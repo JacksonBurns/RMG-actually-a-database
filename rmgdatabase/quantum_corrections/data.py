@@ -1,36 +1,5 @@
-#!/usr/bin/env python3
-
-###############################################################################
-#                                                                             #
-# RMG - Reaction Mechanism Generator                                          #
-#                                                                             #
-# Copyright (c) 2002-2020 Prof. William H. Green (whgreen@mit.edu),           #
-# Prof. Richard H. West (r.west@neu.edu) and the RMG Team (rmg_dev@mit.edu)   #
-#                                                                             #
-# Permission is hereby granted, free of charge, to any person obtaining a     #
-# copy of this software and associated documentation files (the 'Software'),  #
-# to deal in the Software without restriction, including without limitation   #
-# the rights to use, copy, modify, merge, publish, distribute, sublicense,    #
-# and/or sell copies of the Software, and to permit persons to whom the       #
-# Software is furnished to do so, subject to the following conditions:        #
-#                                                                             #
-# The above copyright notice and this permission notice shall be included in  #
-# all copies or substantial portions of the Software.                         #
-#                                                                             #
-# THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  #
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,    #
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE #
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER      #
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING     #
-# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER         #
-# DEALINGS IN THE SOFTWARE.                                                   #
-#                                                                             #
-###############################################################################
-
-"""
-This file provides atomic energy and BAC parameters for several model
-chemistries.
-"""
+# This file provides atomic energy and BAC parameters for several model
+# chemistries.
 
 # Atom energy corrections to reach gas-phase reference state
 # Experimental enthalpy of formation at 0 K, 1 bar for gas phase
@@ -42,7 +11,7 @@ chemistries.
 # Codata: Cox, J. D., Wagman, D. D., and Medvedev, V. A., CODATA Key Values for Thermodynamics, Hemisphere
 # Publishing Corp., New York, 1989. (http://www.science.uwaterloo.ca/~cchieh/cact/tools/thermodata.html)
 
-atom_hf = {
+ATOM_HF = {
     "H": 51.63,
     "He": -1.481,
     "Li": 37.69,
@@ -82,7 +51,7 @@ atom_hf = {
 # Thermal contribution to enthalpy for the atoms reported by Gaussian thermo whitepaper
 # This will be subtracted from the corresponding value in atom_hf to produce an enthalpy used in calculating
 # the enthalpy of formation at 298 K
-atom_thermal = {
+ATOM_THERMAL = {
     "H": 1.01,
     "He": 1.481,
     "Li": 1.1,
@@ -143,7 +112,7 @@ SOC = {
 }
 
 # Atomic energies
-atom_energies = {
+ATOM_ENERGIES = {
     "LevelOfTheory(method='wb97mv',basis='def2tzvpd',software='qchem')": {
         "H": -0.49338216995809725,
         "C": -37.84772407774059,
@@ -485,7 +454,7 @@ atom_energies = {
 }
 
 # Petersson-type bond additivity correction parameters
-pbac = {
+PBAC = {
     "CompositeLevelOfTheory(freq=LevelOfTheory(method='wb97xd3',basis='def2tzvp',software='qchem'),energy=LevelOfTheory(method='ccsd(t)f12',basis='ccpvtzf12',software='molpro'))": {
         "C#C": -0.37319831366523176,
         "C#N": -0.04394537008104246,
@@ -856,7 +825,7 @@ pbac = {
 }
 
 # Melius-type bond additivity correction parameters
-mbac = {
+MBAC = {
     "CompositeLevelOfTheory(freq=LevelOfTheory(method='wb97xd3',basis='def2tzvp',software='qchem'),energy=LevelOfTheory(method='ccsd(t)f12',basis='ccpvtzf12',software='molpro'))": {
         "atom_corr": {
             "C": -0.6004599146970828,
@@ -996,7 +965,7 @@ mbac = {
 #        [4] Calculated as described in 10.1021/ct100326h
 #        [5] J.A. Montgomery, M.J. Frisch, J. Chem. Phys. 1999, 110, 2822–2827, DOI: 10.1063/1.477924
 
-freq_dict = {
+FREQ_DICT = {
     "LevelOfTheory(method='hf',basis='sto3g')": 0.817,  # [2]
     "LevelOfTheory(method='hf',basis='631g')": 0.903,  # [2]
     "LevelOfTheory(method='hf',basis='631g(d)')": 0.899,  # [2]
