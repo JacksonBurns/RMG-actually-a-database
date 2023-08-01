@@ -20,7 +20,10 @@ requires-python = ">=3.7"
 dependencies = ["numpy"]
 
 [project.optional-dependencies]
+# general purpose development
 dev = ["black", "isort", "pytest"]
+# needed when going from v3 to v4 but not just to run
+transition = ["pyyaml", "peewee", "tqdm"]
 
 [project.readme]
 file = "README.md"
