@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "C2H4+O_Klipp2017"
-shortDesc = u"C2H4 + O surface with product branching"
-longDesc = u"""
+shortDesc = "C2H4 + O surface with product branching"
+longDesc = """
 The reaction of atomic oxygen with ethylene is a fundamental oxidation step in combustion.
 
 Decomposition of the initial adduct via spin-allowed reaction channels on the triplet surface competes
@@ -37,65 +37,121 @@ Library written by alongd
 """
 
 entry(
-    index = 1,
-    label = "C2H4 + O <=> CH3 + HCO",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(3.319e+13,'cm^3/(mol*s)'), n=-1.717, Ea=(2893,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1a""",
+    index=1,
+    label="C2H4 + O <=> CH3 + HCO",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(3.319e13, "cm^3/(mol*s)"),
+        n=-1.717,
+        Ea=(2893, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1a""",
 )
 
 entry(
-    index = 2,
-    label = "C2H4 + O <=> CH3CO + H",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(5.485e+11,'cm^3/(mol*s)'), n=-0.4843, Ea=(1958,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1b""",
+    index=2,
+    label="C2H4 + O <=> CH3CO + H",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(5.485e11, "cm^3/(mol*s)"),
+        n=-0.4843,
+        Ea=(1958, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1b""",
 )
 
 entry(
-    index = 3,
-    label = "C2H4 + O <=> CH2CHO + H",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(2.022e+12,'cm^3/(mol*s)'), n=0.9475, Ea=(1724,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1c""",
+    index=3,
+    label="C2H4 + O <=> CH2CHO + H",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(2.022e12, "cm^3/(mol*s)"),
+        n=0.9475,
+        Ea=(1724, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1c""",
 )
 
 entry(
-    index = 4,
-    label = "C2H4 + O <=> C2H3 + OH",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(1e+7,'cm^3/(mol*s)'), n=0, Ea=(0,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1d""",
+    index=4,
+    label="C2H4 + O <=> C2H3 + OH",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(1e7, "cm^3/(mol*s)"),
+        n=0,
+        Ea=(0, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1d""",
 )
 
 entry(
-    index = 5,
-    label = "C2H4 + O <=> CH2 + CH2O",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(4.868e+11,'cm^3/(mol*s)'), n=1.991, Ea=(2860,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1e""",
+    index=5,
+    label="C2H4 + O <=> CH2 + CH2O",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(4.868e11, "cm^3/(mol*s)"),
+        n=1.991,
+        Ea=(2860, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1e""",
 )
 
 entry(
-    index = 6,
-    label = "C2H4 + O <=> CH2CO + H2",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(3.315e+12,'cm^3/(mol*s)'), n=-1.831, Ea=(3180,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1f""",
+    index=6,
+    label="C2H4 + O <=> CH2CO + H2",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(3.315e12, "cm^3/(mol*s)"),
+        n=-1.831,
+        Ea=(3180, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1f""",
 )
 
 entry(
-    index = 7,
-    label = "C2H4 + O <=> CH4 + CO",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(1e+7,'cm^3/(mol*s)'), n=0, Ea=(0,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1g""",
+    index=7,
+    label="C2H4 + O <=> CH4 + CO",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(1e7, "cm^3/(mol*s)"),
+        n=0,
+        Ea=(0, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1g""",
 )
 
 entry(
-    index = 8,
-    label = "C2H4 + O <=> C2H2 + H2O",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(1e+7,'cm^3/(mol*s)'), n=0, Ea=(0,'cal/mol'), T0=(298,'K'), Tmin=(300,'K'), Tmax=(2500,'K')),
-    longDesc = u"""Reaction 1h""",
+    index=8,
+    label="C2H4 + O <=> C2H2 + H2O",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(1e7, "cm^3/(mol*s)"),
+        n=0,
+        Ea=(0, "cal/mol"),
+        T0=(298, "K"),
+        Tmin=(300, "K"),
+        Tmax=(2500, "K"),
+    ),
+    longDesc="""Reaction 1h""",
 )

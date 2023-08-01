@@ -2,18 +2,17 @@
 # encoding: utf-8
 
 name = "Sulfur/DMDS"
-shortDesc = u"dimethyl disulfide library"
-longDesc = u"""
+shortDesc = "dimethyl disulfide library"
+longDesc = """
 Sulfur library originally created by Caleb in RMG-Java. No mention of source of kinetics in Java git commits.
 """
 entry(
-    index = 1,
-    label = "C2H5SJ1 <=> C2H5SJ2",
-    degeneracy = 1,
-    elementary_high_p = True,
-    kinetics = Arrhenius(A=(85.5, 's^-1'), n=3.04, Ea=(11.62, 'kcal/mol'), T0=(1, 'K')),
-    longDesc = 
-u"""
+    index=1,
+    label="C2H5SJ1 <=> C2H5SJ2",
+    degeneracy=1,
+    elementary_high_p=True,
+    kinetics=Arrhenius(A=(85.5, "s^-1"), n=3.04, Ea=(11.62, "kcal/mol"), T0=(1, "K")),
+    longDesc="""
 small molecule oxidation library, reaction file, version 2, JS, August 6, 2003
 originally from Leeds methane oxidation mechanism v1.5
 http://www.chem.leeds.ac.uk/Combustion/Combustion.html
@@ -23,11 +22,13 @@ Ontbinding DMDS
 )
 
 entry(
-    index = 2,
-    label = "C2H4 + SH <=> C2H5SJ2",
-    degeneracy = 1,
-    elementary_high_p = True,
-    kinetics = Arrhenius(A=(9960, 'cm^3/(mol*s)'), n=2.7, Ea=(-0.8, 'kcal/mol'), T0=(1, 'K')),
+    index=2,
+    label="C2H4 + SH <=> C2H5SJ2",
+    degeneracy=1,
+    elementary_high_p=True,
+    kinetics=Arrhenius(
+        A=(9960, "cm^3/(mol*s)"), n=2.7, Ea=(-0.8, "kcal/mol"), T0=(1, "K")
+    ),
 )
 
 # entry(
@@ -42,4 +43,3 @@ entry(
 #         T0 = (1, 'K'),
 #     ),
 # )
-

@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Surface_Adsorption_Bidentate/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 Bidentate adsorption of a gas-phase species onto the surface. 
 The multiple-bond in the gas-phase species is decrease; 
 the atoms at either end are each singled bonded to the surface.
@@ -19,49 +19,52 @@ will be given by k * (mol/m2) * (mol/m2) * (mol/m3)
 so k should be in (m5/mol2/s). We will use sticking coefficients.
 """
 
-template(reactants=["Adsorbate", "VacantSite1", "VacantSite2"], products=["Adsorbed"], ownReverse=False)
+template(
+    reactants=["Adsorbate", "VacantSite1", "VacantSite2"],
+    products=["Adsorbed"],
+    ownReverse=False,
+)
 
 reverse = "Surface_Desorption_Bidentate"
 
-recipe(actions=[
-    ['CHANGE_BOND', '*1', -1, '*2'],
-    ['FORM_BOND', '*1', 1, '*3'],
-    ['FORM_BOND', '*2', 1, '*4']
-])
+recipe(
+    actions=[
+        ["CHANGE_BOND", "*1", -1, "*2"],
+        ["FORM_BOND", "*1", 1, "*3"],
+        ["FORM_BOND", "*2", 1, "*4"],
+    ]
+)
 
 entry(
-    index = 1,
-    label = "Adsorbate",
-    group =
-"""
+    index=1,
+    label="Adsorbate",
+    group="""
 1 *1 R!H u0 {2,[D,T]}
 2 *2 R!H u0 {1,[D,T]}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
+    index=2,
     label="VacantSite1",
-    group =
-"""
+    group="""
 1 *3 Xv u0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
+    index=3,
     label="VacantSite2",
-    group =
-"""
+    group="""
 1 *4 Xv u0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: Adsorbate
 
 L1: VacantSite1
@@ -72,15 +75,13 @@ L1: VacantSite2
 
 
 forbidden(
-    label = "chargedSurface1",
-    group =
-"""
+    label="chargedSurface1",
+    group="""
 1 *1 R!H u0 c-1 {2,T}
 2 *2 R!H u0 c+1 {1,T}
 """,
-    shortDesc = u"""""",
-    longDesc =
-u"""
+    shortDesc="""""",
+    longDesc="""
 The adsorbing molecule should not have a charge on the surface. 
 I've written it specifically for the case of CO adsorption for now.
 
@@ -93,15 +94,13 @@ e.g. this is not allowed:
 )
 
 forbidden(
-    label = "chargedSurface2",
-    group =
-"""
+    label="chargedSurface2",
+    group="""
 1 *1 R!H u0 c+1 {2,T}
 2 *2 R!H u0 c-1 {1,T}
 """,
-    shortDesc = u"""""",
-    longDesc =
-u"""
+    shortDesc="""""",
+    longDesc="""
 The adsorbing molecule should not have a charge on the surface. 
 I've written it specifically for the case of CO adsorption for now.
 e.g. this is not allowed:

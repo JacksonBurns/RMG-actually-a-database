@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Surface_vdW_to_Bidentate/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 If a vdW adsorbate has an internal double or a triple bond, reduce the bond order and make it bidentate. 
 
  *1#*2                   *1==*2
@@ -20,37 +20,37 @@ template(reactants=["Combined", "VacantSite"], products=["Adsorbate"], ownRevers
 
 reverse = "Surface_Bidentate_to_vdW"
 
-recipe(actions=[
-    ['CHANGE_BOND', '*1', 1, '*3'],
-    ['FORM_BOND', '*2', 1, '*4'],
-    ['CHANGE_BOND', '*1', -1, '*2'],
-])
+recipe(
+    actions=[
+        ["CHANGE_BOND", "*1", 1, "*3"],
+        ["FORM_BOND", "*2", 1, "*4"],
+        ["CHANGE_BOND", "*1", -1, "*2"],
+    ]
+)
 
 entry(
-    index = 1,
-    label = "Combined",
-    group =
-"""
+    index=1,
+    label="Combined",
+    group="""
 1 *1 R!H  u0 {2,[D,T]}
 2 *2 R!H  u0 {1,[D,T]}
 3 *3 Xv   u0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
+    index=2,
     label="VacantSite",
-    group =
-"""
+    group="""
 1 *4 Xv u0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 
 tree(
-"""
+    """
 L1: Combined
 
 L1: VacantSite

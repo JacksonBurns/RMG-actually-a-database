@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 name = "Birad_R_Recombination/rules"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 """

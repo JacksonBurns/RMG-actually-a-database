@@ -2,23 +2,23 @@
 # encoding: utf-8
 
 name = "Surface_DoubleBond_to_Bidentate/rules"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 """
 entry(
-    index = 1,
-    label = "Combined;VacantSite",
-    kinetics = SurfaceArrheniusBEP(
-        A = (4.27e15, 'm^2/(mol*s)'),
-        n = 0.549,
-        alpha = 0,
-        E0 = (1.0, 'kcal/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="Combined;VacantSite",
+    kinetics=SurfaceArrheniusBEP(
+        A=(4.27e15, "m^2/(mol*s)"),
+        n=0.549,
+        alpha=0,
+        E0=(1.0, "kcal/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    rank=0,
+    shortDesc="""Default""",
+    longDesc="""
 Pre-exponential value, n and E0 are from R31 in Table 1 of "A Catalytic Reaction Mechanism for Methane
 Partial Oxidation at Short ContactTimes, Reforming, and Combustion, and
 for Oxygenate Decomposition and Oxidation on Platinum"
@@ -35,8 +35,5 @@ and temperature, but don't say what this dependence is.
 Note that this reaction is not in fact an example of this reaction family!
 The products have dissocated and are not the bidentate COOH** (or CHOO**).
 However, in the absence of better data, it is currently our best estimate. (KB, CFG, RHW, 2020-11-30).
-"""
+""",
 )
-
-
-

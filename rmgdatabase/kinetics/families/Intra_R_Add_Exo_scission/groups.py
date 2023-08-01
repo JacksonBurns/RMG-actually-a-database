@@ -2,81 +2,78 @@
 # encoding: utf-8
 
 name = "Intra_R_Add_Exo_scission/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 """
 
 template(reactants=["Rn-Cs-Cb"], products=["Rn-Cs-Cb"], ownReverse=True)
 
 reversible = True
-recipe(actions=[
-    ['BREAK_BOND', '*2', 1, '*3'],
-    ['FORM_BOND', '*1', 1, '*2'],
-    ['LOSE_RADICAL', '*1', '1'],
-    ['GAIN_RADICAL', '*3', '1'],
-])
+recipe(
+    actions=[
+        ["BREAK_BOND", "*2", 1, "*3"],
+        ["FORM_BOND", "*1", 1, "*2"],
+        ["LOSE_RADICAL", "*1", "1"],
+        ["GAIN_RADICAL", "*3", "1"],
+    ]
+)
 
 boundaryAtoms = ["*1", "*2"]
 
 entry(
-    index = 0,
-    label = "Rn-Cs-Cb",
-    group = 
-"""
+    index=0,
+    label="Rn-Cs-Cb",
+    group="""
 1 *1 C  u1 {2,S}
 2 *3 C  u0 {1,S} {3,S}
 3 *2 Cb u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 1,
-    label = "rad",
-    group = 
-"""
+    index=1,
+    label="rad",
+    group="""
 1 *1 C u1
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
-    label = "Cs-Cb",
-    group = 
-"""
+    index=2,
+    label="Cs-Cb",
+    group="""
 1 *3 C  u0 {2,S}
 2 *2 Cb u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
-    label = "rad-Ct",
-    group = 
-"""
+    index=3,
+    label="rad-Ct",
+    group="""
 1 *1 C  u1 {2,S}
 2    Ct u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
-    label = "rad-HH",
-    group = 
-"""
+    index=4,
+    label="rad-HH",
+    group="""
 1 *1 C u1 {2,S} {3,S}
 2    H u0 {1,S}
 3    H u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: Rn-Cs-Cb
 L1: rad
     L2: rad-Ct
@@ -86,9 +83,8 @@ L1: Cs-Cb
 )
 
 forbidden(
-    label = "1H_naphthalene_1",
-    group = 
-"""
+    label="1H_naphthalene_1",
+    group="""
 1  *1 Cs u1 {2,S} {10,S}
 2     Cd u0 {1,S} {3,D}
 3     Cd u0 {2,D} {4,S}
@@ -100,18 +96,16 @@ forbidden(
 9  *2 Cb u0 {4,B} {8,B} {10,S}
 10 *3 C  u0 {1,S} {9,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Forbid a 1H_naphthalene radical  from isomerizing to benzofulvenyl radical in one step using this family. No transition state was
 found for such a reaction.
 """,
 )
 
 forbidden(
-    label = "1H_naphthalene_2",
-    group = 
-"""
+    label="1H_naphthalene_2",
+    group="""
 1  *1 Cs u1 {2,S} {10,S}
 2     Cd u0 {1,S} {3,D}
 3     Cd u0 {2,D} {4,S}
@@ -123,18 +117,16 @@ forbidden(
 9  *2 Cb u0 {4,B} {8,B} {10,S}
 10 *3 C  u0 {1,S} {9,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Forbid a 1H_naphthalene radical  from isomerizing to benzofulvenyl radical in one step using this family. No transition state was
 found for such a reaction.
 """,
 )
 
 forbidden(
-    label = "Benzofulvenyl_1",
-    group = 
-"""
+    label="Benzofulvenyl_1",
+    group="""
 1  *1 C  u1 {2,S}
 2  *3 Cs u0 {1,S} {3,S} {10,S}
 3     Cd u0 {2,S} {4,D}
@@ -146,18 +138,16 @@ forbidden(
 9     Cb u0 {8,B} {10,B}
 10 *2 Cb u0 {2,S} {5,B} {9,B}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Forbid a benzofulvenyl radical  from isomerizing to 1H_naphthalene in one step using this family. No transition state was
 found for such a reaction.
 """,
 )
 
 forbidden(
-    label = "Benzofulvenyl_2",
-    group = 
-"""
+    label="Benzofulvenyl_2",
+    group="""
 1  *1 C  u1 {2,S}
 2  *3 Cs u0 {1,S} {3,S} {10,S}
 3     Cd u0 {2,S} {4,D}
@@ -169,11 +159,9 @@ forbidden(
 9     Cb u0 {8,B} {10,B}
 10 *2 Cb u0 {2,S} {5,B} {9,B}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Forbid a benzofulvenyl radical  from isomerizing to 1H_naphthalene in one step using this family. No transition state was
 found for such a reaction.
 """,
 )
-

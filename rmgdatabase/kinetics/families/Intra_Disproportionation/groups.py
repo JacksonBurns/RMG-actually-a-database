@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Intra_Disproportionation/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 """
 
@@ -12,67 +12,65 @@ template(reactants=["Rn"], products=["Y"], ownReverse=False)
 reverse = "BiradFromMultipleBond"
 reversible = True
 
-recipe(actions=[
-    ['FORM_BOND', '*1', 1, '*4'],
-    ['BREAK_BOND', '*2', 1, '*4'],
-    ['CHANGE_BOND', '*2', 1, '*3'],
-    ['LOSE_RADICAL', '*1', '1'],
-    ['LOSE_RADICAL', '*3', '1'],
-])
+recipe(
+    actions=[
+        ["FORM_BOND", "*1", 1, "*4"],
+        ["BREAK_BOND", "*2", 1, "*4"],
+        ["CHANGE_BOND", "*2", 1, "*3"],
+        ["LOSE_RADICAL", "*1", "1"],
+        ["LOSE_RADICAL", "*3", "1"],
+    ]
+)
 
 boundaryAtoms = ["*1", "*3"]
 
 entry(
-    index = 0,
-    label = "Rn",
-    group = "OR{R2radExo, R3, R4, R5, R6, R7}",
-    kinetics = None,
+    index=0,
+    label="Rn",
+    group="OR{R2radExo, R3, R4, R5, R6, R7}",
+    kinetics=None,
 )
 
 entry(
-    index = 1,
-    label = "Y_rad",
-    group = 
-"""
+    index=1,
+    label="Y_rad",
+    group="""
 1 *1 R!H u1
 """,
-    kinetics = None,
-    shortDesc = u"""The abstracting radical""",
+    kinetics=None,
+    shortDesc="""The abstracting radical""",
 )
 
 entry(
-    index = 2,
-    label = "XH_Rrad",
-    group = 
-"""
+    index=2,
+    label="XH_Rrad",
+    group="""
 1 *3 R!H u1 {2,S}
 2 *2 R!H u0 {1,S} {3,S}
 3 *4 H   u0 {2,S}
 """,
-    kinetics = None,
-    shortDesc = u"""The site with a free hydrogen on an atom adjacent to a radical""",
+    kinetics=None,
+    shortDesc="""The site with a free hydrogen on an atom adjacent to a radical""",
 )
 
 entry(
-    index = 3,
-    label = "R2radExo",
-    group = 
-"""
+    index=3,
+    label="R2radExo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B]}
 2 *2 R!H u0 {1,[S,D,B]} {3,S} {4,S}
 3 *3 R!H u1 {2,S}
 4 *4 H   u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
-    label = "R3",
-    group = "OR{R3radExo}",
-    kinetics = None,
-    longDesc = 
-u"""
+    index=4,
+    label="R3",
+    group="OR{R3radExo}",
+    kinetics=None,
+    longDesc="""
 Aaron Vandeputte notes:
 It is assumed that the other radical site (#3) is not a member of the TS ring; we may eventually want to consider the possibility
 for the radical site being in the TS ring, which in certain cases, may give rise to multiple transition states for the same reaction; 
@@ -84,45 +82,42 @@ the rate rules are the same as for the probably more typical exo case (2nd radic
 )
 
 entry(
-    index = 5,
-    label = "R3radExo",
-    group = 
-"""
+    index=5,
+    label="R3radExo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B]}
 3 *2 R!H u0 {2,[S,D,B]} {4,S} {5,S}
 4 *3 R!H u1 {3,S}
 5 *4 H   u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 6,
-    label = "R4",
-    group = "OR{R4radEndo, R4radExo}",
-    kinetics = None,
+    index=6,
+    label="R4",
+    group="OR{R4radEndo, R4radExo}",
+    kinetics=None,
 )
 
 entry(
-    index = 7,
-    label = "R4radEndo",
-    group = 
-"""
+    index=7,
+    label="R4radEndo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *3 R!H u1 {2,[S,D,B,T]} {4,S}
 4 *2 R!H u0 {3,S} {5,S}
 5 *4 H   u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 8,
-    label = "R4radExo",
-    group = 
-"""
+    index=8,
+    label="R4radExo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *6 R!H u0 {2,[S,D,B,T]} {4,[S,D,B]}
@@ -130,21 +125,20 @@ entry(
 5 *3 R!H u1 {4,S}
 6 *4 H   u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 9,
-    label = "R5",
-    group = "OR{R5radEndo, R5radExo}",
-    kinetics = None,
+    index=9,
+    label="R5",
+    group="OR{R5radEndo, R5radExo}",
+    kinetics=None,
 )
 
 entry(
-    index = 10,
-    label = "R5radEndo",
-    group = 
-"""
+    index=10,
+    label="R5radEndo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *6 R!H u0 {2,[S,D,B,T]} {4,[S,D,B,T]}
@@ -152,14 +146,13 @@ entry(
 5 *2 R!H u0 {4,S} {6,S}
 6 *4 H   u0 {5,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 11,
-    label = "R5radExo",
-    group = 
-"""
+    index=11,
+    label="R5radExo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *7 R!H u0 {2,[S,D,B,T]} {4,[S,D,B,T]}
@@ -168,21 +161,20 @@ entry(
 6 *3 R!H u1 {5,S}
 7 *4 H   u0 {5,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 12,
-    label = "R6",
-    group = "OR{R6radEndo, R6radExo}",
-    kinetics = None,
+    index=12,
+    label="R6",
+    group="OR{R6radEndo, R6radExo}",
+    kinetics=None,
 )
 
 entry(
-    index = 13,
-    label = "R6radEndo",
-    group = 
-"""
+    index=13,
+    label="R6radEndo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *7 R!H u0 {2,[S,D,B,T]} {4,[S,D,B,T]}
@@ -191,14 +183,13 @@ entry(
 6 *2 R!H u0 {5,S} {7,S}
 7 *4 H   u0 {6,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 14,
-    label = "R6radExo",
-    group = 
-"""
+    index=14,
+    label="R6radExo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *7 R!H u0 {2,[S,D,B,T]} {4,[S,D,B,T]}
@@ -208,21 +199,20 @@ entry(
 7 *3 R!H u1 {6,S}
 8 *4 H   u0 {6,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 15,
-    label = "R7",
-    group = "OR{R7radEndo, R7radExo}",
-    kinetics = None,
+    index=15,
+    label="R7",
+    group="OR{R7radEndo, R7radExo}",
+    kinetics=None,
 )
 
 entry(
-    index = 16,
-    label = "R7radEndo",
-    group = 
-"""
+    index=16,
+    label="R7radEndo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *7 R!H u0 {2,[S,D,B,T]} {4,[S,D,B,T]}
@@ -232,14 +222,13 @@ entry(
 7 *2 R!H u0 {6,S} {8,S}
 8 *4 H   u0 {7,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 17,
-    label = "R7radExo",
-    group = 
-"""
+    index=17,
+    label="R7radExo",
+    group="""
 1 *1 R!H u1 {2,[S,D,B,T]}
 2 *5 R!H u0 {1,[S,D,B,T]} {3,[S,D,B,T]}
 3 *7 R!H u0 {2,[S,D,B,T]} {4,[S,D,B,T]}
@@ -250,59 +239,55 @@ entry(
 8 *3 R!H u1 {7,S}
 9 *4 H   u0 {7,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 18,
-    label = "Y_rad_NDe",
-    group = 
-"""
+    index=18,
+    label="Y_rad_NDe",
+    group="""
 1 *1 R!H          u1 {2,S}
 2    [Cs,O2s,S2s] u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 19,
-    label = "Y_rad_De",
-    group = 
-"""
+    index=19,
+    label="Y_rad_De",
+    group="""
 1 *1 R!H                  u1 {2,[S,D]}
 2    [Cd,Cdd,Ct,CO,CS,Cb] u0 {1,[S,D]}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 20,
-    label = "XH_Rrad_NDe",
-    group = 
-"""
+    index=20,
+    label="XH_Rrad_NDe",
+    group="""
 1 *3 R!H          u1 {2,S} {4,S}
 2 *2 R!H          u0 {1,S} {3,S}
 3 *4 H            u0 {2,S}
 4    [Cs,O2s,S2s] u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 21,
-    label = "XH_Rrad_De",
-    group = 
-"""
+    index=21,
+    label="XH_Rrad_De",
+    group="""
 1 *3 R!H                  u1 {2,S} {4,[S,D]}
 2 *2 R!H                  u0 {1,S} {3,S}
 3 *4 H                    u0 {2,S}
 4    [Cd,Cdd,Ct,CO,CS,Cb] u0 {1,[S,D]}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: Rn
     L2: R2radExo
     L2: R3
@@ -329,9 +314,8 @@ L1: XH_Rrad
 )
 
 forbidden(
-    label = "fused5rings_1",
-    group = 
-"""
+    label="fused5rings_1",
+    group="""
 1 C u1 {2,S} {5,S}
 2 C u0 {1,S} {3,S}
 3 C u0 {2,S} {4,S}
@@ -341,17 +325,15 @@ forbidden(
 7 C u0 {6,S} {8,S}
 8 C u0 {4,S} {7,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "fused5rings_2",
-    group = 
-"""
+    label="fused5rings_2",
+    group="""
 1 C u1 {2,S} {5,S}
 2 C u0 {1,S} {3,S}
 3 C u0 {2,S} {4,S}
@@ -361,17 +343,15 @@ forbidden(
 7 C u1 {6,S} {8,S}
 8 C u0 {4,S} {7,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "fused5rings_3",
-    group = 
-"""
+    label="fused5rings_3",
+    group="""
 1 C u1 {2,S} {5,S}
 2 C u0 {1,S} {3,S}
 3 C u0 {2,S} {4,S}
@@ -381,17 +361,15 @@ forbidden(
 7 C u0 {6,S} {8,S}
 8 C u1 {4,S} {7,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "fused5rings_4",
-    group = 
-"""
+    label="fused5rings_4",
+    group="""
 1 C u0 {2,S} {5,S}
 2 C u1 {1,S} {3,S}
 3 C u0 {2,S} {4,S}
@@ -401,10 +379,8 @@ forbidden(
 7 C u1 {6,S} {8,S}
 8 C u0 {4,S} {7,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
-

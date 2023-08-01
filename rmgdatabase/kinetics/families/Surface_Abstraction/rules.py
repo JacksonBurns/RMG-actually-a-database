@@ -2,23 +2,23 @@
 # encoding: utf-8
 
 name = "Surface_Abstraction/rules"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 """
 entry(
-    index = 1,
-    label = "Abstracting;Donating",
-    kinetics = SurfaceArrheniusBEP(
-        A = (1.0e15, 'm^2/(mol*s)'),
-        n = 0,
-        alpha = 0,
-        E0 = (80., 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="Abstracting;Donating",
+    kinetics=SurfaceArrheniusBEP(
+        A=(1.0e15, "m^2/(mol*s)"),
+        n=0,
+        alpha=0,
+        E0=(80.0, "kJ/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    rank=0,
+    shortDesc="""Default""",
+    longDesc="""
 "Arrhenius preexponential values for surface recombination...reactions are, in the SI system,... 10^13 - 10^14 m2/mol/s ...for bimolecular reactions"
 from page 54 of "Silicon epitaxy"
 Author:	Danilo Crippa; Daniel L Rode; Maurizio Masi
@@ -34,21 +34,21 @@ There is no instance of non-H abstraction in Delgado, so I reduced it from 1E17 
 )
 
 entry(
-    index = 1,
-    label = "Abstracting;*R-H",
-    kinetics = SurfaceArrheniusBEP(
-        A = (5.0e17, 'm^2/(mol*s)'),
-        n = 0,
-        alpha = 0.0, #0.26
-        E0 = (40.0, 'kJ/mol'), #34.3
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="Abstracting;*R-H",
+    kinetics=SurfaceArrheniusBEP(
+        A=(5.0e17, "m^2/(mol*s)"),
+        n=0,
+        alpha=0.0,  # 0.26
+        E0=(40.0, "kJ/mol"),  # 34.3
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 0,
-    shortDesc = u"""Made up""",
-    longDesc = u"""
+    rank=0,
+    shortDesc="""Made up""",
+    longDesc="""
 CFG increased the pre-exponential factor from 1E13, which is what we originally had,
 based upon the above citation, to 1E17, to bring it closer to the values in the
 Deutschmann_Ni (Delgado) mechanism
-    """
+    """,
 )

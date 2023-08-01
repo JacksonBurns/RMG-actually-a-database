@@ -2,25 +2,22 @@
 # encoding: utf-8
 
 name = "Surface_Adsorption_Bidentate/rules"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 Adsorption of an unsaturated gas-phase species forming a single adsorbate that is bound to two sites (di-sigma)
 """
 entry(
-    index = 1,
-    label = "Adsorbate;VacantSite1;VacantSite2",
-    kinetics = StickingCoefficientBEP(
-        A = 0.2,
-        n = 0,
-        alpha = 0,
-        E0 = (0, 'kcal/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="Adsorbate;VacantSite1;VacantSite2",
+    kinetics=StickingCoefficientBEP(
+        A=0.2,
+        n=0,
+        alpha=0,
+        E0=(0, "kcal/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""Made up"""
+    rank=0,
+    shortDesc="""Default""",
+    longDesc="""Made up""",
 )
-
-
-

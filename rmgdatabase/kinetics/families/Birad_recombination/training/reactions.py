@@ -2,20 +2,26 @@
 # encoding: utf-8
 
 name = "Birad_recombination/training"
-shortDesc = u"Reaction kinetics used to generate rate rules"
-longDesc = u"""
+shortDesc = "Reaction kinetics used to generate rate rules"
+longDesc = """
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 entry(
-    index = 0,
-    label = "C8H12 <=> C8H12-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2e+12,'s^-1'), n=0, Ea=(7.5312,'kJ/mol'), T0=(1,'K'), Tmin=(550,'K'), Tmax=(650,'K')),
-    rank = 10,
-    shortDesc = """[186] Benson et al.""",
-    longDesc = 
-"""
+    index=0,
+    label="C8H12 <=> C8H12-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2e12, "s^-1"),
+        n=0,
+        Ea=(7.5312, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(550, "K"),
+        Tmax=(650, "K"),
+    ),
+    rank=10,
+    shortDesc="""[186] Benson et al.""",
+    longDesc="""
 [186] Benson, S.W. J. Chem. Phys. 1967, 46, 4920.
 
 CH2=CHCH(.)CH2CH2CH(.)CH=CH2 --> 4-vinylcyclohexene. (Rxn. -c); arises from birad recombination of resonance isomer: .CH2CH=CHCH2CH2CH(.)CH=CH2
@@ -32,14 +38,20 @@ Converted to training reaction from rate rule: R6_SSSDS;C_rad_out_H/OneDe;Cpri_r
 )
 
 entry(
-    index = 1,
-    label = "C4H8 <=> C4H8-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.62e+12,'s^-1'), n=-0.305, Ea=(8.28432,'kJ/mol'), T0=(1,'K'), Tmin=(600,'K'), Tmax=(2000,'K')),
-    rank = 6,
-    shortDesc = """[x] Sirjean et al.""",
-    longDesc = 
-"""
+    index=1,
+    label="C4H8 <=> C4H8-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.62e12, "s^-1"),
+        n=-0.305,
+        Ea=(8.28432, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(600, "K"),
+        Tmax=(2000, "K"),
+    ),
+    rank=6,
+    shortDesc="""[x] Sirjean et al.""",
+    longDesc="""
 [x] Sirjean, B.; Glaude, P. A.; Ruiz-Lopez, M. F.; Fournet, R.; J. Phys. Chem. A. 2006, 110, 12693-12704. 
 http://dx.doi.org/10.1021/jp0651081
 .CH2CH2CH2CH2CH2. -> cyclopentane (k4-1 in Scheme 5/Table 7)
@@ -53,14 +65,20 @@ Converted to training reaction from rate rule: R4_SSS;C_rad_out_2H;Cpri_rad_out_
 )
 
 entry(
-    index = 2,
-    label = "C5H10 <=> C5H10-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7.76e+09,'s^-1'), n=0.311, Ea=(7.1128,'kJ/mol'), T0=(1,'K'), Tmin=(600,'K'), Tmax=(2000,'K')),
-    rank = 6,
-    shortDesc = """[x] Sirjean et al.""",
-    longDesc = 
-"""
+    index=2,
+    label="C5H10 <=> C5H10-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7.76e09, "s^-1"),
+        n=0.311,
+        Ea=(7.1128, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(600, "K"),
+        Tmax=(2000, "K"),
+    ),
+    rank=6,
+    shortDesc="""[x] Sirjean et al.""",
+    longDesc="""
 [x] Sirjean, B.; Glaude, P. A.; Ruiz-Lopez, M. F.; Fournet, R.; J. Phys. Chem. A. 2006, 110, 12693-12704. 
 http://dx.doi.org/10.1021/jp0651081
 .CH2CH2CH2CH2CH2CH2. -> cyclohexane (k5-1+k5-2 in Scheme 7/Table 10) (includes formation of both boat and chair conformations)
@@ -76,80 +94,81 @@ Converted to training reaction from rate rule: R5_SSSS;C_rad_out_2H;Cpri_rad_out
 )
 
 entry(
-    index = 3,
-    label = "C6H12 <=> C6H12-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.21e+10,'s^-1'), n=0.137, Ea=(8.87008,'kJ/mol'), T0=(1,'K'), Tmin=(600,'K'), Tmax=(2000,'K')),
-    rank = 6,
-    shortDesc = """[x] Sirjean et al.""",
-    longDesc = 
-"""
+    index=3,
+    label="C6H12 <=> C6H12-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.21e10, "s^-1"),
+        n=0.137,
+        Ea=(8.87008, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(600, "K"),
+        Tmax=(2000, "K"),
+    ),
+    rank=6,
+    shortDesc="""[x] Sirjean et al.""",
+    longDesc="""
 Converted to training reaction from rate rule: R6_SSSSS;C_rad_out_2H;Cpri_rad_out_2H
 """,
 )
 
 entry(
-    index = 4,
-    label = "CH2S2 <=> CH2S2-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.18e+16,'s^-1'), n=0, Ea=(2.9288,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K')),
-    rank = 10,
-    shortDesc = """A.G. Vandeputte""",
-    longDesc = 
-"""
+    index=4,
+    label="CH2S2 <=> CH2S2-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.18e16, "s^-1"),
+        n=0,
+        Ea=(2.9288, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(300, "K"),
+        Tmax=(1500, "K"),
+    ),
+    rank=10,
+    shortDesc="""A.G. Vandeputte""",
+    longDesc="""
 Converted to training reaction from rate rule: R3_SS;S_rad;Spri_rad
 """,
 )
 
 entry(
-    index = 5,
-    label = "C8H12 <=> C8H12-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(
-        A = (3.49424e+11, 's^-1'),
-        n = -0.0806221,
-        Ea = (12.5388, 'kJ/mol'),
-        T0 = (1, 'K')),
-    rank = 5,
-    shortDesc = u"""Level of theory: CBS-QB3 with 1D rotors in B3LYP/CBSB7""",
-    longDesc = 
-u"""
-library value for butadiene dimerization reactions calculated by Duminda Ranasinghe and Hao-Wei Pang in March 2019
-""",
-)
-
-entry(
-    index = 6,
-    label = "C8H12_DVT <=> C8H12_COD",
-    degeneracy = 1,
-     kinetics = Arrhenius(
-        A = (1.56665e+11, 's^-1'),
-        n = -0.0961041,
-        Ea = (25.7391, 'kJ/mol'),
-        T0 = (1, 'K')),
-    rank = 5,
-    shortDesc = u"""Level of theory: CBS-QB3 with 1D rotors in B3LYP/CBSB7""",
-    longDesc = 
-u"""
-library value for butadiene dimerization reactions calculated by Duminda Ranasinghe and Hao-Wei Pang in March 2019
-""",
-)
-
-entry(
-    index = 7,
-    label = "C8H12_DVT2 <=> C8H12_DVCB",
-    degeneracy = 1,
-    kinetics = Arrhenius(
-        A = (1.3971e+12, 's^-1'),
-        n = -0.104026,
-        Ea = (16.1686, 'kJ/mol'),
-        T0 = (1, 'K')
+    index=5,
+    label="C8H12 <=> C8H12-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.49424e11, "s^-1"), n=-0.0806221, Ea=(12.5388, "kJ/mol"), T0=(1, "K")
     ),
-    rank = 5,
-    shortDesc = u"""Level of theory: CBS-QB3 with 1D rotors in B3LYP/CBSB7""",
-    longDesc = 
-u"""
+    rank=5,
+    shortDesc="""Level of theory: CBS-QB3 with 1D rotors in B3LYP/CBSB7""",
+    longDesc="""
 library value for butadiene dimerization reactions calculated by Duminda Ranasinghe and Hao-Wei Pang in March 2019
 """,
 )
 
+entry(
+    index=6,
+    label="C8H12_DVT <=> C8H12_COD",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(1.56665e11, "s^-1"), n=-0.0961041, Ea=(25.7391, "kJ/mol"), T0=(1, "K")
+    ),
+    rank=5,
+    shortDesc="""Level of theory: CBS-QB3 with 1D rotors in B3LYP/CBSB7""",
+    longDesc="""
+library value for butadiene dimerization reactions calculated by Duminda Ranasinghe and Hao-Wei Pang in March 2019
+""",
+)
+
+entry(
+    index=7,
+    label="C8H12_DVT2 <=> C8H12_DVCB",
+    degeneracy=1,
+    kinetics=Arrhenius(
+        A=(1.3971e12, "s^-1"), n=-0.104026, Ea=(16.1686, "kJ/mol"), T0=(1, "K")
+    ),
+    rank=5,
+    shortDesc="""Level of theory: CBS-QB3 with 1D rotors in B3LYP/CBSB7""",
+    longDesc="""
+library value for butadiene dimerization reactions calculated by Duminda Ranasinghe and Hao-Wei Pang in March 2019
+""",
+)

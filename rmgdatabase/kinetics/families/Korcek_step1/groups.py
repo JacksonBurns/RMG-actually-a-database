@@ -2,28 +2,31 @@
 # encoding: utf-8
 
 name = "Korcek_step1/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 """
 
-template(reactants=["RCH(OOH)CH2C(O)R'"], products=["cyclic_peroxide"], ownReverse=False)
+template(
+    reactants=["RCH(OOH)CH2C(O)R'"], products=["cyclic_peroxide"], ownReverse=False
+)
 
 reverse = "cyclic_peroxide_ringopening"
 
 reversible = True
-recipe(actions=[
-    ['BREAK_BOND', '*1', 1, '*2'],
-    ['CHANGE_BOND', '*3', -1, '*4'],
-    ['FORM_BOND', '*2', 1, '*3'],
-    ['FORM_BOND', '*1', 1, '*4'],
-])
+recipe(
+    actions=[
+        ["BREAK_BOND", "*1", 1, "*2"],
+        ["CHANGE_BOND", "*3", -1, "*4"],
+        ["FORM_BOND", "*2", 1, "*3"],
+        ["FORM_BOND", "*1", 1, "*4"],
+    ]
+)
 
 entry(
-    index = 0,
-    label = "RCH(OOH)CH2C(O)R'",
-    group = 
-"""
+    index=0,
+    label="RCH(OOH)CH2C(O)R'",
+    group="""
 1     C u0 {2,S} {4,S} {7,S} {9,S}
 2     C u0 {1,S} {3,S} {11,S} {12,S}
 3  *4 C u0 {2,S} {6,D} {8,S}
@@ -37,11 +40,11 @@ entry(
 11    H u0 {2,S}
 12    H u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: RCH(OOH)CH2C(O)R'
 """
 )

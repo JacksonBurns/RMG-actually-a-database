@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Intra_Retro_Diels_alder_bicyclic/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 """
 
@@ -12,27 +12,28 @@ template(reactants=["cyclohexene"], products=["open"], ownReverse=False)
 reverse = "ringopening"
 
 reversible = True
-recipe(actions=[
-    ['CHANGE_BOND', '*1', 1, '*2'],
-    ['CHANGE_BOND', '*3', 1, '*4'],
-    ['CHANGE_BOND', '*2', -1, '*3'],
-    ['CHANGE_BOND', '*5', 1, '*6'],
-    ['BREAK_BOND', '*1', 1, '*6'],
-    ['BREAK_BOND', '*4', 1, '*5'],
-])
-
-entry(
-    index = 0,
-    label = "cyclohexene",
-    group = "OR{cyclohexene_1inring, cyclohexene_2inring, cyclohexene_3inring, cyclohexene_4inring}",
-    kinetics = None,
+recipe(
+    actions=[
+        ["CHANGE_BOND", "*1", 1, "*2"],
+        ["CHANGE_BOND", "*3", 1, "*4"],
+        ["CHANGE_BOND", "*2", -1, "*3"],
+        ["CHANGE_BOND", "*5", 1, "*6"],
+        ["BREAK_BOND", "*1", 1, "*6"],
+        ["BREAK_BOND", "*4", 1, "*5"],
+    ]
 )
 
 entry(
-    index = 1,
-    label = "cyclohexene_1inring",
-    group = 
-"""
+    index=0,
+    label="cyclohexene",
+    group="OR{cyclohexene_1inring, cyclohexene_2inring, cyclohexene_3inring, cyclohexene_4inring}",
+    kinetics=None,
+)
+
+entry(
+    index=1,
+    label="cyclohexene_1inring",
+    group="""
 1  *1 R!H u0 c0 {2,S} {6,S} {8,S} {9,S}
 2  *2 R!H u0 c0 {1,S} {3,D}
 3  *3 R!H u0 c0 {2,D} {4,S}
@@ -44,14 +45,13 @@ entry(
 9  *8 R   u0 {1,S}
 10 *9 R   u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
-    label = "cyclohexene_2inring",
-    group = 
-"""
+    index=2,
+    label="cyclohexene_2inring",
+    group="""
 1  *1 R!H u0 c0 {2,S} {6,S} {9,S} {10,S}
 2  *2 R!H u0 c0 {1,S} {3,D}
 3  *3 R!H u0 c0 {2,D} {4,S}
@@ -64,14 +64,13 @@ entry(
 10 *8 R   u0 {1,S}
 11 *9 R   u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
-    label = "cyclohexene_3inring",
-    group = 
-"""
+    index=3,
+    label="cyclohexene_3inring",
+    group="""
 1  *1 R!H u0 c0 {2,S} {6,S} {10,S} {11,S}
 2  *2 R!H u0 c0 {1,S} {3,D}
 3  *3 R!H u0 c0 {2,D} {4,S}
@@ -85,14 +84,13 @@ entry(
 11 *8 R   u0 {1,S}
 12 *9 R   u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
-    label = "cyclohexene_4inring",
-    group = 
-"""
+    index=4,
+    label="cyclohexene_4inring",
+    group="""
 1  *1 R!H u0 c0 {2,S} {6,S} {11,S} {12,S}
 2  *2 R!H u0 c0 {1,S} {3,D}
 3  *3 R!H u0 c0 {2,D} {4,S}
@@ -107,11 +105,11 @@ entry(
 12 *8 R   u0 {1,S}
 13 *9 R   u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: cyclohexene
     L2: cyclohexene_1inring
     L2: cyclohexene_2inring
@@ -121,9 +119,8 @@ L1: cyclohexene
 )
 
 forbidden(
-    label = "bicyclohepta13diene",
-    group = 
-"""
+    label="bicyclohepta13diene",
+    group="""
 1 *3 R!H u0 {2,[D,T]} {4,S}
 2 *2 R!H u0 {1,[D,T]} {3,S} {6,S}
 3 *1 R!H u0 {2,S} {7,S}
@@ -132,17 +129,15 @@ forbidden(
 6    R!H u0 {2,S} {5,S}
 7 *6 R!H u0 {3,S} {5,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "bicyclohepta13diene_prod",
-    group = 
-"""
+    label="bicyclohepta13diene_prod",
+    group="""
 1 *3 R!H u0 {2,S} {4,[D,T]}
 2 *2 R!H u0 {1,S} {3,[D,T]} {6,S}
 3 *1 R!H u0 {2,[D,T]}
@@ -151,17 +146,15 @@ forbidden(
 6    R!H u0 {2,S} {5,S}
 7 *6 R!H u0 {5,[D,T]}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "bicyclohepta13diene_rad",
-    group = 
-"""
+    label="bicyclohepta13diene_rad",
+    group="""
 1 *3 R!H u0 {2,[D,T]} {4,S}
 2 *2 R!H u0 {1,[D,T]} {3,S} {6,S}
 3 *1 R!H u0 {2,S} {7,S}
@@ -170,17 +163,15 @@ forbidden(
 6    R!H u1 {2,S} {5,S}
 7 *6 R!H u0 {3,S} {5,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "bicyclohepta13diene_rad_prod",
-    group = 
-"""
+    label="bicyclohepta13diene_rad_prod",
+    group="""
 1 *3 R!H u0 {2,S} {4,[D,T]}
 2 *2 R!H u0 {1,S} {3,[D,T]} {6,S}
 3 *1 R!H u0 {2,[D,T]}
@@ -189,17 +180,15 @@ forbidden(
 6    R!H u1 {2,S} {5,S}
 7 *6 R!H u0 {5,[D,T]}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
 
 forbidden(
-    label = "two5rings",
-    group = 
-"""
+    label="two5rings",
+    group="""
 1     C u0 {2,S} {4,S} {5,S} {10,S}
 2  *4 C u0 {1,S} {3,S} {16,S}
 3  *3 C u0 {2,S} {6,S} {11,D}
@@ -217,10 +206,8 @@ forbidden(
 15    H u0 {10,S}
 16    H u0 {2,S}
 """,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 
 """,
 )
-

@@ -2,20 +2,27 @@
 # encoding: utf-8
 
 name = "intra_H_migration/training"
-shortDesc = u"Reaction kinetics used to generate rate rules"
-longDesc = u"""
+shortDesc = "Reaction kinetics used to generate rate rules"
+longDesc = """
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 entry(
-    index = 1,
-    label = "C3HF4O <=> C3HF4O-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(2.01526e+12,'s^-1'), n=0.18834, Ea=(147.694,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.10613, dn = +|- 0.0132522, dEa = +|- 0.0721181 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=1,
+    label="C3HF4O <=> C3HF4O-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(2.01526e12, "s^-1"),
+        n=0.18834,
+        Ea=(147.694, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.10613, dn = +|- 0.0132522, dEa = +|- 0.0721181 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CF2CF2CHO <=> CF3CFCHO
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -34,14 +41,21 @@ H    2.304691    1.121958    0.033928
 )
 
 entry(
-    index = 2,
-    label = "C4H6F3 <=> C4H6F3-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(0.000550858,'s^-1'), n=4.50663, Ea=(210.996,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 35.7263, dn = +|- 0.4698, dEa = +|- 2.55664 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=2,
+    label="C4H6F3 <=> C4H6F3-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(0.000550858, "s^-1"),
+        n=4.50663,
+        Ea=(210.996, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 35.7263, dn = +|- 0.4698, dEa = +|- 2.55664 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CF2CH2CH2CH2F <=> CH2CH2CH2CF3
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -64,14 +78,21 @@ H    1.230852    2.208941    -0.945251
 )
 
 entry(
-    index = 3,
-    label = "C2H2F3 <=> C2H2F3-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.36622e+11,'s^-1'), n=0.48217, Ea=(122.23,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17845, dn = +|- 0.0215722, dEa = +|- 0.117395 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=3,
+    label="C2H2F3 <=> C2H2F3-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.36622e11, "s^-1"),
+        n=0.48217,
+        Ea=(122.23, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17845, dn = +|- 0.0215722, dEa = +|- 0.117395 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CF2CH2F <=> CH2CF3
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -88,14 +109,21 @@ C    -0.727456    0.000243    -0.266644
 )
 
 entry(
-    index = 4,
-    label = "C3H6Cl <=> C3H6Cl-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.00221e+06,'s^-1'), n=1.90111, Ea=(169.648,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.59483, dn = +|- 0.061324, dEa = +|- 0.333723 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=4,
+    label="C3H6Cl <=> C3H6Cl-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.00221e06, "s^-1"),
+        n=1.90111,
+        Ea=(169.648, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.59483, dn = +|- 0.061324, dEa = +|- 0.333723 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2Cl <=> CH2CH2CH2Cl
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -115,14 +143,21 @@ Cl    1.611586    -0.004644    0.543876
 )
 
 entry(
-    index = 5,
-    label = "C3H6F <=> C3H6F-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(0.00930803,'s^-1'), n=4.16824, Ea=(227.637,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 33.1868, dn = +|- 0.460113, dEa = +|- 2.50392 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=5,
+    label="C3H6F <=> C3H6F-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(0.00930803, "s^-1"),
+        n=4.16824,
+        Ea=(227.637, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 33.1868, dn = +|- 0.460113, dEa = +|- 2.50392 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2F <=> CH2CH2CH2F
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -142,14 +177,21 @@ F    1.345025    0.139951    0.037479
 )
 
 entry(
-    index = 6,
-    label = "C4H8Cl <=> C4H8Cl-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.50247e+07,'s^-1'), n=1.58353, Ea=(156.188,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.34324, dn = +|- 0.0387684, dEa = +|- 0.210976 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=6,
+    label="C4H8Cl <=> C4H8Cl-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.50247e07, "s^-1"),
+        n=1.58353,
+        Ea=(156.188, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.34324, dn = +|- 0.0387684, dEa = +|- 0.210976 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2CH2Cl <=> CH2CH2CH2CH2Cl
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -172,14 +214,21 @@ H    1.698521    0.321271    -1.194546
 )
 
 entry(
-    index = 7,
-    label = "C4H8Br <=> C4H8Br-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(9.62119e+10,'s^-1'), n=0.157944, Ea=(121.704,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06787, dn = +|- 0.00862677, dEa = +|- 0.0469466 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=7,
+    label="C4H8Br <=> C4H8Br-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(9.62119e10, "s^-1"),
+        n=0.157944,
+        Ea=(121.704, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06787, dn = +|- 0.00862677, dEa = +|- 0.0469466 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2CH2Br <=> CH2CH2CH2CH2Br
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -202,14 +251,21 @@ H    1.712867    0.288928    -1.203257
 )
 
 entry(
-    index = 8,
-    label = "C2H4F <=> C2H4F-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.31151e+11,'s^-1'), n=0.116194, Ea=(135.383,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06904, dn = +|- 0.00877084, dEa = +|- 0.0477306 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=8,
+    label="C2H4F <=> C2H4F-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.31151e11, "s^-1"),
+        n=0.116194,
+        Ea=(135.383, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06904, dn = +|- 0.00877084, dEa = +|- 0.0477306 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2F <=> CH2CH2F
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -226,14 +282,21 @@ C    -0.670492    0.001069    1.074944
 )
 
 entry(
-    index = 9,
-    label = "C2H4Cl <=> C2H4Cl-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.03108e+13,'s^-1'), n=-0.0707693, Ea=(47.2642,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01008, dn = +|- 0.00131731, dEa = +|- 0.00716878 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=9,
+    label="C2H4Cl <=> C2H4Cl-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.03108e13, "s^-1"),
+        n=-0.0707693,
+        Ea=(47.2642, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01008, dn = +|- 0.00131731, dEa = +|- 0.00716878 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2Cl <=> CH2CH2Cl
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -250,14 +313,21 @@ C    -0.632765    -0.000252    1.108133
 )
 
 entry(
-    index = 10,
-    label = "C3H6Br <=> C3H6Br-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.2885e+08,'s^-1'), n=1.30127, Ea=(134.618,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.11448, dn = +|- 0.0142406, dEa = +|- 0.0774968 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=10,
+    label="C3H6Br <=> C3H6Br-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.2885e08, "s^-1"),
+        n=1.30127,
+        Ea=(134.618, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.11448, dn = +|- 0.0142406, dEa = +|- 0.0774968 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2Br <=> CH2CH2CH2Br
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -277,14 +347,21 @@ Br    1.714764    -0.004894    0.556354
 )
 
 entry(
-    index = 11,
-    label = "C4H8F <=> C4H8F-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.35274e-11,'s^-1'), n=6.31569, Ea=(202.311,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 193.49, dn = +|- 0.691746, dEa = +|- 3.76445 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=11,
+    label="C4H8F <=> C4H8F-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.35274e-11, "s^-1"),
+        n=6.31569,
+        Ea=(202.311, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 193.49, dn = +|- 0.691746, dEa = +|- 3.76445 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2CH2F <=> CH2CH2CH2CH2F
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -307,14 +384,21 @@ H    1.101562    2.14882    -1.005652
 )
 
 entry(
-    index = 12,
-    label = "C2F5 <=> C2F5-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1.28412e+12,'s^-1'), n=0.253035, Ea=(209.151,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14701, dn = +|- 0.0180193, dEa = +|- 0.0980605 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=12,
+    label="C2F5 <=> C2F5-2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(1.28412e12, "s^-1"),
+        n=0.253035,
+        Ea=(209.151, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14701, dn = +|- 0.0180193, dEa = +|- 0.0980605 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CF3CF2 <=> CF3CF2
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -331,14 +415,21 @@ C    -0.68263    0.00035    -0.26305
 )
 
 entry(
-    index = 13,
-    label = "C5H10Br <=> C5H10Br-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.68639e+09,'s^-1'), n=0.389834, Ea=(137.78,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.23187, dn = +|- 0.0273974, dEa = +|- 0.149096 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=13,
+    label="C5H10Br <=> C5H10Br-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.68639e09, "s^-1"),
+        n=0.389834,
+        Ea=(137.78, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.23187, dn = +|- 0.0273974, dEa = +|- 0.149096 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2CH2CH2Br <=> CH2CH2CH2CH2CH2Br
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -364,14 +455,21 @@ H    -2.352696    -1.196093    -0.186862
 )
 
 entry(
-    index = 14,
-    label = "C5H10Cl <=> C5H10Cl-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.11837e-16,'s^-1'), n=7.45351, Ea=(118.459,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 301.9, dn = +|- 0.750193, dEa = +|- 4.08252 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=14,
+    label="C5H10Cl <=> C5H10Cl-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.11837e-16, "s^-1"),
+        n=7.45351,
+        Ea=(118.459, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 301.9, dn = +|- 0.750193, dEa = +|- 4.08252 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2CH2CH2Cl <=> CH2CH2CH2CH2CH2Cl
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -397,14 +495,21 @@ H    0.342954    -2.321257    0.375529
 )
 
 entry(
-    index = 15,
-    label = "C5H10F <=> C5H10F-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.64853e+07,'s^-1'), n=1.15307, Ea=(198.221,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.79242, dn = +|- 0.0766688, dEa = +|- 0.417229 kJ/mol"""),
-    rank = 3,
-    shortDesc = """M062X-D3/jun-cc-pVTZ RRHO""",
-    longDesc = 
-"""
+    index=15,
+    label="C5H10F <=> C5H10F-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.64853e07, "s^-1"),
+        n=1.15307,
+        Ea=(198.221, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.79242, dn = +|- 0.0766688, dEa = +|- 0.417229 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""M062X-D3/jun-cc-pVTZ RRHO""",
+    longDesc="""
 Training reaction from kinetics library: autotst/intra_halogen_migration
 Original entry: CH2CH2CH2CH2CH2F <=> CH2CH2CH2CH2CH2F
 Calculated with Gaussian 16 using M062X with D3 dispersion and jun-cc-pVTZ basis set
@@ -428,4 +533,3 @@ H    1.252805    2.030219    1.234814
 H    1.274034    2.605945    -0.496042
 """,
 )
-

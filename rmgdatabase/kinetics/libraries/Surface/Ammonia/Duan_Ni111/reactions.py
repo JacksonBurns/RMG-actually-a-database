@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Duan_Ni111"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 This library is built to import training reactions, based on:
 "Ammonia decomposition on Fe(1 1 0), Co(1 1 1) and 
 Ni(1 1 1) surfaces: A density functional theory study"
@@ -19,17 +19,17 @@ https://doi.org/10.1016/j.fuproc.2012.05.030
 """
 
 entry(
-    index = 1,
-    label = "NH3_X + X <=> NH2_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (4.35E15, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (107103.9, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="NH3_X + X <=> NH2_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(4.35e15, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(107103.9, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation_vdW""",
+    longDesc="""
 "Ammonia decomposition on Fe(1 1 0), Co(1 1 1) and 
 Ni(1 1 1) surfaces: A density functional theory study"
 Duan et al. Journal of Molecular Catalysis A: Chemical 357 (2012) 81–86
@@ -50,22 +50,22 @@ Ea = 1.11eV = 107103.9J/mol
 
 This is reaction 1 from Table 2
 """,
-    metal = "Ni",
-    facet = "111",
+    metal="Ni",
+    facet="111",
 )
 
 entry(
-    index = 2,
-    label = "NH2_X + X <=> NH_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (8.34E19, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (56929.1, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=2,
+    label="NH2_X + X <=> NH_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(8.34e19, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(56929.1, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation""",
+    longDesc="""
 "Ammonia decomposition on Fe(1 1 0), Co(1 1 1) and 
 Ni(1 1 1) surfaces: A density functional theory study"
 Duan et al. Journal of Molecular Catalysis A: Chemical 357 (2012) 81–86
@@ -86,22 +86,22 @@ Ea = 0.59eV = 56929.1J/mol
 
 This is reaction 2 from Table 2  
 """,
-    metal = "Ni",
-    facet = "111",
+    metal="Ni",
+    facet="111",
 )
 
 entry(
-    index = 3,
-    label = "NH_X + X <=> N_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (2.46E19, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (107103.9, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=3,
+    label="NH_X + X <=> N_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(2.46e19, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(107103.9, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation""",
+    longDesc="""
 "Ammonia decomposition on Fe(1 1 0), Co(1 1 1) and 
 Ni(1 1 1) surfaces: A density functional theory study"
 Duan et al. Journal of Molecular Catalysis A: Chemical 357 (2012) 81–86
@@ -122,22 +122,22 @@ Ea = 1.11eV = 107103.9J/mol
 
 This is reaction 3 from Table 2  
 """,
-    metal = "Ni",
-    facet = "111",
+    metal="Ni",
+    facet="111",
 )
 
 entry(
-    index = 4,
-    label = "N_X + N_X <=> N2 + X + X",
-    kinetics = SurfaceArrhenius(
-        A = (3.62E20, 'cm^2/(mol*s)'),  
-        n = 0.0,
-        Ea = (179471.4, 'J/mol'),  
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=4,
+    label="N_X + N_X <=> N2 + X + X",
+    kinetics=SurfaceArrhenius(
+        A=(3.62e20, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(179471.4, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""N2 Surface_Adsorption_Dissociative""",
-    longDesc = u"""
+    shortDesc="""N2 Surface_Adsorption_Dissociative""",
+    longDesc="""
 "Ammonia decomposition on Fe(1 1 0), Co(1 1 1) and 
 Ni(1 1 1) surfaces: A density functional theory study"
 Duan et al. Journal of Molecular Catalysis A: Chemical 357 (2012) 81–86
@@ -158,6 +158,6 @@ Ea = 1.86eV = 179471.4J/mol
 
 This is reaction 4 from Table 2   
 """,
-    metal = "Ni",
-    facet = "111",
+    metal="Ni",
+    facet="111",
 )

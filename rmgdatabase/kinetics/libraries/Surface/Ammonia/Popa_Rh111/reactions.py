@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Popa_Rh111"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 Based primarily on 
 "Ab initio density-functional theory study of 
 NHx dehydrogenation and reverse reactions on the Rh(111) surface"
@@ -20,19 +20,19 @@ Phys. Chem. C 2007, 111, 9839– 9852.
 https://doi.org/10.1021/jp071072g
 """
 
-#top <=> bridge + hcp
+# top <=> bridge + hcp
 entry(
-    index = 1,
-    label = "NH3_X + X <=> NH2_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (8.21E21, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (109033.7, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="NH3_X + X <=> NH2_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(8.21e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(109033.7, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation_vdW""",
+    longDesc="""
 Based primarily on "Ab initio density-functional theory study of 
 NHx dehydrogenation and reverse reactions on the Rh(111) surface"
 C. Popa, W. K. Offermans, R. A. van Santen, and A. P. J. Jansen
@@ -46,23 +46,23 @@ Ea = 1.13eV = 109033.7J/mol
 
 This is reaction 1 of TABLE VI.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
-#bridge <=> fcc + fcc
+# bridge <=> fcc + fcc
 entry(
-    index = 2,
-    label = "NH2_X + X <=> NH_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (6.33E21, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (92630.4, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=2,
+    label="NH2_X + X <=> NH_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(6.33e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(92630.4, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation""",
+    longDesc="""
 Based primarily on "Ab initio density-functional theory study of 
 NHx dehydrogenation and reverse reactions on the Rh(111) surface"
 C. Popa, W. K. Offermans, R. A. van Santen, and A. P. J. Jansen
@@ -76,23 +76,23 @@ Ea = 0.86eV = 92630.4J/mol
 
 This is reaction 3 of TABLE VI.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
-#hcp <=> hcp + hcp
+# hcp <=> hcp + hcp
 entry(
-    index = 3,
-    label = "NH_X + X <=> N_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (7.94E21, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (97454.9, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=3,
+    label="NH_X + X <=> N_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(7.94e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(97454.9, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation""",
+    longDesc="""
 Based primarily on "Ab initio density-functional theory study of 
 NHx dehydrogenation and reverse reactions on the Rh(111) surface"
 C. Popa, W. K. Offermans, R. A. van Santen, and A. P. J. Jansen
@@ -106,23 +106,23 @@ Ea = 1.01eV = 97454.9J/mol
 
 This is reaction 7 of TABLE VI.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # top + hcp <=> bridge + top
 entry(
-    index = 4,
-    label = "NH3_X +O_X <=> NH2_X + OH_X",
-    kinetics = SurfaceArrhenius(
-        A=(6.40E20, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (92630.4, 'J/mol'),   
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=4,
+    label="NH3_X +O_X <=> NH2_X + OH_X",
+    kinetics=SurfaceArrhenius(
+        A=(6.40e20, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(92630.4, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Abstraction_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Abstraction_vdW""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -137,23 +137,23 @@ Ea = 0.96eV = 92630.4J/mol
 
 This is reaction 2a. of TABLE 4.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # brigde + fcc <=> hcp + top
 entry(
-    index = 5,
-    label = "NH2_X +O_X <=> NH_X + OH_X",
-    kinetics = SurfaceArrhenius(
-        A=(6.29E21, 'cm^2/(mol*s)'),
-        n = 0.0,
-        Ea = (71402.6, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=5,
+    label="NH2_X +O_X <=> NH_X + OH_X",
+    kinetics=SurfaceArrhenius(
+        A=(6.29e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(71402.6, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Abstraction""",
-    longDesc = u"""
+    shortDesc="""Surface_Abstraction""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -168,23 +168,23 @@ Ea = 0.74eV = 71402.6J/mol
 
 This is reaction 4a. of TABLE 4.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # hcp + hcp <=> hcp + top
 entry(
-    index = 6,
-    label = "NH_X +O_X <=> N_X + OH_X",
-    kinetics = SurfaceArrhenius(
-        A=(8.32E21 , 'cm^2/(mol*s)'),
-        n = 0.0,
-        Ea = (84911.2, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=6,
+    label="NH_X +O_X <=> N_X + OH_X",
+    kinetics=SurfaceArrhenius(
+        A=(8.32e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(84911.2, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Abstraction""",
-    longDesc = u"""
+    shortDesc="""Surface_Abstraction""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -199,23 +199,23 @@ Ea = 0.88eV = 84911.2J/mol
 
 This is reaction 2a. of TABLE 4.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # top + top <=> bridge + top
 entry(
-    index = 7,
-    label = "NH3_X + OH_X <=> NH2_X + H2O_X",
-    kinetics = SurfaceArrhenius(
-        A=(7.27E20, 'cm^2/(mol*s)'),
-        n = 0.0,
-        Ea = (23157.6, 'J/mol'), 
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=7,
+    label="NH3_X + OH_X <=> NH2_X + H2O_X",
+    kinetics=SurfaceArrhenius(
+        A=(7.27e20, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(23157.6, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Abstraction_Single_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Abstraction_Single_vdW""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -230,23 +230,23 @@ Ea = 0.24eV = 23157.6J/mol
 
 This is reaction 1a. of TABLE 5.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # bridge + top + hcp + top
 entry(
-    index = 8,
-    label = "NH2_X + OH_X <=> NH_X + H2O_X",
-    kinetics = SurfaceArrhenius(
-        A=(1.50E21, 'cm^2/(mol*s)'),
-        n = 0.0,
-        Ea = (13508.6, 'J/mol'), 
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=8,
+    label="NH2_X + OH_X <=> NH_X + H2O_X",
+    kinetics=SurfaceArrhenius(
+        A=(1.50e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(13508.6, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Abstraction_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Abstraction_vdW""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -261,23 +261,23 @@ Ea = 0.14eV = 13508.6J/mol
 
 This is reaction 3a. of TABLE 5.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # hcp + top <=> hcp + top
 entry(
-    index = 9,
-    label = "NH_X + OH_X <=> N_X + H2O_X",
-    kinetics = SurfaceArrhenius(
-        A=(4.52E20, 'cm^2/(mol*s)'),
-        n = 0.0,
-        Ea = (22192.7, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=9,
+    label="NH_X + OH_X <=> N_X + H2O_X",
+    kinetics=SurfaceArrhenius(
+        A=(4.52e20, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(22192.7, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Abstraction_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Abstraction_vdW""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -292,23 +292,23 @@ Ea = 0.23eV = 22192.7J/mol
 
 This is reaction 6a. of TABLE 5.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )
 
 # hcp + fcc <=> top
 entry(
-    index = 10,
-    label = "N_X + N_X  <=>  N2_X + X",
-    kinetics = SurfaceArrhenius(
-        A=(1.69E22, 'cm^2/(mol*s)'),
-        n = 0.0,
-        Ea = (147629.7, 'J/mol'), 
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=10,
+    label="N_X + N_X  <=>  N2_X + X",
+    kinetics=SurfaceArrhenius(
+        A=(1.69e22, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(147629.7, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 Based primarily on 
 "Density-functional theory study of NHx oxidation 
 and reverse reactions on the Rh (111) surface."
@@ -323,6 +323,6 @@ Ea = 1.53eV = 147629.7J/mol
 
 This is reaction 3a. of TABLE 6.
 """,
-    metal = "Rh",
-    facet = "111",
+    metal="Rh",
+    facet="111",
 )

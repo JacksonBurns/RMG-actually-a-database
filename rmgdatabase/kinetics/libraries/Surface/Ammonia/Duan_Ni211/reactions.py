@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Duan_Ni211"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 This library is built to import training reactions, based on:
 "Structure sensitivity of ammonia decomposition 
 over Ni catalysts: A computational and experimental study"
@@ -12,17 +12,17 @@ https://doi.org/10.1016/j.fuproc.2012.05.030
 """
 
 entry(
-    index = 1,
-    label = "NH3_X + X <=> NH2_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (5.52E19, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (63683.4, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="NH3_X + X <=> NH2_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(5.52e19, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(63683.4, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation_vdW""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation_vdW""",
+    longDesc="""
 "Structure sensitivity of ammonia decomposition 
 over Ni catalysts: A computational and experimental study"
 Duan et al. Fuel Processing Technology 108 (2013) 112–117
@@ -36,22 +36,22 @@ Ea = 0.66eV = 63683.4J/mol
 
 This is reaction 1 from Table 2
 """,
-    metal = "Ni",
-    facet = "211",
+    metal="Ni",
+    facet="211",
 )
 
 entry(
-    index = 2,
-    label = "NH2_X + X <=> NH_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (2.31E20, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (86841, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=2,
+    label="NH2_X + X <=> NH_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(2.31e20, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(86841, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation""",
+    longDesc="""
 "Structure sensitivity of ammonia decomposition 
 over Ni catalysts: A computational and experimental study"
 Duan et al. Fuel Processing Technology 108 (2013) 112–117
@@ -65,22 +65,22 @@ Ea = 0.9eV = 86841J/mol
 
 This is reaction 2 from Table 2  
 """,
-    metal = "Ni",
-    facet = "211",
+    metal="Ni",
+    facet="211",
 )
 
 entry(
-    index = 3,
-    label = "NH_X + X <=> N_X + H_X",
-    kinetics = SurfaceArrhenius(
-        A = (3.36E21, 'cm^2/(mol*s)'), 
-        n = 0.0,
-        Ea = (100349.6, 'J/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=3,
+    label="NH_X + X <=> N_X + H_X",
+    kinetics=SurfaceArrhenius(
+        A=(3.36e21, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(100349.6, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Surface_Dissociation""",
-    longDesc = u"""
+    shortDesc="""Surface_Dissociation""",
+    longDesc="""
 "Structure sensitivity of ammonia decomposition 
 over Ni catalysts: A computational and experimental study"
 Duan et al. Fuel Processing Technology 108 (2013) 112–117
@@ -94,22 +94,22 @@ Ea = 1.04eV = 100349.6J/mol
 
 This is reaction 3 from Table 2  
 """,
-    metal = "Ni",
-    facet = "211",
+    metal="Ni",
+    facet="211",
 )
 
 entry(
-    index = 4,
-    label = "N_X + N_X <=> N2 + X + X",
-    kinetics = SurfaceArrhenius(
-        A = (4.90E20, 'cm^2/(mol*s)'),  
-        n = 0.0,
-        Ea = (285610.4, 'J/mol'),  
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=4,
+    label="N_X + N_X <=> N2 + X + X",
+    kinetics=SurfaceArrhenius(
+        A=(4.90e20, "cm^2/(mol*s)"),
+        n=0.0,
+        Ea=(285610.4, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""N2 Surface_Adsorption_Dissociative""",
-    longDesc = u"""
+    shortDesc="""N2 Surface_Adsorption_Dissociative""",
+    longDesc="""
 "Structure sensitivity of ammonia decomposition 
 over Ni catalysts: A computational and experimental study"
 Duan et al. Fuel Processing Technology 108 (2013) 112–117
@@ -123,6 +123,6 @@ Ea = 2.96eV = 285610.4J/mol
 
 This is reaction 4 from Table 2   
 """,
-    metal = "Ni",
-    facet = "211",
+    metal="Ni",
+    facet="211",
 )

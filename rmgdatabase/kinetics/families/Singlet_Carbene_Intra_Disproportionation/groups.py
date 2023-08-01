@@ -2,63 +2,63 @@
 # encoding: utf-8
 
 name = "Singlet_Carbene_Intra_Disproportionation/groups"
-shortDesc = u"Convert a singlet carbene to a closed-shell molecule through a concerted 1,2-H shift + 1,2-bond formation"
-longDesc = u"""
+shortDesc = "Convert a singlet carbene to a closed-shell molecule through a concerted 1,2-H shift + 1,2-bond formation"
+longDesc = """
 Reaction site *1 should always be a singlet in this family.
 """
 
-template(reactants=["singletcarbene_CH"], products=["CH_C_unsaturated"], ownReverse=False)
+template(
+    reactants=["singletcarbene_CH"], products=["CH_C_unsaturated"], ownReverse=False
+)
 
 reverse = "SingletCarbenefromMultipleBond"
 
 reversible = True
-recipe(actions=[
-    ['LOSE_PAIR', '*1', '1'],
-    ['FORM_BOND', '*1', 1, '*3'],
-    ['BREAK_BOND', '*2', 1, '*3'],
-    ['CHANGE_BOND', '*1', 1, '*2'],
-])
+recipe(
+    actions=[
+        ["LOSE_PAIR", "*1", "1"],
+        ["FORM_BOND", "*1", 1, "*3"],
+        ["BREAK_BOND", "*2", 1, "*3"],
+        ["CHANGE_BOND", "*1", 1, "*2"],
+    ]
+)
 
 boundaryAtoms = ["*1", "*2"]
 
 entry(
-    index = 0,
-    label = "singletcarbene_CH",
-    group = 
-"""
+    index=0,
+    label="singletcarbene_CH",
+    group="""
 1 *1 C u0 p1 c0 {2,[S,D]}
 2 *2 C u0 {1,[S,D]} {3,S}
 3 *3 H u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 1,
-    label = "singletcarbene",
-    group = 
-"""
+    index=1,
+    label="singletcarbene",
+    group="""
 1 *1 C u0 p1 c0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
-    label = "CH",
-    group = 
-"""
+    index=2,
+    label="CH",
+    group="""
 1 *2 C u0 {2,S}
 2 *3 H u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
-    label = "fulvene_backbone",
-    group = 
-"""
+    index=3,
+    label="fulvene_backbone",
+    group="""
 1 *2 C u0 {2,S} {6,S} {7,S}
 2    C u0 {1,S} {3,S} {5,D}
 3    C u0 {2,S} {4,D}
@@ -67,14 +67,13 @@ entry(
 6 *1 C u0 p1 c0 {1,S} {4,S}
 7 *3 H u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
-    label = "benzene_backbone",
-    group = 
-"""
+    index=4,
+    label="benzene_backbone",
+    group="""
 1 *2 C u0 {2,S} {6,S} {7,S}
 2    C u0 {1,S} {3,D}
 3    C u0 {2,D} {4,S}
@@ -83,180 +82,166 @@ entry(
 6 *1 C u0 p1 c0 {1,S} {5,S}
 7 *3 H u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 5,
-    label = "CsJ2-C",
-    group = 
-"""
+    index=5,
+    label="CsJ2-C",
+    group="""
 1 *1 C u0 p1 c0 {2,S}
 2 *2 C u0 {1,S} {3,S}
 3 *3 H u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 6,
-    label = "CdJ2=C",
-    group = 
-"""
+    index=6,
+    label="CdJ2=C",
+    group="""
 1 *1 C u0 p1 c0 {2,D}
 2 *2 C u0 {1,D} {3,S}
 3 *3 H u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 7,
-    label = "CdJ2",
-    group = 
-"""
+    index=7,
+    label="CdJ2",
+    group="""
 1 *1 C2d u0 p1 c0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 8,
-    label = "CsJ2H",
-    group = 
-"""
+    index=8,
+    label="CsJ2H",
+    group="""
 1 *1 C2s u0 p1 c0 {2,S}
 2    H   u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 9,
-    label = "CsJ2C",
-    group = 
-"""
+    index=9,
+    label="CsJ2C",
+    group="""
 1 *1 C2s u0 p1 c0 {2,S}
 2    C   u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 10,
-    label = "CsJ2(CsC)",
-    group = 
-"""
+    index=10,
+    label="CsJ2(CsC)",
+    group="""
 1 *1 C2s u0 p1 c0 {2,S}
 2    Cs  u0 {1,S} {3,S}
 3    C   u0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 11,
-    label = "CsJ2(C=C)",
-    group = 
-"""
+    index=11,
+    label="CsJ2(C=C)",
+    group="""
 1 *1 C2s u0 p1 c0 {2,S}
 2    Cd  u0 {1,S} {3,D}
 3    C   u0 {2,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 12,
-    label = "CdH2",
-    group = 
-"""
+    index=12,
+    label="CdH2",
+    group="""
 1 *2 Cd u0 {2,S} {3,S}
 2 *3 H  u0 {1,S}
 3    H  u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 13,
-    label = "CdHC",
-    group = 
-"""
+    index=13,
+    label="CdHC",
+    group="""
 1 *2 Cd u0 {2,S} {3,S}
 2 *3 H  u0 {1,S}
 3    C  u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 14,
-    label = "CH3",
-    group = 
-"""
+    index=14,
+    label="CH3",
+    group="""
 1 *2 Cs u0 {2,S} {3,S} {4,S}
 2 *3 H  u0 {1,S}
 3    H  u0 {1,S}
 4    H  u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 15,
-    label = "CH2(C)",
-    group = 
-"""
+    index=15,
+    label="CH2(C)",
+    group="""
 1 *2 Cs u0 {2,S} {3,S} {4,S}
 2 *3 H  u0 {1,S}
 3    H  u0 {1,S}
 4    C  u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 16,
-    label = "CH2(C=C)",
-    group = 
-"""
+    index=16,
+    label="CH2(C=C)",
+    group="""
 1 *2 Cs u0 {2,S} {3,S} {4,S}
 2 *3 H  u0 {1,S}
 3    H  u0 {1,S}
 4    Cd u0 {1,S} {5,D}
 5    C  u0 {4,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 17,
-    label = "CH(C)C",
-    group = 
-"""
+    index=17,
+    label="CH(C)C",
+    group="""
 1 *2 Cs u0 {2,S} {3,S} {4,S}
 2 *3 H  u0 {1,S}
 3    C  u0 {1,S}
 4    C  u0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 18,
-    label = "CH=C",
-    group = 
-"""
+    index=18,
+    label="CH=C",
+    group="""
 1 *2 Cd u0 {2,S} {3,D}
 2 *3 H  u0 {1,S}
 3    C  u0 {1,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: singletcarbene_CH
     L2: fulvene_backbone
     L2: benzene_backbone
@@ -278,4 +263,3 @@ L1: CH
     L2: CH=C
 """
 )
-

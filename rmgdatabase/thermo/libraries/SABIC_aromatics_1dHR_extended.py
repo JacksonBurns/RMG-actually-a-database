@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "SABIC_aromatics_1dHR_extended"
-shortDesc = u"Species relevant to aromatics formation, up to Benzo[a]pyrene (C20H12)"
-longDesc = u"""
+shortDesc = "Species relevant to aromatics formation, up to Benzo[a]pyrene (C20H12)"
+longDesc = """
 CBS-QB3 calculations for most species obtained from SABIC
 Rotor scans performed using ARC v1.0.0
 Some species were rerun with ARC because the original CBS-QB3 optimized geometries had imaginary frequencies
@@ -22,10 +22,9 @@ has at least one invalidated rotor scan job. It is not clear how much these inva
 accuracy of these species, and thus they have been included here in a separate library from the main one.
 """
 entry(
-    index = 0,
-    label = "C10H8_9",
-    molecule = 
-"""
+    index=0,
+    label="C10H8_9",
+    molecule="""
 multiplicity 3
 1  C u0 p0 c0 {2,B} {3,B} {7,S}
 2  C u0 p0 c0 {1,B} {4,B} {9,S}
@@ -46,20 +45,43 @@ multiplicity 3
 17 H u0 p0 c0 {8,S}
 18 H u0 p0 c0 {8,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.48534,0.0905321,-7.93611e-05,3.6381e-08,-6.78067e-12,65837,38.6568], Tmin=(200,'K'), Tmax=(1247.6,'K')),
-            NASAPolynomial(coeffs=[13.9392,0.0410799,-1.99058e-05,4.61129e-09,-4.14672e-13,61988.2,-39.1704], Tmin=(1247.6,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.48534,
+                    0.0905321,
+                    -7.93611e-05,
+                    3.6381e-08,
+                    -6.78067e-12,
+                    65837,
+                    38.6568,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1247.6, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.9392,
+                    0.0410799,
+                    -1.99058e-05,
+                    4.61129e-09,
+                    -4.14672e-13,
+                    61988.2,
+                    -39.1704,
+                ],
+                Tmin=(1247.6, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (544.986,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (424.038,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(544.986, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(424.038, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C:C': 6, 'C-C': 3, 'C#C': 1, 'C-H': 8}
 1D rotors:
 pivots: [1, 7], dihedral: [2, 1, 7, 15], rotor symmetry: 1, max scan energy: 1.52 kJ/mol
@@ -93,10 +115,9 @@ H      -4.91080900    6.20997800    0.05626500
 )
 
 entry(
-    index = 1,
-    label = "C6H5O2_10",
-    molecule = 
-"""
+    index=1,
+    label="C6H5O2_10",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {6,S} {8,S}
 2  C u0 p0 c0 {1,S} {4,D} {9,S}
@@ -112,20 +133,43 @@ multiplicity 2
 12 H u0 p0 c0 {5,S}
 13 O u0 p2 c0 {7,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-0.450451,0.0582732,-3.59733e-05,4.58127e-09,2.29423e-12,2955.52,30.9558], Tmin=(200,'K'), Tmax=(1070.09,'K')),
-            NASAPolynomial(coeffs=[11.2319,0.028728,-1.43557e-05,3.4473e-09,-3.22334e-13,-353.329,-29.9743], Tmin=(1070.09,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -0.450451,
+                    0.0582732,
+                    -3.59733e-05,
+                    4.58127e-09,
+                    2.29423e-12,
+                    2955.52,
+                    30.9558,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1070.09, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    11.2319,
+                    0.028728,
+                    -1.43557e-05,
+                    3.4473e-09,
+                    -3.22334e-13,
+                    -353.329,
+                    -29.9743,
+                ],
+                Tmin=(1070.09, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (22.2373,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (303.478,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(22.2373, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(303.478, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=O': 1, 'C-O': 2, 'C-C': 3, 'C=C': 2, 'C-H': 5}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -152,10 +196,9 @@ H       2.66577800    3.70986600   -1.73726700
 )
 
 entry(
-    index = 2,
-    label = "C10H10_59",
-    molecule = 
-"""
+    index=2,
+    label="C10H10_59",
+    molecule="""
 1  C u0 p0 c0 {2,S} {3,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {9,S} {13,S} {14,S}
 3  C u0 p0 c0 {1,S} {4,B} {5,B}
@@ -177,20 +220,43 @@ entry(
 19 H u0 p0 c0 {5,S}
 20 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.32242,0.0924993,-7.0585e-05,2.77256e-08,-4.41731e-12,30827.7,37.0785], Tmin=(200,'K'), Tmax=(1441.44,'K')),
-            NASAPolynomial(coeffs=[15.095,0.044166,-2.02882e-05,4.46339e-09,-3.82769e-13,25806.5,-53.3192], Tmin=(1441.44,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.32242,
+                    0.0924993,
+                    -7.0585e-05,
+                    2.77256e-08,
+                    -4.41731e-12,
+                    30827.7,
+                    37.0785,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1441.44, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    15.095,
+                    0.044166,
+                    -2.02882e-05,
+                    4.46339e-09,
+                    -3.82769e-13,
+                    25806.5,
+                    -53.3192,
+                ],
+                Tmin=(1441.44, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (253.205,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (473.925,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(253.205, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(473.925, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 3, 'C-C': 6, 'C#C': 1, 'C-H': 10}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -225,10 +291,9 @@ H       1.45097400    3.67530600    2.15139200
 )
 
 entry(
-    index = 3,
-    label = "C9H11_19",
-    molecule = 
-"""
+    index=3,
+    label="C9H11_19",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {10,S} {11,S} {12,S}
 2  C u0 p0 c0 {3,S} {13,S} {14,S} {15,S}
@@ -251,20 +316,43 @@ multiplicity 2
 19 H u0 p0 c0 {9,S}
 20 H u0 p0 c0 {6,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.9449,0.0725295,-2.14256e-05,-1.71797e-08,9.92166e-12,15414,37.266], Tmin=(200,'K'), Tmax=(1028.13,'K')),
-            NASAPolynomial(coeffs=[7.36139,0.0568353,-2.84554e-05,6.78396e-09,-6.23984e-13,12416.3,-13.162], Tmin=(1028.13,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.9449,
+                    0.0725295,
+                    -2.14256e-05,
+                    -1.71797e-08,
+                    9.92166e-12,
+                    15414,
+                    37.266,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1028.13, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    7.36139,
+                    0.0568353,
+                    -2.84554e-05,
+                    6.78396e-09,
+                    -6.23984e-13,
+                    12416.3,
+                    -13.162,
+                ],
+                Tmin=(1028.13, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (124.964,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (473.925,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(124.964, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(473.925, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 3, 'C-C': 6, 'C-H': 11}
 1D rotors:
 pivots: [1, 2], dihedral: [10, 1, 2, 3], rotor symmetry: 3, max scan energy: 0.60 kJ/mol
@@ -299,10 +387,9 @@ H       2.47520800    1.07798300    0.03359800
 )
 
 entry(
-    index = 4,
-    label = "C10H9_17",
-    molecule = 
-"""
+    index=4,
+    label="C10H9_17",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {8,S} {9,S} {11,S}
 2  C u0 p0 c0 {1,S} {3,B} {4,B}
@@ -324,20 +411,43 @@ multiplicity 2
 18 H u0 p0 c0 {8,S}
 19 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.51732,0.0918381,-7.21119e-05,2.78684e-08,-4.03292e-12,56769.3,42.4758], Tmin=(200,'K'), Tmax=(1169.99,'K')),
-            NASAPolynomial(coeffs=[14.4154,0.0426081,-2.00986e-05,4.55728e-09,-4.03656e-13,52214.3,-44.4061], Tmin=(1169.99,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.51732,
+                    0.0918381,
+                    -7.21119e-05,
+                    2.78684e-08,
+                    -4.03292e-12,
+                    56769.3,
+                    42.4758,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1169.99, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    14.4154,
+                    0.0426081,
+                    -2.00986e-05,
+                    4.55728e-09,
+                    -4.03656e-13,
+                    52214.3,
+                    -44.4061,
+                ],
+                Tmin=(1169.99, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (468.739,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (448.981,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(468.739, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(448.981, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 3, 'C#C': 1, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -371,10 +481,9 @@ H      -2.06447100    3.23012300   -0.13275100
 )
 
 entry(
-    index = 5,
-    label = "C10H9_14",
-    molecule = 
-"""
+    index=5,
+    label="C10H9_14",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {3,B} {7,S}
 2  C u0 p0 c0 {1,B} {4,B} {10,S}
@@ -396,20 +505,43 @@ multiplicity 2
 18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.67371,0.0937313,-7.29322e-05,2.7396e-08,-3.73124e-12,48340.3,39.7306], Tmin=(200,'K'), Tmax=(1162.19,'K')),
-            NASAPolynomial(coeffs=[14.7312,0.0436174,-2.08876e-05,4.78985e-09,-4.27577e-13,43633.6,-49.6986], Tmin=(1162.19,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.67371,
+                    0.0937313,
+                    -7.29322e-05,
+                    2.7396e-08,
+                    -3.73124e-12,
+                    48340.3,
+                    39.7306,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1162.19, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    14.7312,
+                    0.0436174,
+                    -2.08876e-05,
+                    4.78985e-09,
+                    -4.27577e-13,
+                    43633.6,
+                    -49.6986,
+                ],
+                Tmin=(1162.19, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (398.57,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(398.57, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 5, 'C-C': 5, 'C-H': 9}
 1D rotors:
 pivots: [8, 9], dihedral: [3, 8, 9, 10], rotor symmetry: 1, max scan energy: 19.91 kJ/mol
@@ -443,10 +575,9 @@ H       0.65945000   -4.69888000    0.44588800
 )
 
 entry(
-    index = 6,
-    label = "C10H9_13",
-    molecule = 
-"""
+    index=6,
+    label="C10H9_13",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {9,S} {11,S} {12,S}
 2  C u0 p0 c0 {3,S} {4,B} {5,B}
@@ -468,20 +599,43 @@ multiplicity 2
 18 H u0 p0 c0 {5,S}
 19 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.50377,0.0885307,-6.00534e-05,1.53205e-08,2.02933e-13,50082.8,39.3902], Tmin=(200,'K'), Tmax=(1087.78,'K')),
-            NASAPolynomial(coeffs=[13.3951,0.0455479,-2.21293e-05,5.16093e-09,-4.68936e-13,45708,-42.8605], Tmin=(1087.78,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.50377,
+                    0.0885307,
+                    -6.00534e-05,
+                    1.53205e-08,
+                    2.02933e-13,
+                    50082.8,
+                    39.3902,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1087.78, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.3951,
+                    0.0455479,
+                    -2.21293e-05,
+                    5.16093e-09,
+                    -4.68936e-13,
+                    45708,
+                    -42.8605,
+                ],
+                Tmin=(1087.78, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (413.082,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(413.082, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 3, 'C#C': 1, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -515,10 +669,9 @@ H       3.74681100    3.16553100   -0.02201100
 )
 
 entry(
-    index = 7,
-    label = "C10H9_12",
-    molecule = 
-"""
+    index=7,
+    label="C10H9_12",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {3,B} {7,S}
 2  C u0 p0 c0 {1,B} {4,B} {11,S}
@@ -540,20 +693,43 @@ multiplicity 2
 18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.35351,0.0841632,-4.74975e-05,3.44028e-09,3.97002e-12,51836.7,39.9921], Tmin=(200,'K'), Tmax=(1068.04,'K')),
-            NASAPolynomial(coeffs=[12.4292,0.0481197,-2.40106e-05,5.71677e-09,-5.2732e-13,47577,-37.4576], Tmin=(1068.04,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.35351,
+                    0.0841632,
+                    -4.74975e-05,
+                    3.44028e-09,
+                    3.97002e-12,
+                    51836.7,
+                    39.9921,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1068.04, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    12.4292,
+                    0.0481197,
+                    -2.40106e-05,
+                    5.71677e-09,
+                    -5.2732e-13,
+                    47577,
+                    -37.4576,
+                ],
+                Tmin=(1068.04, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (427.683,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(427.683, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 5, 'C-C': 5, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -587,10 +763,9 @@ H       1.71387600   -4.77290000   -0.04823500
 )
 
 entry(
-    index = 8,
-    label = "C10H10_67",
-    molecule = 
-"""
+    index=8,
+    label="C10H10_67",
+    molecule="""
 1  C u0 p0 c0 {2,S} {3,S} {4,S} {11,S}
 2  C u0 p0 c0 {1,S} {9,S} {12,S} {13,S}
 3  C u0 p0 c0 {1,S} {5,S} {8,D}
@@ -612,20 +787,43 @@ entry(
 19 H u0 p0 c0 {8,S}
 20 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.96043,0.0975681,-7.50647e-05,2.77033e-08,-3.60342e-12,46312.9,39.5848], Tmin=(200,'K'), Tmax=(1144.85,'K')),
-            NASAPolynomial(coeffs=[14.8327,0.046203,-2.19192e-05,4.99766e-09,-4.45028e-13,41530.9,-51.7557], Tmin=(1144.85,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.96043,
+                    0.0975681,
+                    -7.50647e-05,
+                    2.77033e-08,
+                    -3.60342e-12,
+                    46312.9,
+                    39.5848,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1144.85, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    14.8327,
+                    0.046203,
+                    -2.19192e-05,
+                    4.99766e-09,
+                    -4.45028e-13,
+                    41530.9,
+                    -51.7557,
+                ],
+                Tmin=(1144.85, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (381.568,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (478.082,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(381.568, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(478.082, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 3, 'C#C': 1, 'C-H': 10}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -659,10 +857,9 @@ H      -0.68504300    2.85768300   -0.79454500
 )
 
 entry(
-    index = 9,
-    label = "C10H11_26",
-    molecule = 
-"""
+    index=9,
+    label="C10H11_26",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {11,S} {12,S} {13,S}
 2  C u0 p0 c0 {4,S} {5,B} {6,B}
@@ -686,20 +883,43 @@ multiplicity 2
 20 H u0 p0 c0 {10,S}
 21 H u0 p0 c0 {6,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.44165,0.0862879,-4.27917e-05,-1.09326e-09,5.16359e-12,23061.1,38.8924], Tmin=(200,'K'), Tmax=(1067.02,'K')),
-            NASAPolynomial(coeffs=[10.5853,0.0566736,-2.81805e-05,6.65977e-09,-6.08332e-13,19186.9,-29.9273], Tmin=(1067.02,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.44165,
+                    0.0862879,
+                    -4.27917e-05,
+                    -1.09326e-09,
+                    5.16359e-12,
+                    23061.1,
+                    38.8924,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1067.02, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    10.5853,
+                    0.0566736,
+                    -2.81805e-05,
+                    6.65977e-09,
+                    -6.08332e-13,
+                    19186.9,
+                    -29.9273,
+                ],
+                Tmin=(1067.02, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (188.405,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (498.868,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(188.405, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(498.868, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 4, 'C-C': 6, 'C-H': 11}
 1D rotors:
 pivots: [1, 2], dihedral: [12, 1, 2, 3], rotor symmetry: 3, max scan energy: 5.67 kJ/mol
@@ -736,10 +956,9 @@ H       1.34541900   -2.31830800    0.00002200
 )
 
 entry(
-    index = 10,
-    label = "C9H9_23",
-    molecule = 
-"""
+    index=10,
+    label="C9H9_23",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {8,S} {10,S} {11,S} {12,S}
 2  C u0 p0 c0 {3,B} {4,B} {9,S}
@@ -760,20 +979,43 @@ multiplicity 2
 17 H u0 p0 c0 {7,S}
 18 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.55363,0.0757967,-4.39338e-05,6.26638e-09,2.10608e-12,37724.9,35.1285], Tmin=(200,'K'), Tmax=(1081.57,'K')),
-            NASAPolynomial(coeffs=[10.3102,0.0461588,-2.25764e-05,5.27355e-09,-4.77833e-13,34325.8,-26.8877], Tmin=(1081.57,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.55363,
+                    0.0757967,
+                    -4.39338e-05,
+                    6.26638e-09,
+                    2.10608e-12,
+                    37724.9,
+                    35.1285,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1081.57, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    10.3102,
+                    0.0461588,
+                    -2.25764e-05,
+                    5.27355e-09,
+                    -4.77833e-13,
+                    34325.8,
+                    -26.8877,
+                ],
+                Tmin=(1081.57, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (310.821,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(310.821, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C-H': 9}
 1D rotors:
 pivots: [1, 2], dihedral: [10, 1, 2, 3], rotor symmetry: 3, max scan energy: 6.31 kJ/mol
@@ -805,10 +1047,9 @@ H       0.46473700   -2.05237600   -2.84359000
 )
 
 entry(
-    index = 11,
-    label = "C9H9_25",
-    molecule = 
-"""
+    index=11,
+    label="C9H9_25",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,B} {4,B}
 2  C u0 p0 c0 {1,S} {8,S} {9,D}
@@ -829,20 +1070,43 @@ multiplicity 2
 17 H u0 p0 c0 {8,S}
 18 H u0 p0 c0 {8,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.76925,0.0743788,-3.46571e-05,-5.6145e-09,6.5632e-12,30293.9,35.3594], Tmin=(200,'K'), Tmax=(1054.48,'K')),
-            NASAPolynomial(coeffs=[11.6804,0.0443782,-2.18801e-05,5.21055e-09,-4.84869e-13,26288.9,-35.7816], Tmin=(1054.48,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.76925,
+                    0.0743788,
+                    -3.46571e-05,
+                    -5.6145e-09,
+                    6.5632e-12,
+                    30293.9,
+                    35.3594,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1054.48, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    11.6804,
+                    0.0443782,
+                    -2.18801e-05,
+                    5.21055e-09,
+                    -4.84869e-13,
+                    26288.9,
+                    -35.7816,
+                ],
+                Tmin=(1054.48, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (248.819,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(248.819, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [1, 4], dihedral: [2, 1, 4, 5], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -874,10 +1138,9 @@ H      -3.23363100    1.89969500   -1.78510000
 )
 
 entry(
-    index = 12,
-    label = "C10H9_27",
-    molecule = 
-"""
+    index=12,
+    label="C10H9_27",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {3,B} {10,S}
 2  C u0 p0 c0 {1,B} {4,B} {12,S}
@@ -899,20 +1162,43 @@ multiplicity 2
 18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.86746,0.0901843,-5.66132e-05,8.27007e-09,3.15501e-12,48806.6,41.0257], Tmin=(200,'K'), Tmax=(1069.61,'K')),
-            NASAPolynomial(coeffs=[15.1851,0.0440046,-2.17662e-05,5.19572e-09,-4.84354e-13,43724.6,-52.9863], Tmin=(1069.61,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.86746,
+                    0.0901843,
+                    -5.66132e-05,
+                    8.27007e-09,
+                    3.15501e-12,
+                    48806.6,
+                    41.0257,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1069.61, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    15.1851,
+                    0.0440046,
+                    -2.17662e-05,
+                    5.19572e-09,
+                    -4.84354e-13,
+                    43724.6,
+                    -52.9863,
+                ],
+                Tmin=(1069.61, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (402.204,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(402.204, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 5, 'C-H': 9}
 1D rotors:
 pivots: [2, 3], dihedral: [1, 2, 3, 4], rotor symmetry: 1, max scan energy: 28.03 kJ/mol
@@ -945,10 +1231,9 @@ H       1.68573300   -4.02511900   -0.79691600
 )
 
 entry(
-    index = 13,
-    label = "C9H9_20",
-    molecule = 
-"""
+    index=13,
+    label="C9H9_20",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {4,B} {7,S}
 2  C u0 p0 c0 {1,B} {3,B} {8,S}
@@ -969,20 +1254,43 @@ multiplicity 2
 17 H u0 p0 c0 {9,S}
 18 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.92609,0.0778476,-4.30634e-05,1.84054e-09,4.27672e-12,30954.9,35.754], Tmin=(200,'K'), Tmax=(1059.25,'K')),
-            NASAPolynomial(coeffs=[12.2091,0.0434449,-2.12174e-05,5.00354e-09,-4.61398e-13,26895.8,-38.279], Tmin=(1059.25,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.92609,
+                    0.0778476,
+                    -4.30634e-05,
+                    1.84054e-09,
+                    4.27672e-12,
+                    30954.9,
+                    35.754,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1059.25, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    12.2091,
+                    0.0434449,
+                    -2.12174e-05,
+                    5.00354e-09,
+                    -4.61398e-13,
+                    26895.8,
+                    -38.279,
+                ],
+                Tmin=(1059.25, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (254.27,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(254.27, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C-H': 9}
 1D rotors:
 pivots: [9, 10], dihedral: [4, 9, 10, 11], rotor symmetry: 1, max scan energy: 13.28 kJ/mol
@@ -1015,10 +1323,9 @@ H      -3.57079600   -2.26978800   -0.03642300
 )
 
 entry(
-    index = 14,
-    label = "C10H10_74",
-    molecule = 
-"""
+    index=14,
+    label="C10H10_74",
+    molecule="""
 1  C u0 p0 c0 {2,D} {3,S} {4,S}
 2  C u0 p0 c0 {1,D} {6,S} {14,S}
 3  C u0 p0 c0 {1,S} {7,D} {15,S}
@@ -1040,20 +1347,43 @@ entry(
 19 H u0 p0 c0 {10,S}
 20 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.89157,0.0883178,-4.36593e-05,-4.95747e-09,7.38486e-12,37007,39.3974], Tmin=(200,'K'), Tmax=(1061.72,'K')),
-            NASAPolynomial(coeffs=[14.2883,0.0492916,-2.48297e-05,6.01638e-09,-5.67072e-13,31910.5,-51.3358], Tmin=(1061.72,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.89157,
+                    0.0883178,
+                    -4.36593e-05,
+                    -4.95747e-09,
+                    7.38486e-12,
+                    37007,
+                    39.3974,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1061.72, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    14.2883,
+                    0.0492916,
+                    -2.48297e-05,
+                    6.01638e-09,
+                    -5.67072e-13,
+                    31910.5,
+                    -51.3358,
+                ],
+                Tmin=(1061.72, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (304.025,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (478.082,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(304.025, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(478.082, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 5, 'C-C': 5, 'C-H': 10}
 1D rotors:
 pivots: [2, 3], dihedral: [1, 2, 3, 4], rotor symmetry: 1, max scan energy: 36.14 kJ/mol
@@ -1087,10 +1417,9 @@ H       4.66601600   -4.55380000   -0.06375800
 )
 
 entry(
-    index = 15,
-    label = "C10H11_16",
-    molecule = 
-"""
+    index=15,
+    label="C10H11_16",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {4,S} {5,D}
@@ -1114,20 +1443,43 @@ multiplicity 2
 20 H u0 p0 c0 {10,S}
 21 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.99732,0.0895883,-3.98528e-05,-9.24973e-09,8.73874e-12,32562.9,40.2924], Tmin=(200,'K'), Tmax=(1057.72,'K')),
-            NASAPolynomial(coeffs=[13.3743,0.0542282,-2.7363e-05,6.61226e-09,-6.20121e-13,27614.2,-46.6314], Tmin=(1057.72,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.99732,
+                    0.0895883,
+                    -3.98528e-05,
+                    -9.24973e-09,
+                    8.73874e-12,
+                    32562.9,
+                    40.2924,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1057.72, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.3743,
+                    0.0542282,
+                    -2.7363e-05,
+                    6.61226e-09,
+                    -6.20121e-13,
+                    27614.2,
+                    -46.6314,
+                ],
+                Tmin=(1057.72, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (267.015,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (503.026,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(267.015, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(503.026, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 4, 'C-H': 11}
 1D rotors:
 pivots: [2, 3], dihedral: [1, 2, 3, 4], rotor symmetry: 1, max scan energy: 40.00 kJ/mol
@@ -1164,10 +1516,9 @@ H      -3.92621900   -1.44733100   -0.83875700
 )
 
 entry(
-    index = 16,
-    label = "C10H11_11",
-    molecule = 
-"""
+    index=16,
+    label="C10H11_11",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {4,S} {11,S}
 2  C u1 p0 c0 {1,S} {5,S} {12,S}
@@ -1191,20 +1542,43 @@ multiplicity 2
 20 H u0 p0 c0 {10,S}
 21 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-3.22007,0.102008,-7.91366e-05,3.03042e-08,-4.34606e-12,41295.1,41.9577], Tmin=(200,'K'), Tmax=(1170.04,'K')),
-            NASAPolynomial(coeffs=[15.1908,0.048569,-2.28098e-05,5.15129e-09,-4.54767e-13,36336.3,-52.5351], Tmin=(1170.04,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -3.22007,
+                    0.102008,
+                    -7.91366e-05,
+                    3.03042e-08,
+                    -4.34606e-12,
+                    41295.1,
+                    41.9577,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1170.04, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    15.1908,
+                    0.048569,
+                    -2.28098e-05,
+                    5.15129e-09,
+                    -4.54767e-13,
+                    36336.3,
+                    -52.5351,
+                ],
+                Tmin=(1170.04, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (339.733,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (503.026,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(339.733, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(503.026, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 4, 'C-C': 6, 'C-H': 11}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -1242,10 +1616,9 @@ H      -3.82372600   -4.48627100   -1.07833100
 )
 
 entry(
-    index = 17,
-    label = "C9H9_8",
-    molecule = 
-"""
+    index=17,
+    label="C9H9_8",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {4,S} {10,S}
 2  C u0 p0 c0 {1,S} {8,S} {11,S} {12,S}
@@ -1266,20 +1639,43 @@ multiplicity 2
 17 H u0 p0 c0 {6,S}
 18 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.14196,0.082062,-5.22524e-05,9.63434e-09,1.91754e-12,48916.1,37.2025], Tmin=(200,'K'), Tmax=(1070.29,'K')),
-            NASAPolynomial(coeffs=[13.0429,0.0423924,-2.05942e-05,4.82576e-09,-4.42126e-13,44687.4,-41.6576], Tmin=(1070.29,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.14196,
+                    0.082062,
+                    -5.22524e-05,
+                    9.63434e-09,
+                    1.91754e-12,
+                    48916.1,
+                    37.2025,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1070.29, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.0429,
+                    0.0423924,
+                    -2.05942e-05,
+                    4.82576e-09,
+                    -4.42126e-13,
+                    44687.4,
+                    -41.6576,
+                ],
+                Tmin=(1070.29, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (403.531,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(403.531, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 2, 'C#C': 1, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -1311,10 +1707,9 @@ H       0.88260400    3.87742300    0.95452800
 )
 
 entry(
-    index = 18,
-    label = "C9H9_9",
-    molecule = 
-"""
+    index=18,
+    label="C9H9_9",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {3,S} {4,B}
 2  C u0 p0 c0 {1,B} {5,B} {12,S}
@@ -1335,20 +1730,43 @@ multiplicity 2
 17 H u0 p0 c0 {9,S}
 18 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.55059,0.0699084,-2.2676e-05,-1.61355e-08,9.67203e-12,27416.2,33.707], Tmin=(200,'K'), Tmax=(1053.41,'K')),
-            NASAPolynomial(coeffs=[10.5311,0.0474479,-2.40364e-05,5.82704e-09,-5.48095e-13,23571.6,-31.3756], Tmin=(1053.41,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.55059,
+                    0.0699084,
+                    -2.2676e-05,
+                    -1.61355e-08,
+                    9.67203e-12,
+                    27416.2,
+                    33.707,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1053.41, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    10.5311,
+                    0.0474479,
+                    -2.40364e-05,
+                    5.82704e-09,
+                    -5.48095e-13,
+                    23571.6,
+                    -31.3756,
+                ],
+                Tmin=(1053.41, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (224.962,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(224.962, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [4, 5], dihedral: [1, 4, 5, 6], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -1381,10 +1799,9 @@ H      -1.54931100    5.70099000    0.03428100
 )
 
 entry(
-    index = 19,
-    label = "C9H7_3",
-    molecule = 
-"""
+    index=19,
+    label="C9H7_3",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {8,S} {10,S} {11,S}
 2  C u0 p0 c0 {1,S} {3,B} {7,B}
@@ -1403,20 +1820,43 @@ multiplicity 2
 15 H u0 p0 c0 {6,S}
 16 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.25585,0.0704075,-4.31761e-05,6.86465e-09,1.98204e-12,66017.1,34.8669], Tmin=(200,'K'), Tmax=(1072.93,'K')),
-            NASAPolynomial(coeffs=[11.2227,0.0384684,-1.89108e-05,4.45483e-09,-4.08083e-13,62500,-30.1248], Tmin=(1072.93,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.25585,
+                    0.0704075,
+                    -4.31761e-05,
+                    6.86465e-09,
+                    1.98204e-12,
+                    66017.1,
+                    34.8669,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1072.93, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    11.2227,
+                    0.0384684,
+                    -1.89108e-05,
+                    4.45483e-09,
+                    -4.08083e-13,
+                    62500,
+                    -30.1248,
+                ],
+                Tmin=(1072.93, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (546.179,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (378.308,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(546.179, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(378.308, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 3, 'C#C': 1, 'C-H': 7}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -1446,10 +1886,9 @@ H       2.04270000    0.71770000   -1.46340000
 )
 
 entry(
-    index = 20,
-    label = "C12H17_1",
-    molecule = 
-"""
+    index=20,
+    label="C12H17_1",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {15,S} {16,S}
 2  C u0 p0 c0 {1,S} {4,S} {17,S} {18,S}
@@ -1481,20 +1920,43 @@ multiplicity 2
 28 H u0 p0 c0 {12,S}
 29 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.53221,0.0917496,-1.36302e-05,-3.54279e-08,1.67745e-11,7239.69,26.4763], Tmin=(200,'K'), Tmax=(1031.84,'K')),
-            NASAPolynomial(coeffs=[12.1726,0.0802019,-4.00191e-05,9.51737e-09,-8.73737e-13,3462.75,-32.8525], Tmin=(1031.84,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    1.53221,
+                    0.0917496,
+                    -1.36302e-05,
+                    -3.54279e-08,
+                    1.67745e-11,
+                    7239.69,
+                    26.4763,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1031.84, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    12.1726,
+                    0.0802019,
+                    -4.00191e-05,
+                    9.51737e-09,
+                    -8.73737e-13,
+                    3462.75,
+                    -32.8525,
+                ],
+                Tmin=(1031.84, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (58.9064,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (685.944,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(58.9064, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(685.944, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 9, 'C=C': 3, 'C-H': 17}
 1D rotors:
 pivots: [1, 2], dihedral: [14, 1, 2, 3], rotor symmetry: 3, max scan energy: 11.86 kJ/mol
@@ -1541,10 +2003,9 @@ H      -3.08559600   -6.72199600   -0.00257700
 )
 
 entry(
-    index = 21,
-    label = "C12H16_128",
-    molecule = 
-"""
+    index=21,
+    label="C12H16_128",
+    molecule="""
 multiplicity 3
 1  C u0 p0 c0 {2,S} {3,S} {15,S} {16,S}
 2  C u0 p0 c0 {1,S} {4,S} {17,S} {18,S}
@@ -1575,20 +2036,43 @@ multiplicity 3
 27 H u0 p0 c0 {8,S}
 28 H u0 p0 c0 {12,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.30904,0.0860002,-1.31927e-05,-3.20634e-08,1.51185e-11,42159.1,21.2584], Tmin=(200,'K'), Tmax=(1041.1,'K')),
-            NASAPolynomial(coeffs=[13.2409,0.0753613,-3.75152e-05,8.90196e-09,-8.15597e-13,38599.6,-34.2197], Tmin=(1041.1,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.30904,
+                    0.0860002,
+                    -1.31927e-05,
+                    -3.20634e-08,
+                    1.51185e-11,
+                    42159.1,
+                    21.2584,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1041.1, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.2409,
+                    0.0753613,
+                    -3.75152e-05,
+                    8.90196e-09,
+                    -8.15597e-13,
+                    38599.6,
+                    -34.2197,
+                ],
+                Tmin=(1041.1, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (350.241,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (661.001,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(350.241, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(661.001, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 9, 'C=C': 3, 'C-H': 16}
 1D rotors:
 * Invalidated! pivots: [1, 3], dihedral: [2, 1, 3, 4], invalidation reason: scan job crashed
@@ -1634,10 +2118,9 @@ H       4.27610000    7.45033200    2.14737800
 )
 
 entry(
-    index = 22,
-    label = "C10H8_14",
-    molecule = 
-"""
+    index=22,
+    label="C10H8_14",
+    molecule="""
 1  C u0 p0 c0 {2,B} {3,B} {4,S}
 2  C u0 p0 c0 {1,B} {5,B} {12,S}
 3  C u0 p0 c0 {1,B} {7,B} {16,S}
@@ -1657,20 +2140,43 @@ entry(
 17 H u0 p0 c0 {8,S}
 18 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.23269,0.0832217,-5.31582e-05,9.82013e-09,1.91866e-12,43608.1,36.766], Tmin=(200,'K'), Tmax=(1074.44,'K')),
-            NASAPolynomial(coeffs=[13.2617,0.0429087,-2.11287e-05,4.99343e-09,-4.59385e-13,39275.9,-43.7637], Tmin=(1074.44,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.23269,
+                    0.0832217,
+                    -5.31582e-05,
+                    9.82013e-09,
+                    1.91866e-12,
+                    43608.1,
+                    36.766,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1074.44, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.2617,
+                    0.0429087,
+                    -2.11287e-05,
+                    4.99343e-09,
+                    -4.59385e-13,
+                    39275.9,
+                    -43.7637,
+                ],
+                Tmin=(1074.44, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (359.348,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(359.348, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C#C': 1, 'C-H': 8}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -1702,10 +2208,9 @@ H       3.18076100    3.71583700   -0.01321300
 )
 
 entry(
-    index = 23,
-    label = "C10H8_17",
-    molecule = 
-"""
+    index=23,
+    label="C10H8_17",
+    molecule="""
 1  C u0 p0 c0 {2,S} {3,B} {4,B}
 2  C u0 p0 c0 {1,S} {8,D} {9,S}
 3  C u0 p0 c0 {1,B} {5,B} {11,S}
@@ -1725,20 +2230,43 @@ entry(
 17 H u0 p0 c0 {8,S}
 18 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.23998,0.0831397,-5.33613e-05,9.91688e-09,1.95057e-12,44095.2,38.442], Tmin=(200,'K'), Tmax=(1071.08,'K')),
-            NASAPolynomial(coeffs=[13.4644,0.0420957,-2.05356e-05,4.83099e-09,-4.44151e-13,39721.3,-43.1148], Tmin=(1071.08,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.23998,
+                    0.0831397,
+                    -5.33613e-05,
+                    9.91688e-09,
+                    1.95057e-12,
+                    44095.2,
+                    38.442,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1071.08, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.4644,
+                    0.0420957,
+                    -2.05356e-05,
+                    4.83099e-09,
+                    -4.44151e-13,
+                    39721.3,
+                    -43.1148,
+                ],
+                Tmin=(1071.08, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (363.391,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(363.391, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C#C': 1, 'C-H': 8}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -1770,10 +2298,9 @@ H       0.65463900    2.17710200   -0.58189900
 )
 
 entry(
-    index = 24,
-    label = "C14H10_14",
-    molecule = 
-"""
+    index=24,
+    label="C14H10_14",
+    molecule="""
 1  C u0 p0 c0 {2,B} {6,B} {7,B}
 2  C u0 p0 c0 {1,B} {5,B} {8,B}
 3  C u0 p0 c0 {4,B} {5,B} {11,S}
@@ -1799,20 +2326,43 @@ entry(
 23 H u0 p0 c0 {12,S}
 24 H u0 p0 c0 {14,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-5.19919,0.127009,-0.000100179,3.65536e-08,-4.38963e-12,50635.4,49.9524], Tmin=(200,'K'), Tmax=(1127.43,'K')),
-            NASAPolynomial(coeffs=[19.7182,0.0552226,-2.67812e-05,6.22615e-09,-5.63806e-13,43960.7,-77.9322], Tmin=(1127.43,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -5.19919,
+                    0.127009,
+                    -0.000100179,
+                    3.65536e-08,
+                    -4.38963e-12,
+                    50635.4,
+                    49.9524,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1127.43, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    19.7182,
+                    0.0552226,
+                    -2.67812e-05,
+                    6.22615e-09,
+                    -5.63806e-13,
+                    43960.7,
+                    -77.9322,
+                ],
+                Tmin=(1127.43, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (416.338,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (577.856,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(416.338, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(577.856, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 6, 'C-C': 8, 'C#C': 1, 'C-H': 10}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -1850,10 +2400,9 @@ H       4.64062700    1.39460300    0.09119100
 )
 
 entry(
-    index = 25,
-    label = "C14H10_16",
-    molecule = 
-"""
+    index=25,
+    label="C14H10_16",
+    molecule="""
 1  C u0 p0 c0 {2,B} {4,B} {8,B}
 2  C u0 p0 c0 {1,B} {6,B} {7,B}
 3  C u0 p0 c0 {4,B} {5,B} {9,S}
@@ -1879,20 +2428,43 @@ entry(
 23 H u0 p0 c0 {12,S}
 24 H u0 p0 c0 {14,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-5.36417,0.12703,-9.66082e-05,3.11986e-08,-2.27187e-12,50172.3,48.919], Tmin=(200,'K'), Tmax=(1099,'K')),
-            NASAPolynomial(coeffs=[20.2733,0.0547972,-2.67898e-05,6.29843e-09,-5.77713e-13,43264.2,-82.9785], Tmin=(1099,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -5.36417,
+                    0.12703,
+                    -9.66082e-05,
+                    3.11986e-08,
+                    -2.27187e-12,
+                    50172.3,
+                    48.919,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1099, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    20.2733,
+                    0.0547972,
+                    -2.67898e-05,
+                    6.29843e-09,
+                    -5.77713e-13,
+                    43264.2,
+                    -82.9785,
+                ],
+                Tmin=(1099, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (412.352,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (577.856,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(412.352, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(577.856, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 8, 'C=C': 6, 'C#C': 1, 'C-H': 10}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -1930,10 +2502,9 @@ H       1.44804400    2.37549400    0.00893400
 )
 
 entry(
-    index = 26,
-    label = "C14H10_13",
-    molecule = 
-"""
+    index=26,
+    label="C14H10_13",
+    molecule="""
 1  C u0 p0 c0 {2,B} {3,B} {7,B}
 2  C u0 p0 c0 {1,B} {4,B} {11,S}
 3  C u0 p0 c0 {1,B} {5,B} {6,B}
@@ -1959,20 +2530,43 @@ entry(
 23 H u0 p0 c0 {12,S}
 24 H u0 p0 c0 {14,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-4.91442,0.127154,-0.000105902,4.48357e-08,-7.61051e-12,51645.4,48.706], Tmin=(200,'K'), Tmax=(1379.56,'K')),
-            NASAPolynomial(coeffs=[20.9229,0.0522387,-2.44459e-05,5.47231e-09,-4.77147e-13,44516.6,-84.2574], Tmin=(1379.56,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -4.91442,
+                    0.127154,
+                    -0.000105902,
+                    4.48357e-08,
+                    -7.61051e-12,
+                    51645.4,
+                    48.706,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1379.56, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    20.9229,
+                    0.0522387,
+                    -2.44459e-05,
+                    5.47231e-09,
+                    -4.77147e-13,
+                    44516.6,
+                    -84.2574,
+                ],
+                Tmin=(1379.56, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (424.96,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (577.856,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(424.96, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(577.856, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 8, 'C=C': 6, 'C#C': 1, 'C-H': 10}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -2010,10 +2604,9 @@ H       2.24136600    0.00061200    1.56893000
 )
 
 entry(
-    index = 27,
-    label = "C10H9_34",
-    molecule = 
-"""
+    index=27,
+    label="C10H9_34",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {8,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {3,B} {4,B}
@@ -2035,20 +2628,43 @@ multiplicity 2
 18 H u0 p0 c0 {4,S}
 19 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.43864,0.0902238,-6.68363e-05,2.30433e-08,-2.56703e-12,49452.8,41.0022], Tmin=(200,'K'), Tmax=(1139.27,'K')),
-            NASAPolynomial(coeffs=[13.5802,0.0449008,-2.15394e-05,4.94988e-09,-4.42779e-13,45094.3,-41.4779], Tmin=(1139.27,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.43864,
+                    0.0902238,
+                    -6.68363e-05,
+                    2.30433e-08,
+                    -2.56703e-12,
+                    49452.8,
+                    41.0022,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1139.27, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.5802,
+                    0.0449008,
+                    -2.15394e-05,
+                    4.94988e-09,
+                    -4.42779e-13,
+                    45094.3,
+                    -41.4779,
+                ],
+                Tmin=(1139.27, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (407.934,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(407.934, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 3, 'C#C': 1, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 5], invalidation reason: scan job crashed
@@ -2082,10 +2698,9 @@ H       0.17629000    1.68911500   -0.52095800
 )
 
 entry(
-    index = 28,
-    label = "C9H11_21",
-    molecule = 
-"""
+    index=28,
+    label="C9H11_21",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {4,S} {10,S} {11,S}
 2  C u0 p0 c0 {1,S} {12,S} {13,S} {14,S}
@@ -2108,20 +2723,43 @@ multiplicity 2
 19 H u0 p0 c0 {9,S}
 20 H u0 p0 c0 {6,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.81744,0.0741879,-2.28536e-05,-1.73082e-08,1.0152e-11,16558.8,36.7165], Tmin=(200,'K'), Tmax=(1044.96,'K')),
-            NASAPolynomial(coeffs=[9.59882,0.053669,-2.66756e-05,6.35965e-09,-5.89432e-13,12907.2,-24.9183], Tmin=(1044.96,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.81744,
+                    0.0741879,
+                    -2.28536e-05,
+                    -1.73082e-08,
+                    1.0152e-11,
+                    16558.8,
+                    36.7165,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1044.96, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    9.59882,
+                    0.053669,
+                    -2.66756e-05,
+                    6.35965e-09,
+                    -5.89432e-13,
+                    12907.2,
+                    -24.9183,
+                ],
+                Tmin=(1044.96, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (134.572,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (473.925,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(134.572, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(473.925, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 3, 'C-H': 11}
 1D rotors:
 pivots: [1, 2], dihedral: [11, 1, 2, 3], rotor symmetry: 3, max scan energy: 12.29 kJ/mol
@@ -2156,10 +2794,9 @@ H       1.88687100   -1.60595200   -3.29395000
 )
 
 entry(
-    index = 29,
-    label = "C8H9_19",
-    molecule = 
-"""
+    index=29,
+    label="C8H9_19",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {4,S} {9,S} {10,S}
 2  C u1 p0 c0 {5,S} {6,S} {7,S}
@@ -2179,20 +2816,43 @@ multiplicity 2
 16 H u0 p0 c0 {8,S}
 17 H u0 p0 c0 {8,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-0.872041,0.0607272,-1.25869e-05,-2.12294e-08,1.06411e-11,27148.1,30.1367], Tmin=(200,'K'), Tmax=(1049.07,'K')),
-            NASAPolynomial(coeffs=[8.63964,0.0464316,-2.35621e-05,5.70931e-09,-5.36161e-13,23943.4,-21.9697], Tmin=(1049.07,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -0.872041,
+                    0.0607272,
+                    -1.25869e-05,
+                    -2.12294e-08,
+                    1.06411e-11,
+                    27148.1,
+                    30.1367,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1049.07, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    8.63964,
+                    0.0464316,
+                    -2.35621e-05,
+                    5.70931e-09,
+                    -5.36161e-13,
+                    23943.4,
+                    -21.9697,
+                ],
+                Tmin=(1049.07, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (223.08,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (403.252,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(223.08, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(403.252, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 3, 'C-H': 9}
 1D rotors:
 pivots: [2, 3], dihedral: [1, 2, 3, 4], rotor symmetry: 2, max scan energy: 38.85 kJ/mol
@@ -2223,10 +2883,9 @@ H       0.35385200   -2.60799800    0.08479800
 )
 
 entry(
-    index = 30,
-    label = "C10H7_7",
-    molecule = 
-"""
+    index=30,
+    label="C10H7_7",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {3,B} {7,S}
 2  C u0 p0 c0 {1,B} {4,B} {8,S}
@@ -2246,20 +2905,43 @@ multiplicity 2
 16 H u0 p0 c0 {9,S}
 17 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.41717,0.0923508,-8.23444e-05,3.71916e-08,-6.69456e-12,73478.7,36.4989], Tmin=(200,'K'), Tmax=(1316.22,'K')),
-            NASAPolynomial(coeffs=[16.7135,0.034213,-1.60895e-05,3.63374e-09,-3.20698e-13,68442.7,-61.0522], Tmin=(1316.22,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.41717,
+                    0.0923508,
+                    -8.23444e-05,
+                    3.71916e-08,
+                    -6.69456e-12,
+                    73478.7,
+                    36.4989,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1316.22, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    16.7135,
+                    0.034213,
+                    -1.60895e-05,
+                    3.63374e-09,
+                    -3.20698e-13,
+                    68442.7,
+                    -61.0522,
+                ],
+                Tmin=(1316.22, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (607.774,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (403.252,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(607.774, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(403.252, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C#C': 1, 'C-H': 7}
 1D rotors:
 pivots: [3, 4], dihedral: [1, 3, 4, 5], rotor symmetry: 1, max scan energy: 22.89 kJ/mol
@@ -2290,10 +2972,9 @@ H       5.60211300    2.26748100   -0.04481900
 )
 
 entry(
-    index = 31,
-    label = "C10H9_7",
-    molecule = 
-"""
+    index=31,
+    label="C10H9_7",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {9,S} {13,S} {14,S}
@@ -2315,20 +2996,43 @@ multiplicity 2
 18 H u0 p0 c0 {7,S}
 19 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.48239,0.091835,-7.31471e-05,2.98314e-08,-4.90401e-12,62725.5,40.4863], Tmin=(200,'K'), Tmax=(1414.09,'K')),
-            NASAPolynomial(coeffs=[15.7238,0.0403327,-1.85127e-05,4.07278e-09,-3.49815e-13,57576.8,-53.6549], Tmin=(1414.09,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.48239,
+                    0.091835,
+                    -7.31471e-05,
+                    2.98314e-08,
+                    -4.90401e-12,
+                    62725.5,
+                    40.4863,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1414.09, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    15.7238,
+                    0.0403327,
+                    -1.85127e-05,
+                    4.07278e-09,
+                    -3.49815e-13,
+                    57576.8,
+                    -53.6549,
+                ],
+                Tmin=(1414.09, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (518.273,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (448.981,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(518.273, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(448.981, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 3, 'C-C': 6, 'C#C': 1, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan job crashed
@@ -2362,10 +3066,9 @@ H       1.63950000    3.74480000    2.20910000
 )
 
 entry(
-    index = 32,
-    label = "C10H9_6",
-    molecule = 
-"""
+    index=32,
+    label="C10H9_6",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {3,B} {4,S}
 2  C u0 p0 c0 {1,B} {5,B} {12,S}
@@ -2387,20 +3090,43 @@ multiplicity 2
 18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.40901,0.0854579,-5.01917e-05,5.82307e-09,3.21809e-12,44793.3,38.2131], Tmin=(200,'K'), Tmax=(1071.58,'K')),
-            NASAPolynomial(coeffs=[12.5517,0.0481774,-2.39936e-05,5.69181e-09,-5.23157e-13,40521,-39.9717], Tmin=(1071.58,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.40901,
+                    0.0854579,
+                    -5.01917e-05,
+                    5.82307e-09,
+                    3.21809e-12,
+                    44793.3,
+                    38.2131,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1071.58, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    12.5517,
+                    0.0481774,
+                    -2.39936e-05,
+                    5.69181e-09,
+                    -5.23157e-13,
+                    40521,
+                    -39.9717,
+                ],
+                Tmin=(1071.58, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (369.106,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(369.106, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 5, 'C-C': 5, 'C-H': 9}
 1D rotors:
 * Invalidated! pivots: [3, 4], dihedral: [2, 3, 4, 5], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -2434,10 +3160,9 @@ H       1.58171200   -4.39898100    0.24959600
 )
 
 entry(
-    index = 33,
-    label = "C10H11_31",
-    molecule = 
-"""
+    index=33,
+    label="C10H11_31",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {4,B} {5,B}
@@ -2461,20 +3186,43 @@ multiplicity 2
 20 H u0 p0 c0 {10,S}
 21 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.56478,0.0847045,-3.60867e-05,-9.4879e-09,8.35759e-12,27522.8,42.1715], Tmin=(200,'K'), Tmax=(1051.26,'K')),
-            NASAPolynomial(coeffs=[11.8041,0.0540944,-2.67448e-05,6.36153e-09,-5.89594e-13,23172.1,-34.1922], Tmin=(1051.26,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.56478,
+                    0.0847045,
+                    -3.60867e-05,
+                    -9.4879e-09,
+                    8.35759e-12,
+                    27522.8,
+                    42.1715,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1051.26, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    11.8041,
+                    0.0540944,
+                    -2.67448e-05,
+                    6.36153e-09,
+                    -5.89594e-13,
+                    23172.1,
+                    -34.1922,
+                ],
+                Tmin=(1051.26, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (225.359,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (498.868,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(225.359, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(498.868, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 4, 'C-H': 11}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 5], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -2511,10 +3259,9 @@ H       1.36858500   -2.30421400    0.21089300
 )
 
 entry(
-    index = 34,
-    label = "C10H11_33",
-    molecule = 
-"""
+    index=34,
+    label="C10H11_33",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {11,S} {12,S} {13,S}
 2  C u0 p0 c0 {4,S} {5,S} {6,D}
@@ -2538,20 +3285,43 @@ multiplicity 2
 20 H u0 p0 c0 {10,S}
 21 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.69263,0.0933105,-6.05875e-05,1.53419e-08,-6.42636e-14,33912.2,40.1758], Tmin=(200,'K'), Tmax=(1112.04,'K')),
-            NASAPolynomial(coeffs=[12.3364,0.0534194,-2.58904e-05,5.99808e-09,-5.39386e-13,29693.7,-37.8652], Tmin=(1112.04,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.69263,
+                    0.0933105,
+                    -6.05875e-05,
+                    1.53419e-08,
+                    -6.42636e-14,
+                    33912.2,
+                    40.1758,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1112.04, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    12.3364,
+                    0.0534194,
+                    -2.58904e-05,
+                    5.99808e-09,
+                    -5.39386e-13,
+                    29693.7,
+                    -37.8652,
+                ],
+                Tmin=(1112.04, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (278.582,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (503.026,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(278.582, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(503.026, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 4, 'C-H': 11}
 1D rotors:
 pivots: [1, 2], dihedral: [12, 1, 2, 3], rotor symmetry: 3, max scan energy: 6.50 kJ/mol
@@ -2589,10 +3359,9 @@ H      -4.44743200   -4.71220200    0.26815800
 )
 
 entry(
-    index = 35,
-    label = "C10H11_32",
-    molecule = 
-"""
+    index=35,
+    label="C10H11_32",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {4,S} {11,S} {12,S}
 2  C u0 p0 c0 {3,S} {5,S} {6,D}
@@ -2616,20 +3385,43 @@ multiplicity 2
 20 H u0 p0 c0 {10,S}
 21 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-3.03505,0.0964086,-6.24915e-05,1.44188e-08,7.04055e-13,36134.4,40.8725], Tmin=(200,'K'), Tmax=(1095.13,'K')),
-            NASAPolynomial(coeffs=[13.2891,0.0533454,-2.61918e-05,6.13024e-09,-5.56227e-13,31565.9,-43.8995], Tmin=(1095.13,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -3.03505,
+                    0.0964086,
+                    -6.24915e-05,
+                    1.44188e-08,
+                    7.04055e-13,
+                    36134.4,
+                    40.8725,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1095.13, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    13.2891,
+                    0.0533454,
+                    -2.61918e-05,
+                    6.13024e-09,
+                    -5.56227e-13,
+                    31565.9,
+                    -43.8995,
+                ],
+                Tmin=(1095.13, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (296.849,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (503.026,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(296.849, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(503.026, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 6, 'C=C': 4, 'C-H': 11}
 1D rotors:
 * Invalidated! pivots: [2, 3], dihedral: [1, 2, 3, 4], invalidation reason: scan has a barrier larger than 40 kJ/mol
@@ -2667,10 +3459,9 @@ H       0.22714300   -4.86636600   -0.02880600
 )
 
 entry(
-    index = 36,
-    label = "C8H9_12",
-    molecule = 
-"""
+    index=36,
+    label="C8H9_12",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {3,S} {9,S} {10,S} {11,S}
 2  C u0 p0 c0 {3,S} {4,B} {5,B}
@@ -2690,20 +3481,43 @@ multiplicity 2
 16 H u0 p0 c0 {8,S}
 17 H u0 p0 c0 {5,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-0.609542,0.0568654,-6.91216e-06,-2.48497e-08,1.15293e-11,19332.7,30.1599], Tmin=(200,'K'), Tmax=(1048.04,'K')),
-            NASAPolynomial(coeffs=[7.94572,0.0462593,-2.32855e-05,5.6368e-09,-5.30699e-13,16328.7,-17.2921], Tmin=(1048.04,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -0.609542,
+                    0.0568654,
+                    -6.91216e-06,
+                    -2.48497e-08,
+                    1.15293e-11,
+                    19332.7,
+                    30.1599,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1048.04, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    7.94572,
+                    0.0462593,
+                    -2.32855e-05,
+                    5.6368e-09,
+                    -5.30699e-13,
+                    16328.7,
+                    -17.2921,
+                ],
+                Tmin=(1048.04, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (158.226,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (403.252,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(158.226, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(403.252, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 3, 'C-C': 5, 'C-H': 9}
 1D rotors:
 pivots: [1, 2], dihedral: [10, 1, 2, 4], rotor symmetry: 3, max scan energy: 0.89 kJ/mol
@@ -2734,10 +3548,9 @@ H       0.18838200   -2.61582100    0.23057000
 )
 
 entry(
-    index = 37,
-    label = "C8H9_17",
-    molecule = 
-"""
+    index=37,
+    label="C8H9_17",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {9,S} {10,S}
 2  C u0 p0 c0 {1,S} {4,D} {5,S}
@@ -2757,20 +3570,43 @@ multiplicity 2
 16 H u0 p0 c0 {8,S}
 17 H u0 p0 c0 {8,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.17887,0.0631665,-1.31166e-05,-2.32474e-08,1.15979e-11,27026.2,31.0639], Tmin=(200,'K'), Tmax=(1065.32,'K')),
-            NASAPolynomial(coeffs=[10.7459,0.044278,-2.29685e-05,5.72619e-09,-5.53759e-13,23016.5,-34.1147], Tmin=(1065.32,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.17887,
+                    0.0631665,
+                    -1.31166e-05,
+                    -2.32474e-08,
+                    1.15979e-11,
+                    27026.2,
+                    31.0639,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1065.32, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    10.7459,
+                    0.044278,
+                    -2.29685e-05,
+                    5.72619e-09,
+                    -5.53759e-13,
+                    23016.5,
+                    -34.1147,
+                ],
+                Tmin=(1065.32, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (221.858,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (403.252,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(221.858, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(403.252, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 3, 'C-C': 5, 'C-H': 9}
 1D rotors:
 pivots: [2, 3], dihedral: [1, 2, 3, 4], rotor symmetry: 1, max scan energy: 39.65 kJ/mol
@@ -2803,10 +3639,9 @@ H       2.64203000    0.74242200    0.85023000
 # Species with imaginary frequencies from first run which converged on the second run
 
 entry(
-    index = 38,
-    label = "C10H8_11",
-    molecule = 
-"""
+    index=38,
+    label="C10H8_11",
+    molecule="""
 1  C u0 p0 c0 {2,B} {3,B} {7,S}
 2  C u0 p0 c0 {1,B} {4,B} {9,S}
 3  C u0 p0 c0 {1,B} {6,B} {14,S}
@@ -2826,20 +3661,43 @@ entry(
 17 H u0 p0 c0 {8,S}
 18 H u0 p0 c0 {10,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.57062,0.0900569,-6.93325e-05,2.3852e-08,-2.33051e-12,43674.1,37.8577], Tmin=(200,'K'), Tmax=(1104.61,'K')),
-            NASAPolynomial(coeffs=[15.0272,0.0396578,-1.89892e-05,4.38968e-09,-3.97526e-13,38973.3,-52.4727], Tmin=(1104.61,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.57062,
+                    0.0900569,
+                    -6.93325e-05,
+                    2.3852e-08,
+                    -2.33051e-12,
+                    43674.1,
+                    37.8577,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1104.61, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    15.0272,
+                    0.0396578,
+                    -1.89892e-05,
+                    4.38968e-09,
+                    -3.97526e-13,
+                    38973.3,
+                    -52.4727,
+                ],
+                Tmin=(1104.61, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (359.779,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (428.195,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(359.779, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(428.195, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 4, 'C#C': 1, 'C-H': 8}
 1D rotors:
 pivots: [1, 7], dihedral: [2, 1, 7, 8], rotor symmetry: 1, max scan energy: 17.76 kJ/mol
@@ -2871,10 +3729,9 @@ H      -3.09542700    2.95564100   -0.05794100
 )
 
 entry(
-    index = 39,
-    label = "C10H9_29",
-    molecule = 
-"""
+    index=39,
+    label="C10H9_29",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,B} {4,B} {7,S}
 2  C u0 p0 c0 {1,B} {3,B} {8,S}
@@ -2896,20 +3753,43 @@ multiplicity 2
 18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {9,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-2.79269,0.0943294,-7.30511e-05,2.64608e-08,-3.18406e-12,47572.6,39.8915], Tmin=(200,'K'), Tmax=(1127.76,'K')),
-            NASAPolynomial(coeffs=[14.9799,0.0430945,-2.06025e-05,4.73575e-09,-4.25156e-13,42813.4,-51.3152], Tmin=(1127.76,'K'), Tmax=(3500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -2.79269,
+                    0.0943294,
+                    -7.30511e-05,
+                    2.64608e-08,
+                    -3.18406e-12,
+                    47572.6,
+                    39.8915,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1127.76, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    14.9799,
+                    0.0430945,
+                    -2.06025e-05,
+                    4.73575e-09,
+                    -4.25156e-13,
+                    42813.4,
+                    -51.3152,
+                ],
+                Tmin=(1127.76, "K"),
+                Tmax=(3500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3500,'K'),
-        E0 = (392.107,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (453.139,'J/(mol*K)'),
+        Tmin=(200, "K"),
+        Tmax=(3500, "K"),
+        E0=(392.107, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(453.139, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C-C': 5, 'C=C': 5, 'C-H': 9}
 1D rotors:
 pivots: [1, 7], dihedral: [2, 1, 7, 10], rotor symmetry: 1, max scan energy: 16.16 kJ/mol
@@ -2943,10 +3823,9 @@ H       4.26583700    0.54108800    0.89827400
 )
 
 entry(
-    index = 40,
-    label = "N15-2",
-    molecule = 
-"""
+    index=40,
+    label="N15-2",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {6,S} {7,S} {15,S}
 2  C u0 p0 c0 {1,S} {3,B} {4,B}
@@ -2974,20 +3853,43 @@ multiplicity 2
 24 H u0 p0 c0 {14,S}
 25 H u0 p0 c0 {14,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.78472,0.013241,0.00035794,-7.28989e-07,4.59407e-10,48879.4,16.2332], Tmin=(10,'K'), Tmax=(505.2,'K')),
-            NASAPolynomial(coeffs=[-2.87694,0.112387,-7.42057e-05,2.30778e-08,-2.72228e-12,48960.3,37.9628], Tmin=(505.2,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.78472,
+                    0.013241,
+                    0.00035794,
+                    -7.28989e-07,
+                    4.59407e-10,
+                    48879.4,
+                    16.2332,
+                ],
+                Tmin=(10, "K"),
+                Tmax=(505.2, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    -2.87694,
+                    0.112387,
+                    -7.42057e-05,
+                    2.30778e-08,
+                    -2.72228e-12,
+                    48960.3,
+                    37.9628,
+                ],
+                Tmin=(505.2, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (10,'K'),
-        Tmax = (3000,'K'),
-        E0 = (406.339,'kJ/mol'),
-        Cp0 = (33.2579,'J/(mol*K)'),
-        CpInf = (602.799,'J/(mol*K)'),
+        Tmin=(10, "K"),
+        Tmax=(3000, "K"),
+        E0=(406.339, "kJ/mol"),
+        Cp0=(33.2579, "J/(mol*K)"),
+        CpInf=(602.799, "J/(mol*K)"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 Bond corrections: {'C=C': 6, 'C-C': 10, 'C-H': 11}
 1D rotors:
 pivots: [5, 13], dihedral: [3, 5, 13, 14], rotor symmetry: 1, max scan energy: 18.27 kJ/mol

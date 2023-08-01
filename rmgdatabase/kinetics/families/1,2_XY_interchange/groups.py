@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "1,2_XY_interchange/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 X1-R2-R3-Y4    ->    Y4-R2-R3-X1
 
@@ -15,168 +15,159 @@ template(reactants=["XY"], products=["YX"], ownReverse=True)
 
 reversible = True
 
-recipe(actions=[
-    ['BREAK_BOND', '*1', 1, '*2'],
-    ['BREAK_BOND', '*3', 1, '*4'],
-    ['FORM_BOND', '*1', 1, '*3'],
-    ['FORM_BOND', '*2', 1, '*4'],
-])
-
-entry(
-    index = 0,
-    label = "XY",
-    group = "OR{YY,OY}",
-    kinetics = None,
+recipe(
+    actions=[
+        ["BREAK_BOND", "*1", 1, "*2"],
+        ["BREAK_BOND", "*3", 1, "*4"],
+        ["FORM_BOND", "*1", 1, "*3"],
+        ["FORM_BOND", "*2", 1, "*4"],
+    ]
 )
 
 entry(
-    index = 1,
-    label = "YY",
-    group =
-"""
+    index=0,
+    label="XY",
+    group="OR{YY,OY}",
+    kinetics=None,
+)
+
+entry(
+    index=1,
+    label="YY",
+    group="""
 1 *1 Val7   u0 {2,S}
 2 *2 Cs     u0 {1,S} {3,S}
 3 *3 Cs     u0 {2,S} {4,S}
 4 *4 Val7   u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
-    label = "FF",
-    group =
-"""
+    index=2,
+    label="FF",
+    group="""
 1 *1 F1s   u0 {2,S}
 2 *2 Cs    u0 {1,S} {3,S}
 3 *3 Cs    u0 {2,S} {4,S}
 4 *4 F1s   u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
-    label = "ClCl",
-    group =
-"""
+    index=3,
+    label="ClCl",
+    group="""
 1 *1 Cl1s  u0 {2,S}
 2 *2 Cs    u0 {1,S} {3,S}
 3 *3 Cs    u0 {2,S} {4,S}
 4 *4 Cl1s  u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
-    label = "BrBr",
-    group =
-"""
+    index=4,
+    label="BrBr",
+    group="""
 1 *1 Br1s  u0 {2,S}
 2 *2 Cs    u0 {1,S} {3,S}
 3 *3 Cs    u0 {2,S} {4,S}
 4 *4 Br1s  u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 5,
-    label = "FCl",
-    group =
-"""
+    index=5,
+    label="FCl",
+    group="""
 1 *1 F1s  u0 {2,S}
 2 *2 Cs   u0 {1,S} {3,S}
 3 *3 Cs   u0 {2,S} {4,S}
 4 *4 Cl1s u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 6,
-    label = "FBr",
-    group =
-"""
+    index=6,
+    label="FBr",
+    group="""
 1 *1 F1s   u0 {2,S}
 2 *2 Cs  u0 {1,S} {3,S}
 3 *3 Cs  u0 {2,S} {4,S}
 4 *4 Br1s  u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 7,
-    label = "ClBr",
-    group =
-"""
+    index=7,
+    label="ClBr",
+    group="""
 1 *1 Cl1s  u0 {2,S}
 2 *2 Cs    u0 {1,S} {3,S}
 3 *3 Cs    u0 {2,S} {4,S}
 4 *4 Br1s  u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 8,
-    label = "OY",
-    group =
-"""
+    index=8,
+    label="OY",
+    group="""
 1 *1 O2s    u0 {2,S}
 2 *2 Cs     u0 {1,S} {3,S}
 3 *3 Cs     u0 {2,S} {4,S}
 4 *4 Val7   u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 9,
-    label = "OF",
-    group =
-"""
+    index=9,
+    label="OF",
+    group="""
 1 *1 O2s  u0 {2,S}
 2 *2 Cs   u0 {1,S} {3,S}
 3 *3 Cs   u0 {2,S} {4,S}
 4 *4 F1s  u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 
 entry(
-    index = 10,
-    label = "OCl",
-    group =
-"""
+    index=10,
+    label="OCl",
+    group="""
 1 *1 O2s  u0 {2,S}
 2 *2 Cs   u0 {1,S} {3,S}
 3 *3 Cs   u0 {2,S} {4,S}
 4 *4 Cl1s u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 
 entry(
-    index = 11,
-    label = "OBr",
-    group =
-"""
+    index=11,
+    label="OBr",
+    group="""
 1 *1 O2s  u0 {2,S}
 2 *2 Cs   u0 {1,S} {3,S}
 3 *3 Cs   u0 {2,S} {4,S}
 4 *4 Br1s u0 {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 
 tree(
-"""
+    """
 L1: XY
     L2: YY
         L3: FF

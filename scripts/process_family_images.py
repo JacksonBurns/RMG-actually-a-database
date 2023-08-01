@@ -61,22 +61,31 @@ except ImportError:
 
 def generate_family_pdf():
     """Compiles eps files into single pdf via latex"""
-    database_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    fam_dir = os.path.join(database_directory, 'input', 'kinetics', 'families')
+    database_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    fam_dir = os.path.join(database_directory, "input", "kinetics", "families")
     dir_list = os.listdir(fam_dir)
-    fam_list = sorted([item for item in dir_list if (os.path.isdir(os.path.join(fam_dir, item)))
-                                                     and (item != '__pycache__')])  # Only keep folders
+    fam_list = sorted(
+        [
+            item
+            for item in dir_list
+            if (os.path.isdir(os.path.join(fam_dir, item))) and (item != "__pycache__")
+        ]
+    )  # Only keep folders
 
-    temp_dir = os.path.join(database_directory, 'temp')
-    img_dir = os.path.join(temp_dir, 'images')
+    temp_dir = os.path.join(database_directory, "temp")
+    img_dir = os.path.join(temp_dir, "images")
     if not os.path.isdir(img_dir):
         os.makedirs(img_dir)
 
-    latex_header = r"""\documentclass{article}
+    latex_header = (
+        r"""\documentclass{article}
 
     \usepackage[margin=1in]{geometry}
     \usepackage{graphicx,color}
-    \graphicspath{{""" + img_dir + '/' + r"""}}
+    \graphicspath{{"""
+        + img_dir
+        + "/"
+        + r"""}}
     \usepackage{epstopdf}
     \setcounter{secnumdepth}{0}
 
@@ -88,74 +97,92 @@ def generate_family_pdf():
     \end{center}
 
     """
+    )
 
     latex_footer = r"""
     \end{document}
     """
 
-    print('Preparing latex file...\n')
-    with open(os.path.join(temp_dir, 'rmg_reaction_families.tex'), 'w') as f:
+    print("Preparing latex file...\n")
+    with open(os.path.join(temp_dir, "rmg_reaction_families.tex"), "w") as f:
         f.write(latex_header)
         if tqdm is not None:
             iterator = tqdm(fam_list)
         else:
             iterator = fam_list
         for fam in iterator:
-            cleaned_name = fam.replace('_', '\_')
-            f.write(r'\section{{\texttt{{{0}}}}}'.format(cleaned_name))
-            f.write('\n\n')
-            img_file = os.path.join(fam_dir, fam, 'template.eps')
-            f.write(r'\begin{center}')
-            f.write('\n')
+            cleaned_name = fam.replace("_", "\_")
+            f.write(r"\section{{\texttt{{{0}}}}}".format(cleaned_name))
+            f.write("\n\n")
+            img_file = os.path.join(fam_dir, fam, "template.eps")
+            f.write(r"\begin{center}")
+            f.write("\n")
             if os.path.isfile(img_file):
-                filename = fam + '.eps'
-                new_file = os.path.join(temp_dir, 'images', filename)
+                filename = fam + ".eps"
+                new_file = os.path.join(temp_dir, "images", filename)
                 shutil.copyfile(img_file, new_file)
-                f.write(r'\includegraphics[scale=0.8]{{{0}}}'.format(filename))
-                f.write('\n')
+                f.write(r"\includegraphics[scale=0.8]{{{0}}}".format(filename))
+                f.write("\n")
             else:
-                f.write(r'Image Not Available')
-                f.write('\n')
-            f.write(r'\end{center}')
-            f.write('\n\n')
+                f.write(r"Image Not Available")
+                f.write("\n")
+            f.write(r"\end{center}")
+            f.write("\n\n")
 
         f.write(latex_footer)
 
-    print('Compiling latex file...\n')
+    print("Compiling latex file...\n")
     cwd = os.getcwd()
     os.chdir(temp_dir)
-    subprocess.check_call(['pdflatex', '-shell-escape', '-interaction=nonstopmode', 'rmg_reaction_families.tex'])
-    shutil.copyfile('rmg_reaction_families.pdf', os.path.join(database_directory, 'families', 'rmg_reaction_families.pdf'))
+    subprocess.check_call(
+        [
+            "pdflatex",
+            "-shell-escape",
+            "-interaction=nonstopmode",
+            "rmg_reaction_families.tex",
+        ]
+    )
+    shutil.copyfile(
+        "rmg_reaction_families.pdf",
+        os.path.join(database_directory, "families", "rmg_reaction_families.pdf"),
+    )
     os.chdir(cwd)
     shutil.rmtree(temp_dir)
 
 
 def generate_family_pngs():
     """Converts eps files to png files located in RMG-database/families/images"""
-    database_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    fam_dir = os.path.join(database_directory, 'input', 'kinetics', 'families')
+    database_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    fam_dir = os.path.join(database_directory, "input", "kinetics", "families")
     dir_list = os.listdir(fam_dir)
-    fam_list = sorted([item for item in dir_list if (os.path.isdir(os.path.join(fam_dir, item)))
-                       and (item != '__pycache__')])  # Only keep folders
+    fam_list = sorted(
+        [
+            item
+            for item in dir_list
+            if (os.path.isdir(os.path.join(fam_dir, item))) and (item != "__pycache__")
+        ]
+    )  # Only keep folders
 
-    img_dir = os.path.join(database_directory, 'families', 'images')
+    img_dir = os.path.join(database_directory, "families", "images")
     if not os.path.isdir(img_dir):
         os.makedirs(img_dir)
 
-    print('Converting eps files to png files...\n')
+    print("Converting eps files to png files...\n")
     if tqdm is not None:
         iterator = tqdm(fam_list)
     else:
         iterator = fam_list
     for fam in iterator:
-        eps_file = os.path.join(fam_dir, fam, 'template.eps')
+        eps_file = os.path.join(fam_dir, fam, "template.eps")
         if os.path.isfile(eps_file):
-            filename = fam + '.png'
+            filename = fam + ".png"
             png_file = os.path.join(img_dir, filename)
             # -colorspace rgb gives transparent background, -density sets resolution
-            subprocess.check_call(['convert', '-colorspace', 'rgb', '-density', '300', eps_file, png_file])
+            subprocess.check_call(
+                ["convert", "-colorspace", "rgb", "-density", "300", eps_file, png_file]
+            )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     generate_family_pdf()
     generate_family_pngs()

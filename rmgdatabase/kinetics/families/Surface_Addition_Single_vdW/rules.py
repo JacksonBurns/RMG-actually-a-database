@@ -2,23 +2,23 @@
 # encoding: utf-8
 
 name = "Surface_Addition_Single_vdW/rules"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 A single bonded surface species adding to a vdW double, triple, or quadruple bonded species and adsorbing to a surface.
 """
 
 entry(
-    index = 1,
-    label = "AdsorbateVdW;Adsorbate1",
-    kinetics = SurfaceArrheniusBEP(
-        A = (1.0e13, 'm^2/(mol*s)'),
-        n = 0,
-        alpha = 0.5,
-        E0 = (5, 'kcal/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=1,
+    label="AdsorbateVdW;Adsorbate1",
+    kinetics=SurfaceArrheniusBEP(
+        A=(1.0e13, "m^2/(mol*s)"),
+        n=0,
+        alpha=0.5,
+        E0=(5, "kcal/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""Made up"""
+    rank=0,
+    shortDesc="""Default""",
+    longDesc="""Made up""",
 )

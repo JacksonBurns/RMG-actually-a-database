@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Surface_Adsorption_Double/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 Adsorption of a gas-phase triplet onto the surface. The unpaired electrons in the reactant form a double bond with the metal.
 
  *1         *1
@@ -19,143 +19,134 @@ template(reactants=["Adsorbate", "VacantSite"], products=["Adsorbed"], ownRevers
 
 reverse = "Surface_Desorption_Double"
 
-reactantNum=2
-productNum=1
+reactantNum = 2
+productNum = 1
 
-recipe(actions=[
-    ['LOSE_RADICAL', '*1', 2],
-    ['FORM_BOND', '*1', 1, '*2'],
-    ['CHANGE_BOND', '*1', 1, '*2']
-])
+recipe(
+    actions=[
+        ["LOSE_RADICAL", "*1", 2],
+        ["FORM_BOND", "*1", 1, "*2"],
+        ["CHANGE_BOND", "*1", 1, "*2"],
+    ]
+)
 
 entry(
-    index = 1,
-    label = "Adsorbate",
-    group =
-"""
+    index=1,
+    label="Adsorbate",
+    group="""
 1 *1 R!H u2
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
+    index=2,
     label="VacantSite",
-    group =
-"""
+    group="""
 1 *2 Xv u0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
-    label = "C",
-    group =
-"""
+    index=3,
+    label="C",
+    group="""
 1 *1 C u2
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
-    label = "CH2",
-    group =
-"""
+    index=4,
+    label="CH2",
+    group="""
 multiplicity [3]
 1 *1 C u2 p0 c0 {2,S} {3,S}
 2    H u0 p0 c0 {1,S}
 3    H u0 p0 c0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 5,
-    label = "CO",
-    group =
-"""
+    index=5,
+    label="CO",
+    group="""
 multiplicity [3]
 1    O u0 p2 c0 {2,D}
 2 *1 C u2 p0 c0 {1,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 6,
-    label = "C2O",
-    group =
-"""
+    index=6,
+    label="C2O",
+    group="""
 multiplicity [3]
 1    O u0 p2 c0 {2,D}
 2    C u0 p0 c0 {1,D} {3,D}
 3 *1 C u2 p0 c0 {2,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 7,
-    label = "N",
-    group =
-"""
+    index=7,
+    label="N",
+    group="""
 1 *1 N u2
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 8,
-    label = "NH",
-    group =
-"""
+    index=8,
+    label="NH",
+    group="""
 multiplicity [3]
 1 *1 N u2 p1 c0 {2,S}
 2    H u0 p0 c0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 9,
-    label = "NN",
-    group =
-"""
+    index=9,
+    label="NN",
+    group="""
 multiplicity [3]
 1    N u0 {2,S}
 2 *1 N u2 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 10,
-    label = "N2H2",
-    group =
-"""
+    index=10,
+    label="N2H2",
+    group="""
 multiplicity [3]
 1    N u0 p1 c0 {2,S} {3,S} {4,S}
 2 *1 N u2 p1 c0 {1,S}
 3    H u0 p0 c0 {1,S}
 4    H u0 p0 c0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 11,
-    label = "O",
-    group =
-"""
+    index=11,
+    label="O",
+    group="""
 1 *1 O u2
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: Adsorbate
     L2: C
         L3: CH2

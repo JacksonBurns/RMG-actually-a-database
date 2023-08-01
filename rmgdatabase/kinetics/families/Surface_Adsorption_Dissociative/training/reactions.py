@@ -2,54 +2,54 @@
 # encoding: utf-8
 
 name = "Surface_Adsorption_Dissociative/training"
-shortDesc = u"Reaction kinetics used to generate rate rules"
-longDesc = u"""
+shortDesc = "Reaction kinetics used to generate rate rules"
+longDesc = """
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 
 entry(
-   index = 1,
-   label = "H2 + Ni_3 + Ni_4 <=> HX_3 + HX_4",
-   degeneracy = 2,
-   kinetics = StickingCoefficient(
-       A = 3e-2,
-       n = 0,
-       Ea = (5, 'kJ/mol'),
-       Tmin = (200, 'K'),
-       Tmax = (3000, 'K'),
-   ),
-   rank = 3,
-   shortDesc = u"""Deutschmann Ni""",
-   longDesc = u"""
+    index=1,
+    label="H2 + Ni_3 + Ni_4 <=> HX_3 + HX_4",
+    degeneracy=2,
+    kinetics=StickingCoefficient(
+        A=3e-2,
+        n=0,
+        Ea=(5, "kJ/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
+    ),
+    rank=3,
+    shortDesc="""Deutschmann Ni""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904
 """,
-    metal = "Ni"
+    metal="Ni",
 )
 
 entry(
-   index = 2,
-   label = "H2 + Ni_3 + Ni_4 <=> HX_3 + HX_4",
-   degeneracy = 2,
-   kinetics = StickingCoefficient(
-       A = 0.046,
-       n = 0,
-       Ea = (0, 'J/mol'),
-       Tmin = (200, 'K'),
-       Tmax = (3000, 'K'),
-   ),
-   rank = 10,
-   shortDesc = u"""H2 on Pt""",
-   longDesc = u"""
+    index=2,
+    label="H2 + Ni_3 + Ni_4 <=> HX_3 + HX_4",
+    degeneracy=2,
+    kinetics=StickingCoefficient(
+        A=0.046,
+        n=0,
+        Ea=(0, "J/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
+    ),
+    rank=10,
+    shortDesc="""H2 on Pt""",
+    longDesc="""
     Experimental and microkinetic modeling of steady-state NO reduction by H2 on Pt/BaO/Al2O3 monolith catalysts
     Xu, Clayton, Balakotaiah, Harold et al.
     doi: 10.1016.j.apcatb.2007.08.008
 
     This is R2
     """,
-    metal = 'Pt'
+    metal="Pt",
 )
 
 # entry(

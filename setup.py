@@ -32,23 +32,23 @@ try:
     from distutils.core import setup
     from distutils.extension import Extension
 except ImportError:
-    print('The distutils package is required to build or install RMG Py.')
+    print("The distutils package is required to build or install RMG Py.")
 
 scripts = [
-    'evansPolanyi.py',
-    'exportKineticsLibraryToChemkin.py',
-    'importChemkinLibrary.py',
+    "evansPolanyi.py",
+    "exportKineticsLibraryToChemkin.py",
+    "importChemkinLibrary.py",
 ]
 
-scripts = ['scripts/' + scriptName for scriptName in scripts]
+scripts = ["scripts/" + scriptName for scriptName in scripts]
 
-# Initiate the installation and/or build 
+# Initiate the installation and/or build
 setup(
-    name='RMG-database',
-    version='3.1.0',
-    description='Reaction Mechanism Generator Database',
-    author='William H. Green and the RMG Team',
-    author_email='rmg_dev@mit.edu',
-    url='http://reactionmechanismgenerator.github.io/',
+    name="RMG-database",
+    version="3.1.0",
+    description="Reaction Mechanism Generator Database",
+    author="William H. Green and the RMG Team",
+    author_email="rmg_dev@mit.edu",
+    url="http://reactionmechanismgenerator.github.io/",
     scripts=scripts,
 )

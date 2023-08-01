@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Surface_EleyRideal_Addition_Multiple_Bond/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 Eeley Rideal reaction with a gas phase double, triple, or quadruple bonded species with a species (most likely hydrogen) directly bonded to the surface.
 
  *2    *4=*3         *3-*4-*2
@@ -26,114 +26,107 @@ template(reactants=["Adsorbate1", "Gas"], products=["Adsorbate2"], ownReverse=Fa
 
 reverse = "Surface_EleyRideal_Deletion_Multiple_Bond"
 
-reactantNum=2
-productNum=1
+reactantNum = 2
+productNum = 1
 
-recipe(actions=[
-    ['BREAK_BOND', '*1', 1, '*2'],
-    ['CHANGE_BOND', '*3', -1, '*4'],
-    ['FORM_BOND', '*1', 1, '*3'],
-    ['FORM_BOND', '*2', 1, '*4'],
-])
-
-entry(
-    index = 1,
-    label = "Adsorbate1",
-    group =
-"""
-1 *1 X  ux px cx {2,S}
-2 *2 R  ux px cx {1,S}
-""",
-    kinetics = None,
+recipe(
+    actions=[
+        ["BREAK_BOND", "*1", 1, "*2"],
+        ["CHANGE_BOND", "*3", -1, "*4"],
+        ["FORM_BOND", "*1", 1, "*3"],
+        ["FORM_BOND", "*2", 1, "*4"],
+    ]
 )
 
 entry(
-    index = 2,
+    index=1,
+    label="Adsorbate1",
+    group="""
+1 *1 X  ux px cx {2,S}
+2 *2 R  ux px cx {1,S}
+""",
+    kinetics=None,
+)
+
+entry(
+    index=2,
     label="Gas",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 R!H u0 px cx {2,[D,T,Q]}
 2 *4 R!H u0 px cx {1,[D,T,Q]}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
+    index=3,
     label="*H",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 H u0 p0 c0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
+    index=4,
     label="*C",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 5,
+    index=5,
     label="R=R",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 R!H u0 px cx {2,D}
 2 *4 R!H u0 px cx {1,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 6,
+    index=6,
     label="R#R",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 R!H u0 px cx {2,T}
 2 *4 R!H u0 px cx {1,T}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 7,
+    index=7,
     label="C=C",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 C u0 p0 c0 {2,D}
 2 *4 C u0 p0 c0 {1,D}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 8,
+    index=8,
     label="C#C",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 C u0 p0 c0 {2,T}
 2 *4 C u0 p0 c0 {1,T}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 9,
+    index=9,
     label="*C2",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
 3    H u0 p0 c0 {2,S}
@@ -143,14 +136,13 @@ entry(
 7    H u0 p0 c0 {5,S}
 8    H u0 p0 c0 {5,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 10,
+    index=10,
     label="*C4",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
 3    H u0 p0 c0 {2,S}
@@ -166,14 +158,13 @@ entry(
 13   H u0 p0 c0 {7,S}
 14   H u0 p0 c0 {7,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 11,
+    index=11,
     label="*C6",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
 3    H u0 p0 c0 {2,S}
@@ -195,14 +186,13 @@ entry(
 19   H u0 p0 c0 {15,S}
 20   H u0 p0 c0 {15,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 12,
+    index=12,
     label="*C8",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
 3    H u0 p0 c0 {2,S}
@@ -230,14 +220,13 @@ entry(
 25   H u0 p0 c0 {21,S}
 26   H u0 p0 c0 {21,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 13,
+    index=13,
     label="CH2=CH2",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 *4 C u0 p0 c0 {1,D} {5,S} {6,S}
@@ -246,25 +235,24 @@ multiplicity [1]
 5    H u0 p0 c0 {2,S}
 6    H u0 p0 c0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 14,
+    index=14,
     label="HC#CH",
-    group =
-"""
+    group="""
 multiplicity [1]
 1 *3 C u0 p0 c0 {2,T} {3,S}
 2 *4 C u0 p0 c0 {1,T} {4,S}
 3    H u0 p0 c0 {1,S}
 4    H u0 p0 c0 {2,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: Adsorbate1
     L2: *H
     L2: *C
@@ -283,29 +271,25 @@ L1: Gas
 )
 
 forbidden(
-    label = "chargedBond",
-    group =
-"""
+    label="chargedBond",
+    group="""
 1 *4 R!H ux c[+1,-1] {2,[S,D,T]}
 2 *3 R!H ux c[+1,-1] {1,[S,D,T]}
 """,
-    shortDesc = u"""""",
-    longDesc =
-u"""
+    shortDesc="""""",
+    longDesc="""
 The adsorbing molecule should not have a charge on the surface.
 """,
 )
 
 forbidden(
-    label = "radical",
-    group =
-"""
+    label="radical",
+    group="""
 1 R!H u1 cx {2,[S,D,T]}
 2 R!H ux cx {1,[S,D,T]}
 """,
-    shortDesc = u"""""",
-    longDesc =
-u"""
+    shortDesc="""""",
+    longDesc="""
 There should be no radicals
 """,
 )

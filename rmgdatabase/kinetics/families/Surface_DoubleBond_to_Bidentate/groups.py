@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Surface_DoubleBond_to_Bidentate"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 If an adsorbate has an internal double bond, then it can fall over onto a vacant site, creating a bidentate.
 
  *1=*2                    *1--*2  
@@ -19,40 +19,39 @@ template(reactants=["Combined", "VacantSite"], products=["Adsorbate"], ownRevers
 
 reverse = "Surface_Bidentate_to_DoubleBond"
 
-recipe(actions=[
-    ['FORM_BOND', '*2', 1, '*4'],
-    ['CHANGE_BOND', '*1', -1, '*2'],
-    ['CHANGE_BOND', '*1', 1, '*3'],
-]) 
+recipe(
+    actions=[
+        ["FORM_BOND", "*2", 1, "*4"],
+        ["CHANGE_BOND", "*1", -1, "*2"],
+        ["CHANGE_BOND", "*1", 1, "*3"],
+    ]
+)
 
 entry(
-    index = 1,
-    label = "Combined",
-    group =
-"""
+    index=1,
+    label="Combined",
+    group="""
 1 *1 R!H     u0 {2,[D,T]} {3,[S,D]}
 2 *2 R!H     u0 {1,[D,T]} 
 3 *3 Xo      u0 {1,[S,D]}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
+    index=2,
     label="VacantSite",
-    group =
-"""
+    group="""
 1 *4 Xv u0
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 
 tree(
-"""
+    """
 L1: Combined
 
 L1: VacantSite
 """
 )
-

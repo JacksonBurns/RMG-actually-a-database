@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "NOx2018"
-shortDesc = u"NOx2018"
-longDesc = u"""
+shortDesc = "NOx2018"
+longDesc = """
 P. Glarborg, J.A. Miller, B. Ruscic, S.J. Klippenstein
 Modeling nitrogen chemistry in combustion
 Progress in Energy and Combustion Science
@@ -34,8 +34,7 @@ https://doi.org/10.1016/j.pecs.2018.01.002
 entry(
     index=1,
     label="CHCHOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u1 p0 c0 {1,D} {5,S}
@@ -46,20 +45,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(224.700, 'K'),
-        sigma=(4.162, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(224.700, "K"),
+        sigma=(4.162, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=2,
     label="OCHCO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p0 c0 {1,D} {5,D}
@@ -69,20 +67,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(440.200, 'K'),
-        sigma=(4.010, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(440.200, "K"),
+        sigma=(4.010, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=3,
     label="HCOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u2 p0 c0 {2,S} {3,S}
     2 O u0 p2 c0 {1,S} {4,S}
@@ -91,20 +88,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(498.000, 'K'),
-        sigma=(3.590, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(498.000, "K"),
+        sigma=(3.590, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=4,
     label="CH2CHOOH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {5,S}
     2 C u0 p0 c0 {1,D} {6,S} {7,S}
     3 O u0 p2 c0 {1,S} {4,S}
@@ -116,20 +112,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=5,
     label="CH2CHOO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p0 c0 {1,D} {5,S} {6,S}
@@ -141,20 +136,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=6,
     label="CH3CHOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u1 p0 c0 {1,S} {3,S} {7,S}
@@ -167,20 +161,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(362.600, 'K'),
-        sigma=(4.530, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(362.600, "K"),
+        sigma=(4.530, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=7,
     label="H2CC",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p1 c0 {1,D}
     3 H u0 p0 c0 {1,S}
@@ -188,20 +181,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(209.000, 'K'),
-        sigma=(4.100, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(209.000, "K"),
+        sigma=(4.100, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=8,
     label="CH2OOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {4,S} {5,S}
     2 O u0 p2 c0 {1,S} {3,S}
@@ -212,20 +204,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(417.000, 'K'),
-        sigma=(3.690, 'angstroms'),
-        dipoleMoment=(1.700, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(417.000, "K"),
+        sigma=(3.690, "angstroms"),
+        dipoleMoment=(1.700, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=9,
     label="CH2CH2OH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u1 p0 c0 {1,S} {6,S} {7,S}
@@ -238,20 +229,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(362.600, 'K'),
-        sigma=(4.530, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(362.600, "K"),
+        sigma=(4.530, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=10,
     label="CH2CHOH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p0 c0 {1,D} {5,S} {6,S}
     3 O u0 p2 c0 {1,S} {7,S}
@@ -262,20 +252,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=11,
     label="cC2H4O",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {3,S} {6,S} {7,S}
     3 O u0 p2 c0 {1,S} {2,S}
@@ -286,20 +275,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=12,
     label="cC2H3O",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u1 p0 c0 {1,S} {3,S} {6,S}
@@ -310,20 +298,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=13,
     label="CH3CH2OOH",
-    molecule=
-    """
+    molecule="""
     1  C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
     2  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
     3  O u0 p2 c0 {1,S} {4,S}
@@ -337,20 +324,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=14,
     label="CH3CH2OO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
@@ -364,20 +350,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=15,
     label="CH2CH2OOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
     2 C u1 p0 c0 {1,S} {7,S} {8,S}
@@ -391,20 +376,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=16,
     label="CH3CHOOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
     2 C u1 p0 c0 {1,S} {3,S} {8,S}
@@ -418,20 +402,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=17,
     label="HOCH2CH2OO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1  C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
     2  C u0 p0 c0 {1,S} {4,S} {7,S} {8,S}
@@ -446,40 +429,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(395.0, 'K'),
-        sigma=(4.037, 'angstroms'),
-        dipoleMoment=(1.3, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(395.0, "K"),
+        sigma=(4.037, "angstroms"),
+        dipoleMoment=(1.3, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=18,
     label="HON",
-    molecule=
-    """
+    molecule="""
     1 O u0 p1 c+1 {2,D} {3,S}
     2 N u0 p2 c-1 {1,D}
     3 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(116.700, 'K'),
-        sigma=(3.492, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(116.700, "K"),
+        sigma=(3.492, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=19,
     label="HNO2",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,S} {3,D} {4,S}
     2 H u0 p0 c0 {1,S}
     3 O u0 p2 c0 {1,D}
@@ -487,20 +468,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(350.000, 'K'),
-        sigma=(3.950, 'angstroms'),
-        dipoleMoment=(1.639, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(350.000, "K"),
+        sigma=(3.950, "angstroms"),
+        dipoleMoment=(1.639, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=20,
     label="HONO2",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,S} {3,D} {4,S}
     2 O u0 p2 c0 {1,S} {5,S}
     3 O u0 p2 c0 {1,D}
@@ -509,20 +489,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(400.000, 'K'),
-        sigma=(4.200, 'angstroms'),
-        dipoleMoment=(0.200, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(400.000, "K"),
+        sigma=(4.200, "angstroms"),
+        dipoleMoment=(0.200, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=21,
     label="H2NN(S)",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,D} {3,S} {4,S}
     2 N u0 p2 c-1 {1,D}
     3 H u0 p0 c0 {1,S}
@@ -530,20 +509,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(71.400, 'K'),
-        sigma=(3.798, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(71.400, "K"),
+        sigma=(3.798, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=22,
     label="NH2OH",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {3,S} {4,S}
     2 O u0 p2 c0 {1,S} {5,S}
     3 H u0 p0 c0 {1,S}
@@ -552,40 +530,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(116.700, 'K'),
-        sigma=(3.492, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(116.700, "K"),
+        sigma=(3.492, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=23,
     label="HNC",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,S} {3,T}
     2 H u0 p0 c0 {1,S}
     3 C u0 p1 c-1 {1,T}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(569.000, 'K'),
-        sigma=(3.630, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(569.000, "K"),
+        sigma=(3.630, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=24,
     label="HCNH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,D} {3,S}
     2 N u0 p1 c0 {1,D} {4,S}
@@ -594,20 +570,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(569.000, 'K'),
-        sigma=(3.630, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(569.000, "K"),
+        sigma=(3.630, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=25,
     label="CH3NO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 N u0 p1 c0 {1,S} {6,D}
     3 H u0 p0 c0 {1,S}
@@ -617,20 +592,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=26,
     label="CH3NH2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 N u0 p1 c0 {1,S} {6,S} {7,S}
     3 H u0 p0 c0 {1,S}
@@ -641,20 +615,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.800, 'K'),
-        sigma=(3.626, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.800, "K"),
+        sigma=(3.626, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=27,
     label="CH3NH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 N u1 p1 c0 {1,S} {6,S}
@@ -665,20 +638,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.800, 'K'),
-        sigma=(3.626, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.800, "K"),
+        sigma=(3.626, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=28,
     label="CH2NH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,S} {4,S}
     2 N u0 p1 c0 {1,S} {5,S} {6,S}
@@ -689,20 +661,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.800, 'K'),
-        sigma=(3.626, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.800, "K"),
+        sigma=(3.626, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=29,
     label="CH2NH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 N u0 p1 c0 {1,D} {5,S}
     3 H u0 p0 c0 {1,S}
@@ -711,20 +682,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(417.000, 'K'),
-        sigma=(3.690, 'angstroms'),
-        dipoleMoment=(1.7, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(417.000, "K"),
+        sigma=(3.690, "angstroms"),
+        dipoleMoment=(1.7, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=30,
     label="CH3OO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 O u0 p2 c0 {1,S} {6,S}
@@ -735,20 +705,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(417.000, 'K'),
-        sigma=(3.690, 'angstroms'),
-        dipoleMoment=(1.7, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(417.000, "K"),
+        sigma=(3.690, "angstroms"),
+        dipoleMoment=(1.7, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=31,
     label="CH3OOH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 O u0 p2 c0 {1,S} {3,S}
     3 O u0 p2 c0 {2,S} {7,S}
@@ -759,20 +728,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.800, 'K'),
-        sigma=(3.626, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.800, "K"),
+        sigma=(3.626, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=32,
     label="HOCH2O",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 O u0 p2 c0 {1,S} {6,S}
@@ -783,20 +751,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(470.600, 'K'),
-        sigma=(4.410, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(470.600, "K"),
+        sigma=(4.410, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=33,
     label="HOCO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,D}
     2 O u0 p2 c0 {1,S} {4,S}
@@ -805,20 +772,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(498.000, 'K'),
-        sigma=(3.590, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(498.000, "K"),
+        sigma=(3.590, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=34,
     label="HOCHO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,D} {4,S}
     2 O u0 p2 c0 {1,S} {5,S}
     3 O u0 p2 c0 {1,D}
@@ -827,20 +793,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.800, 'K'),
-        sigma=(3.626, 'angstroms'),
-        dipoleMoment=(1.7, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.800, "K"),
+        sigma=(3.626, "angstroms"),
+        dipoleMoment=(1.7, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=35,
     label="OCHO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,D} {4,S}
     2 O u1 p2 c0 {1,S}
@@ -849,96 +814,91 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(498.000, 'K'),
-        sigma=(3.590, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(498.000, "K"),
+        sigma=(3.590, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=36,
     label="AR",
-    molecule=
-    """
+    molecule="""
     1 Ar u0 p4 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(136.500, 'K'),
-        sigma=(3.330, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(136.500, "K"),
+        sigma=(3.330, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=37,
     label="C",
-    molecule=
-    """
+    molecule="""
     1 C u2 p1 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(97.530, 'K'),
-        sigma=(3.621, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(1.76, 'angstroms^3'),
+        epsilon=(97.530, "K"),
+        sigma=(3.621, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(1.76, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=38,
     label="CH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p1 c0 {2,S}
     2 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(80.000, 'K'),
-        sigma=(2.750, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(80.000, "K"),
+        sigma=(2.750, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=39,
     label="CH2(S)",
-    molecule=
-    """
+    molecule="""
     1 C u0 p1 c0 {2,S} {3,S}
     2 H u0 p0 c0 {1,S}
     3 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(144.000, 'K'),
-        sigma=(3.800, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(144.000, "K"),
+        sigma=(3.800, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=40,
     label="CH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u2 p0 c0 {2,S} {3,S}
     2 H u0 p0 c0 {1,S}
@@ -946,20 +906,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(144.000, 'K'),
-        sigma=(3.800, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(144.000, "K"),
+        sigma=(3.800, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=41,
     label="CH3",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,S} {4,S}
     2 H u0 p0 c0 {1,S}
@@ -968,20 +927,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(144.000, 'K'),
-        sigma=(3.800, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(144.000, "K"),
+        sigma=(3.800, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=42,
     label="CH4",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 H u0 p0 c0 {1,S}
     3 H u0 p0 c0 {1,S}
@@ -990,59 +948,56 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(141.400, 'K'),
-        sigma=(3.746, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(2.600, 'angstroms^3'),
+        epsilon=(141.400, "K"),
+        sigma=(3.746, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(2.600, "angstroms^3"),
         rotrelaxcollnum=13.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=43,
     label="CO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p1 c-1 {2,T}
     2 O u0 p1 c+1 {1,T}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(98.100, 'K'),
-        sigma=(3.650, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(1.950, 'angstroms^3'),
+        epsilon=(98.100, "K"),
+        sigma=(3.650, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(1.950, "angstroms^3"),
         rotrelaxcollnum=1.800,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=44,
     label="CO2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,D}
     2 O u0 p2 c0 {1,D}
     3 O u0 p2 c0 {1,D}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(244.000, 'K'),
-        sigma=(3.650, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(2.650, 'angstroms^3'),
+        epsilon=(244.000, "K"),
+        sigma=(3.650, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(2.650, "angstroms^3"),
         rotrelaxcollnum=2.100,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=45,
     label="HCO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,D}
     2 H u0 p0 c0 {1,S}
@@ -1050,20 +1005,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(498.000, 'K'),
-        sigma=(3.590, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(498.000, "K"),
+        sigma=(3.590, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=46,
     label="CH2O",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 O u0 p2 c0 {1,D}
     3 H u0 p0 c0 {1,S}
@@ -1071,20 +1025,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(498.000, 'K'),
-        sigma=(3.590, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(498.000, "K"),
+        sigma=(3.590, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=47,
     label="CH2OH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,S} {4,S}
     2 O u0 p2 c0 {1,S} {5,S}
@@ -1094,20 +1047,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(417.000, 'K'),
-        sigma=(3.690, 'angstroms'),
-        dipoleMoment=(1.7, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(417.000, "K"),
+        sigma=(3.690, "angstroms"),
+        dipoleMoment=(1.7, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=48,
     label="CH3O",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 O u1 p2 c0 {1,S}
@@ -1117,20 +1069,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(417.000, 'K'),
-        sigma=(3.690, 'angstroms'),
-        dipoleMoment=(1.7, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(417.000, "K"),
+        sigma=(3.690, "angstroms"),
+        dipoleMoment=(1.7, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=49,
     label="CH3OH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 O u0 p2 c0 {1,S} {6,S}
     3 H u0 p0 c0 {1,S}
@@ -1140,40 +1091,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.800, 'K'),
-        sigma=(3.626, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.800, "K"),
+        sigma=(3.626, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=50,
     label="C2",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u1 p0 c0 {2,T}
     2 C u1 p0 c0 {1,T}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(97.530, 'K'),
-        sigma=(3.621, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(1.76, 'angstroms^3'),
+        epsilon=(97.530, "K"),
+        sigma=(3.621, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(1.76, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=51,
     label="C2O",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u0 p0 c0 {2,T} {3,S}
     2 C u1 p0 c0 {1,T}
@@ -1181,20 +1130,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=52,
     label="C2H",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,T} {3,S}
     2 C u1 p0 c0 {1,T}
@@ -1202,20 +1150,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(209.000, 'K'),
-        sigma=(4.100, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(209.000, "K"),
+        sigma=(4.100, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=53,
     label="C2H2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,T} {3,S}
     2 C u0 p0 c0 {1,T} {4,S}
     3 H u0 p0 c0 {1,S}
@@ -1223,20 +1170,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(209.000, 'K'),
-        sigma=(4.100, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(209.000, "K"),
+        sigma=(4.100, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=54,
     label="C2H3",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u1 p0 c0 {1,D} {5,S}
@@ -1246,20 +1192,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(209.000, 'K'),
-        sigma=(4.100, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(209.000, "K"),
+        sigma=(4.100, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=55,
     label="C2H4",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p0 c0 {1,D} {5,S} {6,S}
     3 H u0 p0 c0 {1,S}
@@ -1269,20 +1214,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(280.800, 'K'),
-        sigma=(3.971, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(280.800, "K"),
+        sigma=(3.971, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=56,
     label="C2H5",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u1 p0 c0 {1,S} {6,S} {7,S}
@@ -1294,20 +1238,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.300, 'K'),
-        sigma=(4.302, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.300, "K"),
+        sigma=(4.302, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=57,
     label="C2H6",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
     3 H u0 p0 c0 {1,S}
@@ -1319,20 +1262,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.300, 'K'),
-        sigma=(4.302, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.300, "K"),
+        sigma=(4.302, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=58,
     label="HCCO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,T} {4,S}
     2 C u0 p0 c0 {1,T} {3,S}
@@ -1341,20 +1283,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(150.000, 'K'),
-        sigma=(2.500, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(150.000, "K"),
+        sigma=(2.500, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=59,
     label="HCCOH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,T} {3,S}
     2 C u0 p0 c0 {1,T} {4,S}
     3 O u0 p2 c0 {1,S} {5,S}
@@ -1363,20 +1304,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=60,
     label="CH2CO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p0 c0 {1,D} {5,D}
     3 H u0 p0 c0 {1,S}
@@ -1385,20 +1325,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=61,
     label="CH2CHO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,S} {4,S}
     2 C u0 p0 c0 {1,S} {5,D} {6,S}
@@ -1409,78 +1348,74 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=62,
     label="H",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 H u1 p0 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(145.000, 'K'),
-        sigma=(2.050, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(145.000, "K"),
+        sigma=(2.050, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=63,
     label="H2",
-    molecule=
-    """
+    molecule="""
     1 H u0 p0 c0 {2,S}
     2 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(38.000, 'K'),
-        sigma=(2.920, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.790, 'angstroms^3'),
+        epsilon=(38.000, "K"),
+        sigma=(2.920, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.790, "angstroms^3"),
         rotrelaxcollnum=280.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=64,
     label="H2O",
-    molecule=
-    """
+    molecule="""
     1 O u0 p2 c0 {2,S} {3,S}
     2 H u0 p0 c0 {1,S}
     3 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(572.400, 'K'),
-        sigma=(2.605, 'angstroms'),
-        dipoleMoment=(1.844, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(572.400, "K"),
+        sigma=(2.605, "angstroms"),
+        dipoleMoment=(1.844, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=65,
     label="H2O2",
-    molecule=
-    """
+    molecule="""
     1 O u0 p2 c0 {2,S} {3,S}
     2 O u0 p2 c0 {1,S} {4,S}
     3 H u0 p0 c0 {1,S}
@@ -1488,20 +1423,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(107.400, 'K'),
-        sigma=(3.458, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(107.400, "K"),
+        sigma=(3.458, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=3.8,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=66,
     label="HO2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 O u0 p2 c0 {2,S} {3,S}
     2 O u1 p2 c0 {1,S}
@@ -1509,116 +1443,110 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(107.400, 'K'),
-        sigma=(3.458, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(107.400, "K"),
+        sigma=(3.458, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=67,
     label="N2",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,T}
     2 N u0 p1 c0 {1,T}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(97.530, 'K'),
-        sigma=(3.621, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(1.76, 'angstroms^3'),
+        epsilon=(97.530, "K"),
+        sigma=(3.621, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(1.76, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=68,
     label="O",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 O u2 p2 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(80.000, 'K'),
-        sigma=(2.750, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(80.000, "K"),
+        sigma=(2.750, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=69,
     label="O2",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 O u1 p2 c0 {2,S}
     2 O u1 p2 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(107.400, 'K'),
-        sigma=(3.458, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(1.6, 'angstroms^3'),
+        epsilon=(107.400, "K"),
+        sigma=(3.458, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(1.6, "angstroms^3"),
         rotrelaxcollnum=3.8,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=70,
     label="OH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 O u1 p2 c0 {2,S}
     2 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(80.000, 'K'),
-        sigma=(2.750, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(80.000, "K"),
+        sigma=(2.750, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=71,
     label="HE",
-    molecule=
-    """
+    molecule="""
     1 He u0 p1 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(10.200, 'K'),
-        sigma=(2.576, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(10.200, "K"),
+        sigma=(2.576, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=72,
     label="HONO",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {3,D}
     2 O u0 p2 c0 {1,S} {4,S}
     3 O u0 p2 c0 {1,D}
@@ -1626,60 +1554,57 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(350.000, 'K'),
-        sigma=(3.950, 'angstroms'),
-        dipoleMoment=(1.639, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(350.000, "K"),
+        sigma=(3.950, "angstroms"),
+        dipoleMoment=(1.639, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=73,
     label="NO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u1 p1 c0 {2,D}
     2 O u0 p2 c0 {1,D}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(139.320, 'K'),
-        sigma=(3.339, 'angstroms'),
-        dipoleMoment=(0.2, 'De'),
-        polarizability=(1.76, 'angstroms^3'),
+        epsilon=(139.320, "K"),
+        sigma=(3.339, "angstroms"),
+        dipoleMoment=(0.2, "De"),
+        polarizability=(1.76, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=74,
     label="HNO",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,D} {3,S}
     2 O u0 p2 c0 {1,D}
     3 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(170.000, 'K'),
-        sigma=(3.430, 'angstroms'),
-        dipoleMoment=(1.62, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(170.000, "K"),
+        sigma=(3.430, "angstroms"),
+        dipoleMoment=(1.62, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=75,
     label="NO2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u0 p1 c0 {2,D} {3,S}
     2 O u0 p2 c0 {1,D}
@@ -1687,20 +1612,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(333.590, 'K'),
-        sigma=(3.852, 'angstroms'),
-        dipoleMoment=(0.4, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(333.590, "K"),
+        sigma=(3.852, "angstroms"),
+        dipoleMoment=(0.4, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=76,
     label="CH3CH2OH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
     3 O u0 p2 c0 {1,S} {9,S}
@@ -1713,20 +1637,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(362.600, 'K'),
-        sigma=(4.530, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(362.600, "K"),
+        sigma=(4.530, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=77,
     label="CH3CH2O",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u0 p0 c0 {1,S} {3,S} {7,S} {8,S}
@@ -1739,20 +1662,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(362.600, 'K'),
-        sigma=(4.530, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(362.600, "K"),
+        sigma=(4.530, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=78,
     label="CH3CO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u1 p0 c0 {1,S} {6,D}
@@ -1763,20 +1685,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=79,
     label="CH3CHO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,D} {7,S}
     3 H u0 p0 c0 {1,S}
@@ -1787,20 +1708,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=80,
     label="OCHCHO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,D} {5,S}
     2 C u0 p0 c0 {1,S} {4,D} {6,S}
     3 O u0 p2 c0 {1,D}
@@ -1810,20 +1730,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(440.200, 'K'),
-        sigma=(4.010, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(440.200, "K"),
+        sigma=(4.010, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=81,
     label="NO3",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u0 p0 c+1 {2,D} {3,S} {4,S}
     2 O u0 p2 c0 {1,D}
@@ -1832,40 +1751,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(400.000, 'K'),
-        sigma=(4.200, 'angstroms'),
-        dipoleMoment=(0.2, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(400.000, "K"),
+        sigma=(4.200, "angstroms"),
+        dipoleMoment=(0.2, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=82,
     label="N2O",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,D} {3,D}
     2 N u0 p2 c-1 {1,D}
     3 O u0 p2 c0 {1,D}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.2, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.2, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=83,
     label="H2NO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u1 p0 c+1 {2,S} {3,S} {4,S}
     2 O u0 p3 c-1 {1,S}
@@ -1874,20 +1791,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(116.700, 'K'),
-        sigma=(3.492, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(116.700, "K"),
+        sigma=(3.492, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=84,
     label="HNOH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u1 p1 c0 {2,S} {3,S}
     2 O u0 p2 c0 {1,S} {4,S}
@@ -1896,20 +1812,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(116.700, 'K'),
-        sigma=(3.492, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(116.700, "K"),
+        sigma=(3.492, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=85,
     label="CH2CN",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,S} {4,S}
     2 C u0 p0 c0 {1,S} {5,T}
@@ -1919,20 +1834,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(422.220, 'K'),
-        sigma=(5.329, 'angstroms'),
-        dipoleMoment=(3.5, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(422.220, "K"),
+        sigma=(5.329, "angstroms"),
+        dipoleMoment=(3.5, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=86,
     label="CH3CN",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,T}
     3 H u0 p0 c0 {1,S}
@@ -1942,20 +1856,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(422.220, 'K'),
-        sigma=(5.329, 'angstroms'),
-        dipoleMoment=(3.5, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(422.220, "K"),
+        sigma=(5.329, "angstroms"),
+        dipoleMoment=(3.5, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=87,
     label="NCN",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u0 p0 c0 {2,D} {3,D}
     2 N u1 p1 c0 {1,D}
@@ -1963,20 +1876,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(422.220, 'K'),
-        sigma=(5.329, 'angstroms'),
-        dipoleMoment=(2.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(422.220, "K"),
+        sigma=(5.329, "angstroms"),
+        dipoleMoment=(2.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=88,
     label="HNCN",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,T}
     2 N u1 p1 c0 {1,S} {4,S}
@@ -1985,20 +1897,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(422.220, 'K'),
-        sigma=(5.329, 'angstroms'),
-        dipoleMoment=(2.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(422.220, "K"),
+        sigma=(5.329, "angstroms"),
+        dipoleMoment=(2.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=89,
     label="HNCNH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,D}
     2 N u0 p1 c0 {1,D} {4,S}
     3 N u0 p1 c0 {1,D} {5,S}
@@ -2007,40 +1918,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(422.220, 'K'),
-        sigma=(5.329, 'angstroms'),
-        dipoleMoment=(2.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(422.220, "K"),
+        sigma=(5.329, "angstroms"),
+        dipoleMoment=(2.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=90,
     label="CN",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,T}
     2 N u0 p1 c0 {1,T}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(75.000, 'K'),
-        sigma=(3.856, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(75.000, "K"),
+        sigma=(3.856, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=91,
     label="H2CN",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 N u1 p1 c0 {1,D}
@@ -2049,40 +1958,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(569.000, 'K'),
-        sigma=(3.630, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(569.000, "K"),
+        sigma=(3.630, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=92,
     label="HCN",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,T} {3,S}
     2 N u0 p1 c0 {1,T}
     3 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(569.000, 'K'),
-        sigma=(3.630, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(569.000, "K"),
+        sigma=(3.630, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=93,
     label="HCNO",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,T} {3,S}
     2 C u0 p0 c0 {1,T} {4,S}
     3 O u0 p3 c-1 {1,S}
@@ -2090,20 +1997,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=94,
     label="HOCN",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,T}
     2 O u0 p2 c0 {1,S} {4,S}
     3 N u0 p1 c0 {1,T}
@@ -2111,20 +2017,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=95,
     label="HNCO",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,D} {4,S}
     2 C u0 p0 c0 {1,D} {3,D}
     3 O u0 p2 c0 {2,D}
@@ -2132,20 +2037,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=96,
     label="HNNO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 O u0 p2 c0 {2,D}
     2 N u0 p1 c0 {1,D} {3,S}
@@ -2154,39 +2058,37 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=97,
     label="N",
-    molecule=
-    """
+    molecule="""
     multiplicity 4
     1 N u3 p1 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(71.400, 'K'),
-        sigma=(3.298, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(71.400, "K"),
+        sigma=(3.298, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=98,
     label="N2H2",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,D} {3,S}
     2 N u0 p1 c0 {1,D} {4,S}
     3 H u0 p0 c0 {1,S}
@@ -2194,20 +2096,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(71.400, 'K'),
-        sigma=(3.798, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(71.400, "K"),
+        sigma=(3.798, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=99,
     label="N2H3",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u0 p1 c0 {2,S} {3,S} {4,S}
     2 N u1 p1 c0 {1,S} {5,S}
@@ -2217,20 +2118,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(200.000, 'K'),
-        sigma=(3.900, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(200.000, "K"),
+        sigma=(3.900, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=100,
     label="N2H4",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {3,S} {4,S}
     2 N u0 p1 c0 {1,S} {5,S} {6,S}
     3 H u0 p0 c0 {1,S}
@@ -2240,20 +2140,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(205.000, 'K'),
-        sigma=(4.230, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(4.26, 'angstroms^3'),
+        epsilon=(205.000, "K"),
+        sigma=(4.230, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(4.26, "angstroms^3"),
         rotrelaxcollnum=1.5,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=101,
     label="NCO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,D}
     2 N u1 p1 c0 {1,D}
@@ -2261,40 +2160,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=102,
     label="NH",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 N u2 p1 c0 {2,S}
     2 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(80.000, 'K'),
-        sigma=(2.650, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(80.000, "K"),
+        sigma=(2.650, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=103,
     label="NH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u1 p1 c0 {2,S} {3,S}
     2 H u0 p0 c0 {1,S}
@@ -2302,20 +2199,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(80.000, 'K'),
-        sigma=(2.650, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(2.26, 'angstroms^3'),
+        epsilon=(80.000, "K"),
+        sigma=(2.650, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(2.26, "angstroms^3"),
         rotrelaxcollnum=4.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=104,
     label="NH3",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {3,S} {4,S}
     2 H u0 p0 c0 {1,S}
     3 H u0 p0 c0 {1,S}
@@ -2323,20 +2219,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(481.000, 'K'),
-        sigma=(2.920, 'angstroms'),
-        dipoleMoment=(1.47, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(481.000, "K"),
+        sigma=(2.920, "angstroms"),
+        dipoleMoment=(1.47, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=10.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=105,
     label="NNH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u0 p1 c0 {2,D} {3,S}
     2 N u1 p1 c0 {1,D}
@@ -2344,20 +2239,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(71.400, 'K'),
-        sigma=(3.798, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(71.400, "K"),
+        sigma=(3.798, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=106,
     label="NCNO",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {3,D}
     2 C u0 p0 c0 {1,S} {4,T}
     3 O u0 p2 c0 {1,D}
@@ -2365,20 +2259,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=107,
     label="NCCN",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u0 p0 c0 {2,S} {3,T}
     2 C u1 p0 c0 {1,S} {4,D}
@@ -2387,71 +2280,68 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(374.000, 'K'),
-        sigma=(4.361, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(374.000, "K"),
+        sigma=(4.361, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=108,
     label="O3",
-    molecule=
-    """
+    molecule="""
     1 O u0 p3 c-1 {2,S}
     2 O u0 p1 c+1 {1,S} {3,D}
     3 O u0 p2 c0 {2,D}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(180.000, 'K'),
-        sigma=(4.100, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(180.000, "K"),
+        sigma=(4.100, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=109,
     label="Cl",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 Cl u1 p3 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(130.800, 'K'),
-        sigma=(3.613, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(130.800, "K"),
+        sigma=(3.613, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=110,
     label="HCl",
-    molecule=
-    """
+    molecule="""
     1 H  u0 p0 c0 {2,S}
     2 Cl u0 p3 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(344.700, 'K'),
-        sigma=(3.339, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(344.700, "K"),
+        sigma=(3.339, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 # entry(
@@ -2514,28 +2404,26 @@ entry(
 entry(
     index=114,
     label="H2S",
-    molecule=
-    """
+    molecule="""
     1 S u0 p2 c0 {2,S} {3,S}
     2 H u0 p0 c0 {1,S}
     3 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(301.000, 'K'),
-        sigma=(3.600, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(301.000, "K"),
+        sigma=(3.600, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=115,
     label="HSO2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 O u0 p2 c0 {2,D}
     2 S u1 p0 c0 {1,D} {3,S} {4,D}
@@ -2544,119 +2432,113 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.000, 'K'),
-        sigma=(4.290, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.000, "K"),
+        sigma=(4.290, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=116,
     label="S",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 S u2 p2 c0
     """,
     transport=TransportData(
         shapeIndex=0,
-        epsilon=(847.000, 'K'),
-        sigma=(3.839, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(847.000, "K"),
+        sigma=(3.839, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=0.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=117,
     label="S2",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 S u1 p2 c0 {2,S}
     2 S u1 p2 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(847.000, 'K'),
-        sigma=(3.900, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(847.000, "K"),
+        sigma=(3.900, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=118,
     label="SH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 S u1 p2 c0 {2,S}
     2 H u0 p0 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(847.000, 'K'),
-        sigma=(3.900, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(847.000, "K"),
+        sigma=(3.900, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=119,
     label="SO",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 S u1 p2 c0 {2,S}
     2 O u1 p2 c0 {1,S}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(301.000, 'K'),
-        sigma=(3.993, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(301.000, "K"),
+        sigma=(3.993, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=120,
     label="SO2",
-    molecule=
-    """
+    molecule="""
     1 O u0 p2 c0 {2,D}
     2 S u0 p1 c0 {1,D} {3,D}
     3 O u0 p2 c0 {2,D}
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.000, 'K'),
-        sigma=(4.290, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.000, "K"),
+        sigma=(4.290, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=121,
     label="SO3",
-    molecule=
-    """
+    molecule="""
     1 O u0 p2 c0 {2,D}
     2 S u0 p0 c0 {1,D} {3,D} {4,D}
     3 O u0 p2 c0 {2,D}
@@ -2664,20 +2546,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(378.400, 'K'),
-        sigma=(4.175, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(378.400, "K"),
+        sigma=(4.175, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=122,
     label="CH2NO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u1 p0 c0 {2,S} {3,S} {4,S}
     2 N u0 p1 c0 {1,S} {5,D}
@@ -2687,20 +2568,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=123,
     label="C2H5NO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
     3 N u0 p1 c0 {1,S} {9,D}
@@ -2713,20 +2593,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.000, 'K'),
-        sigma=(4.760, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.000, "K"),
+        sigma=(4.760, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=124,
     label="CH3CHNO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u0 p0 c0 {1,S} {3,D} {7,S}
@@ -2739,20 +2618,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.000, 'K'),
-        sigma=(4.760, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.000, "K"),
+        sigma=(4.760, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=125,
     label="CHCHNO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u1 p0 c0 {1,D} {5,S}
@@ -2763,20 +2641,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(357.000, 'K'),
-        sigma=(5.180, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(357.000, "K"),
+        sigma=(5.180, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=126,
     label="CH2CHNO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u0 p0 c0 {1,D} {5,S} {6,S}
     3 N u0 p1 c0 {1,S} {7,D}
@@ -2787,20 +2664,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(357.000, 'K'),
-        sigma=(5.176, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(357.000, "K"),
+        sigma=(5.176, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=127,
     label="CH3NO2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 N u0 p0 c+1 {1,S} {6,D} {7,S}
     3 H u0 p0 c0 {1,S}
@@ -2811,20 +2687,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=128,
     label="CH3ONO",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 O u0 p2 c0 {1,S} {3,S}
     3 N u0 p1 c0 {2,S} {7,D}
@@ -2835,20 +2710,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=129,
     label="CH2NO2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u0 p0 c+1 {2,S} {3,D} {6,S}
     2 C u1 p0 c0 {1,S} {4,S} {5,S}
@@ -2859,20 +2733,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(232.400, 'K'),
-        sigma=(3.828, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(232.400, "K"),
+        sigma=(3.828, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=130,
     label="C2H5NO2",
-    molecule=
-    """
+    molecule="""
     1  C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2  C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
     3  N u0 p0 c+1 {1,S} {9,D} {10,S}
@@ -2886,20 +2759,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(503.072, 'K'),
-        sigma=(5.340, 'angstroms'),
-        dipoleMoment=(1.67, 'De'),
-        polarizability=(8.88, 'angstroms^3'),
+        epsilon=(503.072, "K"),
+        sigma=(5.340, "angstroms"),
+        dipoleMoment=(1.67, "De"),
+        polarizability=(8.88, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=131,
     label="CH2CH2NO2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 N u0 p0 c+1 {1,S} {6,D} {7,S}
@@ -2913,20 +2785,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(503.072, 'K'),
-        sigma=(5.340, 'angstroms'),
-        dipoleMoment=(1.67, 'De'),
-        polarizability=(8.88, 'angstroms^3'),
+        epsilon=(503.072, "K"),
+        sigma=(5.340, "angstroms"),
+        dipoleMoment=(1.67, "De"),
+        polarizability=(8.88, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=132,
     label="CH3CHNO2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u1 p0 c0 {1,S} {3,S} {7,S}
@@ -2940,20 +2811,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(503.072, 'K'),
-        sigma=(5.340, 'angstroms'),
-        dipoleMoment=(1.67, 'De'),
-        polarizability=(8.88, 'angstroms^3'),
+        epsilon=(503.072, "K"),
+        sigma=(5.340, "angstroms"),
+        dipoleMoment=(1.67, "De"),
+        polarizability=(8.88, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=133,
     label="CH3ONO2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
     2 N u0 p0 c+1 {3,S} {7,D} {8,S}
     3 O u0 p2 c0 {1,S} {2,S}
@@ -2965,20 +2835,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(459.500, 'K'),
-        sigma=(5.036, 'angstroms'),
-        dipoleMoment=(1.7, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(459.500, "K"),
+        sigma=(5.036, "angstroms"),
+        dipoleMoment=(1.7, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=134,
     label="CH3CH2ONO",
-    molecule=
-    """
+    molecule="""
     1  C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
     2  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
     3  O u0 p2 c0 {1,S} {4,S}
@@ -2992,20 +2861,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(503.072, 'K'),
-        sigma=(5.340, 'angstroms'),
-        dipoleMoment=(1.67, 'De'),
-        polarizability=(8.8, 'angstroms^3'),
+        epsilon=(503.072, "K"),
+        sigma=(5.340, "angstroms"),
+        dipoleMoment=(1.67, "De"),
+        polarizability=(8.8, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=135,
     label="CH3CH2ONO2",
-    molecule=
-    """
+    molecule="""
     1  C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
     3  N u0 p0 c+1 {4,S} {10,D} {11,S}
@@ -3020,40 +2888,38 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(496.000, 'K'),
-        sigma=(5.200, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(496.000, "K"),
+        sigma=(5.200, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=136,
     label="HNC",
-    molecule=
-    """
+    molecule="""
     1 N u0 p0 c+1 {2,S} {3,T}
     2 H u0 p0 c0 {1,S}
     3 C u0 p1 c-1 {1,T}
     """,
     transport=TransportData(
         shapeIndex=1,
-        epsilon=(569.000, 'K'),
-        sigma=(3.630, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(569.000, "K"),
+        sigma=(3.630, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=137,
     label="CH3CH2NH2",
-    molecule=
-    """
+    molecule="""
     1  C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2  C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
     3  N u0 p1 c0 {1,S} {9,S} {10,S}
@@ -3067,20 +2933,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=138,
     label="CH3NHCH3",
-    molecule=
-    """
+    molecule="""
     1  C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
     2  C u0 p0 c0 {3,S} {7,S} {8,S} {9,S}
     3  N u0 p1 c0 {1,S} {2,S} {10,S}
@@ -3094,20 +2959,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=139,
     label="CH2CH2NH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u1 p0 c0 {1,S} {6,S} {7,S}
@@ -3121,20 +2985,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=140,
     label="CH3NCH3",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
     2 C u0 p0 c0 {3,S} {7,S} {8,S} {9,S}
@@ -3148,20 +3011,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=141,
     label="CH3NHCH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 N u0 p1 c0 {1,S} {3,S} {7,S}
@@ -3175,20 +3037,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=142,
     label="CH3CHNH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u1 p0 c0 {1,S} {3,S} {7,S}
@@ -3202,20 +3063,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=143,
     label="CH3CH2NH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
@@ -3229,20 +3089,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=144,
     label="CH2CHNH2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,D} {4,S}
     2 N u0 p1 c0 {1,S} {5,S} {6,S}
     3 C u0 p0 c0 {1,D} {7,S} {8,S}
@@ -3254,20 +3113,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(303.400, 'K'),
-        sigma=(4.810, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(303.400, "K"),
+        sigma=(4.810, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=145,
     label="CH3CHNH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u0 p0 c0 {1,S} {3,D} {7,S}
     3 N u0 p1 c0 {2,D} {8,S}
@@ -3279,20 +3137,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(303.400, 'K'),
-        sigma=(4.810, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(303.400, "K"),
+        sigma=(4.810, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=146,
     label="CH3NCH2",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
     2 C u0 p0 c0 {3,D} {7,S} {8,S}
     3 N u0 p1 c0 {1,S} {2,D}
@@ -3304,20 +3161,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(303.400, 'K'),
-        sigma=(4.810, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(303.400, "K"),
+        sigma=(4.810, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=147,
     label="CH2CHNH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,D} {4,S}
     2 C u1 p0 c0 {1,S} {5,S} {6,S}
@@ -3329,20 +3185,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=148,
     label="CHCHNH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,D} {4,S}
     2 N u0 p1 c0 {1,S} {5,S} {6,S}
@@ -3354,20 +3209,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=149,
     label="CH2NCH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {3,D} {6,S} {7,S}
     2 C u1 p0 c0 {3,S} {4,S} {5,S}
@@ -3379,20 +3233,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=150,
     label="CH3CHN",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {6,D} {7,S}
@@ -3404,20 +3257,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=151,
     label="CH3NCH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 N u0 p1 c0 {1,S} {3,D}
@@ -3429,20 +3281,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=152,
     label="CH3CNH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u1 p0 c0 {1,S} {3,D}
@@ -3454,20 +3305,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=153,
     label="CH2CNH2",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {3,D} {4,S} {5,S}
     2 N u0 p1 c0 {3,S} {6,S} {7,S}
@@ -3479,20 +3329,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=154,
     label="CH2CNH",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {4,S} {5,S}
     2 C u0 p0 c0 {1,D} {3,D}
     3 N u0 p1 c0 {2,D} {6,S}
@@ -3502,20 +3351,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(260.000, 'K'),
-        sigma=(4.850, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(260.000, "K"),
+        sigma=(4.850, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=155,
     label="CH2CHN",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u0 p0 c0 {2,S} {3,D} {6,S}
     2 C u1 p0 c0 {1,S} {4,S} {5,S}
@@ -3526,20 +3374,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(260.000, 'K'),
-        sigma=(4.850, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(260.000, "K"),
+        sigma=(4.850, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=156,
     label="CH2CHN(S)",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,D} {4,S} {5,S}
     2 C u0 p0 c0 {1,D} {3,S} {6,S}
     3 N u0 p2 c0 {2,S}
@@ -3549,20 +3396,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(260.000, 'K'),
-        sigma=(4.850, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(260.000, "K"),
+        sigma=(4.850, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=157,
     label="c-C2H3N",
-    molecule=
-    """
+    molecule="""
     1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {3,D} {6,S}
     3 N u0 p1 c0 {1,S} {2,D}
@@ -3572,20 +3418,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(260.000, 'K'),
-        sigma=(4.850, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(260.000, "K"),
+        sigma=(4.850, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=158,
     label="CHCNH2",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {3,T}
     3 C u0 p0 c0 {2,T} {6,S}
@@ -3595,20 +3440,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(260.000, 'K'),
-        sigma=(4.850, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(260.000, "K"),
+        sigma=(4.850, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=159,
     label="CHCNH",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,T} {3,S}
     2 C u0 p0 c0 {1,T} {5,S}
@@ -3618,20 +3462,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(252.000, 'K'),
-        sigma=(4.760, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(252.000, "K"),
+        sigma=(4.760, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=160,
     label="H2NCHO",
-    molecule=
-    """
+    molecule="""
     1 N u0 p1 c0 {2,S} {4,S} {5,S}
     2 C u0 p0 c0 {1,S} {3,D} {6,S}
     3 O u0 p2 c0 {2,D}
@@ -3641,20 +3484,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=161,
     label="H2NCO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 N u0 p1 c0 {2,S} {3,S} {4,S}
     2 C u1 p0 c0 {1,S} {5,D}
@@ -3664,20 +3506,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(307.800, 'K'),
-        sigma=(4.140, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(307.800, "K"),
+        sigma=(4.140, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=162,
     label="CH3NC",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 N u0 p1 c0 {1,S} {3,D}
@@ -3688,20 +3529,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(422.220, 'K'),
-        sigma=(5.329, 'angstroms'),
-        dipoleMoment=(3.5, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(422.220, "K"),
+        sigma=(5.329, "angstroms"),
+        dipoleMoment=(3.5, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=163,
     label="CH3C(O)OO",
-    molecule=
-    """
+    molecule="""
     multiplicity 2
     1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
     2 C u0 p0 c0 {1,S} {3,S} {7,D}
@@ -3714,20 +3554,19 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(435.500, 'K'),
-        sigma=(4.860, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(435.500, "K"),
+        sigma=(4.860, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=1.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 entry(
     index=164,
     label="CHCHO",
-    molecule=
-    """
+    molecule="""
     multiplicity 3
     1 C u0 p0 c0 {2,D} {3,S} {4,S}
     2 C u1 p0 c0 {1,D} {5,S}
@@ -3737,13 +3576,13 @@ entry(
     """,
     transport=TransportData(
         shapeIndex=2,
-        epsilon=(436.000, 'K'),
-        sigma=(3.970, 'angstroms'),
-        dipoleMoment=(0.0, 'De'),
-        polarizability=(0.0, 'angstroms^3'),
+        epsilon=(436.000, "K"),
+        sigma=(3.970, "angstroms"),
+        dipoleMoment=(0.0, "De"),
+        polarizability=(0.0, "angstroms^3"),
         rotrelaxcollnum=2.0,
     ),
-    shortDesc=u"""""",
+    shortDesc="""""",
 )
 
 """

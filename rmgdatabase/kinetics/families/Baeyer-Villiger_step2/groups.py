@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Baeyer-Villiger_step2/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 
 """
 
@@ -11,22 +11,23 @@ template(reactants=["criegee"], products=["ester", "acid"], ownReverse=False)
 
 reverse = "none"
 
-recipe(actions=[
-    ['BREAK_BOND', '*1', 1, '*2'],
-    ['BREAK_BOND', '*3', 1, '*4'],
-    ['BREAK_BOND', '*5', 1, '*6'],
-    ['CHANGE_BOND', '*1', 1, '*3'],
-    ['CHANGE_BOND', '*6', 1, '*7'],
-    ['CHANGE_BOND', '*7', -1, '*8'],
-    ['FORM_BOND', '*2', 1, '*5'],
-    ['FORM_BOND', '*4', 1, '*8'],
-])
+recipe(
+    actions=[
+        ["BREAK_BOND", "*1", 1, "*2"],
+        ["BREAK_BOND", "*3", 1, "*4"],
+        ["BREAK_BOND", "*5", 1, "*6"],
+        ["CHANGE_BOND", "*1", 1, "*3"],
+        ["CHANGE_BOND", "*6", 1, "*7"],
+        ["CHANGE_BOND", "*7", -1, "*8"],
+        ["FORM_BOND", "*2", 1, "*5"],
+        ["FORM_BOND", "*4", 1, "*8"],
+    ]
+)
 
 entry(
-    index = 1,
-    label = "criegee",
-    group =
-"""
+    index=1,
+    label="criegee",
+    group="""
 1  *1 C     u0 {2,S} {3,S} {4,S} {5,S}
 2  *2 [C,H] u0 {1,S}
 3     [C,H] u0 {1,S}
@@ -38,14 +39,13 @@ entry(
 9     R     u0 {7,S}
 10 *4 H     u0 {4,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
-    label = "6_membered_ring",
-    group =
-"""
+    index=2,
+    label="6_membered_ring",
+    group="""
 1  *1 C     u0 {2,S} {3,S} {7,S} {8,S}
 2  *2 [C,H] u0 {1,S} {4,[S,D,T,B]}
 3     [C,H] u0 {1,S} {6,[S,D,T,B]}
@@ -60,13 +60,12 @@ entry(
 12    R     u0 {10,S}
 13 *4 H     u0 {7,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: criegee
     L2: 6_membered_ring
 """
 )
-

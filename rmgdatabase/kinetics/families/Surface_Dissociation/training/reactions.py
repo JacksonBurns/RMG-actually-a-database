@@ -2,68 +2,68 @@
 # encoding: utf-8
 
 name = "Surface_Dissociation/training"
-shortDesc = u"Reaction kinetics used to generate rate rules"
-longDesc = u"""
+shortDesc = "Reaction kinetics used to generate rate rules"
+longDesc = """
 Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 
 entry(
-    index = 1,
-    label = "OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(4.02E14, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(11.5, 'kJ/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=1,
+    label="OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(4.02e14, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(11.5, "kJ/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
-    rank = 10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    rank=10,
+    shortDesc="""Default""",
+    longDesc="""
     Experimental and microkinetic modeling of steady-state NO reduction by H2 on Pt/BaO/Al2O3 monolith catalysts
     Xu, Clayton, Balakotaiah, Harold et al.
     doi: 10.1016.j.apcatb.2007.08.008
 """,
-    metal = "Pt",
+    metal="Pt",
 )
 
 entry(
-    index = 4,
-    label = "HOCXO_1 + Ni_4 <=> OCX_3 + HOX_5",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(1.46E20, 'm^2/(mol*s)'),
-        n = -0.213,
-        Ea=(54300.0, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=4,
+    label="HOCXO_1 + Ni_4 <=> OCX_3 + HOX_5",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(1.46e20, "m^2/(mol*s)"),
+        n=-0.213,
+        Ea=(54300.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R44
 """,
-    metal = 'Ni',
+    metal="Ni",
 )
 
 entry(
-    index = 10,
-    label = "OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(1.586e16, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(0.56, 'eV/molecule'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=10,
+    label="OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(1.586e16, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(0.56, "eV/molecule"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
-    rank = 10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    rank=10,
+    shortDesc="""Default""",
+    longDesc="""
 Reaction 10 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
@@ -71,99 +71,99 @@ A factor from paper / surface site density of Cu
 4.667E11 m^4/(mol^2 * s) / 2.943e‐5 mol/m^2 = 1.586e16 m^2/(mol*s)
 Erxn = 0.14 eV
 """,
-    metal = "Cu",
+    metal="Cu",
 )
 
 entry(
-    index = 9,
-    label = "NH2_X + Ni_4 <=> NHX_1 + HX_5",
-    degeneracy = 2,
-    kinetics = SurfaceArrhenius(
-        A = (2.718e22, 'cm^2/(mol*s)'),
-        n = 0,
-        Ea = (75.74, 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=9,
+    label="NH2_X + Ni_4 <=> NHX_1 + HX_5",
+    degeneracy=2,
+    kinetics=SurfaceArrhenius(
+        A=(2.718e22, "cm^2/(mol*s)"),
+        n=0,
+        Ea=(75.74, "kJ/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 10,
-    shortDesc = u"""NH2 Surface Dissociation""",
-    longDesc = u"""
+    rank=10,
+    shortDesc="""NH2 Surface Dissociation""",
+    longDesc="""
     Micro-kinetic modeling of NH3 decomposition on Ni and its application to solid oxide fuel cells
     Deutschmann et al
     doi: 10.1016/j.ces.2011.07.007
 
     This is R9
     """,
-    metal = "Ni",
+    metal="Ni",
 )
 
 entry(
-    index = 11,
-    label = "NHX_2 + Ni_4 <=> NX + HX_5",
-    kinetics = SurfaceArrhenius(
-        A = (6.213e19, 'cm^2/(mol*s)'),
-        n = 0,
-        Ea = (22.93, 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+    index=11,
+    label="NHX_2 + Ni_4 <=> NX + HX_5",
+    kinetics=SurfaceArrhenius(
+        A=(6.213e19, "cm^2/(mol*s)"),
+        n=0,
+        Ea=(22.93, "kJ/mol"),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    rank = 10,
-    shortDesc = u"""NH Surface Dissociation""",
-    longDesc = u"""
+    rank=10,
+    shortDesc="""NH Surface Dissociation""",
+    longDesc="""
     Micro-kinetic modeling of NH3 decomposition on Ni and its application to solid oxide fuel cells
     Deutschmann et al
     doi: 10.1016/j.ces.2011.07.007
 
     This is R11
     """,
-    metal = "Ni",
+    metal="Ni",
 )
 
 entry(
-    index = 16,
-    label = "CH2X_3 + HX_5 <=> CH3X_1 + Ni_4",
-    degeneracy = 3,
-    kinetics = SurfaceArrhenius(
-        A=(3.09E19, 'm^2/(mol*s)'),
-        n = -0.087,
-        Ea=(57200.0, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=16,
+    label="CH2X_3 + HX_5 <=> CH3X_1 + Ni_4",
+    degeneracy=3,
+    kinetics=SurfaceArrhenius(
+        A=(3.09e19, "m^2/(mol*s)"),
+        n=-0.087,
+        Ea=(57200.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R16
 """,
-    metal = "Ni",
+    metal="Ni",
 )
 
 
 entry(
-    index = 18,
-    label = "CHX_3 + HX_5 <=> CH2X_1 + Ni_4",
-    degeneracy = 2,
-    kinetics = SurfaceArrhenius(
-        A=(9.77E20, 'm^2/(mol*s)'),
-        n = -0.087,
-        Ea=(81000.0, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=18,
+    label="CHX_3 + HX_5 <=> CH2X_1 + Ni_4",
+    degeneracy=2,
+    kinetics=SurfaceArrhenius(
+        A=(9.77e20, "m^2/(mol*s)"),
+        n=-0.087,
+        Ea=(81000.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R18
 """,
-    metal = "Ni",
+    metal="Ni",
 )
 
-#Delgado has this reaction as exothermic. However, our own thermo has this reaction as endothermic. removing and replacing with reverse direction, R20.
-#entry(
+# Delgado has this reaction as exothermic. However, our own thermo has this reaction as endothermic. removing and replacing with reverse direction, R20.
+# entry(
 #    index = 19,
 #    label = "CHX_1 + Ni_4 <=> CX_3 + HX_5",
 #    degeneracy = 1,
@@ -177,48 +177,48 @@ Catalysts, 2015, 5, 871-904. Reaction R18
 #    rank = 10,
 #    shortDesc = u"""Default""",
 #    longDesc = u"""
-#"Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
-#Delgado et al
-#Catalysts, 2015, 5, 871-904. Reaction R19
-#""",
+# "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
+# Delgado et al
+# Catalysts, 2015, 5, 871-904. Reaction R19
+# """,
 #    metal = "Ni"
-#)
+# )
 
 entry(
-    index = 20,
-    label = "CX_3 + HX_5 <=> CHX_1 + Ni_4",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(1.70E20, 'm^2/(mol*s)'),
-        n = -0.5,
-        Ea=(157900., 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=20,
+    label="CX_3 + HX_5 <=> CHX_1 + Ni_4",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(1.70e20, "m^2/(mol*s)"),
+        n=-0.5,
+        Ea=(157900.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R20
 """,
-    metal = "Ni",
+    metal="Ni",
 )
 
 entry(
-    index = 28,
-    label = "HCOO* + Ni_4 <=> HCO* + OX_3",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(8.733e16, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(2.36, 'eV/molecule'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=28,
+    label="HCOO* + Ni_4 <=> HCO* + OX_3",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(8.733e16, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(2.36, "eV/molecule"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 Reaction 28 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
@@ -226,7 +226,7 @@ A factor from paper / surface site density of Cu
 2.570E12 1/s 2.943e‐5 mol/m^2 = 8.733e16 m^2/(mol*s)
 Erxn = 2.18 eV
 """,
-    metal = "Cu",
+    metal="Cu",
 )
 
 # entry(
@@ -255,40 +255,40 @@ Erxn = 2.18 eV
 
 
 entry(
-    index = 32,
-    label = "HOX_1 + Ni_4 <=> OX_3 + HX_5",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(2.25E16, 'm^2/(mol*s)'),
-        n = 0.188,
-        Ea=(29600.0, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=32,
+    label="HOX_1 + Ni_4 <=> OX_3 + HX_5",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(2.25e16, "m^2/(mol*s)"),
+        n=0.188,
+        Ea=(29600.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R32
 """,
-    metal = "Ni",
+    metal="Ni",
 )
 
 entry(
-    index = 15,
-    label = "HOX_1 + Ni_4 <=> OX_3 + HX_5",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(7.452e17, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(1.68, 'eV/molecule'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=15,
+    label="HOX_1 + Ni_4 <=> OX_3 + HX_5",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(7.452e17, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(1.68, "eV/molecule"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
-    rank = 10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    rank=10,
+    shortDesc="""Default""",
+    longDesc="""
 Reaction 15 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
@@ -296,23 +296,23 @@ A factor from paper / surface site density of Cu
 2.193E13 1/s / 2.943e‐5 mol/m^2 = 7.452e17 m^2/(mol*s)
 Erxn = 0.72 eV
 """,
-    metal = "Cu",
+    metal="Cu",
 )
 
 entry(
-    index = 36,
-    label = "CH3O2* + Ni_4 <=> CH2OH*_2 + OX_3",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(1.864e18, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(2.01, 'eV/molecule'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=36,
+    label="CH3O2* + Ni_4 <=> CH2OH*_2 + OX_3",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(1.864e18, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(2.01, "eV/molecule"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
-    rank = 10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    rank=10,
+    shortDesc="""Default""",
+    longDesc="""
 Reaction 36 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
@@ -320,44 +320,44 @@ A factor from paper / surface site density of Cu
 5.485E13 1/s / 2.943e‐5 mol/m^2 = 1.864e18 m^2/(mol*s)
 Erxn = 1.39 eV
 """,
-    metal = "Cu",
+    metal="Cu",
 )
 
 entry(
-    index = 48,
-    label = "CXHO_1 + Ni_4 <=> OCX_3 + HX_5",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(3.71E17, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(0.0, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=48,
+    label="CXHO_1 + Ni_4 <=> OCX_3 + HX_5",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(3.71e17, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(0.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 "Surface Reaction Kinetics of Steam- and CO2-Reforming as well as Oxidation of Methane over Nickel-Based Catalysts"
 Delgado et al
 Catalysts, 2015, 5, 871-904. Reaction R8
 """,
-    metal = "Ni",
+    metal="Ni",
 )
 
 entry(
-    index = 26,
-    label = "OCX_3 + HX_5 <=> CXHO_1 + Ni_4",
-    degeneracy = 1,
-    kinetics = SurfaceArrhenius(
-        A=(3.140e17, 'm^2/(mol*s)'),
-        n = 0.0,
-        Ea=(0.99, 'eV/molecule'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=26,
+    label="OCX_3 + HX_5 <=> CXHO_1 + Ni_4",
+    degeneracy=1,
+    kinetics=SurfaceArrhenius(
+        A=(3.140e17, "m^2/(mol*s)"),
+        n=0.0,
+        Ea=(0.99, "eV/molecule"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=10,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 Reaction 26 from table 2 in "Mechanism of Methanol Synthesis on Cu through CO2
 and CO Hydrogenation", Grabow and Mavrikakis.  doi:10.1021/cs200055d
 
@@ -365,62 +365,62 @@ A factor from paper / surface site density of Cu
 9.240E12 1/s / 2.943e‐5 mol/m^2 = 3.140e17 m^2/(mol*s)
 eErxn = 0.78
 """,
-    metal = "Cu",
+    metal="Cu",
 )
 
 entry(
-    index = 60,
-    label = "HCCH2_2X + Ni_4 <=> HCCH_2X + HX_5",
-    degeneracy = 2,
-    kinetics = SurfaceArrhenius(
-        A=(1.9460e16, 'm^2/(mol*s)'),
-        n = 0.512, 
-        Ea=(69707.5, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=60,
+    label="HCCH2_2X + Ni_4 <=> HCCH_2X + HX_5",
+    degeneracy=2,
+    kinetics=SurfaceArrhenius(
+        A=(1.9460e16, "m^2/(mol*s)"),
+        n=0.512,
+        Ea=(69707.5, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=8,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 Calculated with DFT by Katrín Blöndal at Brown University, using the vdW-DF-cx functional in Quantum ESPRESSO.
 """,
-    metal = "Pt",
+    metal="Pt",
 )
 
 entry(
-    index = 61,
-    label = "H2CCH2_2X + Ni_4 <=> H2CCH_2X + HX_5",
-    degeneracy = 2,
-    kinetics = SurfaceArrhenius(
-        A=(3.034e15, 'm^2/(mol*s)'), 
-        n = 0.661, 
-        Ea=(55411.0, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=61,
+    label="H2CCH2_2X + Ni_4 <=> H2CCH_2X + HX_5",
+    degeneracy=2,
+    kinetics=SurfaceArrhenius(
+        A=(3.034e15, "m^2/(mol*s)"),
+        n=0.661,
+        Ea=(55411.0, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=8,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 Calculated with DFT by Katrín Blöndal at Brown University, using the vdW-DF-cx functional in Quantum ESPRESSO.
 """,
-    metal = "Pt",
+    metal="Pt",
 )
 
 entry(
-    index = 62,
-    label = "H2CO_2X + Ni_4 <=> HCO_2X + HX_5",
-    degeneracy = 2,
-    kinetics = SurfaceArrhenius(
-        A=(1.438e17, 'm^2/(mol*s)'),
-        n = 0.043, 
-        Ea=(1417.1, 'J/mol'),
-        Tmin = (298, 'K'),
-        Tmax = (2000, 'K'),
+    index=62,
+    label="H2CO_2X + Ni_4 <=> HCO_2X + HX_5",
+    degeneracy=2,
+    kinetics=SurfaceArrhenius(
+        A=(1.438e17, "m^2/(mol*s)"),
+        n=0.043,
+        Ea=(1417.1, "J/mol"),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
     rank=8,
-    shortDesc = u"""Default""",
-    longDesc = u"""
+    shortDesc="""Default""",
+    longDesc="""
 Calculated with DFT by Katrín Blöndal at Brown University, using the vdW-DF-cx functional in Quantum ESPRESSO.
 """,
-    metal = "Pt",
+    metal="Pt",
 )

@@ -4,8 +4,8 @@
 # rename to original
 
 name = "Sulfur/HSSH_1bar"
-shortDesc = u"HSSH PES at 1bar"
-longDesc =u"""
+shortDesc = "HSSH PES at 1bar"
+longDesc = """
 The H2S + S = SH + SH reaction has several pathways.
 The direct H-abstraction on the triplet surface has a barrier of 45 kJ/mol
 H2S + S can also pass through an inter-system crossing (barrier estimated to be only 3 kJ/mol),
@@ -24,18 +24,31 @@ This library should not be used at higher pressures.
 """
 
 entry(
-    index = 1,
-    label = "H2S + S <=> SH + SH",
-    degeneracy = 2,
-    kinetics = MultiArrhenius(
-        arrhenius = [
-            Arrhenius(A=(1.18e+18, 'cm^3/(mol*s)'), n=-1.685, Ea=(5975, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
-            Arrhenius(A=(7.40e+06, 'cm^3/(mol*s)'), n=2.297, Ea=(9011, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
+    index=1,
+    label="H2S + S <=> SH + SH",
+    degeneracy=2,
+    kinetics=MultiArrhenius(
+        arrhenius=[
+            Arrhenius(
+                A=(1.18e18, "cm^3/(mol*s)"),
+                n=-1.685,
+                Ea=(5975, "cal/mol"),
+                T0=(1, "K"),
+                Tmin=(300, "K"),
+                Tmax=(2000, "K"),
+            ),
+            Arrhenius(
+                A=(7.40e06, "cm^3/(mol*s)"),
+                n=2.297,
+                Ea=(9011, "cal/mol"),
+                T0=(1, "K"),
+                Tmin=(300, "K"),
+                Tmax=(2000, "K"),
+            ),
         ],
     ),
-    shortDesc = u"""[Marshall2011b],[Sendt2008]""",
-    longDesc =
-u"""
+    shortDesc="""[Marshall2011b],[Sendt2008]""",
+    longDesc="""
 computed at 1 bar, Table 1, 3rd entry from [Marshall2011b]
 k_abstraction from [Sendt2008] p. 3242
 calculations done at the MRCI/aug-cc-pV(Q+d)Z//MRCI/aug-cc-pVTZ level of theory
@@ -49,18 +62,31 @@ of x2: i.e., A = 7.4e+06 cm^3/(mol*s), NOT 3.7e+06 cm^3/(mol*s))
 )
 
 entry(
-    index = 2,
-    label = "HSS + H <=> S2 + H2",
-    degeneracy = 1,
-    kinetics = MultiArrhenius(
-        arrhenius = [
-            Arrhenius(A=(2.91e+16, 'cm^3/(mol*s)'), n=-0.894, Ea=(0, 'kJ/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
-            Arrhenius(A=(1.05e+08, 'cm^3/(mol*s)'), n=1.750, Ea=(-4, 'kJ/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
+    index=2,
+    label="HSS + H <=> S2 + H2",
+    degeneracy=1,
+    kinetics=MultiArrhenius(
+        arrhenius=[
+            Arrhenius(
+                A=(2.91e16, "cm^3/(mol*s)"),
+                n=-0.894,
+                Ea=(0, "kJ/mol"),
+                T0=(1, "K"),
+                Tmin=(300, "K"),
+                Tmax=(2000, "K"),
+            ),
+            Arrhenius(
+                A=(1.05e08, "cm^3/(mol*s)"),
+                n=1.750,
+                Ea=(-4, "kJ/mol"),
+                T0=(1, "K"),
+                Tmin=(300, "K"),
+                Tmax=(2000, "K"),
+            ),
         ],
     ),
-    shortDesc = u"""[Sendt2009b]""",
-    longDesc =
-u"""
+    shortDesc="""[Sendt2009b]""",
+    longDesc="""
 R10
 calculations done at the MRCI/aug-cc-pV(Q+d)Z//CASSCF/cc-pVTZ level of theory
 One rate is not PDep, the other is PDep given at 1 bar
@@ -69,18 +95,31 @@ also available from [Sendt2008] and [Marshall2011b]
 )
 
 entry(
-    index = 3,
-    label = "HSS + H <=> H2S + S",
-    degeneracy = 1,
-    kinetics = MultiArrhenius(
-        arrhenius = [
-            Arrhenius(A=(4.19e+18, 'cm^3/(mol*s)'), n=-1.563, Ea=(2, 'kJ/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
-            Arrhenius(A=(1.50e+08, 'cm^3/(mol*s)'), n=1.551, Ea=(9, 'kJ/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2000, 'K')),
+    index=3,
+    label="HSS + H <=> H2S + S",
+    degeneracy=1,
+    kinetics=MultiArrhenius(
+        arrhenius=[
+            Arrhenius(
+                A=(4.19e18, "cm^3/(mol*s)"),
+                n=-1.563,
+                Ea=(2, "kJ/mol"),
+                T0=(1, "K"),
+                Tmin=(300, "K"),
+                Tmax=(2000, "K"),
+            ),
+            Arrhenius(
+                A=(1.50e08, "cm^3/(mol*s)"),
+                n=1.551,
+                Ea=(9, "kJ/mol"),
+                T0=(1, "K"),
+                Tmin=(300, "K"),
+                Tmax=(2000, "K"),
+            ),
         ],
     ),
-    shortDesc = u"""[Sendt2009b]""",
-    longDesc =
-u"""
+    shortDesc="""[Sendt2009b]""",
+    longDesc="""
 R9
 calculations done at the MRCI/aug-cc-pV(Q+d)Z//CASSCF/cc-pVTZ level of theory
 One rate is not PDep, the other is PDep given at 1 bar

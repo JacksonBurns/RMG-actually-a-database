@@ -8,898 +8,1381 @@ Put kinetic parameters for specific reactions in this file to use as a
 training set for generating rate rules to populate this kinetics family.
 """
 entry(
-    index = 0,
-    label = "O + CH2Cl2O2 <=> CH2ClO2 + ClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(5.80916e+08,'cm^3/(mol*s)'), n=1.65322, Ea=(84.8088,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05841, dn = +|- 0.00745814, dEa = +|- 0.0405869 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=0,
+    label="O + CH2Cl2O2 <=> CH2ClO2 + ClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(5.80916e08, "cm^3/(mol*s)"),
+        n=1.65322,
+        Ea=(84.8088, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05841, dn = +|- 0.00745814, dEa = +|- 0.0405869 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + OC(O)(Cl)Cl <=> [O]Cl + O[C](O)Cl
 """,
 )
 
 entry(
-    index = 1,
-    label = "HO + C3H5Cl3 <=> C3H5Cl2 + ClHO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(186883,'cm^3/(mol*s)'), n=2.60235, Ea=(107.458,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02615, dn = +|- 0.00339129, dEa = +|- 0.0184553 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=1,
+    label="HO + C3H5Cl3 <=> C3H5Cl2 + ClHO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(186883, "cm^3/(mol*s)"),
+        n=2.60235,
+        Ea=(107.458, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02615, dn = +|- 0.00339129, dEa = +|- 0.0184553 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CC(Cl)C(Cl)Cl <=> OCl + C[CH]C(Cl)Cl
 """,
 )
 
 entry(
-    index = 2,
-    label = "O + C2H3ClO <=> C2H3O + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.20761e+08,'cm^3/(mol*s)'), n=1.59458, Ea=(13.1811,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02896, dn = +|- 0.00375086, dEa = +|- 0.020412 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=2,
+    label="O + C2H3ClO <=> C2H3O + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.20761e08, "cm^3/(mol*s)"),
+        n=1.59458,
+        Ea=(13.1811, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02896, dn = +|- 0.00375086, dEa = +|- 0.020412 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CDCOCl <=> [O]Cl + CDC[O]
 """,
 )
 
 entry(
-    index = 3,
-    label = "O + C3H5Cl3-2 <=> C3H5Cl2-2 + ClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.06755e+08,'cm^3/(mol*s)'), n=1.79071, Ea=(97.425,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09809, dn = +|- 0.0122931, dEa = +|- 0.0668984 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=3,
+    label="O + C3H5Cl3-2 <=> C3H5Cl2-2 + ClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.06755e08, "cm^3/(mol*s)"),
+        n=1.79071,
+        Ea=(97.425, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09809, dn = +|- 0.0122931, dEa = +|- 0.0668984 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CC(Cl)(Cl)CCl <=> [O]Cl + C[C](Cl)CCl
 """,
 )
 
 entry(
-    index = 4,
-    label = "O + C3H7Cl <=> C3H7 + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.56273e+07,'cm^3/(mol*s)'), n=1.9359, Ea=(104.338,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.13532, dn = +|- 0.0166741, dEa = +|- 0.0907397 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=4,
+    label="O + C3H7Cl <=> C3H7 + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.56273e07, "cm^3/(mol*s)"),
+        n=1.9359,
+        Ea=(104.338, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.13532, dn = +|- 0.0166741, dEa = +|- 0.0907397 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CC(C)Cl <=> [O]Cl + C[CH]C
 """,
 )
 
 entry(
-    index = 5,
-    label = "CH3 + CH2Cl2O <=> CH2ClO + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(7117.49,'cm^3/(mol*s)'), n=2.81981, Ea=(59.0669,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06185, dn = +|- 0.00788423, dEa = +|- 0.0429057 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=5,
+    label="CH3 + CH2Cl2O <=> CH2ClO + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(7117.49, "cm^3/(mol*s)"),
+        n=2.81981,
+        Ea=(59.0669, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06185, dn = +|- 0.00788423, dEa = +|- 0.0429057 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + OC(Cl)Cl <=> CCl + O[CH]Cl
 """,
 )
 
 entry(
-    index = 6,
-    label = "H + C2H4ClO <=> C2H4O + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.40466e+07,'cm^3/(mol*s)'), n=1.832, Ea=(49.2095,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1682, dn = +|- 0.0204253, dEa = +|- 0.111154 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=6,
+    label="H + C2H4ClO <=> C2H4O + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.40466e07, "cm^3/(mol*s)"),
+        n=1.832,
+        Ea=(49.2095, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1682, dn = +|- 0.0204253, dEa = +|- 0.111154 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + C[C](O)Cl <=> Cl + C[C]O
 """,
 )
 
 entry(
-    index = 7,
-    label = "O + C3H3Cl5 <=> C3H3Cl4 + ClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(2.52699e+10,'cm^3/(mol*s)'), n=0.772422, Ea=(90.8516,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09973, dn = +|- 0.0124894, dEa = +|- 0.0679669 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=7,
+    label="O + C3H3Cl5 <=> C3H3Cl4 + ClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(2.52699e10, "cm^3/(mol*s)"),
+        n=0.772422,
+        Ea=(90.8516, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09973, dn = +|- 0.0124894, dEa = +|- 0.0679669 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CC(Cl)(Cl)C(Cl)(Cl)Cl <=> [O]Cl + C[C](Cl)C(Cl)(Cl)Cl
 """,
 )
 
 entry(
-    index = 8,
-    label = "CH3 + CH3ClO <=> CH3O + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5493.93,'cm^3/(mol*s)'), n=2.84052, Ea=(4.63057,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06391, dn = +|- 0.0081395, dEa = +|- 0.0442949 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=8,
+    label="CH3 + CH3ClO <=> CH3O + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5493.93, "cm^3/(mol*s)"),
+        n=2.84052,
+        Ea=(4.63057, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06391, dn = +|- 0.0081395, dEa = +|- 0.0442949 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + COCl <=> CCl + C[O]
 """,
 )
 
 entry(
-    index = 9,
-    label = "HO + C2HClO <=> C2HO + ClHO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(89835.9,'cm^3/(mol*s)'), n=2.42885, Ea=(-3.00753,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03257, dn = +|- 0.00421021, dEa = +|- 0.0229118 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=9,
+    label="HO + C2HClO <=> C2HO + ClHO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(89835.9, "cm^3/(mol*s)"),
+        n=2.42885,
+        Ea=(-3.00753, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03257, dn = +|- 0.00421021, dEa = +|- 0.0229118 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + C#COCl <=> OCl + C#C[O]
 """,
 )
 
 entry(
-    index = 10,
-    label = "H + C3H6Cl2 <=> C3H6Cl + ClH",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.57471e+07,'cm^3/(mol*s)'), n=1.94617, Ea=(33.763,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21532, dn = +|- 0.0256201, dEa = +|- 0.139424 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=10,
+    label="H + C3H6Cl2 <=> C3H6Cl + ClH",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(3.57471e07, "cm^3/(mol*s)"),
+        n=1.94617,
+        Ea=(33.763, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21532, dn = +|- 0.0256201, dEa = +|- 0.139424 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CCC(Cl)Cl <=> Cl + CC[CH]Cl
 """,
 )
 
 entry(
-    index = 11,
-    label = "HO + Cl2O <=> ClO-2 + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(119473,'cm^3/(mol*s)'), n=2.3895, Ea=(2.97331,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04011, dn = +|- 0.00516678, dEa = +|- 0.0281174 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=11,
+    label="HO + Cl2O <=> ClO-2 + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(119473, "cm^3/(mol*s)"),
+        n=2.3895,
+        Ea=(2.97331, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04011, dn = +|- 0.00516678, dEa = +|- 0.0281174 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + ClOCl <=> OCl + [O]Cl
 """,
 )
 
 entry(
-    index = 12,
-    label = "H + C2H4Cl <=> C2H4 + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.00158e+07,'cm^3/(mol*s)'), n=1.87664, Ea=(50.0411,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17686, dn = +|- 0.0213956, dEa = +|- 0.116434 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=12,
+    label="H + C2H4Cl <=> C2H4 + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.00158e07, "cm^3/(mol*s)"),
+        n=1.87664,
+        Ea=(50.0411, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17686, dn = +|- 0.0213956, dEa = +|- 0.116434 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + C[CH]Cl <=> Cl + [CH]C
 """,
 )
 
 entry(
-    index = 13,
-    label = "H + C3H3Cl2 <=> C3H3Cl + ClH",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(4.70933e+07,'cm^3/(mol*s)'), n=1.8421, Ea=(44.8005,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17557, dn = +|- 0.0212508, dEa = +|- 0.115646 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=13,
+    label="H + C3H3Cl2 <=> C3H3Cl + ClH",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(4.70933e07, "cm^3/(mol*s)"),
+        n=1.8421,
+        Ea=(44.8005, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17557, dn = +|- 0.0212508, dEa = +|- 0.115646 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CDC[C](Cl)Cl <=> Cl + [CH2]CD[C]Cl
 """,
 )
 
 entry(
-    index = 14,
-    label = "O + C3HCl2 <=> C3HCl + ClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.42164e+08,'cm^3/(mol*s)'), n=1.78047, Ea=(113.245,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09522, dn = +|- 0.0119502, dEa = +|- 0.0650327 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=14,
+    label="O + C3HCl2 <=> C3HCl + ClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.42164e08, "cm^3/(mol*s)"),
+        n=1.78047,
+        Ea=(113.245, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09522, dn = +|- 0.0119502, dEa = +|- 0.0650327 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + [CH]DCDC(Cl)Cl <=> [O]Cl + C#C[C]Cl
 """,
 )
 
 entry(
-    index = 15,
-    label = "CH3 + C2H4Cl2 <=> C2H4Cl + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(9454.61,'cm^3/(mol*s)'), n=2.8542, Ea=(64.2418,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05531, dn = +|- 0.00707308, dEa = +|- 0.0384914 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=15,
+    label="CH3 + C2H4Cl2 <=> C2H4Cl + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(9454.61, "cm^3/(mol*s)"),
+        n=2.8542,
+        Ea=(64.2418, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05531, dn = +|- 0.00707308, dEa = +|- 0.0384914 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(Cl)Cl <=> CCl + C[CH]Cl
 """,
 )
 
 entry(
-    index = 16,
-    label = "CH3 + C3HCl2 <=> C3HCl + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(28353.7,'cm^3/(mol*s)'), n=2.76355, Ea=(65.434,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07927, dn = +|- 0.0100225, dEa = +|- 0.0545422 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=16,
+    label="CH3 + C3HCl2 <=> C3HCl + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(28353.7, "cm^3/(mol*s)"),
+        n=2.76355,
+        Ea=(65.434, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07927, dn = +|- 0.0100225, dEa = +|- 0.0545422 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + [CH]DCDC(Cl)Cl <=> CCl + C#C[C]Cl
 """,
 )
 
 entry(
-    index = 17,
-    label = "H + CH2ClO2-2 <=> CH2O2 + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8.23604e+07,'cm^3/(mol*s)'), n=1.89796, Ea=(61.7352,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19534, dn = +|- 0.0234424, dEa = +|- 0.127573 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=17,
+    label="H + CH2ClO2-2 <=> CH2O2 + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(8.23604e07, "cm^3/(mol*s)"),
+        n=1.89796,
+        Ea=(61.7352, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19534, dn = +|- 0.0234424, dEa = +|- 0.127573 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + O[C](O)Cl <=> Cl + O[C]O
 """,
 )
 
 entry(
-    index = 18,
-    label = "H + CH3ClO <=> CH3O + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.38374e+09,'cm^3/(mol*s)'), n=1.70653, Ea=(6.57711,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07914, dn = +|- 0.0100071, dEa = +|- 0.0544581 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=18,
+    label="H + CH3ClO <=> CH3O + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.38374e09, "cm^3/(mol*s)"),
+        n=1.70653,
+        Ea=(6.57711, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07914, dn = +|- 0.0100071, dEa = +|- 0.0544581 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + COCl <=> Cl + C[O]
 """,
 )
 
 entry(
-    index = 19,
-    label = "HO + CH2Cl2O <=> CH2ClO + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(353242,'cm^3/(mol*s)'), n=2.47253, Ea=(99.9309,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01034, dn = +|- 0.00135126, dEa = +|- 0.00735351 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=19,
+    label="HO + CH2Cl2O <=> CH2ClO + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(353242, "cm^3/(mol*s)"),
+        n=2.47253,
+        Ea=(99.9309, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01034, dn = +|- 0.00135126, dEa = +|- 0.00735351 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + OC(Cl)Cl <=> OCl + O[CH]Cl
 """,
 )
 
 entry(
-    index = 20,
-    label = "O + CH2Cl <=> CH2 + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.81832e+06,'cm^3/(mol*s)'), n=1.87825, Ea=(142.476,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.10803, dn = +|- 0.013478, dEa = +|- 0.073347 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=20,
+    label="O + CH2Cl <=> CH2 + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.81832e06, "cm^3/(mol*s)"),
+        n=1.87825,
+        Ea=(142.476, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.10803, dn = +|- 0.013478, dEa = +|- 0.073347 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + [CH2]Cl <=> [O]Cl + [CH2]
 """,
 )
 
 entry(
-    index = 21,
-    label = "CH3 + CH3ClO-2 <=> CH3O-2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4356.66,'cm^3/(mol*s)'), n=2.88851, Ea=(70.5677,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04626, dn = +|- 0.00594149, dEa = +|- 0.0323334 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=21,
+    label="CH3 + CH3ClO-2 <=> CH3O-2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4356.66, "cm^3/(mol*s)"),
+        n=2.88851,
+        Ea=(70.5677, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04626, dn = +|- 0.00594149, dEa = +|- 0.0323334 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + OCCl <=> CCl + [CH2]O
 """,
 )
 
 entry(
-    index = 22,
-    label = "HO + C2H4Cl2 <=> C2H4Cl + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(397568,'cm^3/(mol*s)'), n=2.54536, Ea=(100.601,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01018, dn = +|- 0.00133064, dEa = +|- 0.00724129 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=22,
+    label="HO + C2H4Cl2 <=> C2H4Cl + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(397568, "cm^3/(mol*s)"),
+        n=2.54536,
+        Ea=(100.601, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01018, dn = +|- 0.00133064, dEa = +|- 0.00724129 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CC(Cl)Cl <=> OCl + C[CH]Cl
 """,
 )
 
 entry(
-    index = 23,
-    label = "H + C3H7Cl-2 <=> C3H7-2 + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.68467e+07,'cm^3/(mol*s)'), n=2.0298, Ea=(38.3868,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.2407, dn = +|- 0.0283358, dEa = +|- 0.154202 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=23,
+    label="H + C3H7Cl-2 <=> C3H7-2 + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.68467e07, "cm^3/(mol*s)"),
+        n=2.0298,
+        Ea=(38.3868, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.2407, dn = +|- 0.0283358, dEa = +|- 0.154202 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CCCCl <=> Cl + [CH2]CC
 """,
 )
 
 entry(
-    index = 24,
-    label = "CH3 + CH2Cl2O2 <=> CH2ClO2 + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(23591.7,'cm^3/(mol*s)'), n=2.7472, Ea=(52.1474,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08573, dn = +|- 0.0108058, dEa = +|- 0.0588047 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=24,
+    label="CH3 + CH2Cl2O2 <=> CH2ClO2 + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(23591.7, "cm^3/(mol*s)"),
+        n=2.7472,
+        Ea=(52.1474, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08573, dn = +|- 0.0108058, dEa = +|- 0.0588047 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + OC(O)(Cl)Cl <=> CCl + O[C](O)Cl
 """,
 )
 
 entry(
-    index = 25,
-    label = "CH3 + C4H9Cl <=> C4H9 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2839.94,'cm^3/(mol*s)'), n=2.94646, Ea=(77.8123,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03603, dn = +|- 0.00465072, dEa = +|- 0.025309 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=25,
+    label="CH3 + C4H9Cl <=> C4H9 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2839.94, "cm^3/(mol*s)"),
+        n=2.94646,
+        Ea=(77.8123, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03603, dn = +|- 0.00465072, dEa = +|- 0.025309 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(C)CCl <=> CCl + [CH2]C(C)C
 """,
 )
 
 entry(
-    index = 26,
-    label = "HO + CCl3 <=> CCl2 + ClHO",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(2.93311e+06,'cm^3/(mol*s)'), n=2.24188, Ea=(122.935,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07305, dn = +|- 0.00926323, dEa = +|- 0.0504102 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=26,
+    label="HO + CCl3 <=> CCl2 + ClHO",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(2.93311e06, "cm^3/(mol*s)"),
+        n=2.24188,
+        Ea=(122.935, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07305, dn = +|- 0.00926323, dEa = +|- 0.0504102 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + Cl[C](Cl)Cl <=> OCl + Cl[C]Cl
 """,
 )
 
 entry(
-    index = 27,
-    label = "H + C3H3Cl-2 <=> C3H3 + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.05257e+07,'cm^3/(mol*s)'), n=2.04125, Ea=(38.0124,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.26689, dn = +|- 0.03108, dEa = +|- 0.169136 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=27,
+    label="H + C3H3Cl-2 <=> C3H3 + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.05257e07, "cm^3/(mol*s)"),
+        n=2.04125,
+        Ea=(38.0124, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.26689, dn = +|- 0.03108, dEa = +|- 0.169136 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CDCDCCl <=> Cl + C#C[CH2]
 """,
 )
 
 entry(
-    index = 28,
-    label = "O + CH3ClO <=> CH3O + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.61815e+08,'cm^3/(mol*s)'), n=1.58988, Ea=(13.9429,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02819, dn = +|- 0.00365281, dEa = +|- 0.0198784 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=28,
+    label="O + CH3ClO <=> CH3O + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.61815e08, "cm^3/(mol*s)"),
+        n=1.58988,
+        Ea=(13.9429, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02819, dn = +|- 0.00365281, dEa = +|- 0.0198784 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + COCl <=> [O]Cl + C[O]
 """,
 )
 
 entry(
-    index = 29,
-    label = "CH3 + C2H3Cl2 <=> C2H3Cl + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(23789.9,'cm^3/(mol*s)'), n=2.70774, Ea=(80.0709,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09808, dn = +|- 0.0122924, dEa = +|- 0.0668949 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=29,
+    label="CH3 + C2H3Cl2 <=> C2H3Cl + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(23789.9, "cm^3/(mol*s)"),
+        n=2.70774,
+        Ea=(80.0709, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09808, dn = +|- 0.0122924, dEa = +|- 0.0668949 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + C[C](Cl)Cl <=> CCl + C[C]Cl
 """,
 )
 
 entry(
-    index = 30,
-    label = "CH3 + C3H4Cl4 <=> C3H4Cl3 + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(336166,'cm^3/(mol*s)'), n=1.8024, Ea=(51.3079,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06368, dn = +|- 0.00811105, dEa = +|- 0.0441401 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=30,
+    label="CH3 + C3H4Cl4 <=> C3H4Cl3 + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(336166, "cm^3/(mol*s)"),
+        n=1.8024,
+        Ea=(51.3079, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06368, dn = +|- 0.00811105, dEa = +|- 0.0441401 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(Cl)(Cl)C(Cl)Cl <=> CCl + C[C](Cl)C(Cl)Cl
 """,
 )
 
 entry(
-    index = 31,
-    label = "O + C2H4Cl <=> C2H4 + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.81035e+07,'cm^3/(mol*s)'), n=1.82655, Ea=(134.177,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09378, dn = +|- 0.0117774, dEa = +|- 0.0640924 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=31,
+    label="O + C2H4Cl <=> C2H4 + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.81035e07, "cm^3/(mol*s)"),
+        n=1.82655,
+        Ea=(134.177, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09378, dn = +|- 0.0117774, dEa = +|- 0.0640924 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + C[CH]Cl <=> [O]Cl + [CH]C
 """,
 )
 
 entry(
-    index = 32,
-    label = "CH3 + C2H2Cl <=> C2H2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(171123,'cm^3/(mol*s)'), n=2.55484, Ea=(132.466,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16304, dn = +|- 0.0198437, dEa = +|- 0.107988 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=32,
+    label="CH3 + C2H2Cl <=> C2H2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(171123, "cm^3/(mol*s)"),
+        n=2.55484,
+        Ea=(132.466, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16304, dn = +|- 0.0198437, dEa = +|- 0.107988 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CD[C]Cl <=> CCl + [C]DC
 """,
 )
 
 entry(
-    index = 33,
-    label = "CH3 + C3H7Cl-2 <=> C3H7-2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4483.29,'cm^3/(mol*s)'), n=2.95719, Ea=(77.2828,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03106, dn = +|- 0.00401835, dEa = +|- 0.0218677 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=33,
+    label="CH3 + C3H7Cl-2 <=> C3H7-2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4483.29, "cm^3/(mol*s)"),
+        n=2.95719,
+        Ea=(77.2828, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03106, dn = +|- 0.00401835, dEa = +|- 0.0218677 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CCCCl <=> CCl + [CH2]CC
 """,
 )
 
 entry(
-    index = 34,
-    label = "O + CH3Cl-2 <=> CH3-2 + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.05404e+07,'cm^3/(mol*s)'), n=2.14943, Ea=(120.991,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21693, dn = +|- 0.025794, dEa = +|- 0.14037 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=34,
+    label="O + CH3Cl-2 <=> CH3-2 + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.05404e07, "cm^3/(mol*s)"),
+        n=2.14943,
+        Ea=(120.991, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21693, dn = +|- 0.025794, dEa = +|- 0.14037 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CCl <=> [O]Cl + [CH3]
 """,
 )
 
 entry(
-    index = 35,
-    label = "CH3 + C3H6Cl2 <=> C3H6Cl + CH3Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(11212.4,'cm^3/(mol*s)'), n=2.84217, Ea=(65.0652,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05834, dn = +|- 0.00744956, dEa = +|- 0.0405402 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=35,
+    label="CH3 + C3H6Cl2 <=> C3H6Cl + CH3Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(11212.4, "cm^3/(mol*s)"),
+        n=2.84217,
+        Ea=(65.0652, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05834, dn = +|- 0.00744956, dEa = +|- 0.0405402 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CCC(Cl)Cl <=> CCl + CC[CH]Cl
 """,
 )
 
 entry(
-    index = 36,
-    label = "CH3 + C2H3Cl-2 <=> C2H3 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8975.81,'cm^3/(mol*s)'), n=2.87801, Ea=(99.8098,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05584, dn = +|- 0.00713907, dEa = +|- 0.0388505 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=36,
+    label="CH3 + C2H3Cl-2 <=> C2H3 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(8975.81, "cm^3/(mol*s)"),
+        n=2.87801,
+        Ea=(99.8098, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05584, dn = +|- 0.00713907, dEa = +|- 0.0388505 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CDCCl <=> CCl + [CH]DC
 """,
 )
 
 entry(
-    index = 37,
-    label = "CH3 + C3H6Cl2-2 <=> C3H6Cl-2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(236052,'cm^3/(mol*s)'), n=1.87159, Ea=(62.8581,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04224, dn = +|- 0.00543552, dEa = +|- 0.0295799 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=37,
+    label="CH3 + C3H6Cl2-2 <=> C3H6Cl-2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(236052, "cm^3/(mol*s)"),
+        n=1.87159,
+        Ea=(62.8581, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04224, dn = +|- 0.00543552, dEa = +|- 0.0295799 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(Cl)CCl <=> CCl + C[CH]CCl
 """,
 )
 
 entry(
-    index = 38,
-    label = "CH3 + C3H5Cl3 <=> C3H5Cl2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3561.02,'cm^3/(mol*s)'), n=2.88661, Ea=(68.6462,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04637, dn = +|- 0.00595485, dEa = +|- 0.0324061 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=38,
+    label="CH3 + C3H5Cl3 <=> C3H5Cl2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3561.02, "cm^3/(mol*s)"),
+        n=2.88661,
+        Ea=(68.6462, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04637, dn = +|- 0.00595485, dEa = +|- 0.0324061 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(Cl)C(Cl)Cl <=> CCl + C[CH]C(Cl)Cl
 """,
 )
 
 entry(
-    index = 39,
-    label = "H + C3H6Cl2-3 <=> C3H6Cl-3 + ClH",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.16865e+08,'cm^3/(mol*s)'), n=1.86734, Ea=(30.6689,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17371, dn = +|- 0.0210434, dEa = +|- 0.114518 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=39,
+    label="H + C3H6Cl2-3 <=> C3H6Cl-3 + ClH",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.16865e08, "cm^3/(mol*s)"),
+        n=1.86734,
+        Ea=(30.6689, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17371, dn = +|- 0.0210434, dEa = +|- 0.114518 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CC(C)(Cl)Cl <=> Cl + C[C](C)Cl
 """,
 )
 
 entry(
-    index = 40,
-    label = "H + C3H4Cl4-2 <=> C3H4Cl3-2 + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.03495e+07,'cm^3/(mol*s)'), n=1.95189, Ea=(34.5865,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21456, dn = +|- 0.0255375, dEa = +|- 0.138974 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=40,
+    label="H + C3H4Cl4-2 <=> C3H4Cl3-2 + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.03495e07, "cm^3/(mol*s)"),
+        n=1.95189,
+        Ea=(34.5865, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21456, dn = +|- 0.0255375, dEa = +|- 0.138974 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CC(Cl)C(Cl)(Cl)Cl <=> Cl + C[CH]C(Cl)(Cl)Cl
 """,
 )
 
 entry(
-    index = 41,
-    label = "O + C3H3Cl2 <=> C3H3Cl + ClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.14461e+08,'cm^3/(mol*s)'), n=1.7152, Ea=(130.056,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07254, dn = +|- 0.00920088, dEa = +|- 0.0500709 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=41,
+    label="O + C3H3Cl2 <=> C3H3Cl + ClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(3.14461e08, "cm^3/(mol*s)"),
+        n=1.7152,
+        Ea=(130.056, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07254, dn = +|- 0.00920088, dEa = +|- 0.0500709 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CDC[C](Cl)Cl <=> [O]Cl + [CH2]CD[C]Cl
 """,
 )
 
 entry(
-    index = 42,
-    label = "CH3 + C2HCl <=> C2H + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7.25803e+08,'cm^3/(mol*s)'), n=1.0218, Ea=(128.126,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17209, dn = +|- 0.0208614, dEa = +|- 0.113527 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=42,
+    label="CH3 + C2HCl <=> C2H + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7.25803e08, "cm^3/(mol*s)"),
+        n=1.0218,
+        Ea=(128.126, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17209, dn = +|- 0.0208614, dEa = +|- 0.113527 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + C#CCl <=> CCl + [C]#C
 """,
 )
 
 entry(
-    index = 43,
-    label = "O + C3H5Cl3-3 <=> C3H5Cl2-3 + ClO",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1.89034e+08,'cm^3/(mol*s)'), n=1.7261, Ea=(86.9051,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08692, dn = +|- 0.0109501, dEa = +|- 0.05959 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=43,
+    label="O + C3H5Cl3-3 <=> C3H5Cl2-3 + ClO",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(1.89034e08, "cm^3/(mol*s)"),
+        n=1.7261,
+        Ea=(86.9051, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08692, dn = +|- 0.0109501, dEa = +|- 0.05959 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CCC(Cl)(Cl)Cl <=> [O]Cl + CC[C](Cl)Cl
 """,
 )
 
 entry(
-    index = 44,
-    label = "O + C2HClO <=> C2HO + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.34788e+08,'cm^3/(mol*s)'), n=1.5918, Ea=(2.60586,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0294, dn = +|- 0.0038065, dEa = +|- 0.0207148 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=44,
+    label="O + C2HClO <=> C2HO + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.34788e08, "cm^3/(mol*s)"),
+        n=1.5918,
+        Ea=(2.60586, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0294, dn = +|- 0.0038065, dEa = +|- 0.0207148 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + C#COCl <=> [O]Cl + C#C[O]
 """,
 )
 
 entry(
-    index = 45,
-    label = "CH3 + CH2ClO2-2 <=> CH2O2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(34330.4,'cm^3/(mol*s)'), n=2.71102, Ea=(105.393,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.10497, dn = +|- 0.0131137, dEa = +|- 0.0713642 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=45,
+    label="CH3 + CH2ClO2-2 <=> CH2O2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(34330.4, "cm^3/(mol*s)"),
+        n=2.71102,
+        Ea=(105.393, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.10497, dn = +|- 0.0131137, dEa = +|- 0.0713642 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + O[C](O)Cl <=> CCl + O[C]O
 """,
 )
 
 entry(
-    index = 46,
-    label = "CH3 + C2H5Cl <=> C2H5 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1608.05,'cm^3/(mol*s)'), n=2.95327, Ea=(77.1245,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03068, dn = +|- 0.00397063, dEa = +|- 0.021608 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=46,
+    label="CH3 + C2H5Cl <=> C2H5 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1608.05, "cm^3/(mol*s)"),
+        n=2.95327,
+        Ea=(77.1245, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03068, dn = +|- 0.00397063, dEa = +|- 0.021608 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CCCl <=> CCl + C[CH2]
 """,
 )
 
 entry(
-    index = 47,
-    label = "CH3 + C2H4ClO <=> C2H4O + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(11146.4,'cm^3/(mol*s)'), n=2.7136, Ea=(92.8747,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0988, dn = +|- 0.0123784, dEa = +|- 0.067363 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=47,
+    label="CH3 + C2H4ClO <=> C2H4O + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(11146.4, "cm^3/(mol*s)"),
+        n=2.7136,
+        Ea=(92.8747, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0988, dn = +|- 0.0123784, dEa = +|- 0.067363 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + C[C](O)Cl <=> CCl + C[C]O
 """,
 )
 
 entry(
-    index = 48,
-    label = "CH3 + C3H4Cl4-2 <=> C3H4Cl3-2 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(210390,'cm^3/(mol*s)'), n=1.87409, Ea=(63.6314,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04775, dn = +|- 0.0061287, dEa = +|- 0.0333522 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=48,
+    label="CH3 + C3H4Cl4-2 <=> C3H4Cl3-2 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(210390, "cm^3/(mol*s)"),
+        n=1.87409,
+        Ea=(63.6314, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04775, dn = +|- 0.0061287, dEa = +|- 0.0333522 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(Cl)C(Cl)(Cl)Cl <=> CCl + C[CH]C(Cl)(Cl)Cl
 """,
 )
 
 entry(
-    index = 49,
-    label = "O + C3H5Cl3 <=> C3H5Cl2 + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.89307e+07,'cm^3/(mol*s)'), n=1.947, Ea=(109.429,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14813, dn = +|- 0.0181481, dEa = +|- 0.0987615 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=49,
+    label="O + C3H5Cl3 <=> C3H5Cl2 + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.89307e07, "cm^3/(mol*s)"),
+        n=1.947,
+        Ea=(109.429, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14813, dn = +|- 0.0181481, dEa = +|- 0.0987615 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + CC(Cl)C(Cl)Cl <=> [O]Cl + C[CH]C(Cl)Cl
 """,
 )
 
 entry(
-    index = 50,
-    label = "HO + C3H6Cl2 <=> C3H6Cl + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(114704,'cm^3/(mol*s)'), n=2.53406, Ea=(100.726,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.00517, dn = +|- 0.000677194, dEa = +|- 0.00368527 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=50,
+    label="HO + C3H6Cl2 <=> C3H6Cl + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(114704, "cm^3/(mol*s)"),
+        n=2.53406,
+        Ea=(100.726, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.00517, dn = +|- 0.000677194, dEa = +|- 0.00368527 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CCC(Cl)Cl <=> OCl + CC[CH]Cl
 """,
 )
 
 entry(
-    index = 51,
-    label = "CH3 + C3H5Cl <=> C3H5 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7177.19,'cm^3/(mol*s)'), n=2.80408, Ea=(93.3484,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0772, dn = +|- 0.00976965, dEa = +|- 0.0531661 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=51,
+    label="CH3 + C3H5Cl <=> C3H5 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7177.19, "cm^3/(mol*s)"),
+        n=2.80408,
+        Ea=(93.3484, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0772, dn = +|- 0.00976965, dEa = +|- 0.0531661 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CDC(C)Cl <=> CCl + CD[C]C
 """,
 )
 
 entry(
-    index = 52,
-    label = "H + CHCl2O <=> CHClO + ClH",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(7.26429e+07,'cm^3/(mol*s)'), n=1.83646, Ea=(47.659,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.184, dn = +|- 0.0221901, dEa = +|- 0.120758 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=52,
+    label="H + CHCl2O <=> CHClO + ClH",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(7.26429e07, "cm^3/(mol*s)"),
+        n=1.83646,
+        Ea=(47.659, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.184, dn = +|- 0.0221901, dEa = +|- 0.120758 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + O[C](Cl)Cl <=> Cl + O[C]Cl
 """,
 )
 
 entry(
-    index = 53,
-    label = "HO + C3H4Cl4 <=> C3H4Cl3 + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(192123,'cm^3/(mol*s)'), n=2.39913, Ea=(87.1348,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02694, dn = +|- 0.00349211, dEa = +|- 0.0190039 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=53,
+    label="HO + C3H4Cl4 <=> C3H4Cl3 + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(192123, "cm^3/(mol*s)"),
+        n=2.39913,
+        Ea=(87.1348, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02694, dn = +|- 0.00349211, dEa = +|- 0.0190039 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CC(Cl)(Cl)C(Cl)Cl <=> OCl + C[C](Cl)C(Cl)Cl
 """,
 )
 
 entry(
-    index = 54,
-    label = "HO + CHCl3O <=> CHCl2O + ClHO",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(472078,'cm^3/(mol*s)'), n=2.34331, Ea=(77.8439,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03741, dn = +|- 0.00482477, dEa = +|- 0.0262562 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=54,
+    label="HO + CHCl3O <=> CHCl2O + ClHO",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(472078, "cm^3/(mol*s)"),
+        n=2.34331,
+        Ea=(77.8439, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03741, dn = +|- 0.00482477, dEa = +|- 0.0262562 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + OC(Cl)(Cl)Cl <=> OCl + O[C](Cl)Cl
 """,
 )
 
 entry(
-    index = 55,
-    label = "HO + CH3ClO <=> CH3O + ClHO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(70323.5,'cm^3/(mol*s)'), n=2.34313, Ea=(12.464,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05809, dn = +|- 0.00741885, dEa = +|- 0.0403731 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=55,
+    label="HO + CH3ClO <=> CH3O + ClHO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(70323.5, "cm^3/(mol*s)"),
+        n=2.34313,
+        Ea=(12.464, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05809, dn = +|- 0.00741885, dEa = +|- 0.0403731 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + COCl <=> OCl + C[O]
 """,
 )
 
 entry(
-    index = 56,
-    label = "H + CH2ClO-2 <=> CH2O + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.64852e+07,'cm^3/(mol*s)'), n=1.87563, Ea=(51.6952,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.18225, dn = +|- 0.021996, dEa = +|- 0.119702 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=56,
+    label="H + CH2ClO-2 <=> CH2O + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.64852e07, "cm^3/(mol*s)"),
+        n=1.87563,
+        Ea=(51.6952, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.18225, dn = +|- 0.021996, dEa = +|- 0.119702 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + O[CH]Cl <=> Cl + [CH]O
 """,
 )
 
 entry(
-    index = 57,
-    label = "H + C2H5ClO <=> C2H5O + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.37292e+07,'cm^3/(mol*s)'), n=1.85998, Ea=(31.3569,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16586, dn = +|- 0.0201613, dEa = +|- 0.109717 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=57,
+    label="H + C2H5ClO <=> C2H5O + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.37292e07, "cm^3/(mol*s)"),
+        n=1.85998,
+        Ea=(31.3569, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16586, dn = +|- 0.0201613, dEa = +|- 0.109717 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CC(O)Cl <=> Cl + C[CH]O
 """,
 )
 
 entry(
-    index = 58,
-    label = "CH3 + C2H4Cl <=> C2H4 + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(19807.9,'cm^3/(mol*s)'), n=2.78529, Ea=(92.1915,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08308, dn = +|- 0.010485, dEa = +|- 0.0570592 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=58,
+    label="CH3 + C2H4Cl <=> C2H4 + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(19807.9, "cm^3/(mol*s)"),
+        n=2.78529,
+        Ea=(92.1915, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08308, dn = +|- 0.010485, dEa = +|- 0.0570592 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + C[CH]Cl <=> CCl + [CH]C
 """,
 )
 
 entry(
-    index = 59,
-    label = "O + C3H6Cl-4 <=> C3H6 + ClO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.27701e+07,'cm^3/(mol*s)'), n=1.64048, Ea=(127.582,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03537, dn = +|- 0.00456635, dEa = +|- 0.0248499 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=59,
+    label="O + C3H6Cl-4 <=> C3H6 + ClO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.27701e07, "cm^3/(mol*s)"),
+        n=1.64048,
+        Ea=(127.582, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03537, dn = +|- 0.00456635, dEa = +|- 0.0248499 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [O] + C[C](C)Cl <=> [O]Cl + C[C]C
 """,
 )
 
 entry(
-    index = 60,
-    label = "CH3 + CH2ClO-2 <=> CH2O + CH3Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(11610.3,'cm^3/(mol*s)'), n=2.81056, Ea=(94.0144,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06431, dn = +|- 0.00818791, dEa = +|- 0.0445583 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=60,
+    label="CH3 + CH2ClO-2 <=> CH2O + CH3Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(11610.3, "cm^3/(mol*s)"),
+        n=2.81056,
+        Ea=(94.0144, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06431, dn = +|- 0.00818791, dEa = +|- 0.0445583 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + O[CH]Cl <=> CCl + [CH]O
 """,
 )
 
 entry(
-    index = 61,
-    label = "H + CH2Cl2O2 <=> CH2ClO2 + ClH",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.71747e+08,'cm^3/(mol*s)'), n=1.75948, Ea=(27.3761,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.11835, dn = +|- 0.0146956, dEa = +|- 0.0799727 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=61,
+    label="H + CH2Cl2O2 <=> CH2ClO2 + ClH",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(3.71747e08, "cm^3/(mol*s)"),
+        n=1.75948,
+        Ea=(27.3761, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.11835, dn = +|- 0.0146956, dEa = +|- 0.0799727 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + OC(O)(Cl)Cl <=> Cl + O[C](O)Cl
 """,
 )
 
 entry(
-    index = 62,
-    label = "H + C2H3ClO <=> C2H3O + ClH",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.8674e+08,'cm^3/(mol*s)'), n=1.69184, Ea=(5.09994,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06991, dn = +|- 0.00887856, dEa = +|- 0.0483168 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=62,
+    label="H + C2H3ClO <=> C2H3O + ClH",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.8674e08, "cm^3/(mol*s)"),
+        n=1.69184,
+        Ea=(5.09994, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06991, dn = +|- 0.00887856, dEa = +|- 0.0483168 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + CDCOCl <=> Cl + CDC[O]
 """,
 )
 
 entry(
-    index = 63,
-    label = "HO + C3H6Cl2-3 <=> C3H6Cl-3 + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.15903e+06,'cm^3/(mol*s)'), n=2.43229, Ea=(93.219,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02763, dn = +|- 0.00358107, dEa = +|- 0.019488 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=63,
+    label="HO + C3H6Cl2-3 <=> C3H6Cl-3 + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(3.15903e06, "cm^3/(mol*s)"),
+        n=2.43229,
+        Ea=(93.219, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02763, dn = +|- 0.00358107, dEa = +|- 0.019488 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CC(C)(Cl)Cl <=> OCl + C[C](C)Cl
 """,
 )
 
 entry(
-    index = 64,
-    label = "HO + C3H3Cl5 <=> C3H3Cl4 + ClHO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(422964,'cm^3/(mol*s)'), n=2.3853, Ea=(87.78,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03095, dn = +|- 0.00400448, dEa = +|- 0.0217923 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=64,
+    label="HO + C3H3Cl5 <=> C3H3Cl4 + ClHO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(422964, "cm^3/(mol*s)"),
+        n=2.3853,
+        Ea=(87.78, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03095, dn = +|- 0.00400448, dEa = +|- 0.0217923 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CC(Cl)(Cl)C(Cl)(Cl)Cl <=> OCl + C[C](Cl)C(Cl)(Cl)Cl
 """,
 )
 
 entry(
-    index = 65,
-    label = "HO + C3H3Cl-2 <=> C3H3 + ClHO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(31828.9,'cm^3/(mol*s)'), n=2.73518, Ea=(101.33,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07274, dn = +|- 0.00922502, dEa = +|- 0.0502022 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=65,
+    label="HO + C3H3Cl-2 <=> C3H3 + ClHO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(31828.9, "cm^3/(mol*s)"),
+        n=2.73518,
+        Ea=(101.33, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07274, dn = +|- 0.00922502, dEa = +|- 0.0502022 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [OH] + CDCDCCl <=> OCl + C#C[CH2]
 """,
 )
 
 entry(
-    index = 66,
-    label = "CH3 + C2H3Cl3 <=> C2H3Cl2 + CH3Cl",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1.80659e+06,'cm^3/(mol*s)'), n=1.79841, Ea=(50.2703,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0638, dn = +|- 0.00812597, dEa = +|- 0.0442212 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=66,
+    label="CH3 + C2H3Cl3 <=> C2H3Cl2 + CH3Cl",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(1.80659e06, "cm^3/(mol*s)"),
+        n=1.79841,
+        Ea=(50.2703, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0638, dn = +|- 0.00812597, dEa = +|- 0.0442212 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [CH3] + CC(Cl)(Cl)Cl <=> CCl + C[C](Cl)Cl
 """,
 )
 
 entry(
-    index = 67,
-    label = "H + CH2Cl2O <=> CH2ClO + ClH",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.04071e+08,'cm^3/(mol*s)'), n=1.85451, Ea=(31.171,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16739, dn = +|- 0.0203335, dEa = +|- 0.110654 kJ/mol"""),
-    rank = 3,
-    longDesc = 
-"""
+    index=67,
+    label="H + CH2Cl2O <=> CH2ClO + ClH",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.04071e08, "cm^3/(mol*s)"),
+        n=1.85451,
+        Ea=(31.171, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16739, dn = +|- 0.0203335, dEa = +|- 0.110654 kJ/mol""",
+    ),
+    rank=3,
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_abstraction
 Original entry: [H] + OC(Cl)Cl <=> Cl + O[CH]Cl
 """,
 )
 
 entry(
-    index = 68,
-    label = "C2H2Cl4 + H <=> ClH-2 + C2H2Cl3",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(1.46201e+08,'cm^3/(mol*s)'), n=1.87317, Ea=(15.8216,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16351, dn = +|- 0.0198965, dEa = +|- 0.108276 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=68,
+    label="C2H2Cl4 + H <=> ClH-2 + C2H2Cl3",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(1.46201e08, "cm^3/(mol*s)"),
+        n=1.87317,
+        Ea=(15.8216, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16351, dn = +|- 0.0198965, dEa = +|- 0.108276 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)C(Cl)Cl + [H] <=> Cl + Cl[CH]C(Cl)Cl
 barrier = 21.502064 kJ/mol
@@ -919,14 +1402,21 @@ H    -3.579319    -1.260357    -1.098574
 )
 
 entry(
-    index = 69,
-    label = "Cl2 + CFO <=> CClFO + Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(141671,'cm^3/(mol*s)'), n=2.5177, Ea=(0.0383549,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.00866, dn = +|- 0.00113339, dEa = +|- 0.00616788 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=69,
+    label="Cl2 + CFO <=> CClFO + Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(141671, "cm^3/(mol*s)"),
+        n=2.5177,
+        Ea=(0.0383549, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.00866, dn = +|- 0.00113339, dEa = +|- 0.00616788 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [Cl][Cl] + OD[C]F <=> ODC(F)Cl + [Cl]
 barrier = 2.301919 kJ/mol
@@ -942,14 +1432,21 @@ C    1.797314    -0.036564    0.007158
 )
 
 entry(
-    index = 70,
-    label = "ClO-3 + C2H2Cl-2 <=> C2H2Cl2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(210425,'cm^3/(mol*s)'), n=1.63892, Ea=(8.63391,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04912, dn = +|- 0.00630039, dEa = +|- 0.0342865 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=70,
+    label="ClO-3 + C2H2Cl-2 <=> C2H2Cl2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(210425, "cm^3/(mol*s)"),
+        n=1.63892,
+        Ea=(8.63391, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04912, dn = +|- 0.00630039, dEa = +|- 0.0342865 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CD[C]Cl + [O]Cl <=> CDC(Cl)Cl + [O]
 barrier = 11.547192 kJ/mol
@@ -967,14 +1464,21 @@ H    1.948493    2.22086    0.010338
 )
 
 entry(
-    index = 71,
-    label = "CH2Cl2 + C2H4Cl-2 <=> C2H4Cl2 + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(53.106,'cm^3/(mol*s)'), n=3.17583, Ea=(58.13,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05888, dn = +|- 0.00751639, dEa = +|- 0.0409039 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=71,
+    label="CH2Cl2 + C2H4Cl-2 <=> C2H4Cl2 + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(53.106, "cm^3/(mol*s)"),
+        n=3.17583,
+        Ea=(58.13, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05888, dn = +|- 0.00751639, dEa = +|- 0.0409039 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[CH]Cl + ClCCl <=> CC(Cl)Cl + [CH2]Cl
 barrier = 62.960045 kJ/mol
@@ -997,14 +1501,21 @@ H    1.884427    1.598126    1.218233
 )
 
 entry(
-    index = 72,
-    label = "C4H6Cl2 + H <=> ClH-2 + C4H6Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(8.23139e+07,'cm^3/(mol*s)'), n=1.86255, Ea=(33.7223,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17796, dn = +|- 0.021518, dEa = +|- 0.1171 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=72,
+    label="C4H6Cl2 + H <=> ClH-2 + C4H6Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(8.23139e07, "cm^3/(mol*s)"),
+        n=1.86255,
+        Ea=(33.7223, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17796, dn = +|- 0.021518, dEa = +|- 0.1171 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)DC(Cl)Cl + [H] <=> Cl + CC(C)D[C]Cl
 barrier = 39.772135 kJ/mol
@@ -1028,14 +1539,21 @@ H    -3.374651    1.028587    -0.000534
 )
 
 entry(
-    index = 73,
-    label = "C2H2ClF + H <=> ClH-2 + C2H2F",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.39935e+10,'cm^3/(mol*s)'), n=0.953042, Ea=(47.9115,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20246, dn = +|- 0.0242226, dEa = +|- 0.131818 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=73,
+    label="C2H2ClF + H <=> ClH-2 + C2H2F",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.39935e10, "cm^3/(mol*s)"),
+        n=0.953042,
+        Ea=(47.9115, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.20246, dn = +|- 0.0242226, dEa = +|- 0.131818 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FCDCCl + [H] <=> Cl + [CH]DCF
 barrier = 52.771390 kJ/mol
@@ -1053,14 +1571,21 @@ H    -2.604982    -1.012514    0.356975
 )
 
 entry(
-    index = 74,
-    label = "CH2ClF + C2H4F <=> C2H4ClF + CH2F",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(30.9108,'cm^3/(mol*s)'), n=3.22093, Ea=(61.1732,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07445, dn = +|- 0.00943393, dEa = +|- 0.0513391 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=74,
+    label="CH2ClF + C2H4F <=> C2H4ClF + CH2F",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(30.9108, "cm^3/(mol*s)"),
+        n=3.22093,
+        Ea=(61.1732, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07445, dn = +|- 0.00943393, dEa = +|- 0.0513391 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FCCl + C[CH]F <=> [CH2]F + CC(F)Cl
 barrier = 65.687914 kJ/mol
@@ -1083,14 +1608,21 @@ H    -1.855917    -0.691212    1.200032
 )
 
 entry(
-    index = 75,
-    label = "ClO-3 + C6H12Cl <=> C6H12Cl2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(151.446,'cm^3/(mol*s)'), n=2.66819, Ea=(17.48,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07726, dn = +|- 0.0097768, dEa = +|- 0.053205 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=75,
+    label="ClO-3 + C6H12Cl <=> C6H12Cl2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(151.446, "cm^3/(mol*s)"),
+        n=2.66819,
+        Ea=(17.48, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07726, dn = +|- 0.0097768, dEa = +|- 0.053205 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + C[C](Cl)C(C)(C)C <=> CC(C)(C)C(C)(Cl)Cl + [O]
 barrier = 21.304028 kJ/mol
@@ -1121,14 +1653,21 @@ H    -0.4992    1.51556    2.076341
 )
 
 entry(
-    index = 76,
-    label = "CCl3F + CH2F <=> CH2ClF + CCl2F",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(4943.94,'cm^3/(mol*s)'), n=2.87921, Ea=(42.9159,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02916, dn = +|- 0.0037765, dEa = +|- 0.0205516 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=76,
+    label="CCl3F + CH2F <=> CH2ClF + CCl2F",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(4943.94, "cm^3/(mol*s)"),
+        n=2.87921,
+        Ea=(42.9159, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02916, dn = +|- 0.0037765, dEa = +|- 0.0205516 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(Cl)(Cl)Cl + [CH2]F <=> FCCl + F[C](Cl)Cl
 barrier = 47.380536 kJ/mol
@@ -1147,14 +1686,21 @@ H    3.208519    -1.318402    0.827395
 )
 
 entry(
-    index = 77,
-    label = "ClF + CCl3-2 <=> CCl4 + F",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1355.02,'cm^3/(mol*s)'), n=2.64458, Ea=(2.92583,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04442, dn = +|- 0.00570987, dEa = +|- 0.0310729 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=77,
+    label="ClF + CCl3-2 <=> CCl4 + F",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1355.02, "cm^3/(mol*s)"),
+        n=2.64458,
+        Ea=(2.92583, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04442, dn = +|- 0.00570987, dEa = +|- 0.0310729 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FCl + Cl[C](Cl)Cl <=> ClC(Cl)(Cl)Cl + [F]
 barrier = 5.843741 kJ/mol
@@ -1170,14 +1716,21 @@ C    -0.759232    0.159505    -0.011966
 )
 
 entry(
-    index = 78,
-    label = "ClHO-2 + CClF2 <=> CCl2F2 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(46.0523,'cm^3/(mol*s)'), n=3.14472, Ea=(-2.20466,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03956, dn = +|- 0.00509662, dEa = +|- 0.0277356 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=78,
+    label="ClHO-2 + CClF2 <=> CCl2F2 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(46.0523, "cm^3/(mol*s)"),
+        n=3.14472,
+        Ea=(-2.20466, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03956, dn = +|- 0.00509662, dEa = +|- 0.0277356 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + F[C](F)Cl <=> FC(F)(Cl)Cl + [OH]
 barrier = 0.936422 kJ/mol
@@ -1195,14 +1748,21 @@ H    3.254942    0.293203    -0.333649
 )
 
 entry(
-    index = 79,
-    label = "CClF3 + H <=> ClH-2 + CF3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7.34575e+07,'cm^3/(mol*s)'), n=1.82774, Ea=(33.4417,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17094, dn = +|- 0.0207323, dEa = +|- 0.112825 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=79,
+    label="CClF3 + H <=> ClH-2 + CF3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7.34575e07, "cm^3/(mol*s)"),
+        n=1.82774,
+        Ea=(33.4417, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17094, dn = +|- 0.0207323, dEa = +|- 0.112825 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(F)Cl + [H] <=> Cl + F[C](F)F
 barrier = 39.363802 kJ/mol
@@ -1219,14 +1779,21 @@ H    -3.022376    0.516201    -1e-06
 )
 
 entry(
-    index = 80,
-    label = "C3H5Cl3-3 + CH3 <=> CH3Cl-2 + C3H5Cl2-4",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(4002.48,'cm^3/(mol*s)'), n=2.78212, Ea=(36.8458,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07036, dn = +|- 0.00893322, dEa = +|- 0.0486142 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=80,
+    label="C3H5Cl3-3 + CH3 <=> CH3Cl-2 + C3H5Cl2-4",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(4002.48, "cm^3/(mol*s)"),
+        n=2.78212,
+        Ea=(36.8458, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07036, dn = +|- 0.00893322, dEa = +|- 0.0486142 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH3] + CCC(Cl)(Cl)Cl <=> CCl + CC[C](Cl)Cl
 barrier = 43.252461 kJ/mol
@@ -1252,14 +1819,21 @@ H    -3.952271    1.437327    0.019587
 )
 
 entry(
-    index = 81,
-    label = "CH2Cl2 + CH3 <=> CH3Cl-2 + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(7897.61,'cm^3/(mol*s)'), n=2.90196, Ea=(59.4349,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03983, dn = +|- 0.00513163, dEa = +|- 0.0279261 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=81,
+    label="CH2Cl2 + CH3 <=> CH3Cl-2 + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(7897.61, "cm^3/(mol*s)"),
+        n=2.90196,
+        Ea=(59.4349, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03983, dn = +|- 0.00513163, dEa = +|- 0.0279261 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCl + [CH3] <=> CCl + [CH2]Cl
 barrier = 66.453607 kJ/mol
@@ -1279,14 +1853,21 @@ H    1.448517    0.614572    1.237972
 )
 
 entry(
-    index = 82,
-    label = "ClHO-2 + CHClF <=> CHCl2F + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(88.1678,'cm^3/(mol*s)'), n=3.09314, Ea=(2.84185,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02552, dn = +|- 0.00331091, dEa = +|- 0.0180179 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=82,
+    label="ClHO-2 + CHClF <=> CHCl2F + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(88.1678, "cm^3/(mol*s)"),
+        n=3.09314,
+        Ea=(2.84185, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02552, dn = +|- 0.00331091, dEa = +|- 0.0180179 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + F[CH]Cl <=> [OH] + FC(Cl)Cl
 barrier = 6.474267 kJ/mol
@@ -1303,14 +1884,21 @@ H    -3.10822    0.306021    -0.946802
 )
 
 entry(
-    index = 83,
-    label = "ClO-3 + C5H10Cl <=> C5H10Cl2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(130.695,'cm^3/(mol*s)'), n=2.65639, Ea=(15.9082,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07162, dn = +|- 0.00908798, dEa = +|- 0.0494565 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=83,
+    label="ClO-3 + C5H10Cl <=> C5H10Cl2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(130.695, "cm^3/(mol*s)"),
+        n=2.65639,
+        Ea=(15.9082, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07162, dn = +|- 0.00908798, dEa = +|- 0.0494565 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[C](Cl)C(C)C + [O]Cl <=> CC(C)C(C)(Cl)Cl + [O]
 barrier = 19.986841 kJ/mol
@@ -1338,14 +1926,21 @@ H    1.19233    1.544056    1.895786
 )
 
 entry(
-    index = 84,
-    label = "C2H4Cl2O + H <=> ClH-2 + C2H4ClO-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(2.35321e+08,'cm^3/(mol*s)'), n=1.76471, Ea=(16.4016,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.11963, dn = +|- 0.014846, dEa = +|- 0.0807914 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=84,
+    label="C2H4Cl2O + H <=> ClH-2 + C2H4ClO-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(2.35321e08, "cm^3/(mol*s)"),
+        n=1.76471,
+        Ea=(16.4016, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.11963, dn = +|- 0.014846, dEa = +|- 0.0807914 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(O)(Cl)Cl + [H] <=> Cl + C[C](O)Cl
 barrier = 21.652637 kJ/mol
@@ -1366,14 +1961,21 @@ H    -3.289537    -0.886809    0.080914
 )
 
 entry(
-    index = 85,
-    label = "BrCl + HO <=> ClHO-2 + Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8.50529e+06,'cm^3/(mol*s)'), n=1.86514, Ea=(19.8882,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04247, dn = +|- 0.00546506, dEa = +|- 0.0297407 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=85,
+    label="BrCl + HO <=> ClHO-2 + Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(8.50529e06, "cm^3/(mol*s)"),
+        n=1.86514,
+        Ea=(19.8882, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04247, dn = +|- 0.00546506, dEa = +|- 0.0297407 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClBr + [OH] <=> OCl + [Br]
 barrier = 24.495676 kJ/mol
@@ -1387,14 +1989,21 @@ H    2.893162    -0.825429    0.617448
 )
 
 entry(
-    index = 86,
-    label = "C2H2Cl2-2 + H <=> ClH-2 + C2H2Cl-3",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(8.77662e+07,'cm^3/(mol*s)'), n=1.96458, Ea=(46.0239,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.22029, dn = +|- 0.0261562, dEa = +|- 0.142341 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=86,
+    label="C2H2Cl2-2 + H <=> ClH-2 + C2H2Cl-3",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(8.77662e07, "cm^3/(mol*s)"),
+        n=1.96458,
+        Ea=(46.0239, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.22029, dn = +|- 0.0261562, dEa = +|- 0.142341 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCDCCl + [H] <=> Cl + [CH]DCCl
 barrier = 51.421303 kJ/mol
@@ -1412,14 +2021,21 @@ H    3.655664    -0.508042    0.30965
 )
 
 entry(
-    index = 87,
-    label = "CCl4 + H <=> ClH-2 + CCl3-2",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(7.16026e+08,'cm^3/(mol*s)'), n=1.73491, Ea=(10.5432,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.103, dn = +|- 0.0128798, dEa = +|- 0.0700913 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=87,
+    label="CCl4 + H <=> ClH-2 + CCl3-2",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(7.16026e08, "cm^3/(mol*s)"),
+        n=1.73491,
+        Ea=(10.5432, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.103, dn = +|- 0.0128798, dEa = +|- 0.0700913 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)Cl + [H] <=> Cl + Cl[C](Cl)Cl
 barrier = 15.292379 kJ/mol
@@ -1436,14 +2052,21 @@ H    3.522435    0.055633    -0.221624
 )
 
 entry(
-    index = 88,
-    label = "ClHO2 + HO <=> ClHO-2 + HO2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(29011.1,'cm^3/(mol*s)'), n=2.3822, Ea=(7.07246,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04159, dn = +|- 0.00535411, dEa = +|- 0.0291369 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=88,
+    label="ClHO2 + HO <=> ClHO-2 + HO2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(29011.1, "cm^3/(mol*s)"),
+        n=2.3822,
+        Ea=(7.07246, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04159, dn = +|- 0.00535411, dEa = +|- 0.0291369 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OOCl + [OH] <=> [O]O + OCl
 barrier = 12.399729 kJ/mol
@@ -1459,14 +2082,21 @@ H    -2.609055    -0.122172    0.823192
 )
 
 entry(
-    index = 89,
-    label = "CH3Cl-2 + C5H11 <=> C5H11Cl + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(10.1836,'cm^3/(mol*s)'), n=3.29456, Ea=(59.6588,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09803, dn = +|- 0.0122864, dEa = +|- 0.0668622 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=89,
+    label="CH3Cl-2 + C5H11 <=> C5H11Cl + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(10.1836, "cm^3/(mol*s)"),
+        n=3.29456,
+        Ea=(59.6588, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09803, dn = +|- 0.0122864, dEa = +|- 0.0668622 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[CH]C(C)C + CCl <=> CC(C)C(C)Cl + [CH3]
 barrier = 65.093817 kJ/mol
@@ -1498,14 +2128,21 @@ H    0.622467    0.717275    -1.627971
 )
 
 entry(
-    index = 90,
-    label = "C2Cl2F4 + H <=> ClH-2 + C2ClF4",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.30852e+08,'cm^3/(mol*s)'), n=1.83086, Ea=(23.8083,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16832, dn = +|- 0.0204385, dEa = +|- 0.111226 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=90,
+    label="C2Cl2F4 + H <=> ClH-2 + C2ClF4",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.30852e08, "cm^3/(mol*s)"),
+        n=1.83086,
+        Ea=(23.8083, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16832, dn = +|- 0.0204385, dEa = +|- 0.111226 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)C(F)(F)Cl + [H] <=> Cl + F[C](F)C(F)(F)Cl
 barrier = 29.867126 kJ/mol
@@ -1525,14 +2162,21 @@ H    3.530416    1.38587    -0.005602
 )
 
 entry(
-    index = 91,
-    label = "CH3Cl-2 + C4H9-2 <=> C4H9Cl-2 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.98204,'cm^3/(mol*s)'), n=3.27477, Ea=(61.9954,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09755, dn = +|- 0.0122283, dEa = +|- 0.0665461 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=91,
+    label="CH3Cl-2 + C4H9-2 <=> C4H9Cl-2 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.98204, "cm^3/(mol*s)"),
+        n=3.27477,
+        Ea=(61.9954, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09755, dn = +|- 0.0122283, dEa = +|- 0.0665461 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + C[CH]CC <=> [CH3] + CCC(C)Cl
 barrier = 68.061272 kJ/mol
@@ -1561,14 +2205,21 @@ H    -0.787386    0.965849    -1.494177
 )
 
 entry(
-    index = 92,
-    label = "CH3Cl-2 + C6H13 <=> C6H13Cl + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(9.26597,'cm^3/(mol*s)'), n=3.28359, Ea=(59.382,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09852, dn = +|- 0.012345, dEa = +|- 0.0671808 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=92,
+    label="CH3Cl-2 + C6H13 <=> C6H13Cl + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(9.26597, "cm^3/(mol*s)"),
+        n=3.28359,
+        Ea=(59.382, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09852, dn = +|- 0.012345, dEa = +|- 0.0671808 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + C[CH]C(C)(C)C <=> [CH3] + CC(Cl)C(C)(C)C
 barrier = 64.635637 kJ/mol
@@ -1603,14 +2254,21 @@ H    -0.357748    0.798827    -1.460277
 )
 
 entry(
-    index = 93,
-    label = "CCl2O + CH3 <=> CH3Cl-2 + CClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(18027.8,'cm^3/(mol*s)'), n=2.78658, Ea=(49.3742,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06168, dn = +|- 0.00786303, dEa = +|- 0.0427903 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=93,
+    label="CCl2O + CH3 <=> CH3Cl-2 + CClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(18027.8, "cm^3/(mol*s)"),
+        n=2.78658,
+        Ea=(49.3742, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06168, dn = +|- 0.00786303, dEa = +|- 0.0427903 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ODC(Cl)Cl + [CH3] <=> CCl + OD[C]Cl
 barrier = 55.344088 kJ/mol
@@ -1629,14 +2287,21 @@ H    3.390904    0.552359    0.881044
 )
 
 entry(
-    index = 94,
-    label = "C2H3Cl3-2 + H <=> ClH-2 + C2H3Cl2-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(6.13449e+07,'cm^3/(mol*s)'), n=1.87455, Ea=(19.0965,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16815, dn = +|- 0.0204196, dEa = +|- 0.111123 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=94,
+    label="C2H3Cl3-2 + H <=> ClH-2 + C2H3Cl2-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(6.13449e07, "cm^3/(mol*s)"),
+        n=1.87455,
+        Ea=(19.0965, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16815, dn = +|- 0.0204196, dEa = +|- 0.111123 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCC(Cl)Cl + [H] <=> Cl + Cl[CH]CCl
 barrier = 24.951209 kJ/mol
@@ -1656,14 +2321,21 @@ H    3.498248    -1.685499    -0.067801
 )
 
 entry(
-    index = 95,
-    label = "ClHO-2 + CFO <=> CClFO + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(506.611,'cm^3/(mol*s)'), n=3.06943, Ea=(1.9381,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01551, dn = +|- 0.00202179, dEa = +|- 0.0110025 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=95,
+    label="ClHO-2 + CFO <=> CClFO + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(506.611, "cm^3/(mol*s)"),
+        n=3.06943,
+        Ea=(1.9381, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01551, dn = +|- 0.00202179, dEa = +|- 0.0110025 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + OD[C]F <=> ODC(F)Cl + [OH]
 barrier = 5.561046 kJ/mol
@@ -1680,14 +2352,21 @@ H    -2.812795    -0.166066    0.746814
 )
 
 entry(
-    index = 96,
-    label = "CHCl3 + CH3 <=> CH3Cl-2 + CHCl2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(14081,'cm^3/(mol*s)'), n=2.82615, Ea=(43.1118,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05798, dn = +|- 0.00740526, dEa = +|- 0.0402991 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=96,
+    label="CHCl3 + CH3 <=> CH3Cl-2 + CHCl2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(14081, "cm^3/(mol*s)"),
+        n=2.82615,
+        Ea=(43.1118, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05798, dn = +|- 0.00740526, dEa = +|- 0.0402991 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)Cl + [CH3] <=> CCl + Cl[CH]Cl
 barrier = 49.684630 kJ/mol
@@ -1707,14 +2386,21 @@ H    3.613778    -0.916436    -0.423497
 )
 
 entry(
-    index = 97,
-    label = "C2Cl3F3 + CF3 <=> CClF3 + C2Cl2F3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(482.31,'cm^3/(mol*s)'), n=3.1849, Ea=(39.6176,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06825, dn = +|- 0.00867427, dEa = +|- 0.047205 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=97,
+    label="C2Cl3F3 + CF3 <=> CClF3 + C2Cl2F3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(482.31, "cm^3/(mol*s)"),
+        n=3.1849,
+        Ea=(39.6176, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06825, dn = +|- 0.00867427, dEa = +|- 0.047205 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(F)C(Cl)(Cl)Cl + F[C](F)F <=> FC(F)(F)Cl + FC(F)(F)[C](Cl)Cl
 barrier = 41.853057 kJ/mol
@@ -1736,14 +2422,21 @@ C    2.970547    -0.087697    -0.10371
 )
 
 entry(
-    index = 98,
-    label = "C3H4Cl2 + H <=> ClH-2 + C3H4Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(4.96546e+07,'cm^3/(mol*s)'), n=1.88378, Ea=(35.054,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19142, dn = +|- 0.0230108, dEa = +|- 0.125224 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=98,
+    label="C3H4Cl2 + H <=> ClH-2 + C3H4Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(4.96546e07, "cm^3/(mol*s)"),
+        n=1.88378,
+        Ea=(35.054, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19142, dn = +|- 0.0230108, dEa = +|- 0.125224 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCDC(Cl)Cl + [H] <=> Cl + CCD[C]Cl
 barrier = 41.325672 kJ/mol
@@ -1764,14 +2457,21 @@ H    -3.382228    -1.022439    0.133555
 )
 
 entry(
-    index = 99,
-    label = "CCl4 + C2Cl5 <=> C2Cl6 + CCl3-2",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(684.52,'cm^3/(mol*s)'), n=2.22654, Ea=(61.792,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08575, dn = +|- 0.0108083, dEa = +|- 0.0588181 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=99,
+    label="CCl4 + C2Cl5 <=> C2Cl6 + CCl3-2",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(684.52, "cm^3/(mol*s)"),
+        n=2.22654,
+        Ea=(61.792, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08575, dn = +|- 0.0108083, dEa = +|- 0.0588181 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)Cl + Cl[C](Cl)C(Cl)(Cl)Cl <=> ClC(Cl)(Cl)C(Cl)(Cl)Cl + Cl[C](Cl)Cl
 barrier = 64.091942 kJ/mol
@@ -1793,14 +2493,21 @@ C    1.381808    -0.738329    -0.256353
 )
 
 entry(
-    index = 100,
-    label = "C2H3Cl2 + H <=> ClH-2 + C2H3Cl-3",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(8.49186e+07,'cm^3/(mol*s)'), n=1.81356, Ea=(42.8431,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1583, dn = +|- 0.0193073, dEa = +|- 0.10507 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=100,
+    label="C2H3Cl2 + H <=> ClH-2 + C2H3Cl-3",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(8.49186e07, "cm^3/(mol*s)"),
+        n=1.81356,
+        Ea=(42.8431, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1583, dn = +|- 0.0193073, dEa = +|- 0.10507 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + C[C](Cl)Cl <=> Cl + C[C]Cl
 barrier = 49.274494 kJ/mol
@@ -1819,14 +2526,21 @@ H    3.112945    -0.74913    -0.388065
 )
 
 entry(
-    index = 101,
-    label = "C2H5Cl + C2H3-2 <=> C2H3Cl-2 + C2H5-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4238.21,'cm^3/(mol*s)'), n=2.23356, Ea=(44.97,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07245, dn = +|- 0.0091898, dEa = +|- 0.0500105 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=101,
+    label="C2H5Cl + C2H3-2 <=> C2H3Cl-2 + C2H5-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4238.21, "cm^3/(mol*s)"),
+        n=2.23356,
+        Ea=(44.97, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07245, dn = +|- 0.0091898, dEa = +|- 0.0500105 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH]DC + CCCl <=> CDCCl + C[CH2]
 barrier = 49.537821 kJ/mol
@@ -1850,14 +2564,21 @@ H    -2.553298    1.201416    0.431001
 )
 
 entry(
-    index = 102,
-    label = "CCl3F + CF3 <=> CClF3 + CCl2F",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(919.182,'cm^3/(mol*s)'), n=3.18453, Ea=(40.4886,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07059, dn = +|- 0.00896101, dEa = +|- 0.0487655 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=102,
+    label="CCl3F + CF3 <=> CClF3 + CCl2F",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(919.182, "cm^3/(mol*s)"),
+        n=3.18453,
+        Ea=(40.4886, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07059, dn = +|- 0.00896101, dEa = +|- 0.0487655 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(Cl)(Cl)Cl + F[C](F)F <=> FC(F)(F)Cl + F[C](Cl)Cl
 barrier = 42.733656 kJ/mol
@@ -1876,14 +2597,21 @@ C    -2.547387    0.02585    0.045841
 )
 
 entry(
-    index = 103,
-    label = "ClO-3 + C3H6F <=> C3H6ClF + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(447.245,'cm^3/(mol*s)'), n=2.63852, Ea=(5.21239,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06424, dn = +|- 0.00817923, dEa = +|- 0.0445111 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=103,
+    label="ClO-3 + C3H6F <=> C3H6ClF + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(447.245, "cm^3/(mol*s)"),
+        n=2.63852,
+        Ea=(5.21239, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06424, dn = +|- 0.00817923, dEa = +|- 0.0445111 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[C](C)F + [O]Cl <=> CC(C)(F)Cl + [O]
 barrier = 9.086073 kJ/mol
@@ -1906,14 +2634,21 @@ H    -2.521516    1.398612    -0.394661
 )
 
 entry(
-    index = 104,
-    label = "CBrClF2 + CF3 <=> CClF3 + CBrF2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(181.5,'cm^3/(mol*s)'), n=3.18568, Ea=(48.5657,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07145, dn = +|- 0.009067, dEa = +|- 0.0493423 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=104,
+    label="CBrClF2 + CF3 <=> CClF3 + CBrF2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(181.5, "cm^3/(mol*s)"),
+        n=3.18568,
+        Ea=(48.5657, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07145, dn = +|- 0.009067, dEa = +|- 0.0493423 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Br + F[C](F)F <=> FC(F)(F)Cl + F[C](F)Br
 barrier = 50.892617 kJ/mol
@@ -1932,14 +2667,21 @@ C    -2.874248    -0.093919    0.001176
 )
 
 entry(
-    index = 105,
-    label = "CH2Cl2 + C3H7-3 <=> C3H7Cl + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(667.183,'cm^3/(mol*s)'), n=2.13101, Ea=(43.1979,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05236, dn = +|- 0.00670443, dEa = +|- 0.0364853 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=105,
+    label="CH2Cl2 + C3H7-3 <=> C3H7Cl + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(667.183, "cm^3/(mol*s)"),
+        n=2.13101,
+        Ea=(43.1979, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05236, dn = +|- 0.00670443, dEa = +|- 0.0364853 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCl + C[CH]C <=> [CH2]Cl + CC(C)Cl
 barrier = 48.577624 kJ/mol
@@ -1965,14 +2707,21 @@ H    -2.17163    -1.539472    0.914985
 )
 
 entry(
-    index = 106,
-    label = "ClHO-2 + O <=> ClO-3 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.3409e+08,'cm^3/(mol*s)'), n=1.5809, Ea=(2.96803,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01859, dn = +|- 0.00242037, dEa = +|- 0.0131715 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=106,
+    label="ClHO-2 + O <=> ClO-3 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.3409e08, "cm^3/(mol*s)"),
+        n=1.5809,
+        Ea=(2.96803, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01859, dn = +|- 0.00242037, dEa = +|- 0.0131715 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + [O] <=> [O]Cl + [OH]
 barrier = 5.568481 kJ/mol
@@ -1987,14 +2736,21 @@ H    1.898282    0.822552    0.492069
 )
 
 entry(
-    index = 107,
-    label = "C2H3Cl3 + H <=> ClH-2 + C2H3Cl2-3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(4.09068e+08,'cm^3/(mol*s)'), n=1.78337, Ea=(14.8929,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.12645, dn = +|- 0.0156438, dEa = +|- 0.0851327 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=107,
+    label="C2H3Cl3 + H <=> ClH-2 + C2H3Cl2-3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(4.09068e08, "cm^3/(mol*s)"),
+        n=1.78337,
+        Ea=(14.8929, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.12645, dn = +|- 0.0156438, dEa = +|- 0.0851327 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(Cl)(Cl)Cl + [H] <=> Cl + C[C](Cl)Cl
 barrier = 19.951966 kJ/mol
@@ -2014,14 +2770,21 @@ H    3.542415    -0.00862    -0.37388
 )
 
 entry(
-    index = 108,
-    label = "Cl2 + C2Cl2F3 <=> C2Cl3F3 + Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(157205,'cm^3/(mol*s)'), n=1.58787, Ea=(12.7432,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03148, dn = +|- 0.00407213, dEa = +|- 0.0221604 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=108,
+    label="Cl2 + C2Cl2F3 <=> C2Cl3F3 + Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(157205, "cm^3/(mol*s)"),
+        n=1.58787,
+        Ea=(12.7432, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03148, dn = +|- 0.00407213, dEa = +|- 0.0221604 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [Cl][Cl] + FC(F)(F)[C](Cl)Cl <=> FC(F)(F)C(Cl)(Cl)Cl + [Cl]
 barrier = 14.742386 kJ/mol
@@ -2040,14 +2803,21 @@ C    -1.009293    -0.443324    -0.035387
 )
 
 entry(
-    index = 109,
-    label = "C3H6ClF + H <=> ClH-2 + C3H6F",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.43171e+07,'cm^3/(mol*s)'), n=1.86762, Ea=(24.8767,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17323, dn = +|- 0.0209897, dEa = +|- 0.114225 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=109,
+    label="C3H6ClF + H <=> ClH-2 + C3H6F",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.43171e07, "cm^3/(mol*s)"),
+        n=1.86762,
+        Ea=(24.8767, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17323, dn = +|- 0.0209897, dEa = +|- 0.114225 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)(F)Cl + [H] <=> Cl + C[C](C)F
 barrier = 30.964217 kJ/mol
@@ -2070,14 +2840,21 @@ H    3.160625    -1.63825    0.528135
 )
 
 entry(
-    index = 110,
-    label = "CCl2F2 + CH2F <=> CH2ClF + CClF2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(42039.7,'cm^3/(mol*s)'), n=1.85566, Ea=(53.38,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03586, dn = +|- 0.00462834, dEa = +|- 0.0251873 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=110,
+    label="CCl2F2 + CH2F <=> CH2ClF + CClF2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(42039.7, "cm^3/(mol*s)"),
+        n=1.85566,
+        Ea=(53.38, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03586, dn = +|- 0.00462834, dEa = +|- 0.0251873 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH2]F + FC(F)(Cl)Cl <=> FCCl + F[C](F)Cl
 barrier = 57.750031 kJ/mol
@@ -2096,14 +2873,21 @@ H    -3.190874    0.759381    0.065128
 )
 
 entry(
-    index = 111,
-    label = "CCl4 + C3H6F <=> C3H6ClF + CCl3-2",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(392.269,'cm^3/(mol*s)'), n=3.09159, Ea=(19.1047,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05261, dn = +|- 0.00673662, dEa = +|- 0.0366604 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=111,
+    label="CCl4 + C3H6F <=> C3H6ClF + CCl3-2",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(392.269, "cm^3/(mol*s)"),
+        n=3.09159,
+        Ea=(19.1047, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05261, dn = +|- 0.00673662, dEa = +|- 0.0366604 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[C](C)F + ClC(Cl)(Cl)Cl <=> CC(C)(F)Cl + Cl[C](Cl)Cl
 barrier = 22.080695 kJ/mol
@@ -2128,14 +2912,21 @@ H    2.782563    -1.447756    -1.391714
 )
 
 entry(
-    index = 112,
-    label = "C2H3Cl3 + CH2F <=> CH2ClF + C2H3Cl2-3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1711.01,'cm^3/(mol*s)'), n=2.91943, Ea=(32.8682,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02247, dn = +|- 0.00291925, dEa = +|- 0.0158864 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=112,
+    label="C2H3Cl3 + CH2F <=> CH2ClF + C2H3Cl2-3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(1711.01, "cm^3/(mol*s)"),
+        n=2.91943,
+        Ea=(32.8682, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02247, dn = +|- 0.00291925, dEa = +|- 0.0158864 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(Cl)(Cl)Cl + [CH2]F <=> FCCl + C[C](Cl)Cl
 barrier = 37.379801 kJ/mol
@@ -2158,14 +2949,21 @@ H    3.347707    0.232257    -1.199717
 )
 
 entry(
-    index = 113,
-    label = "C4H8Cl2 + H <=> ClH-2 + C4H8Cl",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.40202e+07,'cm^3/(mol*s)'), n=1.96824, Ea=(30.999,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21985, dn = +|- 0.0261093, dEa = +|- 0.142086 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=113,
+    label="C4H8Cl2 + H <=> ClH-2 + C4H8Cl",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.40202e07, "cm^3/(mol*s)"),
+        n=1.96824,
+        Ea=(30.999, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21985, dn = +|- 0.0261093, dEa = +|- 0.142086 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)(Cl)CCl + [H] <=> Cl + [CH2]C(C)(C)Cl
 barrier = 37.383335 kJ/mol
@@ -2190,14 +2988,21 @@ H    2.66461    0.237247    2.810497
 )
 
 entry(
-    index = 114,
-    label = "CClFO + H <=> ClH-2 + CFO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.20663e+07,'cm^3/(mol*s)'), n=1.89167, Ea=(38.2202,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.2004, dn = +|- 0.0239977, dEa = +|- 0.130594 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=114,
+    label="CClFO + H <=> ClH-2 + CFO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.20663e07, "cm^3/(mol*s)"),
+        n=1.89167,
+        Ea=(38.2202, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.2004, dn = +|- 0.0239977, dEa = +|- 0.130594 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ODC(F)Cl + [H] <=> Cl + OD[C]F
 barrier = 44.351890 kJ/mol
@@ -2213,14 +3018,21 @@ H    2.798161    0.546242    0.00776
 )
 
 entry(
-    index = 115,
-    label = "CBrClF2 + CH3 <=> CH3Cl-2 + CBrF2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7798.37,'cm^3/(mol*s)'), n=2.71484, Ea=(54.7433,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08762, dn = +|- 0.0110347, dEa = +|- 0.0600505 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=115,
+    label="CBrClF2 + CH3 <=> CH3Cl-2 + CBrF2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7798.37, "cm^3/(mol*s)"),
+        n=2.71484,
+        Ea=(54.7433, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08762, dn = +|- 0.0110347, dEa = +|- 0.0600505 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Br + [CH3] <=> CCl + F[C](F)Br
 barrier = 60.897073 kJ/mol
@@ -2239,14 +3051,21 @@ H    -3.782216    -1.423984    -0.429825
 )
 
 entry(
-    index = 116,
-    label = "C2H5ClO-2 + HO <=> ClHO-2 + C2H5O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(42257.6,'cm^3/(mol*s)'), n=2.34082, Ea=(-4.97939,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06796, dn = +|- 0.00863823, dEa = +|- 0.0470089 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=116,
+    label="C2H5ClO-2 + HO <=> ClHO-2 + C2H5O-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(42257.6, "cm^3/(mol*s)"),
+        n=2.34082,
+        Ea=(-4.97939, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06796, dn = +|- 0.00863823, dEa = +|- 0.0470089 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCOCl + [OH] <=> OCl + CC[O]
 barrier = 0.159970 kJ/mol
@@ -2268,14 +3087,21 @@ H    -3.308527    2.580309    -3.818
 )
 
 entry(
-    index = 117,
-    label = "C2Cl3F3 + CH3 <=> CH3Cl-2 + C2Cl2F3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(50240.7,'cm^3/(mol*s)'), n=2.76768, Ea=(43.3895,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07192, dn = +|- 0.00912462, dEa = +|- 0.0496558 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=117,
+    label="C2Cl3F3 + CH3 <=> CH3Cl-2 + C2Cl2F3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(50240.7, "cm^3/(mol*s)"),
+        n=2.76768,
+        Ea=(43.3895, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07192, dn = +|- 0.00912462, dEa = +|- 0.0496558 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(F)C(Cl)(Cl)Cl + [CH3] <=> CCl + FC(F)(F)[C](Cl)Cl
 barrier = 49.559476 kJ/mol
@@ -2297,14 +3123,21 @@ H    -4.030671    -0.812686    -0.496822
 )
 
 entry(
-    index = 118,
-    label = "BrCl + O <=> ClO-3 + Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8.94992e+09,'cm^3/(mol*s)'), n=1.08089, Ea=(23.1505,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03267, dn = +|- 0.00422331, dEa = +|- 0.0229831 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=118,
+    label="BrCl + O <=> ClO-3 + Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(8.94992e09, "cm^3/(mol*s)"),
+        n=1.08089,
+        Ea=(23.1505, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03267, dn = +|- 0.00422331, dEa = +|- 0.0229831 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClBr + [O] <=> [O]Cl + [Br]
 barrier = 24.363058 kJ/mol
@@ -2317,14 +3150,21 @@ O    -1.970219    -0.183894    -0.0
 )
 
 entry(
-    index = 119,
-    label = "ClHO-2 + CCl2F <=> CCl3F + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(29.9305,'cm^3/(mol*s)'), n=3.20569, Ea=(2.40489,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05906, dn = +|- 0.00753912, dEa = +|- 0.0410276 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=119,
+    label="ClHO-2 + CCl2F <=> CCl3F + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(29.9305, "cm^3/(mol*s)"),
+        n=3.20569,
+        Ea=(2.40489, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05906, dn = +|- 0.00753912, dEa = +|- 0.0410276 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + F[C](Cl)Cl <=> FC(Cl)(Cl)Cl + [OH]
 barrier = 5.886113 kJ/mol
@@ -2342,14 +3182,21 @@ H    3.413506    0.571913    0.562038
 )
 
 entry(
-    index = 120,
-    label = "CH2ClF + H <=> ClH-2 + CH2F",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.89542e+07,'cm^3/(mol*s)'), n=1.98915, Ea=(34.4709,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.23012, dn = +|- 0.0272103, dEa = +|- 0.148078 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=120,
+    label="CH2ClF + H <=> ClH-2 + CH2F",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.89542e07, "cm^3/(mol*s)"),
+        n=1.98915,
+        Ea=(34.4709, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.23012, dn = +|- 0.0272103, dEa = +|- 0.148078 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + FCCl <=> Cl + [CH2]F
 barrier = 41.488630 kJ/mol
@@ -2366,14 +3213,21 @@ H    -2.624536    -0.331016    0.583469
 )
 
 entry(
-    index = 121,
-    label = "ClO-3 + C4H7Cl2 <=> C4H7Cl3 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(148.664,'cm^3/(mol*s)'), n=2.72935, Ea=(30.3973,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08925, dn = +|- 0.0112317, dEa = +|- 0.0611226 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=121,
+    label="ClO-3 + C4H7Cl2 <=> C4H7Cl3 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(148.664, "cm^3/(mol*s)"),
+        n=2.72935,
+        Ea=(30.3973, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08925, dn = +|- 0.0112317, dEa = +|- 0.0611226 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + CC(C)[C](Cl)Cl <=> CC(C)C(Cl)(Cl)Cl + [O]
 barrier = 34.040012 kJ/mol
@@ -2399,14 +3253,21 @@ H    1.299851    2.16667    0.875938
 )
 
 entry(
-    index = 122,
-    label = "ClHO-2 + H <=> ClH-2 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.60971e+09,'cm^3/(mol*s)'), n=1.63953, Ea=(0.451671,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04093, dn = +|- 0.00527044, dEa = +|- 0.0286816 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=122,
+    label="ClHO-2 + H <=> ClH-2 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.60971e09, "cm^3/(mol*s)"),
+        n=1.63953,
+        Ea=(0.451671, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04093, dn = +|- 0.00527044, dEa = +|- 0.0286816 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + [H] <=> Cl + [OH]
 barrier = 3.374597 kJ/mol
@@ -2421,14 +3282,21 @@ H    -1.571541    0.786334    0.232281
 )
 
 entry(
-    index = 123,
-    label = "CH2Cl + H <=> ClH-2 + CH2-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.27707e+07,'cm^3/(mol*s)'), n=1.90015, Ea=(55.422,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.18223, dn = +|- 0.0219933, dEa = +|- 0.119687 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=123,
+    label="CH2Cl + H <=> ClH-2 + CH2-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.27707e07, "cm^3/(mol*s)"),
+        n=1.90015,
+        Ea=(55.422, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.18223, dn = +|- 0.0219933, dEa = +|- 0.119687 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH2]Cl + [H] <=> Cl + [CH2]
 barrier = 62.852116 kJ/mol
@@ -2444,14 +3312,21 @@ H    2.538343    -0.45543    0.029951
 )
 
 entry(
-    index = 124,
-    label = "CCl3F + H <=> ClH-2 + CCl2F",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(3.61734e+08,'cm^3/(mol*s)'), n=1.77539, Ea=(16.5288,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.12921, dn = +|- 0.0159646, dEa = +|- 0.0868786 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=124,
+    label="CCl3F + H <=> ClH-2 + CCl2F",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(3.61734e08, "cm^3/(mol*s)"),
+        n=1.77539,
+        Ea=(16.5288, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.12921, dn = +|- 0.0159646, dEa = +|- 0.0868786 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(Cl)(Cl)Cl + [H] <=> Cl + F[C](Cl)Cl
 barrier = 21.778541 kJ/mol
@@ -2468,14 +3343,21 @@ H    3.472668    -0.000122    -0.046465
 )
 
 entry(
-    index = 125,
-    label = "Cl2 + CCl3-2 <=> CCl4 + Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(527483,'cm^3/(mol*s)'), n=1.61124, Ea=(8.26744,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03932, dn = +|- 0.00506701, dEa = +|- 0.0275745 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=125,
+    label="Cl2 + CCl3-2 <=> CCl4 + Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(527483, "cm^3/(mol*s)"),
+        n=1.61124,
+        Ea=(8.26744, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03932, dn = +|- 0.00506701, dEa = +|- 0.0275745 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [Cl][Cl] + Cl[C](Cl)Cl <=> ClC(Cl)(Cl)Cl + [Cl]
 barrier = 10.165227 kJ/mol
@@ -2492,14 +3374,21 @@ C    -0.874257    -0.047354    -0.080871
 )
 
 entry(
-    index = 126,
-    label = "C3H7ClO + H <=> ClH-2 + C3H7O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.07671e+08,'cm^3/(mol*s)'), n=1.76176, Ea=(19.0677,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.11701, dn = +|- 0.0145377, dEa = +|- 0.0791138 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=126,
+    label="C3H7ClO + H <=> ClH-2 + C3H7O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.07671e08, "cm^3/(mol*s)"),
+        n=1.76176,
+        Ea=(19.0677, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.11701, dn = +|- 0.0145377, dEa = +|- 0.0791138 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(C)(O)Cl <=> Cl + C[C](C)O
 barrier = 24.318581 kJ/mol
@@ -2523,14 +3412,21 @@ H    3.226395    0.020947    -0.022183
 )
 
 entry(
-    index = 127,
-    label = "ClO-3 + CHCl2 <=> CHCl3 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(139886,'cm^3/(mol*s)'), n=1.59647, Ea=(38.7235,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04113, dn = +|- 0.00529593, dEa = +|- 0.0288202 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=127,
+    label="ClO-3 + CHCl2 <=> CHCl3 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(139886, "cm^3/(mol*s)"),
+        n=1.59647,
+        Ea=(38.7235, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04113, dn = +|- 0.00529593, dEa = +|- 0.0288202 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + Cl[CH]Cl <=> ClC(Cl)Cl + [O]
 barrier = 42.464767 kJ/mol
@@ -2547,14 +3443,21 @@ H    -0.562554    0.023755    1.590157
 )
 
 entry(
-    index = 128,
-    label = "CCl2F2 + CF3 <=> CClF3 + CClF2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(501.469,'cm^3/(mol*s)'), n=3.18369, Ea=(43.5336,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07137, dn = +|- 0.00905686, dEa = +|- 0.0492871 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=128,
+    label="CCl2F2 + CF3 <=> CClF3 + CClF2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(501.469, "cm^3/(mol*s)"),
+        n=3.18369,
+        Ea=(43.5336, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07137, dn = +|- 0.00905686, dEa = +|- 0.0492871 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Cl + F[C](F)F <=> FC(F)(F)Cl + F[C](F)Cl
 barrier = 45.878355 kJ/mol
@@ -2574,14 +3477,21 @@ C    -2.263522    0.071123    -0.010938
 )
 
 entry(
-    index = 129,
-    label = "C4H8Cl2-2 + H <=> ClH-2 + C4H8Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.79057e+07,'cm^3/(mol*s)'), n=1.91362, Ea=(32.053,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1966, dn = +|- 0.0235806, dEa = +|- 0.128325 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=129,
+    label="C4H8Cl2-2 + H <=> ClH-2 + C4H8Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(3.79057e07, "cm^3/(mol*s)"),
+        n=1.91362,
+        Ea=(32.053, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1966, dn = +|- 0.0235806, dEa = +|- 0.128325 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)C(Cl)Cl + [H] <=> Cl + CC(C)[CH]Cl
 barrier = 38.437294 kJ/mol
@@ -2606,14 +3516,21 @@ H    3.379386    -1.404282    0.049304
 )
 
 entry(
-    index = 130,
-    label = "CHCl2F + H <=> ClH-2 + CHClF",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(8.05711e+07,'cm^3/(mol*s)'), n=1.90639, Ea=(25.324,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1942, dn = +|- 0.0233173, dEa = +|- 0.126892 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=130,
+    label="CHCl2F + H <=> ClH-2 + CHClF",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(8.05711e07, "cm^3/(mol*s)"),
+        n=1.90639,
+        Ea=(25.324, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1942, dn = +|- 0.0233173, dEa = +|- 0.126892 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(Cl)Cl + [H] <=> Cl + F[CH]Cl
 barrier = 31.734523 kJ/mol
@@ -2630,14 +3547,21 @@ H    3.147635    -0.630484    -0.429156
 )
 
 entry(
-    index = 131,
-    label = "CH3Cl-2 + C2H2Cl-2 <=> C2H2Cl2 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(22.9292,'cm^3/(mol*s)'), n=3.44579, Ea=(51.9809,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14485, dn = +|- 0.0177725, dEa = +|- 0.0967172 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=131,
+    label="CH3Cl-2 + C2H2Cl-2 <=> C2H2Cl2 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(22.9292, "cm^3/(mol*s)"),
+        n=3.44579,
+        Ea=(51.9809, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14485, dn = +|- 0.0177725, dEa = +|- 0.0967172 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CD[C]Cl + CCl <=> CDC(Cl)Cl + [CH3]
 barrier = 56.588208 kJ/mol
@@ -2658,14 +3582,21 @@ H    2.285369    2.015638    0.000791
 )
 
 entry(
-    index = 132,
-    label = "ClHO-2 + CBrF2 <=> CBrClF2 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(33.4555,'cm^3/(mol*s)'), n=3.14313, Ea=(3.09149,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03965, dn = +|- 0.00510901, dEa = +|- 0.027803 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=132,
+    label="ClHO-2 + CBrF2 <=> CBrClF2 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(33.4555, "cm^3/(mol*s)"),
+        n=3.14313,
+        Ea=(3.09149, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03965, dn = +|- 0.00510901, dEa = +|- 0.027803 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + F[C](F)Br <=> FC(F)(Cl)Br + [OH]
 barrier = 6.391329 kJ/mol
@@ -2682,14 +3613,21 @@ H    -3.826354    -0.164783    -0.787409
 )
 
 entry(
-    index = 133,
-    label = "CH3Cl-2 + C4H9-3 <=> C4H9Cl-3 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(0.946418,'cm^3/(mol*s)'), n=3.44684, Ea=(54.354,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16615, dn = +|- 0.0201936, dEa = +|- 0.109893 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=133,
+    label="CH3Cl-2 + C4H9-3 <=> C4H9Cl-3 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(0.946418, "cm^3/(mol*s)"),
+        n=3.44684,
+        Ea=(54.354, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16615, dn = +|- 0.0201936, dEa = +|- 0.109893 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + C[C](C)C <=> [CH3] + CC(C)(C)Cl
 barrier = 60.235275 kJ/mol
@@ -2718,14 +3656,21 @@ H    3.386847    0.053002    1.033783
 )
 
 entry(
-    index = 134,
-    label = "C3H6Cl2-2 + C2H5-2 <=> C2H5Cl + C3H6Cl-5",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1777.36,'cm^3/(mol*s)'), n=1.98145, Ea=(45.3308,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.00453, dn = +|- 0.000594188, dEa = +|- 0.00323355 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=134,
+    label="C3H6Cl2-2 + C2H5-2 <=> C2H5Cl + C3H6Cl-5",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1777.36, "cm^3/(mol*s)"),
+        n=1.98145,
+        Ea=(45.3308, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.00453, dn = +|- 0.000594188, dEa = +|- 0.00323355 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(Cl)CCl + C[CH2] <=> C[CH]CCl + CCCl
 barrier = 50.260154 kJ/mol
@@ -2754,14 +3699,21 @@ H    0.987178    -0.058828    1.554446
 )
 
 entry(
-    index = 135,
-    label = "CHCl3 + CF3 <=> CClF3 + CHCl2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(254.115,'cm^3/(mol*s)'), n=3.26664, Ea=(32.948,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08832, dn = +|- 0.0111199, dEa = +|- 0.0605141 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=135,
+    label="CHCl3 + CF3 <=> CClF3 + CHCl2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(254.115, "cm^3/(mol*s)"),
+        n=3.26664,
+        Ea=(32.948, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08832, dn = +|- 0.0111199, dEa = +|- 0.0605141 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)Cl + F[C](F)F <=> FC(F)(F)Cl + Cl[CH]Cl
 barrier = 35.676052 kJ/mol
@@ -2781,14 +3733,21 @@ H    1.789008    0.051441    1.54331
 )
 
 entry(
-    index = 136,
-    label = "CHClO-2 + CH3 <=> CH3Cl-2 + CHO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(10511.2,'cm^3/(mol*s)'), n=2.86655, Ea=(69.1023,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05768, dn = +|- 0.00736773, dEa = +|- 0.0400949 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=136,
+    label="CHClO-2 + CH3 <=> CH3Cl-2 + CHO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(10511.2, "cm^3/(mol*s)"),
+        n=2.86655,
+        Ea=(69.1023, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05768, dn = +|- 0.00736773, dEa = +|- 0.0400949 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ODCCl + [CH3] <=> CCl + [CH]DO
 barrier = 75.573214 kJ/mol
@@ -2807,14 +3766,21 @@ H    -2.551641    -1.246374    -0.454025
 )
 
 entry(
-    index = 137,
-    label = "ClHO2 + Br <=> BrCl + HO2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8.05994e+07,'cm^3/(mol*s)'), n=1.63822, Ea=(6.54919,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05092, dn = +|- 0.00652481, dEa = +|- 0.0355078 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=137,
+    label="ClHO2 + Br <=> BrCl + HO2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(8.05994e07, "cm^3/(mol*s)"),
+        n=1.63822,
+        Ea=(6.54919, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05092, dn = +|- 0.00652481, dEa = +|- 0.0355078 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OOCl + [Br] <=> [O]O + ClBr
 barrier = 7.605412 kJ/mol
@@ -2829,14 +3795,21 @@ H    3.077949    -1.178774    0.563277
 )
 
 entry(
-    index = 138,
-    label = "C3H6Cl2-3 + CH3 <=> CH3Cl-2 + C3H6Cl-6",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.17087e+06,'cm^3/(mol*s)'), n=1.80738, Ea=(58.6546,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06923, dn = +|- 0.00879494, dEa = +|- 0.0478617 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=138,
+    label="C3H6Cl2-3 + CH3 <=> CH3Cl-2 + C3H6Cl-6",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.17087e06, "cm^3/(mol*s)"),
+        n=1.80738,
+        Ea=(58.6546, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06923, dn = +|- 0.00879494, dEa = +|- 0.0478617 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)(Cl)Cl + [CH3] <=> CCl + C[C](C)Cl
 barrier = 64.634435 kJ/mol
@@ -2861,14 +3834,21 @@ H    -3.675436    -0.140493    0.923942
 )
 
 entry(
-    index = 139,
-    label = "ClO-3 + CH2Br <=> CH2BrCl + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(593.349,'cm^3/(mol*s)'), n=2.23642, Ea=(20.3579,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.4724, dn = +|- 0.0508304, dEa = +|- 0.276617 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=139,
+    label="ClO-3 + CH2Br <=> CH2BrCl + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(593.349, "cm^3/(mol*s)"),
+        n=2.23642,
+        Ea=(20.3579, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.4724, dn = +|- 0.0508304, dEa = +|- 0.276617 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + [CH2]Br <=> ClCBr + [O]
 barrier = 34.091768 kJ/mol
@@ -2884,14 +3864,21 @@ H    0.161347    1.686241    -0.935985
 )
 
 entry(
-    index = 140,
-    label = "C2HCl3 + H <=> ClH-2 + C2HCl2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.26882e+08,'cm^3/(mol*s)'), n=1.93859, Ea=(41.8928,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19974, dn = +|- 0.0239251, dEa = +|- 0.130199 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=140,
+    label="C2HCl3 + H <=> ClH-2 + C2HCl2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.26882e08, "cm^3/(mol*s)"),
+        n=1.93859,
+        Ea=(41.8928, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19974, dn = +|- 0.0239251, dEa = +|- 0.130199 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCDC(Cl)Cl + [H] <=> Cl + [CH]DC(Cl)Cl
 barrier = 47.569180 kJ/mol
@@ -2909,14 +3896,21 @@ H    3.734266    0.146269    0.370309
 )
 
 entry(
-    index = 141,
-    label = "CBrClF2 + H <=> ClH-2 + CBrF2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7.1139e+07,'cm^3/(mol*s)'), n=1.83301, Ea=(31.4394,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17183, dn = +|- 0.0208329, dEa = +|- 0.113372 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=141,
+    label="CBrClF2 + H <=> ClH-2 + CBrF2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7.1139e07, "cm^3/(mol*s)"),
+        n=1.83301,
+        Ea=(31.4394, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17183, dn = +|- 0.0208329, dEa = +|- 0.113372 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Br + [H] <=> Cl + F[C](F)Br
 barrier = 37.400949 kJ/mol
@@ -2938,7 +3932,7 @@ H    -3.491339    -1.282836    0.015925
 #     kinetics = Arrhenius(A=(2.73733e+09,'cm^3/(mol*s)'), n=1.22923, Ea=(108.382,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16026, dn = +|- 0.0195293, dEa = +|- 0.106278 kJ/mol"""),
 #     rank = 3,
 #     shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-#     longDesc = 
+#     longDesc =
 # """
 # Training reaction from kinetics library: autotst/Cl_Abstraction
 # Original entry: [H] + CC(F)Cl <=> Cl + C[CH]F
@@ -2960,14 +3954,21 @@ H    -3.491339    -1.282836    0.015925
 # Wrong TS!
 
 entry(
-    index = 143,
-    label = "C2Cl6 + H <=> ClH-2 + C2Cl5",
-    degeneracy = 6.0,
-    kinetics = Arrhenius(A=(8.08853e+08,'cm^3/(mol*s)'), n=1.77494, Ea=(25.9088,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1342, dn = +|- 0.016544, dEa = +|- 0.0900316 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=143,
+    label="C2Cl6 + H <=> ClH-2 + C2Cl5",
+    degeneracy=6.0,
+    kinetics=Arrhenius(
+        A=(8.08853e08, "cm^3/(mol*s)"),
+        n=1.77494,
+        Ea=(25.9088, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1342, dn = +|- 0.016544, dEa = +|- 0.0900316 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)C(Cl)(Cl)Cl + [H] <=> Cl + Cl[C](Cl)C(Cl)(Cl)Cl
 barrier = 31.068722 kJ/mol
@@ -2986,14 +3987,21 @@ H    1.984372    3.26673    -0.292449
 )
 
 entry(
-    index = 144,
-    label = "C3H7Cl + H <=> ClH-2 + C3H7-3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.63387e+07,'cm^3/(mol*s)'), n=1.93893, Ea=(26.132,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19472, dn = +|- 0.0233736, dEa = +|- 0.127198 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=144,
+    label="C3H7Cl + H <=> ClH-2 + C3H7-3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.63387e07, "cm^3/(mol*s)"),
+        n=1.93893,
+        Ea=(26.132, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19472, dn = +|- 0.0233736, dEa = +|- 0.127198 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)Cl + [H] <=> Cl + C[CH]C
 barrier = 32.379591 kJ/mol
@@ -3016,14 +4024,21 @@ H    -2.975913    0.014842    -0.024896
 )
 
 entry(
-    index = 145,
-    label = "ClH-2 + C2H-2 <=> C2HCl + H",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(96.4471,'cm^3/(mol*s)'), n=3.30977, Ea=(43.0639,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05805, dn = +|- 0.00741294, dEa = +|- 0.0403409 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=145,
+    label="ClH-2 + C2H-2 <=> C2HCl + H",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(96.4471, "cm^3/(mol*s)"),
+        n=3.30977,
+        Ea=(43.0639, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05805, dn = +|- 0.00741294, dEa = +|- 0.0403409 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: Cl + [C]#C <=> C#CCl + [H]
 barrier = 52.573826 kJ/mol
@@ -3039,14 +4054,21 @@ H    2.387123    0.643448    -1.5e-05
 )
 
 entry(
-    index = 146,
-    label = "CH3Cl-2 + C3H7-3 <=> C3H7Cl + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(11.2051,'cm^3/(mol*s)'), n=3.28274, Ea=(60.5556,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09782, dn = +|- 0.0122608, dEa = +|- 0.0667227 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=146,
+    label="CH3Cl-2 + C3H7-3 <=> C3H7Cl + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(11.2051, "cm^3/(mol*s)"),
+        n=3.28274,
+        Ea=(60.5556, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09782, dn = +|- 0.0122608, dEa = +|- 0.0667227 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[CH]C + CCl <=> CC(C)Cl + [CH3]
 barrier = 66.731756 kJ/mol
@@ -3072,14 +4094,21 @@ H    1.252558    0.001056    -1.442759
 )
 
 entry(
-    index = 147,
-    label = "ClHO-2 + CH2Br <=> CH2BrCl + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(215.683,'cm^3/(mol*s)'), n=2.88303, Ea=(8.79962,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05291, dn = +|- 0.00677335, dEa = +|- 0.0368603 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=147,
+    label="ClHO-2 + CH2Br <=> CH2BrCl + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(215.683, "cm^3/(mol*s)"),
+        n=2.88303,
+        Ea=(8.79962, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05291, dn = +|- 0.00677335, dEa = +|- 0.0368603 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + [CH2]Br <=> [OH] + ClCBr
 barrier = 14.815020 kJ/mol
@@ -3096,14 +4125,21 @@ H    -3.777068    -0.018683    -0.858148
 )
 
 entry(
-    index = 148,
-    label = "ClHO-2 + CH3 <=> CH3Cl-2 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(31486.4,'cm^3/(mol*s)'), n=2.84194, Ea=(0.83855,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06429, dn = +|- 0.00818648, dEa = +|- 0.0445505 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=148,
+    label="ClHO-2 + CH3 <=> CH3Cl-2 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(31486.4, "cm^3/(mol*s)"),
+        n=2.84194,
+        Ea=(0.83855, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06429, dn = +|- 0.00818648, dEa = +|- 0.0445505 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + [CH3] <=> [OH] + CCl
 barrier = 6.703957 kJ/mol
@@ -3121,14 +4157,21 @@ H    -2.112034    0.871943    0.222743
 )
 
 entry(
-    index = 149,
-    label = "C2HCl5 + H <=> ClH-2 + C2HCl4",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(2.68715e+08,'cm^3/(mol*s)'), n=1.79312, Ea=(25.6023,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1424, dn = +|- 0.0174907, dEa = +|- 0.095184 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=149,
+    label="C2HCl5 + H <=> ClH-2 + C2HCl4",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(2.68715e08, "cm^3/(mol*s)"),
+        n=1.79312,
+        Ea=(25.6023, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1424, dn = +|- 0.0174907, dEa = +|- 0.095184 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)C(Cl)(Cl)Cl + [H] <=> Cl + Cl[C](Cl)C(Cl)Cl
 barrier = 30.761761 kJ/mol
@@ -3147,14 +4190,21 @@ H    3.182424    2.048284    0.634568
 )
 
 entry(
-    index = 150,
-    label = "ClO-3 + CBrF2 <=> CBrClF2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(54795.5,'cm^3/(mol*s)'), n=1.74792, Ea=(26.4334,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08754, dn = +|- 0.0110254, dEa = +|- 0.06 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=150,
+    label="ClO-3 + CBrF2 <=> CBrClF2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(54795.5, "cm^3/(mol*s)"),
+        n=1.74792,
+        Ea=(26.4334, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08754, dn = +|- 0.0110254, dEa = +|- 0.06 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + F[C](F)Br <=> FC(F)(Cl)Br + [O]
 barrier = 28.902692 kJ/mol
@@ -3170,14 +4220,21 @@ C    0.267447    0.732937    0.004544
 )
 
 entry(
-    index = 151,
-    label = "C2Cl4 + H <=> ClH-2 + C2Cl3",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(6.55379e+08,'cm^3/(mol*s)'), n=1.8839, Ea=(30.3745,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19202, dn = +|- 0.0230769, dEa = +|- 0.125584 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=151,
+    label="C2Cl4 + H <=> ClH-2 + C2Cl3",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(6.55379e08, "cm^3/(mol*s)"),
+        n=1.8839,
+        Ea=(30.3745, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19202, dn = +|- 0.0230769, dEa = +|- 0.125584 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)DC(Cl)Cl + [H] <=> Cl + Cl[C]DC(Cl)Cl
 barrier = 35.960566 kJ/mol
@@ -3195,14 +4252,21 @@ H    -3.011375    -2.01444    0.703563
 )
 
 entry(
-    index = 152,
-    label = "C6H12Cl2-2 + H <=> ClH-2 + C6H12Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.29536e+08,'cm^3/(mol*s)'), n=1.81809, Ea=(20.9771,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14741, dn = +|- 0.018066, dEa = +|- 0.0983146 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=152,
+    label="C6H12Cl2-2 + H <=> ClH-2 + C6H12Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.29536e08, "cm^3/(mol*s)"),
+        n=1.81809,
+        Ea=(20.9771, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14741, dn = +|- 0.018066, dEa = +|- 0.0983146 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(C)(Cl)C(C)(C)Cl <=> Cl + C[C](C)C(C)(C)Cl
 barrier = 25.931699 kJ/mol
@@ -3233,14 +4297,21 @@ H    -3.717044    -1.151887    -0.028466
 )
 
 entry(
-    index = 153,
-    label = "C4H6Cl4 + H <=> ClH-2 + C4H6Cl3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(2.4415e+08,'cm^3/(mol*s)'), n=1.79753, Ea=(26.3422,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14204, dn = +|- 0.0174498, dEa = +|- 0.094961 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=153,
+    label="C4H6Cl4 + H <=> ClH-2 + C4H6Cl3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(2.4415e08, "cm^3/(mol*s)"),
+        n=1.79753,
+        Ea=(26.3422, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14204, dn = +|- 0.0174498, dEa = +|- 0.094961 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)(Cl)C(Cl)(Cl)Cl + [H] <=> Cl + CC(C)(Cl)[C](Cl)Cl
 barrier = 31.560616 kJ/mol
@@ -3265,14 +4336,21 @@ H    0.962422    -3.383886    -1.155262
 )
 
 entry(
-    index = 154,
-    label = "ClHO-2 + CCl3-2 <=> CCl4 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(40.2363,'cm^3/(mol*s)'), n=3.27282, Ea=(14.8511,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08142, dn = +|- 0.0102844, dEa = +|- 0.0559671 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=154,
+    label="ClHO-2 + CCl3-2 <=> CCl4 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(40.2363, "cm^3/(mol*s)"),
+        n=3.27282,
+        Ea=(14.8511, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08142, dn = +|- 0.0102844, dEa = +|- 0.0559671 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + Cl[C](Cl)Cl <=> ClC(Cl)(Cl)Cl + [OH]
 barrier = 18.933259 kJ/mol
@@ -3290,14 +4368,21 @@ H    -3.407001    0.522583    0.802464
 )
 
 entry(
-    index = 155,
-    label = "CH2BrCl + CHF2 <=> CHClF2 + CH2Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(35.1368,'cm^3/(mol*s)'), n=3.29448, Ea=(55.696,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09572, dn = +|- 0.0120098, dEa = +|- 0.065357 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=155,
+    label="CH2BrCl + CHF2 <=> CHClF2 + CH2Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(35.1368, "cm^3/(mol*s)"),
+        n=3.29448,
+        Ea=(55.696, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09572, dn = +|- 0.0120098, dEa = +|- 0.065357 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCBr + F[CH]F <=> [CH2]Br + FC(F)Cl
 barrier = 59.792643 kJ/mol
@@ -3316,14 +4401,21 @@ H    -2.982728    -0.267771    -1.090516
 )
 
 entry(
-    index = 156,
-    label = "Cl2 + O <=> ClO-3 + Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.61204e+10,'cm^3/(mol*s)'), n=1.07817, Ea=(13.1778,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03017, dn = +|- 0.003905, dEa = +|- 0.0212509 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=156,
+    label="Cl2 + O <=> ClO-3 + Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.61204e10, "cm^3/(mol*s)"),
+        n=1.07817,
+        Ea=(13.1778, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03017, dn = +|- 0.003905, dEa = +|- 0.0212509 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [Cl][Cl] + [O] <=> [O]Cl + [Cl]
 barrier = 14.454558 kJ/mol
@@ -3337,14 +4429,21 @@ O    -1.923774    -0.175332    -0.0
 )
 
 entry(
-    index = 157,
-    label = "C3H5Cl + H <=> ClH-2 + C3H5-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.55028e+07,'cm^3/(mol*s)'), n=1.93983, Ea=(41.02,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20506, dn = +|- 0.024506, dEa = +|- 0.133361 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=157,
+    label="C3H5Cl + H <=> ClH-2 + C3H5-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.55028e07, "cm^3/(mol*s)"),
+        n=1.93983,
+        Ea=(41.02, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.20506, dn = +|- 0.024506, dEa = +|- 0.133361 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CDC(C)Cl <=> Cl + CD[C]C
 barrier = 47.101558 kJ/mol
@@ -3365,14 +4464,21 @@ H    2.8503    -0.325917    -0.432417
 )
 
 entry(
-    index = 158,
-    label = "ClO-3 + C2H5-2 <=> C2H5Cl + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3426.83,'cm^3/(mol*s)'), n=2.42175, Ea=(16.643,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01473, dn = +|- 0.00192116, dEa = +|- 0.0104549 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=158,
+    label="ClO-3 + C2H5-2 <=> C2H5Cl + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3426.83, "cm^3/(mol*s)"),
+        n=2.42175,
+        Ea=(16.643, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01473, dn = +|- 0.00192116, dEa = +|- 0.0104549 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[CH2] + [O]Cl <=> CCCl + [O]
 barrier = 22.319351 kJ/mol
@@ -3392,14 +4498,21 @@ H    -1.375174    -1.076216    -1.127442
 )
 
 entry(
-    index = 159,
-    label = "CH3Cl-2 + C3H6-2 <=> C3H6Cl-4 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(97.9469,'cm^3/(mol*s)'), n=3.46572, Ea=(44.1586,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16079, dn = +|- 0.0195886, dEa = +|- 0.1066 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=159,
+    label="CH3Cl-2 + C3H6-2 <=> C3H6Cl-4 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(97.9469, "cm^3/(mol*s)"),
+        n=3.46572,
+        Ea=(44.1586, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16079, dn = +|- 0.0195886, dEa = +|- 0.1066 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + C[C]C <=> [CH3] + C[C](C)Cl
 barrier = 48.499909 kJ/mol
@@ -3424,14 +4537,21 @@ H    3.107169    0.143265    0.95064
 )
 
 entry(
-    index = 160,
-    label = "CCl4 + C2H3-2 <=> C2H3Cl-2 + CCl3-2",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(6041.93,'cm^3/(mol*s)'), n=3.07958, Ea=(21.8162,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03865, dn = +|- 0.00498173, dEa = +|- 0.0271104 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=160,
+    label="CCl4 + C2H3-2 <=> C2H3Cl-2 + CCl3-2",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(6041.93, "cm^3/(mol*s)"),
+        n=3.07958,
+        Ea=(21.8162, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03865, dn = +|- 0.00498173, dEa = +|- 0.0271104 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)Cl + [CH]DC <=> CDCCl + Cl[C](Cl)Cl
 barrier = 25.499224 kJ/mol
@@ -3451,14 +4571,21 @@ H    3.433661    -1.406384    -0.420547
 )
 
 entry(
-    index = 161,
-    label = "C2H3Cl3-3 + H <=> ClH-2 + C2H3Cl2-4",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.48225e+07,'cm^3/(mol*s)'), n=1.97737, Ea=(24.4828,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21245, dn = +|- 0.0253094, dEa = +|- 0.137733 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=161,
+    label="C2H3Cl3-3 + H <=> ClH-2 + C2H3Cl2-4",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.48225e07, "cm^3/(mol*s)"),
+        n=1.97737,
+        Ea=(24.4828, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21245, dn = +|- 0.0253094, dEa = +|- 0.137733 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCC(Cl)Cl + [H] <=> Cl + [CH2]C(Cl)Cl
 barrier = 31.064315 kJ/mol
@@ -3478,14 +4605,21 @@ H    -3.862749    0.098881    0.011821
 )
 
 entry(
-    index = 162,
-    label = "ClHO-2 + C2H2Cl-2 <=> C2H2Cl2 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(330.289,'cm^3/(mol*s)'), n=3.11442, Ea=(-2.15891,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03179, dn = +|- 0.00411109, dEa = +|- 0.0223724 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=162,
+    label="ClHO-2 + C2H2Cl-2 <=> C2H2Cl2 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(330.289, "cm^3/(mol*s)"),
+        n=3.11442,
+        Ea=(-2.15891, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03179, dn = +|- 0.00411109, dEa = +|- 0.0223724 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + CD[C]Cl <=> CDC(Cl)Cl + [OH]
 barrier = 1.048483 kJ/mol
@@ -3503,14 +4637,21 @@ H    -3.10287    -0.596577    0.999207
 )
 
 entry(
-    index = 163,
-    label = "CClFO + CF3 <=> CClF3 + CFO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2891.19,'cm^3/(mol*s)'), n=2.26603, Ea=(69.0476,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09898, dn = +|- 0.0124002, dEa = +|- 0.0674815 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=163,
+    label="CClFO + CF3 <=> CClF3 + CFO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2891.19, "cm^3/(mol*s)"),
+        n=2.26603,
+        Ea=(69.0476, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09898, dn = +|- 0.0124002, dEa = +|- 0.0674815 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ODC(F)Cl + F[C](F)F <=> FC(F)(F)Cl + OD[C]F
 barrier = 71.397745 kJ/mol
@@ -3528,14 +4669,21 @@ C    -2.341032    -0.102381    0.00954
 )
 
 entry(
-    index = 164,
-    label = "C2H2Cl4-2 + CH3 <=> CH3Cl-2 + C2H2Cl3-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(624500,'cm^3/(mol*s)'), n=1.78944, Ea=(30.2399,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06376, dn = +|- 0.00812075, dEa = +|- 0.0441928 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=164,
+    label="C2H2Cl4-2 + CH3 <=> CH3Cl-2 + C2H2Cl3-2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(624500, "cm^3/(mol*s)"),
+        n=1.78944,
+        Ea=(30.2399, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06376, dn = +|- 0.00812075, dEa = +|- 0.0441928 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCC(Cl)(Cl)Cl + [CH3] <=> CCl + ClC[C](Cl)Cl
 barrier = 36.244952 kJ/mol
@@ -3558,14 +4706,21 @@ H    -3.844802    -1.613495    0.841514
 )
 
 entry(
-    index = 165,
-    label = "C2H4ClF-2 + H <=> ClH-2 + C2H4F-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.12149e+07,'cm^3/(mol*s)'), n=2.00716, Ea=(29.5304,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.22536, dn = +|- 0.0267011, dEa = +|- 0.145306 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=165,
+    label="C2H4ClF-2 + H <=> ClH-2 + C2H4F-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.12149e07, "cm^3/(mol*s)"),
+        n=2.00716,
+        Ea=(29.5304, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.22536, dn = +|- 0.0267011, dEa = +|- 0.145306 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FCCCl + [H] <=> Cl + [CH2]CF
 barrier = 36.262390 kJ/mol
@@ -3585,14 +4740,21 @@ H    -2.600382    -1.347749    0.257517
 )
 
 entry(
-    index = 166,
-    label = "CH2Cl2 + CF3 <=> CClF3 + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(169.146,'cm^3/(mol*s)'), n=3.38543, Ea=(44.8483,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.12139, dn = +|- 0.0150517, dEa = +|- 0.0819108 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=166,
+    label="CH2Cl2 + CF3 <=> CClF3 + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(169.146, "cm^3/(mol*s)"),
+        n=3.38543,
+        Ea=(44.8483, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.12139, dn = +|- 0.0150517, dEa = +|- 0.0819108 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCl + F[C](F)F <=> FC(F)(F)Cl + [CH2]Cl
 barrier = 48.125749 kJ/mol
@@ -3612,14 +4774,21 @@ H    2.55571    -0.283769    1.024949
 )
 
 entry(
-    index = 167,
-    label = "ClO-3 + CFO <=> CClFO + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(589857,'cm^3/(mol*s)'), n=1.65372, Ea=(28.2843,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05345, dn = +|- 0.00684134, dEa = +|- 0.0372303 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=167,
+    label="ClO-3 + CFO <=> CClFO + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(589857, "cm^3/(mol*s)"),
+        n=1.65372,
+        Ea=(28.2843, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05345, dn = +|- 0.00684134, dEa = +|- 0.0372303 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + OD[C]F <=> ODC(F)Cl + [O]
 barrier = 31.609122 kJ/mol
@@ -3635,14 +4804,21 @@ C    1.201119    0.091025    0.007543
 )
 
 entry(
-    index = 168,
-    label = "C4H7Cl + H <=> ClH-2 + C4H7",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(7.42968e+07,'cm^3/(mol*s)'), n=1.88465, Ea=(46.2174,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16471, dn = +|- 0.0200323, dEa = +|- 0.109015 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=168,
+    label="C4H7Cl + H <=> ClH-2 + C4H7",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(7.42968e07, "cm^3/(mol*s)"),
+        n=1.88465,
+        Ea=(46.2174, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16471, dn = +|- 0.0200323, dEa = +|- 0.109015 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(C)DCCl <=> Cl + [CH]DC(C)C
 barrier = 51.600902 kJ/mol
@@ -3666,14 +4842,21 @@ H    3.871222    0.684779    -1.168273
 )
 
 entry(
-    index = 169,
-    label = "CCl2O + H <=> ClH-2 + CClO",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.34563e+08,'cm^3/(mol*s)'), n=1.83026, Ea=(24.9557,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1627, dn = +|- 0.0198054, dEa = +|- 0.10778 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=169,
+    label="CCl2O + H <=> ClH-2 + CClO",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.34563e08, "cm^3/(mol*s)"),
+        n=1.83026,
+        Ea=(24.9557, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1627, dn = +|- 0.0198054, dEa = +|- 0.10778 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ODC(Cl)Cl + [H] <=> Cl + OD[C]Cl
 barrier = 30.787342 kJ/mol
@@ -3689,14 +4872,21 @@ H    -2.997782    -0.897597    0.69577
 )
 
 entry(
-    index = 170,
-    label = "C2Cl3F3 + H <=> ClH-2 + C2Cl2F3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(3.93247e+08,'cm^3/(mol*s)'), n=1.7963, Ea=(27.6198,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14261, dn = +|- 0.0175146, dEa = +|- 0.0953139 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=170,
+    label="C2Cl3F3 + H <=> ClH-2 + C2Cl2F3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(3.93247e08, "cm^3/(mol*s)"),
+        n=1.7963,
+        Ea=(27.6198, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14261, dn = +|- 0.0175146, dEa = +|- 0.0953139 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(F)C(Cl)(Cl)Cl + [H] <=> Cl + FC(F)(F)[C](Cl)Cl
 barrier = 32.787577 kJ/mol
@@ -3715,14 +4905,21 @@ H    2.745702    2.345314    -0.003444
 )
 
 entry(
-    index = 171,
-    label = "CCl2F2 + CH3 <=> CH3Cl-2 + CClF2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(12306.9,'cm^3/(mol*s)'), n=2.71255, Ea=(51.3353,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08845, dn = +|- 0.011135, dEa = +|- 0.0605964 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=171,
+    label="CCl2F2 + CH3 <=> CH3Cl-2 + CClF2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(12306.9, "cm^3/(mol*s)"),
+        n=2.71255,
+        Ea=(51.3353, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08845, dn = +|- 0.011135, dEa = +|- 0.0605964 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Cl + [CH3] <=> CCl + F[C](F)Cl
 barrier = 57.555877 kJ/mol
@@ -3742,14 +4939,21 @@ H    -3.620139    0.375722    -0.928158
 )
 
 entry(
-    index = 172,
-    label = "C2H5ClO-2 + O <=> ClO-3 + C2H5O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.5379e+08,'cm^3/(mol*s)'), n=1.59378, Ea=(-0.151855,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02238, dn = +|- 0.00290798, dEa = +|- 0.0158251 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=172,
+    label="C2H5ClO-2 + O <=> ClO-3 + C2H5O-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.5379e08, "cm^3/(mol*s)"),
+        n=1.59378,
+        Ea=(-0.151855, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02238, dn = +|- 0.00290798, dEa = +|- 0.0158251 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCOCl + [O] <=> [O]Cl + CC[O]
 barrier = 1.620486 kJ/mol
@@ -3770,14 +4974,21 @@ H    2.084637    1.059012    -1.219508
 )
 
 entry(
-    index = 173,
-    label = "CH2Cl2 + CH2Br <=> CH2BrCl + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(4096.87,'cm^3/(mol*s)'), n=2.00995, Ea=(72.76,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.00552, dn = +|- 0.000723727, dEa = +|- 0.0039385 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=173,
+    label="CH2Cl2 + CH2Br <=> CH2BrCl + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(4096.87, "cm^3/(mol*s)"),
+        n=2.00995,
+        Ea=(72.76, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.00552, dn = +|- 0.000723727, dEa = +|- 0.0039385 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCl + [CH2]Br <=> [CH2]Cl + ClCBr
 barrier = 78.580656 kJ/mol
@@ -3796,14 +5007,21 @@ H    2.80618    1.762917    0.49189
 )
 
 entry(
-    index = 174,
-    label = "C2Cl6 + CH3 <=> CH3Cl-2 + C2Cl5",
-    degeneracy = 6.0,
-    kinetics = Arrhenius(A=(61254.6,'cm^3/(mol*s)'), n=2.77509, Ea=(40.8245,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06745, dn = +|- 0.00857493, dEa = +|- 0.0466644 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=174,
+    label="C2Cl6 + CH3 <=> CH3Cl-2 + C2Cl5",
+    degeneracy=6.0,
+    kinetics=Arrhenius(
+        A=(61254.6, "cm^3/(mol*s)"),
+        n=2.77509,
+        Ea=(40.8245, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06745, dn = +|- 0.00857493, dEa = +|- 0.0466644 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)C(Cl)(Cl)Cl + [CH3] <=> CCl + Cl[C](Cl)C(Cl)(Cl)Cl
 barrier = 47.003943 kJ/mol
@@ -3825,14 +5043,21 @@ H    -4.346064    0.003026    0.671016
 )
 
 entry(
-    index = 175,
-    label = "CHCl3 + CH2Cl-2 <=> CH2Cl2 + CHCl2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(5143.18,'cm^3/(mol*s)'), n=1.9068, Ea=(48.9097,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03458, dn = +|- 0.00446603, dEa = +|- 0.024304 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=175,
+    label="CHCl3 + CH2Cl-2 <=> CH2Cl2 + CHCl2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(5143.18, "cm^3/(mol*s)"),
+        n=1.9068,
+        Ea=(48.9097, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03458, dn = +|- 0.00446603, dEa = +|- 0.024304 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)Cl + [CH2]Cl <=> Cl[CH]Cl + ClCCl
 barrier = 54.695678 kJ/mol
@@ -3852,14 +5077,21 @@ H    -1.548602    0.962872    1.184341
 )
 
 entry(
-    index = 176,
-    label = "CH2Cl2 + C2H3-2 <=> C2H3Cl-2 + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(709.333,'cm^3/(mol*s)'), n=3.20018, Ea=(34.7131,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06789, dn = +|- 0.00863027, dEa = +|- 0.0469656 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=176,
+    label="CH2Cl2 + C2H3-2 <=> C2H3Cl-2 + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(709.333, "cm^3/(mol*s)"),
+        n=3.20018,
+        Ea=(34.7131, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06789, dn = +|- 0.00863027, dEa = +|- 0.0469656 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCl + [CH]DC <=> [CH2]Cl + CDCCl
 barrier = 39.286425 kJ/mol
@@ -3880,14 +5112,21 @@ H    -3.087207    1.237175    -0.025927
 )
 
 entry(
-    index = 177,
-    label = "C3H6Cl2 + CH2F <=> CH2ClF + C3H6Cl-7",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(671.175,'cm^3/(mol*s)'), n=3.00594, Ea=(48.0169,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.00595, dn = +|- 0.00077967, dEa = +|- 0.00424294 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=177,
+    label="C3H6Cl2 + CH2F <=> CH2ClF + C3H6Cl-7",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(671.175, "cm^3/(mol*s)"),
+        n=3.00594,
+        Ea=(48.0169, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.00595, dn = +|- 0.00077967, dEa = +|- 0.00424294 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCC(Cl)Cl + [CH2]F <=> CC[CH]Cl + FCCl
 barrier = 52.889307 kJ/mol
@@ -3913,14 +5152,21 @@ H    1.273721    0.313887    -1.445283
 )
 
 entry(
-    index = 178,
-    label = "CH2BrCl + CH3 <=> CH3Cl-2 + CH2Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3005.42,'cm^3/(mol*s)'), n=2.90586, Ea=(66.3756,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.039, dn = +|- 0.00502588, dEa = +|- 0.0273506 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=178,
+    label="CH2BrCl + CH3 <=> CH3Cl-2 + CH2Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3005.42, "cm^3/(mol*s)"),
+        n=2.90586,
+        Ea=(66.3756, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.039, dn = +|- 0.00502588, dEa = +|- 0.0273506 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH3] + ClCBr <=> CCl + [CH2]Br
 barrier = 73.432878 kJ/mol
@@ -3939,14 +5185,21 @@ H    3.072899    -1.482723    1.002593
 )
 
 entry(
-    index = 179,
-    label = "ClHO-2 + C2H3ClF <=> C2H3Cl2F + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(25.9217,'cm^3/(mol*s)'), n=3.15405, Ea=(-2.33293,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04401, dn = +|- 0.00565879, dEa = +|- 0.0307949 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=179,
+    label="ClHO-2 + C2H3ClF <=> C2H3Cl2F + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(25.9217, "cm^3/(mol*s)"),
+        n=3.15405,
+        Ea=(-2.33293, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04401, dn = +|- 0.00565879, dEa = +|- 0.0307949 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + C[C](F)Cl <=> CC(F)(Cl)Cl + [OH]
 barrier = 0.690833 kJ/mol
@@ -3966,14 +5219,21 @@ H    -3.334878    -0.197969    0.850471
 )
 
 entry(
-    index = 180,
-    label = "C2H4Cl2O + CH3 <=> CH3Cl-2 + C2H4ClO-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(8323.64,'cm^3/(mol*s)'), n=2.75776, Ea=(53.3391,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08108, dn = +|- 0.0102422, dEa = +|- 0.0557376 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=180,
+    label="C2H4Cl2O + CH3 <=> CH3Cl-2 + C2H4ClO-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(8323.64, "cm^3/(mol*s)"),
+        n=2.75776,
+        Ea=(53.3391, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08108, dn = +|- 0.0102422, dEa = +|- 0.0557376 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(O)(Cl)Cl + [CH3] <=> CCl + C[C](O)Cl
 barrier = 59.665358 kJ/mol
@@ -3996,14 +5256,21 @@ H    0.701281    0.590179    2.105046
 )
 
 entry(
-    index = 181,
-    label = "C2H2Cl2 + H <=> ClH-2 + C2H2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.10586e+08,'cm^3/(mol*s)'), n=1.9091, Ea=(36.7923,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20433, dn = +|- 0.0244261, dEa = +|- 0.132926 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=181,
+    label="C2H2Cl2 + H <=> ClH-2 + C2H2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.10586e08, "cm^3/(mol*s)"),
+        n=1.9091,
+        Ea=(36.7923, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.20433, dn = +|- 0.0244261, dEa = +|- 0.132926 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CDC(Cl)Cl + [H] <=> Cl + CD[C]Cl
 barrier = 42.919777 kJ/mol
@@ -4021,14 +5288,21 @@ H    2.485316    -1.942948    -0.307001
 )
 
 entry(
-    index = 182,
-    label = "ClO-3 + H <=> ClH-2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.99623e+09,'cm^3/(mol*s)'), n=1.20842, Ea=(11.801,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.08452, dn = +|- 0.0106595, dEa = +|- 0.0580086 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=182,
+    label="ClO-3 + H <=> ClH-2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.99623e09, "cm^3/(mol*s)"),
+        n=1.20842,
+        Ea=(11.801, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.08452, dn = +|- 0.0106595, dEa = +|- 0.0580086 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + [H] <=> Cl + [O]
 barrier = 15.543406 kJ/mol
@@ -4042,14 +5316,21 @@ H    1.753441    -0.098142    0.0
 )
 
 entry(
-    index = 183,
-    label = "CH3Cl-2 + H <=> ClH-2 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.59764e+07,'cm^3/(mol*s)'), n=2.07537, Ea=(33.054,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.25697, dn = +|- 0.0300472, dEa = +|- 0.163516 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=183,
+    label="CH3Cl-2 + H <=> ClH-2 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.59764e07, "cm^3/(mol*s)"),
+        n=2.07537,
+        Ea=(33.054, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.25697, dn = +|- 0.0300472, dEa = +|- 0.163516 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + [H] <=> Cl + [CH3]
 barrier = 39.899528 kJ/mol
@@ -4066,14 +5347,21 @@ H    -2.226765    -0.296149    0.000235
 )
 
 entry(
-    index = 184,
-    label = "CH3ClO-2 + H <=> ClH-2 + CH3O-3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.8207e+07,'cm^3/(mol*s)'), n=1.91432, Ea=(26.9905,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.18749, dn = +|- 0.0225768, dEa = +|- 0.122862 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=184,
+    label="CH3ClO-2 + H <=> ClH-2 + CH3O-3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.8207e07, "cm^3/(mol*s)"),
+        n=1.91432,
+        Ea=(26.9905, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.18749, dn = +|- 0.0225768, dEa = +|- 0.122862 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCCl + [H] <=> Cl + [CH2]O
 barrier = 33.632310 kJ/mol
@@ -4091,14 +5379,21 @@ H    -2.579538    -0.910389    0.0451
 )
 
 entry(
-    index = 185,
-    label = "ClHO-2 + CHCl2 <=> CHCl3 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(71.5617,'cm^3/(mol*s)'), n=3.06916, Ea=(6.22331,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01411, dn = +|- 0.00184138, dEa = +|- 0.0100207 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=185,
+    label="ClHO-2 + CHCl2 <=> CHCl3 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(71.5617, "cm^3/(mol*s)"),
+        n=3.06916,
+        Ea=(6.22331, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01411, dn = +|- 0.00184138, dEa = +|- 0.0100207 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + Cl[CH]Cl <=> ClC(Cl)Cl + [OH]
 barrier = 10.626284 kJ/mol
@@ -4116,14 +5411,21 @@ H    -3.354575    -0.65646    -0.00195
 )
 
 entry(
-    index = 186,
-    label = "ClO-3 + C2H3-2 <=> C2H3Cl-2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2855.47,'cm^3/(mol*s)'), n=2.56268, Ea=(6.09476,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02474, dn = +|- 0.00321021, dEa = +|- 0.0174698 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=186,
+    label="ClO-3 + C2H3-2 <=> C2H3Cl-2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2855.47, "cm^3/(mol*s)"),
+        n=2.56268,
+        Ea=(6.09476, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02474, dn = +|- 0.00321021, dEa = +|- 0.0174698 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + [CH]DC <=> CDCCl + [O]
 barrier = 11.000927 kJ/mol
@@ -4141,14 +5443,21 @@ H    -0.961183    -0.193521    0.170161
 )
 
 entry(
-    index = 187,
-    label = "CH3Cl-2 + CH2-2 <=> CH2Cl + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(175826,'cm^3/(mol*s)'), n=2.33022, Ea=(53.7341,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.10284, dn = +|- 0.0128601, dEa = +|- 0.0699841 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=187,
+    label="CH3Cl-2 + CH2-2 <=> CH2Cl + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(175826, "cm^3/(mol*s)"),
+        n=2.33022,
+        Ea=(53.7341, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.10284, dn = +|- 0.0128601, dEa = +|- 0.0699841 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + [CH2] <=> [CH3] + [CH2]Cl
 barrier = 59.329051 kJ/mol
@@ -4167,14 +5476,21 @@ H    2.626645    1.183283    -0.125125
 )
 
 entry(
-    index = 188,
-    label = "CH2Cl2 + H <=> ClH-2 + CH2Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(5.76038e+07,'cm^3/(mol*s)'), n=1.94327, Ea=(26.4699,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20116, dn = +|- 0.02408, dEa = +|- 0.131043 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=188,
+    label="CH2Cl2 + H <=> ClH-2 + CH2Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(5.76038e07, "cm^3/(mol*s)"),
+        n=1.94327,
+        Ea=(26.4699, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.20116, dn = +|- 0.02408, dEa = +|- 0.131043 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCl + [H] <=> Cl + [CH2]Cl
 barrier = 33.058989 kJ/mol
@@ -4191,14 +5507,21 @@ H    -3.017445    -0.640106    0.532064
 )
 
 entry(
-    index = 189,
-    label = "C2H4Cl2-2 + H <=> ClH-2 + C2H4Cl-3",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(5.70062e+07,'cm^3/(mol*s)'), n=1.97907, Ea=(27.5456,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21617, dn = +|- 0.0257118, dEa = +|- 0.139922 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=189,
+    label="C2H4Cl2-2 + H <=> ClH-2 + C2H4Cl-3",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(5.70062e07, "cm^3/(mol*s)"),
+        n=1.97907,
+        Ea=(27.5456, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21617, dn = +|- 0.0257118, dEa = +|- 0.139922 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCCCl + [H] <=> Cl + [CH2]CCl
 barrier = 34.012843 kJ/mol
@@ -4218,14 +5541,21 @@ H    3.65654    -0.581709    0.520402
 )
 
 entry(
-    index = 190,
-    label = "C3H6ClF + CH2F <=> CH2ClF + C3H6F",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(14873.4,'cm^3/(mol*s)'), n=1.93367, Ea=(56.6062,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02492, dn = +|- 0.00323348, dEa = +|- 0.0175965 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=190,
+    label="C3H6ClF + CH2F <=> CH2ClF + C3H6F",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(14873.4, "cm^3/(mol*s)"),
+        n=1.93367,
+        Ea=(56.6062, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02492, dn = +|- 0.00323348, dEa = +|- 0.0175965 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH2]F + CC(C)(F)Cl <=> FCCl + C[C](C)F
 barrier = 60.991438 kJ/mol
@@ -4251,14 +5581,21 @@ H    -2.968974    0.315277    1.042139
 )
 
 entry(
-    index = 191,
-    label = "ClHO-2 + C2Cl2F3 <=> C2Cl3F3 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(11.9048,'cm^3/(mol*s)'), n=3.22184, Ea=(21.2228,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06411, dn = +|- 0.0081644, dEa = +|- 0.0444304 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=191,
+    label="ClHO-2 + C2Cl2F3 <=> C2Cl3F3 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(11.9048, "cm^3/(mol*s)"),
+        n=3.22184,
+        Ea=(21.2228, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06411, dn = +|- 0.0081644, dEa = +|- 0.0444304 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + FC(F)(F)[C](Cl)Cl <=> FC(F)(F)C(Cl)(Cl)Cl + [OH]
 barrier = 25.211353 kJ/mol
@@ -4278,14 +5615,21 @@ H    -3.524476    0.647543    0.419066
 )
 
 entry(
-    index = 192,
-    label = "C4H6Cl3F + H <=> ClH-2 + C4H6Cl2F",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1.40841e+08,'cm^3/(mol*s)'), n=1.75719, Ea=(11.0326,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.114, dn = +|- 0.0141836, dEa = +|- 0.0771868 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=192,
+    label="C4H6Cl3F + H <=> ClH-2 + C4H6Cl2F",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(1.40841e08, "cm^3/(mol*s)"),
+        n=1.75719,
+        Ea=(11.0326, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.114, dn = +|- 0.0141836, dEa = +|- 0.0771868 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(C)(F)C(Cl)(Cl)Cl + [H] <=> Cl + CC(C)(F)[C](Cl)Cl
 barrier = 16.147129 kJ/mol
@@ -4311,14 +5655,21 @@ H    1.912099    -3.182921    -0.144245
 )
 
 entry(
-    index = 193,
-    label = "C4H9Cl-2 + H <=> ClH-2 + C4H9-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.78004e+07,'cm^3/(mol*s)'), n=1.9284, Ea=(27.5148,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19651, dn = +|- 0.0235708, dEa = +|- 0.128271 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=193,
+    label="C4H9Cl-2 + H <=> ClH-2 + C4H9-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.78004e07, "cm^3/(mol*s)"),
+        n=1.9284,
+        Ea=(27.5148, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19651, dn = +|- 0.0235708, dEa = +|- 0.128271 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCC(C)Cl + [H] <=> Cl + C[CH]CC
 barrier = 33.609516 kJ/mol
@@ -4344,14 +5695,21 @@ H    -3.296339    -0.852041    0.486945
 )
 
 entry(
-    index = 194,
-    label = "ClO-3 + CCl3-2 <=> CCl4 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(56787.5,'cm^3/(mol*s)'), n=1.80944, Ea=(49.22,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.11315, dn = +|- 0.0140832, dEa = +|- 0.0766405 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=194,
+    label="ClO-3 + CCl3-2 <=> CCl4 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(56787.5, "cm^3/(mol*s)"),
+        n=1.80944,
+        Ea=(49.22, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.11315, dn = +|- 0.0140832, dEa = +|- 0.0766405 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + Cl[C](Cl)Cl <=> ClC(Cl)(Cl)Cl + [O]
 barrier = 52.430802 kJ/mol
@@ -4368,14 +5726,21 @@ C    -0.515482    0.073799    -0.037459
 )
 
 entry(
-    index = 195,
-    label = "CCl4 + CH3 <=> CH3Cl-2 + CCl3-2",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(114819,'cm^3/(mol*s)'), n=2.77954, Ea=(26.778,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06565, dn = +|- 0.00835344, dEa = +|- 0.0454591 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=195,
+    label="CCl4 + CH3 <=> CH3Cl-2 + CCl3-2",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(114819, "cm^3/(mol*s)"),
+        n=2.77954,
+        Ea=(26.778, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06565, dn = +|- 0.00835344, dEa = +|- 0.0454591 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)Cl + [CH3] <=> CCl + Cl[C](Cl)Cl
 barrier = 32.898137 kJ/mol
@@ -4395,14 +5760,21 @@ H    3.787676    0.918098    -0.563589
 )
 
 entry(
-    index = 196,
-    label = "CCl2F2 + C2H5-2 <=> C2H5Cl + CClF2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(16870.5,'cm^3/(mol*s)'), n=1.82185, Ea=(41.7134,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.04151, dn = +|- 0.00534405, dEa = +|- 0.0290821 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=196,
+    label="CCl2F2 + C2H5-2 <=> C2H5Cl + CClF2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(16870.5, "cm^3/(mol*s)"),
+        n=1.82185,
+        Ea=(41.7134, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.04151, dn = +|- 0.00534405, dEa = +|- 0.0290821 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[CH2] + FC(F)(Cl)Cl <=> CCCl + F[C](F)Cl
 barrier = 46.555927 kJ/mol
@@ -4425,14 +5797,21 @@ H    3.020871    1.641415    0.305477
 )
 
 entry(
-    index = 197,
-    label = "C2H3Cl3 + CF3 <=> CClF3 + C2H3Cl2-3",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(507.899,'cm^3/(mol*s)'), n=3.21727, Ea=(37.6247,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07457, dn = +|- 0.00944874, dEa = +|- 0.0514197 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=197,
+    label="C2H3Cl3 + CF3 <=> CClF3 + C2H3Cl2-3",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(507.899, "cm^3/(mol*s)"),
+        n=3.21727,
+        Ea=(37.6247, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07457, dn = +|- 0.00944874, dEa = +|- 0.0514197 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(Cl)(Cl)Cl + F[C](F)F <=> FC(F)(F)Cl + C[C](Cl)Cl
 barrier = 39.894755 kJ/mol
@@ -4454,14 +5833,21 @@ H    1.16251    0.643483    2.404471
 )
 
 entry(
-    index = 198,
-    label = "Cl2 + CCl2F <=> CCl3F + Cl",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(40289.7,'cm^3/(mol*s)'), n=2.57076, Ea=(1.63465,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02715, dn = +|- 0.00351889, dEa = +|- 0.0191496 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=198,
+    label="Cl2 + CCl2F <=> CCl3F + Cl",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(40289.7, "cm^3/(mol*s)"),
+        n=2.57076,
+        Ea=(1.63465, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02715, dn = +|- 0.00351889, dEa = +|- 0.0191496 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [Cl][Cl] + F[C](Cl)Cl <=> FC(Cl)(Cl)Cl + [Cl]
 barrier = 3.144070 kJ/mol
@@ -4477,14 +5863,21 @@ C    -1.073128    0.041137    0.302892
 )
 
 entry(
-    index = 199,
-    label = "CH3Cl-2 + CHF2 <=> CHClF2 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(23.7629,'cm^3/(mol*s)'), n=3.44894, Ea=(60.7232,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14391, dn = +|- 0.0176643, dEa = +|- 0.0961285 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=199,
+    label="CH3Cl-2 + CHF2 <=> CHClF2 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(23.7629, "cm^3/(mol*s)"),
+        n=3.44894,
+        Ea=(60.7232, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14391, dn = +|- 0.0176643, dEa = +|- 0.0961285 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: F[CH]F + CCl <=> FC(F)Cl + [CH3]
 barrier = 65.602888 kJ/mol
@@ -4504,14 +5897,21 @@ H    -2.864113    -0.749833    -1.142852
 )
 
 entry(
-    index = 200,
-    label = "C3H4Cl2-2 + H <=> ClH-2 + C3H4Cl-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.77168e+07,'cm^3/(mol*s)'), n=1.89866, Ea=(45.4348,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.1726, dn = +|- 0.0209191, dEa = +|- 0.113841 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=200,
+    label="C3H4Cl2-2 + H <=> ClH-2 + C3H4Cl-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.77168e07, "cm^3/(mol*s)"),
+        n=1.89866,
+        Ea=(45.4348, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.1726, dn = +|- 0.0209191, dEa = +|- 0.113841 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(Cl)DCCl + [H] <=> Cl + [CH]DC(C)Cl
 barrier = 51.274040 kJ/mol
@@ -4532,14 +5932,21 @@ H    -3.31274    -0.702474    -0.259
 )
 
 entry(
-    index = 201,
-    label = "ClO-3 + C3H6Cl-6 <=> C3H6Cl2-3 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(495.128,'cm^3/(mol*s)'), n=2.66142, Ea=(17.7217,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07389, dn = +|- 0.00936614, dEa = +|- 0.0509702 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=201,
+    label="ClO-3 + C3H6Cl-6 <=> C3H6Cl2-3 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(495.128, "cm^3/(mol*s)"),
+        n=2.66142,
+        Ea=(17.7217, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07389, dn = +|- 0.00936614, dEa = +|- 0.0509702 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[C](C)Cl + [O]Cl <=> CC(C)(Cl)Cl + [O]
 barrier = 22.011471 kJ/mol
@@ -4561,14 +5968,21 @@ H    0.181704    0.951656    2.512811
 )
 
 entry(
-    index = 202,
-    label = "CH2BrCl + H <=> ClH-2 + CH2Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.68653e+07,'cm^3/(mol*s)'), n=1.9768, Ea=(34.9034,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.22377, dn = +|- 0.0265308, dEa = +|- 0.14438 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=202,
+    label="CH2BrCl + H <=> ClH-2 + CH2Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.68653e07, "cm^3/(mol*s)"),
+        n=1.9768,
+        Ea=(34.9034, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.22377, dn = +|- 0.0265308, dEa = +|- 0.14438 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCBr + [H] <=> Cl + [CH2]Br
 barrier = 41.547961 kJ/mol
@@ -4584,14 +5998,21 @@ H    -3.60544    -0.706096    0.066977
 )
 
 entry(
-    index = 203,
-    label = "C3H5Cl-2 + H <=> ClH-2 + C3H5-3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(4.32043e+07,'cm^3/(mol*s)'), n=1.91844, Ea=(22.9782,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.18321, dn = +|- 0.0221019, dEa = +|- 0.120278 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=203,
+    label="C3H5Cl-2 + H <=> ClH-2 + C3H5-3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(4.32043e07, "cm^3/(mol*s)"),
+        n=1.91844,
+        Ea=(22.9782, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.18321, dn = +|- 0.0221019, dEa = +|- 0.120278 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CDCCCl + [H] <=> Cl + [CH2]CDC
 barrier = 28.947173 kJ/mol
@@ -4612,14 +6033,21 @@ H    3.03709    -0.925171    -0.026315
 )
 
 entry(
-    index = 204,
-    label = "CHCl3O + CH3 <=> CH3Cl-2 + CHCl2O-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(658020,'cm^3/(mol*s)'), n=1.76817, Ea=(33.1442,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07097, dn = +|- 0.00900825, dEa = +|- 0.0490226 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=204,
+    label="CHCl3O + CH3 <=> CH3Cl-2 + CHCl2O-2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(658020, "cm^3/(mol*s)"),
+        n=1.76817,
+        Ea=(33.1442, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07097, dn = +|- 0.00900825, dEa = +|- 0.0490226 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OC(Cl)(Cl)Cl + [CH3] <=> O[C](Cl)Cl + CCl
 barrier = 39.157397 kJ/mol
@@ -4640,14 +6068,21 @@ H    -0.491156    0.79007    2.032928
 )
 
 entry(
-    index = 205,
-    label = "C2H5Cl + H <=> ClH-2 + C2H5-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.32804e+07,'cm^3/(mol*s)'), n=1.99427, Ea=(30.0451,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21837, dn = +|- 0.0259499, dEa = +|- 0.141218 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=205,
+    label="C2H5Cl + H <=> ClH-2 + C2H5-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.32804e07, "cm^3/(mol*s)"),
+        n=1.99427,
+        Ea=(30.0451, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21837, dn = +|- 0.0259499, dEa = +|- 0.141218 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCCl + [H] <=> Cl + C[CH2]
 barrier = 36.650117 kJ/mol
@@ -4667,14 +6102,21 @@ H    -2.467882    1.159418    1.1e-05
 )
 
 entry(
-    index = 206,
-    label = "C2H3Cl2F + CH2F <=> CH2ClF + C2H3ClF",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(487.731,'cm^3/(mol*s)'), n=2.90704, Ea=(45.368,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0256, dn = +|- 0.00332084, dEa = +|- 0.0180719 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=206,
+    label="C2H3Cl2F + CH2F <=> CH2ClF + C2H3ClF",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(487.731, "cm^3/(mol*s)"),
+        n=2.90704,
+        Ea=(45.368, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0256, dn = +|- 0.00332084, dEa = +|- 0.0180719 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(F)(Cl)Cl + [CH2]F <=> FCCl + C[C](F)Cl
 barrier = 49.947253 kJ/mol
@@ -4697,14 +6139,21 @@ H    -3.193793    -0.769061    1.164777
 )
 
 entry(
-    index = 207,
-    label = "ClO-3 + C2Cl2F3 <=> C2Cl3F3 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(8906.58,'cm^3/(mol*s)'), n=1.76738, Ea=(47.3671,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09783, dn = +|- 0.0122621, dEa = +|- 0.0667299 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=207,
+    label="ClO-3 + C2Cl2F3 <=> C2Cl3F3 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(8906.58, "cm^3/(mol*s)"),
+        n=1.76738,
+        Ea=(47.3671, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09783, dn = +|- 0.0122621, dEa = +|- 0.0667299 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + FC(F)(F)[C](Cl)Cl <=> FC(F)(F)C(Cl)(Cl)Cl + [O]
 barrier = 50.697775 kJ/mol
@@ -4723,14 +6172,21 @@ C    -0.202751    -0.466102    0.28939
 )
 
 entry(
-    index = 208,
-    label = "CBrClF2 + CClF2 <=> CCl2F2 + CBrF2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(44.8911,'cm^3/(mol*s)'), n=3.19144, Ea=(56.5628,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07553, dn = +|- 0.0095659, dEa = +|- 0.0520573 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=208,
+    label="CBrClF2 + CClF2 <=> CCl2F2 + CBrF2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(44.8911, "cm^3/(mol*s)"),
+        n=3.19144,
+        Ea=(56.5628, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07553, dn = +|- 0.0095659, dEa = +|- 0.0520573 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Br + F[C](F)Cl <=> FC(F)(Cl)Cl + F[C](F)Br
 barrier = 58.778284 kJ/mol
@@ -4749,14 +6205,21 @@ C    2.590441    -0.24452    0.052854
 )
 
 entry(
-    index = 209,
-    label = "C2Cl2F4 + CF3 <=> CClF3 + C2ClF4",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(342.596,'cm^3/(mol*s)'), n=3.19295, Ea=(56.9806,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07498, dn = +|- 0.00949875, dEa = +|- 0.0516918 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=209,
+    label="C2Cl2F4 + CF3 <=> CClF3 + C2ClF4",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(342.596, "cm^3/(mol*s)"),
+        n=3.19295,
+        Ea=(56.9806, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07498, dn = +|- 0.00949875, dEa = +|- 0.0516918 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)C(F)(F)Cl + F[C](F)F <=> FC(F)(F)Cl + F[C](F)C(F)(F)Cl
 barrier = 59.200487 kJ/mol
@@ -4778,14 +6241,21 @@ C    -2.995156    0.149918    0.048641
 )
 
 entry(
-    index = 210,
-    label = "ClO-3 + C2H4ClO-2 <=> C2H4Cl2O + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(548.19,'cm^3/(mol*s)'), n=2.65512, Ea=(13.3747,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.06186, dn = +|- 0.00788543, dEa = +|- 0.0429122 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=210,
+    label="ClO-3 + C2H4ClO-2 <=> C2H4Cl2O + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(548.19, "cm^3/(mol*s)"),
+        n=2.65512,
+        Ea=(13.3747, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.06186, dn = +|- 0.00788543, dEa = +|- 0.0429122 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + C[C](O)Cl <=> CC(O)(Cl)Cl + [O]
 barrier = 16.968819 kJ/mol
@@ -4806,14 +6276,21 @@ H    0.898465    0.298238    1.931963
 )
 
 entry(
-    index = 211,
-    label = "C3H6BrCl + CH2F <=> CH2ClF + C3H6Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(463.85,'cm^3/(mol*s)'), n=2.94202, Ea=(52.8466,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02218, dn = +|- 0.00288177, dEa = +|- 0.0156825 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=211,
+    label="C3H6BrCl + CH2F <=> CH2ClF + C3H6Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(463.85, "cm^3/(mol*s)"),
+        n=2.94202,
+        Ea=(52.8466, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02218, dn = +|- 0.00288177, dEa = +|- 0.0156825 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH2]F + CC(C)(Cl)Br <=> FCCl + C[C](C)Br
 barrier = 57.440599 kJ/mol
@@ -4838,14 +6315,21 @@ H    -3.508361    -1.463351    -0.713017
 )
 
 entry(
-    index = 212,
-    label = "C2H2Cl4-2 + H <=> ClH-2 + C2H2Cl3-2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(1.77982e+08,'cm^3/(mol*s)'), n=1.76709, Ea=(10.499,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.11548, dn = +|- 0.0143582, dEa = +|- 0.0781367 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=212,
+    label="C2H2Cl4-2 + H <=> ClH-2 + C2H2Cl3-2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(1.77982e08, "cm^3/(mol*s)"),
+        n=1.76709,
+        Ea=(10.499, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.11548, dn = +|- 0.0143582, dEa = +|- 0.0781367 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCC(Cl)(Cl)Cl + [H] <=> Cl + ClC[C](Cl)Cl
 barrier = 15.281374 kJ/mol
@@ -4865,14 +6349,21 @@ H    -3.339819    0.711171    1.984366
 )
 
 entry(
-    index = 213,
-    label = "C4H9Cl + H <=> ClH-2 + C4H9-4",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.94625e+07,'cm^3/(mol*s)'), n=1.97883, Ea=(27.4378,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.2094, dn = +|- 0.0249787, dEa = +|- 0.135933 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=213,
+    label="C4H9Cl + H <=> ClH-2 + C4H9-4",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.94625e07, "cm^3/(mol*s)"),
+        n=1.97883,
+        Ea=(27.4378, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.2094, dn = +|- 0.0249787, dEa = +|- 0.135933 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(C)CCl <=> Cl + [CH2]C(C)C
 barrier = 33.575944 kJ/mol
@@ -4898,14 +6389,21 @@ H    3.345215    0.721114    -0.418463
 )
 
 entry(
-    index = 214,
-    label = "ClO-3 + C3H6Cl-7 <=> C3H6Cl2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(107105,'cm^3/(mol*s)'), n=1.56368, Ea=(20.9671,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02665, dn = +|- 0.00345482, dEa = +|- 0.018801 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=214,
+    label="ClO-3 + C3H6Cl-7 <=> C3H6Cl2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(107105, "cm^3/(mol*s)"),
+        n=1.56368,
+        Ea=(20.9671, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02665, dn = +|- 0.00345482, dEa = +|- 0.018801 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + CC[CH]Cl <=> CCC(Cl)Cl + [O]
 barrier = 24.606227 kJ/mol
@@ -4927,14 +6425,21 @@ H    0.539528    -0.671033    1.664968
 )
 
 entry(
-    index = 215,
-    label = "ClHO-2 + CClO <=> CCl2O + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(102.465,'cm^3/(mol*s)'), n=3.10435, Ea=(3.67657,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0233, dn = +|- 0.00302642, dEa = +|- 0.0164696 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=215,
+    label="ClHO-2 + CClO <=> CCl2O + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(102.465, "cm^3/(mol*s)"),
+        n=3.10435,
+        Ea=(3.67657, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0233, dn = +|- 0.00302642, dEa = +|- 0.0164696 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + OD[C]Cl <=> ODC(Cl)Cl + [OH]
 barrier = 7.663227 kJ/mol
@@ -4951,14 +6456,21 @@ H    -3.297114    0.562419    0.082317
 )
 
 entry(
-    index = 216,
-    label = "ClO-3 + CClO <=> CCl2O + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(776813,'cm^3/(mol*s)'), n=1.65286, Ea=(37.9191,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05343, dn = +|- 0.00683791, dEa = +|- 0.0372116 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=216,
+    label="ClO-3 + CClO <=> CCl2O + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(776813, "cm^3/(mol*s)"),
+        n=1.65286,
+        Ea=(37.9191, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05343, dn = +|- 0.00683791, dEa = +|- 0.0372116 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [O]Cl + OD[C]Cl <=> ODC(Cl)Cl + [O]
 barrier = 41.355622 kJ/mol
@@ -4974,14 +6486,21 @@ C    -0.826958    0.571082    0.029209
 )
 
 entry(
-    index = 217,
-    label = "C4H8Cl2-3 + H <=> ClH-2 + C4H8Cl-3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.53542e+07,'cm^3/(mol*s)'), n=1.81573, Ea=(12.8846,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14111, dn = +|- 0.0173427, dEa = +|- 0.0943781 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=217,
+    label="C4H8Cl2-3 + H <=> ClH-2 + C4H8Cl-3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.53542e07, "cm^3/(mol*s)"),
+        n=1.81573,
+        Ea=(12.8846, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14111, dn = +|- 0.0173427, dEa = +|- 0.0943781 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(C)(Cl)CCl <=> Cl + C[C](C)CCl
 barrier = 18.101580 kJ/mol
@@ -5007,14 +6526,21 @@ H    -3.710049    -1.057745    0.031731
 )
 
 entry(
-    index = 218,
-    label = "CH3Cl-2 + CF3 <=> CClF3 + CH3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(29.1371,'cm^3/(mol*s)'), n=3.55919, Ea=(55.3669,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.17656, dn = +|- 0.0213618, dEa = +|- 0.11625 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=218,
+    label="CH3Cl-2 + CF3 <=> CClF3 + CH3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(29.1371, "cm^3/(mol*s)"),
+        n=3.55919,
+        Ea=(55.3669, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.17656, dn = +|- 0.0213618, dEa = +|- 0.11625 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCl + F[C](F)F <=> FC(F)(F)Cl + [CH3]
 barrier = 59.358428 kJ/mol
@@ -5034,14 +6560,21 @@ H    -3.272954    -1.171559    -0.068029
 )
 
 entry(
-    index = 219,
-    label = "C2H2Cl4-3 + H <=> ClH-2 + C2H2Cl3-3",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.47298e+07,'cm^3/(mol*s)'), n=1.98737, Ea=(21.4492,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.21404, dn = +|- 0.0254819, dEa = +|- 0.138672 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=219,
+    label="C2H2Cl4-3 + H <=> ClH-2 + C2H2Cl3-3",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.47298e07, "cm^3/(mol*s)"),
+        n=1.98737,
+        Ea=(21.4492, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.21404, dn = +|- 0.0254819, dEa = +|- 0.138672 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCC(Cl)(Cl)Cl + [H] <=> Cl + [CH2]C(Cl)(Cl)Cl
 barrier = 27.635182 kJ/mol
@@ -5061,14 +6594,21 @@ H    -3.721234    0.219221    0.583562
 )
 
 entry(
-    index = 220,
-    label = "CCl2F2 + H <=> ClH-2 + CClF2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(1.6836e+08,'cm^3/(mol*s)'), n=1.82792, Ea=(23.5253,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.16478, dn = +|- 0.0200399, dEa = +|- 0.109056 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=220,
+    label="CCl2F2 + H <=> ClH-2 + CClF2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(1.6836e08, "cm^3/(mol*s)"),
+        n=1.82792,
+        Ea=(23.5253, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.16478, dn = +|- 0.0200399, dEa = +|- 0.109056 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)(Cl)Cl + [H] <=> Cl + F[C](F)Cl
 barrier = 29.295341 kJ/mol
@@ -5085,14 +6625,21 @@ H    2.840865    -1.534039    0.007625
 )
 
 entry(
-    index = 221,
-    label = "C3H5Cl3-3 + C3H6F <=> C3H6ClF + C3H5Cl2-4",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(20.0857,'cm^3/(mol*s)'), n=3.1208, Ea=(30.7921,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.05731, dn = +|- 0.00732099, dEa = +|- 0.0398406 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=221,
+    label="C3H5Cl3-3 + C3H6F <=> C3H6ClF + C3H5Cl2-4",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(20.0857, "cm^3/(mol*s)"),
+        n=3.1208,
+        Ea=(30.7921, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.05731, dn = +|- 0.00732099, dEa = +|- 0.0398406 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[C](C)F + CCC(Cl)(Cl)Cl <=> CC(C)(F)Cl + CC[C](Cl)Cl
 barrier = 33.891036 kJ/mol
@@ -5123,14 +6670,21 @@ H    -4.509933    1.132319    -0.941492
 )
 
 entry(
-    index = 222,
-    label = "C4H7Cl3-2 + H <=> ClH-2 + C4H7Cl2-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.09185e+08,'cm^3/(mol*s)'), n=1.80526, Ea=(10.9209,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.13101, dn = +|- 0.0161739, dEa = +|- 0.0880175 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=222,
+    label="C4H7Cl3-2 + H <=> ClH-2 + C4H7Cl2-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.09185e08, "cm^3/(mol*s)"),
+        n=1.80526,
+        Ea=(10.9209, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.13101, dn = +|- 0.0161739, dEa = +|- 0.0880175 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(C)(Cl)C(Cl)Cl <=> Cl + C[C](C)C(Cl)Cl
 barrier = 16.029105 kJ/mol
@@ -5156,14 +6710,21 @@ H    3.685565    0.999737    -0.831823
 )
 
 entry(
-    index = 223,
-    label = "ClHO-2 + CH2-2 <=> CH2Cl + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5191.64,'cm^3/(mol*s)'), n=2.99789, Ea=(-4.01602,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.01347, dn = +|- 0.0017573, dEa = +|- 0.00956317 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=223,
+    label="ClHO-2 + CH2-2 <=> CH2Cl + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5191.64, "cm^3/(mol*s)"),
+        n=2.99789,
+        Ea=(-4.01602, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.01347, dn = +|- 0.0017573, dEa = +|- 0.00956317 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + [CH2] <=> [OH] + [CH2]Cl
 barrier = 1.124784 kJ/mol
@@ -5180,14 +6741,21 @@ H    2.052693    0.875208    0.244029
 )
 
 entry(
-    index = 224,
-    label = "C2HCl3-2 + H <=> ClH-2 + C2HCl2-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(3.48816e+10,'cm^3/(mol*s)'), n=0.915521, Ea=(32.3349,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20696, dn = +|- 0.0247136, dEa = +|- 0.13449 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=224,
+    label="C2HCl3-2 + H <=> ClH-2 + C2HCl2-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(3.48816e10, "cm^3/(mol*s)"),
+        n=0.915521,
+        Ea=(32.3349, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.20696, dn = +|- 0.0247136, dEa = +|- 0.13449 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCDC(Cl)Cl + [H] <=> Cl + Cl[C]DCCl
 barrier = 37.310596 kJ/mol
@@ -5205,14 +6773,21 @@ H    2.995837    -1.248318    0.186895
 )
 
 entry(
-    index = 225,
-    label = "ClO-3 + C2H3Cl2-3 <=> C2H3Cl3 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(27169,'cm^3/(mol*s)'), n=1.73665, Ea=(32.5895,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.09322, dn = +|- 0.0117101, dEa = +|- 0.0637258 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=225,
+    label="ClO-3 + C2H3Cl2-3 <=> C2H3Cl3 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(27169, "cm^3/(mol*s)"),
+        n=1.73665,
+        Ea=(32.5895, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.09322, dn = +|- 0.0117101, dEa = +|- 0.0637258 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[C](Cl)Cl + [O]Cl <=> CC(Cl)(Cl)Cl + [O]
 barrier = 36.017103 kJ/mol
@@ -5232,14 +6807,21 @@ H    0.091997    -0.89578    2.166933
 )
 
 entry(
-    index = 226,
-    label = "CCl3F + CH3 <=> CH3Cl-2 + CCl2F",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(68627.7,'cm^3/(mol*s)'), n=2.75, Ea=(38.2043,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07535, dn = +|- 0.00954405, dEa = +|- 0.0519383 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=226,
+    label="CCl3F + CH3 <=> CH3Cl-2 + CCl2F",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(68627.7, "cm^3/(mol*s)"),
+        n=2.75,
+        Ea=(38.2043, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07535, dn = +|- 0.00954405, dEa = +|- 0.0519383 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(Cl)(Cl)Cl + [CH3] <=> CCl + F[C](Cl)Cl
 barrier = 44.344827 kJ/mol
@@ -5259,14 +6841,21 @@ H    3.682094    0.324751    -0.953794
 )
 
 entry(
-    index = 227,
-    label = "CHClF2 + H <=> ClH-2 + CHF2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.44569e+07,'cm^3/(mol*s)'), n=1.89428, Ea=(34.0612,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.19222, dn = +|- 0.0230989, dEa = +|- 0.125703 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=227,
+    label="CHClF2 + H <=> ClH-2 + CHF2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(3.44569e07, "cm^3/(mol*s)"),
+        n=1.89428,
+        Ea=(34.0612, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.19222, dn = +|- 0.0230989, dEa = +|- 0.125703 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: FC(F)Cl + [H] <=> Cl + F[CH]F
 barrier = 40.669308 kJ/mol
@@ -5283,14 +6872,21 @@ H    -2.719457    0.214376    -0.864501
 )
 
 entry(
-    index = 228,
-    label = "CCl4 + C2H5-2 <=> C2H5Cl + CCl3-2",
-    degeneracy = 4.0,
-    kinetics = Arrhenius(A=(35918.6,'cm^3/(mol*s)'), n=1.86068, Ea=(15.7996,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03121, dn = +|- 0.00403747, dEa = +|- 0.0219718 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=228,
+    label="CCl4 + C2H5-2 <=> C2H5Cl + CCl3-2",
+    degeneracy=4.0,
+    kinetics=Arrhenius(
+        A=(35918.6, "cm^3/(mol*s)"),
+        n=1.86068,
+        Ea=(15.7996, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03121, dn = +|- 0.00403747, dEa = +|- 0.0219718 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)(Cl)Cl + C[CH2] <=> CCCl + Cl[C](Cl)Cl
 barrier = 20.773072 kJ/mol
@@ -5313,14 +6909,21 @@ H    3.119782    -0.753821    1.376525
 )
 
 entry(
-    index = 229,
-    label = "C2H3ClO-2 + H <=> ClH-2 + C2H3O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(6.88575e+07,'cm^3/(mol*s)'), n=1.80771, Ea=(26.9997,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14779, dn = +|- 0.0181094, dEa = +|- 0.0985506 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=229,
+    label="C2H3ClO-2 + H <=> ClH-2 + C2H3O-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(6.88575e07, "cm^3/(mol*s)"),
+        n=1.80771,
+        Ea=(26.9997, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14779, dn = +|- 0.0181094, dEa = +|- 0.0985506 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [H] + CC(DO)Cl <=> Cl + C[C]DO
 barrier = 32.806892 kJ/mol
@@ -5339,14 +6942,21 @@ H    2.914739    -0.36618    0.656035
 )
 
 entry(
-    index = 230,
-    label = "ClO-3 + C3H7-4 <=> C3H7Cl-2 + O",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1756.62,'cm^3/(mol*s)'), n=2.4222, Ea=(13.549,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.0153, dn = +|- 0.00199532, dEa = +|- 0.0108585 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=230,
+    label="ClO-3 + C3H7-4 <=> C3H7Cl-2 + O",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1756.62, "cm^3/(mol*s)"),
+        n=2.4222,
+        Ea=(13.549, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.0153, dn = +|- 0.00199532, dEa = +|- 0.0108585 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH2]CC + [O]Cl <=> CCCCl + [O]
 barrier = 18.809279 kJ/mol
@@ -5369,14 +6979,21 @@ H    -0.851039    -1.081116    1.376006
 )
 
 entry(
-    index = 231,
-    label = "C2H4Cl2 + H <=> ClH-2 + C2H4Cl-2",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(9.19835e+07,'cm^3/(mol*s)'), n=1.91565, Ea=(22.4696,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.18781, dn = +|- 0.0226118, dEa = +|- 0.123052 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=231,
+    label="C2H4Cl2 + H <=> ClH-2 + C2H4Cl-2",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(9.19835e07, "cm^3/(mol*s)"),
+        n=1.91565,
+        Ea=(22.4696, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.18781, dn = +|- 0.0226118, dEa = +|- 0.123052 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CC(Cl)Cl + [H] <=> Cl + C[CH]Cl
 barrier = 28.600879 kJ/mol
@@ -5396,14 +7013,21 @@ H    3.208899    -0.701557    -0.499307
 )
 
 entry(
-    index = 232,
-    label = "ClHO-2 + C2H4F-2 <=> C2H4ClF-2 + HO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(108.085,'cm^3/(mol*s)'), n=2.9324, Ea=(-0.871087,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03187, dn = +|- 0.00412164, dEa = +|- 0.0224298 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=232,
+    label="ClHO-2 + C2H4F-2 <=> C2H4ClF-2 + HO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(108.085, "cm^3/(mol*s)"),
+        n=2.9324,
+        Ea=(-0.871087, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03187, dn = +|- 0.00412164, dEa = +|- 0.0224298 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: OCl + [CH2]CF <=> FCCCl + [OH]
 barrier = 4.152614 kJ/mol
@@ -5423,14 +7047,21 @@ H    -2.402194    -1.479113    0.017936
 )
 
 entry(
-    index = 233,
-    label = "C2H3Cl2F + CH3 <=> CH3Cl-2 + C2H3ClF",
-    degeneracy = 2.0,
-    kinetics = Arrhenius(A=(36814.2,'cm^3/(mol*s)'), n=2.76105, Ea=(50.9567,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.07689, dn = +|- 0.00973286, dEa = +|- 0.0529659 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=233,
+    label="C2H3Cl2F + CH3 <=> CH3Cl-2 + C2H3ClF",
+    degeneracy=2.0,
+    kinetics=Arrhenius(
+        A=(36814.2, "cm^3/(mol*s)"),
+        n=2.76105,
+        Ea=(50.9567, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.07689, dn = +|- 0.00973286, dEa = +|- 0.0529659 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: [CH3] + CC(F)(Cl)Cl <=> CCl + C[C](F)Cl
 barrier = 57.034834 kJ/mol
@@ -5453,14 +7084,21 @@ H    -3.527908    -0.986651    -0.63824
 )
 
 entry(
-    index = 234,
-    label = "CHClO-2 + H <=> ClH-2 + CHO",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(2.40657e+07,'cm^3/(mol*s)'), n=1.94769, Ea=(32.2937,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.20796, dn = +|- 0.0248225, dEa = +|- 0.135083 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=234,
+    label="CHClO-2 + H <=> ClH-2 + CHO",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(2.40657e07, "cm^3/(mol*s)"),
+        n=1.94769,
+        Ea=(32.2937, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.20796, dn = +|- 0.0248225, dEa = +|- 0.135083 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ODCCl + [H] <=> Cl + [CH]DO
 barrier = 39.127745 kJ/mol
@@ -5476,14 +7114,21 @@ H    -2.389837    -1.002695    -0.00837
 )
 
 entry(
-    index = 235,
-    label = "CCl3F + C2H5-2 <=> C2H5Cl + CCl2F",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(957.392,'cm^3/(mol*s)'), n=2.84493, Ea=(27.8664,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.03472, dn = +|- 0.00448469, dEa = +|- 0.0244055 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=235,
+    label="CCl3F + C2H5-2 <=> C2H5Cl + CCl2F",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(957.392, "cm^3/(mol*s)"),
+        n=2.84493,
+        Ea=(27.8664, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.03472, dn = +|- 0.00448469, dEa = +|- 0.0244055 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: C[CH2] + FC(Cl)(Cl)Cl <=> CCCl + F[C](Cl)Cl
 barrier = 32.916576 kJ/mol
@@ -5506,14 +7151,21 @@ H    3.049651    -1.382138    0.73595
 )
 
 entry(
-    index = 236,
-    label = "CHCl3 + H <=> ClH-2 + CHCl2",
-    degeneracy = 3.0,
-    kinetics = Arrhenius(A=(2.28397e+08,'cm^3/(mol*s)'), n=1.83137, Ea=(18.749,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.14773, dn = +|- 0.0181028, dEa = +|- 0.098515 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=236,
+    label="CHCl3 + H <=> ClH-2 + CHCl2",
+    degeneracy=3.0,
+    kinetics=Arrhenius(
+        A=(2.28397e08, "cm^3/(mol*s)"),
+        n=1.83137,
+        Ea=(18.749, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.14773, dn = +|- 0.0181028, dEa = +|- 0.098515 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClC(Cl)Cl + [H] <=> Cl + Cl[CH]Cl
 barrier = 24.365130 kJ/mol
@@ -5530,14 +7182,21 @@ H    3.417057    -0.168091    -0.067533
 )
 
 entry(
-    index = 237,
-    label = "C2H5ClO-2 + H <=> ClH-2 + C2H5O-2",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1.43758e+09,'cm^3/(mol*s)'), n=1.62878, Ea=(-0.698534,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.02963, dn = +|- 0.0038365, dEa = +|- 0.0208781 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=237,
+    label="C2H5ClO-2 + H <=> ClH-2 + C2H5O-2",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(1.43758e09, "cm^3/(mol*s)"),
+        n=1.62878,
+        Ea=(-0.698534, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.02963, dn = +|- 0.0038365, dEa = +|- 0.0208781 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST ccsd(t)-f12/cc-pvdz-f12//M062X-D3/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: CCOCl + [H] <=> Cl + CC[O]
 barrier = 1.960658 kJ/mol
@@ -5558,14 +7217,21 @@ H    -2.706474    1.389037    0.676178
 )
 
 entry(
-    index = 238,
-    label = "CH2BrCl + CClF2 <=> CCl2F2 + CH2Br",
-    degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.12823,'cm^3/(mol*s)'), n=3.42232, Ea=(62.1671,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2500,'K'), comment="""Fitted to 50 data points; dA = *|/ 1.13483, dn = +|- 0.0166171, dEa = +|- 0.0904299 kJ/mol"""),
-    rank = 3,
-    shortDesc = """AutoTST m062x/jun-cc-pVTZ""",
-    longDesc = 
-"""
+    index=238,
+    label="CH2BrCl + CClF2 <=> CCl2F2 + CH2Br",
+    degeneracy=1.0,
+    kinetics=Arrhenius(
+        A=(5.12823, "cm^3/(mol*s)"),
+        n=3.42232,
+        Ea=(62.1671, "kJ/mol"),
+        T0=(1, "K"),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
+        comment="""Fitted to 50 data points; dA = *|/ 1.13483, dn = +|- 0.0166171, dEa = +|- 0.0904299 kJ/mol""",
+    ),
+    rank=3,
+    shortDesc="""AutoTST m062x/jun-cc-pVTZ""",
+    longDesc="""
 Training reaction from kinetics library: autotst/Cl_Abstraction
 Original entry: ClCBr + F[C](F)Cl <=> [CH2]Br + FC(F)(Cl)Cl
 barrier = 65.470393 kJ/mol
@@ -5582,4 +7248,3 @@ H    2.24985    0.551037    1.13673
 H    1.678721    2.188206    0.529933
 """,
 )
-

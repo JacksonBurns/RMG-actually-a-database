@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Klippenstein_Glarborg2016"
-shortDesc = u"High pressure oxydation of methane"
-longDesc = u"""
+shortDesc = "High pressure oxydation of methane"
+longDesc = """
 Methane oxidation at high pressures and intermediate temperatures
 
 Validated against:
@@ -18,26 +18,48 @@ Combustion and Flame 172, 2016, 349-364
 http://dx.doi.org/10.1016/j.combustflame.2016.07.016
 """
 entry(
-    index = 0,
-    label = "H2O2",
-    molecule = 
-"""
+    index=0,
+    label="H2O2",
+    molecule="""
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {4,S}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.31515,-0.000847391,1.76404e-05,-2.26763e-08,9.0895e-12,-17706.7,3.27373], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.57977,0.00405326,-1.29845e-06,1.98211e-10,-1.13969e-14,-18007.2,0.664971], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.31515,
+                    -0.000847391,
+                    1.76404e-05,
+                    -2.26763e-08,
+                    9.0895e-12,
+                    -17706.7,
+                    3.27373,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.57977,
+                    0.00405326,
+                    -1.29845e-06,
+                    1.98211e-10,
+                    -1.13969e-14,
+                    -18007.2,
+                    0.664971,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""DOROFEEVA e  T 8/03""",
-    longDesc = 
-u"""
+    shortDesc="""DOROFEEVA e  T 8/03""",
+    longDesc="""
 DOROFEEVA e  T 8/03
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -58,25 +80,47 @@ OO
 )
 
 entry(
-    index = 1,
-    label = "OH",
-    molecule = 
-"""
+    index=1,
+    label="OH",
+    molecule="""
 multiplicity 2
 1 O u1 p2 c0 {2,S}
 2 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.99198,-0.00240107,4.61664e-06,-3.87916e-09,1.3632e-12,3368.9,-0.103998], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.83853,0.00110741,-2.94e-07,4.20699e-11,-2.4229e-15,3697.81,5.84495], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.99198,
+                    -0.00240107,
+                    4.61664e-06,
+                    -3.87916e-09,
+                    1.3632e-12,
+                    3368.9,
+                    -0.103998,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.83853,
+                    0.00110741,
+                    -2.94e-07,
+                    4.20699e-11,
+                    -2.4229e-15,
+                    3697.81,
+                    5.84495,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""HYDROXYL RADI  IU3/03""",
-    longDesc = 
-u"""
+    shortDesc="""HYDROXYL RADI  IU3/03""",
+    longDesc="""
 HYDROXYL RADI  IU3/03
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -94,24 +138,46 @@ Cp @ 1200 K 0.28%.
 )
 
 entry(
-    index = 2,
-    label = "H2",
-    molecule = 
-"""
+    index=2,
+    label="H2",
+    molecule="""
 1 H u0 p0 c0 {2,S}
 2 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.34433,0.00798052,-1.94782e-05,2.01572e-08,-7.37612e-12,-917.935,0.68301], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.93287,0.000826608,-1.46402e-07,1.541e-11,-6.88805e-16,-813.066,-1.02433], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.34433,
+                    0.00798052,
+                    -1.94782e-05,
+                    2.01572e-08,
+                    -7.37612e-12,
+                    -917.935,
+                    0.68301,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.93287,
+                    0.000826608,
+                    -1.46402e-07,
+                    1.541e-11,
+                    -6.88805e-16,
+                    -813.066,
+                    -1.02433,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""REF ELEMENT    tpis78""",
-    longDesc = 
-u"""
+    shortDesc="""REF ELEMENT    tpis78""",
+    longDesc="""
 REF ELEMENT    tpis78
 1333-74-0
 H2   Calc from Gurvic's table  HF298= 0.0  REF=Gurvich 78  Max Lst Sq Error Cp
@@ -121,47 +187,75 @@ H2   Calc from Gurvic's table  HF298= 0.0  REF=Gurvich 78  Max Lst Sq Error Cp
 )
 
 entry(
-    index = 3,
-    label = "H",
-    molecule = 
-"""
+    index=3,
+    label="H",
+    molecule="""
 multiplicity 2
 1 H u1 p0 c0
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,25473.7,-0.446683], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,25473.7,-0.446683], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[2.5, 0, 0, 0, 0, 25473.7, -0.446683],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[2.5, 0, 0, 0, 0, 25473.7, -0.446683],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
+    shortDesc="""""",
+    longDesc="""
 [H]
 """,
 )
 
 entry(
-    index = 4,
-    label = "O",
-    molecule = 
-"""
+    index=4,
+    label="O",
+    molecule="""
 multiplicity 3
 1 O u2 p2 c0
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.16827,-0.00327932,6.64306e-06,-6.12807e-09,2.11266e-12,29122.3,2.05193], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.54364,-2.73162e-05,-4.1903e-09,4.95482e-12,-4.79554e-16,29226,4.92229], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.16827,
+                    -0.00327932,
+                    6.64306e-06,
+                    -6.12807e-09,
+                    2.11266e-12,
+                    29122.3,
+                    2.05193,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.54364,
+                    -2.73162e-05,
+                    -4.1903e-09,
+                    4.95482e-12,
+                    -4.79554e-16,
+                    29226,
+                    4.92229,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""L 1/90""",
-    longDesc = 
-u"""
+    shortDesc="""L 1/90""",
+    longDesc="""
 L 1/90
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -175,25 +269,47 @@ NSRDS-NBS Sec 7 1976 p. A8 I {HF298=249.229+/-0.002 kJ  REF=ATcT B}.
 )
 
 entry(
-    index = 5,
-    label = "H2O",
-    molecule = 
-"""
+    index=5,
+    label="H2O",
+    molecule="""
 1 O u0 p2 c0 {2,S} {3,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.19864,-0.0020364,6.52034e-06,-5.48793e-09,1.77197e-12,-30293.7,-0.849009], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.67704,0.00297318,-7.73769e-07,9.44335e-11,-4.269e-15,-29885.9,6.88255], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.19864,
+                    -0.0020364,
+                    6.52034e-06,
+                    -5.48793e-09,
+                    1.77197e-12,
+                    -30293.7,
+                    -0.849009,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.67704,
+                    0.00297318,
+                    -7.73769e-07,
+                    9.44335e-11,
+                    -4.269e-15,
+                    -29885.9,
+                    6.88255,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""L 5/89""",
-    longDesc = 
-u"""
+    shortDesc="""L 5/89""",
+    longDesc="""
 L 5/89
 7732-18-5
 H2O REF=Wooley J. RES. NBS 92 (1987), 35. HF298=-241.826+/-0.04 KJ based on
@@ -205,26 +321,48 @@ O
 )
 
 entry(
-    index = 6,
-    label = "HO2",
-    molecule = 
-"""
+    index=6,
+    label="HO2",
+    molecule="""
 multiplicity 2
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u1 p2 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.3018,-0.00474912,2.11583e-05,-2.42764e-08,9.29225e-12,264.018,3.71666], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.17229,0.00188118,-3.46277e-07,1.94658e-11,1.76257e-16,31.0207,2.95768], Tmin=(1000,'K'), Tmax=(5000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.3018,
+                    -0.00474912,
+                    2.11583e-05,
+                    -2.42764e-08,
+                    9.29225e-12,
+                    264.018,
+                    3.71666,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.17229,
+                    0.00188118,
+                    -3.46277e-07,
+                    1.94658e-11,
+                    1.76257e-16,
+                    31.0207,
+                    2.95768,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(5000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (5000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(5000, "K"),
     ),
-    shortDesc = u"""T 1/09""",
-    longDesc = 
-u"""
+    shortDesc="""T 1/09""",
+    longDesc="""
 T 1/09
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -242,25 +380,47 @@ REF=Karton, Parthiban, Martin JPC A 2009}  Max lst Sq Error Cp @ 700 K 0.27%.
 )
 
 entry(
-    index = 7,
-    label = "O2",
-    molecule = 
-"""
+    index=7,
+    label="O2",
+    molecule="""
 multiplicity 3
 1 O u1 p2 c0 {2,S}
 2 O u1 p2 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.78246,-0.00299673,9.8473e-06,-9.6813e-09,3.24373e-12,-1063.94,3.65768], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.66096,0.000656366,-1.4115e-07,2.05798e-11,-1.29913e-15,-1215.98,3.41536], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.78246,
+                    -0.00299673,
+                    9.8473e-06,
+                    -9.6813e-09,
+                    3.24373e-12,
+                    -1063.94,
+                    3.65768,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.66096,
+                    0.000656366,
+                    -1.4115e-07,
+                    2.05798e-11,
+                    -1.29913e-15,
+                    -1215.98,
+                    3.41536,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""REF ELEMENT    TPIS89""",
-    longDesc = 
-u"""
+    shortDesc="""REF ELEMENT    TPIS89""",
+    longDesc="""
 REF ELEMENT    TPIS89
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -274,23 +434,29 @@ B.McBride NASA TP-2002-211556 Max Lst Sq Error Cp @ 1200 K 0.31%.
 )
 
 entry(
-    index = 8,
-    label = "AR",
-    molecule = 
-"""
+    index=8,
+    label="AR",
+    molecule="""
 1 Ar u0 p4 c0
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,4.37967], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,4.37967], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[2.5, 0, 0, 0, 0, -745.375, 4.37967],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[2.5, 0, 0, 0, 0, -745.375, 4.37967],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""REF ELEMENT    g 5/97""",
-    longDesc = 
-u"""
+    shortDesc="""REF ELEMENT    g 5/97""",
+    longDesc="""
 REF ELEMENT    g 5/97
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -304,24 +470,46 @@ Max Lst Sq Error 0.%.
 )
 
 entry(
-    index = 9,
-    label = "N2",
-    molecule = 
-"""
+    index=9,
+    label="N2",
+    molecule="""
 1 N u0 p1 c0 {2,T}
 2 N u0 p1 c0 {1,T}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.53101,-0.000123661,-5.02999e-07,2.43531e-09,-1.40881e-12,-1046.98,2.96747], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.95258,0.0013969,-4.92632e-07,7.8601e-11,-4.60755e-15,-923.949,5.87189], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.53101,
+                    -0.000123661,
+                    -5.02999e-07,
+                    2.43531e-09,
+                    -1.40881e-12,
+                    -1046.98,
+                    2.96747,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.95258,
+                    0.0013969,
+                    -4.92632e-07,
+                    7.8601e-11,
+                    -4.60755e-15,
+                    -923.949,
+                    5.87189,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""REF ELEMENT   G 8/02""",
-    longDesc = 
-u"""
+    shortDesc="""REF ELEMENT   G 8/02""",
+    longDesc="""
 REF ELEMENT   G 8/02
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -334,23 +522,29 @@ N#N
 )
 
 entry(
-    index = 10,
-    label = "HE",
-    molecule = 
-"""
+    index=10,
+    label="HE",
+    molecule="""
 1 He u0 p1 c0
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,0.928724], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,0.928724], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[2.5, 0, 0, 0, 0, -745.375, 0.928724],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[2.5, 0, 0, 0, 0, -745.375, 0.928724],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""REF ELEMENT    g 5/97""",
-    longDesc = 
-u"""
+    shortDesc="""REF ELEMENT    g 5/97""",
+    longDesc="""
 REF ELEMENT    g 5/97
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -364,24 +558,46 @@ Error Cp 0.0%.
 )
 
 entry(
-    index = 11,
-    label = "CO",
-    molecule = 
-"""
+    index=11,
+    label="CO",
+    molecule="""
 1 C u0 p1 c-1 {2,T}
 2 O u0 p1 c+1 {1,T}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.57953,-0.000610354,1.01681e-06,9.07006e-10,-9.04424e-13,-14344.1,3.50841], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.04849,0.00135173,-4.85794e-07,7.88536e-11,-4.69807e-15,-14266.1,6.0171], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.57953,
+                    -0.000610354,
+                    1.01681e-06,
+                    9.07006e-10,
+                    -9.04424e-13,
+                    -14344.1,
+                    3.50841,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.04849,
+                    0.00135173,
+                    -4.85794e-07,
+                    7.88536e-11,
+                    -4.69807e-15,
+                    -14266.1,
+                    6.0171,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""RUS 79""",
-    longDesc = 
-u"""
+    shortDesc="""RUS 79""",
+    longDesc="""
 RUS 79
 74-82-8
 CH4 METHANE  STATWT=1. SIGMA=12.  IA=IB=IC=0.52410356  NU=2916.7,1533.295(2),
@@ -405,25 +621,47 @@ CO  CARBON-MONOXIDE  CALCULATED FROM TSIV TABLE. REF=TSIV 79  HF298=-110.53+/-
 )
 
 entry(
-    index = 12,
-    label = "CO2",
-    molecule = 
-"""
+    index=12,
+    label="CO2",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,D}
 2 O u0 p2 c0 {1,D}
 3 O u0 p2 c0 {1,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.35681,0.00898413,-7.12206e-06,2.4573e-09,-1.42885e-13,-48372,9.9009], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.63651,0.00274146,-9.95898e-07,1.60387e-10,-9.16199e-15,-49024.9,-1.9349], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.35681,
+                    0.00898413,
+                    -7.12206e-06,
+                    2.4573e-09,
+                    -1.42885e-13,
+                    -48372,
+                    9.9009,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.63651,
+                    0.00274146,
+                    -9.95898e-07,
+                    1.60387e-10,
+                    -9.16199e-15,
+                    -49024.9,
+                    -1.9349,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""L 7/88""",
-    longDesc = 
-u"""
+    shortDesc="""L 7/88""",
+    longDesc="""
 L 7/88
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -443,27 +681,49 @@ O=C=O
 )
 
 entry(
-    index = 13,
-    label = "CH4",
-    molecule = 
-"""
+    index=13,
+    label="CH4",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[5.14826,-0.0137002,4.93749e-05,-4.91952e-08,1.70097e-11,-10245.3,-4.63323], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[1.91179,0.00960268,-3.38388e-06,5.38797e-10,-3.19307e-14,-10099.2,8.48242], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    5.14826,
+                    -0.0137002,
+                    4.93749e-05,
+                    -4.91952e-08,
+                    1.70097e-11,
+                    -10245.3,
+                    -4.63323,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    1.91179,
+                    0.00960268,
+                    -3.38388e-06,
+                    5.38797e-10,
+                    -3.19307e-14,
+                    -10099.2,
+                    8.48242,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""RRHO        g 8/99""",
-    longDesc = 
-u"""
+    shortDesc="""RRHO        g 8/99""",
+    longDesc="""
 RRHO        g 8/99
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -477,27 +737,49 @@ C
 )
 
 entry(
-    index = 14,
-    label = "CH3",
-    molecule = 
-"""
+    index=14,
+    label="CH3",
+    molecule="""
 multiplicity 2
 1 C u1 p0 c0 {2,S} {3,S} {4,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.65718,0.0021266,5.45839e-06,-6.6181e-09,2.46571e-12,16422.7,1.67354], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.97812,0.00579785,-1.97558e-06,3.07298e-10,-1.79174e-14,16509.5,4.72248], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.65718,
+                    0.0021266,
+                    5.45839e-06,
+                    -6.6181e-09,
+                    2.46571e-12,
+                    16422.7,
+                    1.67354,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.97812,
+                    0.00579785,
+                    -1.97558e-06,
+                    3.07298e-10,
+                    -1.79174e-14,
+                    16509.5,
+                    4.72248,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""IU0702""",
-    longDesc = 
-u"""
+    shortDesc="""IU0702""",
+    longDesc="""
 IU0702
 DHf(0K) =   102.62 [kcal/mol], taken from SJK v0.9.
 Q(T) from B3LYP/6-311++G(d,p) by CFG on  06Sep2013
@@ -511,10 +793,9 @@ METHYL RADICAL    IU0702C  1.H  3.   0.   0.G   200.000  6000.000  B  15.03452 1
 )
 
 entry(
-    index = 15,
-    label = "CH3OH",
-    molecule = 
-"""
+    index=15,
+    label="CH3OH",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 O u0 p2 c0 {1,S} {6,S}
 3 H u0 p0 c0 {1,S}
@@ -522,17 +803,40 @@ entry(
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[5.65851,-0.0162983,6.91938e-05,-7.58373e-08,2.80428e-11,-25612,-0.897331], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.52727,0.0103179,-3.62893e-06,5.77448e-10,-3.42183e-14,-26002.9,5.16759], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    5.65851,
+                    -0.0162983,
+                    6.91938e-05,
+                    -7.58373e-08,
+                    2.80428e-11,
+                    -25612,
+                    -0.897331,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.52727,
+                    0.0103179,
+                    -3.62893e-06,
+                    5.77448e-10,
+                    -3.42183e-14,
+                    -26002.9,
+                    5.16759,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Methyl alc  T06/02""",
-    longDesc = 
-u"""
+    shortDesc="""Methyl alc  T06/02""",
+    longDesc="""
 Methyl alc  T06/02
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -549,24 +853,46 @@ CO
 )
 
 entry(
-    index = 16,
-    label = "C",
-    molecule = 
-"""
+    index=16,
+    label="C",
+    molecule="""
 multiplicity 3
 1 C u2 p1 c0
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.49975,5.02139e-07,1.93093e-09,-4.94633e-12,2.74089e-15,85485.8,3.66241], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.49891,2.41252e-06,-1.88942e-09,6.24309e-13,-7.45464e-17,85486.2,3.6671], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.49975,
+                    5.02139e-07,
+                    1.93093e-09,
+                    -4.94633e-12,
+                    2.74089e-15,
+                    85485.8,
+                    3.66241,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.49891,
+                    2.41252e-06,
+                    -1.88942e-09,
+                    6.24309e-13,
+                    -7.45464e-17,
+                    85486.2,
+                    3.6671,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
-    longDesc = 
-u"""
+    shortDesc="""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
+    longDesc="""
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
 mirrored at http://garfield.chem.elte.hu/burcat/burcat.html.
@@ -589,25 +915,47 @@ C                 L 7/88C   1    0    0    0G   200.000  6000.000  1000.000,    
 )
 
 entry(
-    index = 17,
-    label = "CH",
-    molecule = 
-"""
+    index=17,
+    label="CH",
+    molecule="""
 multiplicity 2
 1 C u1 p1 c0 {2,S}
 2 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.47159,0.000404745,-1.89388e-06,3.3321e-09,-1.51271e-12,70701.8,2.14542], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.66195,0.00170245,-6.83824e-07,1.3098e-10,-9.71843e-15,70958.9,6.52673], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.47159,
+                    0.000404745,
+                    -1.89388e-06,
+                    3.3321e-09,
+                    -1.51271e-12,
+                    70701.8,
+                    2.14542,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.66195,
+                    0.00170245,
+                    -6.83824e-07,
+                    1.3098e-10,
+                    -9.71843e-15,
+                    70958.9,
+                    6.52673,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""DHf(0K) =   170.13 [kcal/mol], taken from SJK v0.9.""",
-    longDesc = 
-u"""
+    shortDesc="""DHf(0K) =   170.13 [kcal/mol], taken from SJK v0.9.""",
+    longDesc="""
 DHf(0K) =   170.13 [kcal/mol], taken from SJK v0.9.
 Q(T) from B3LYP/6-311++G(d,p) by CFG on  06Sep2013
 3315-37-5
@@ -627,26 +975,48 @@ CH               IU3/03 C  1.H  1.   0.   0.G   200.000  6000.000  1000.000,    
 )
 
 entry(
-    index = 18,
-    label = "C2H",
-    molecule = 
-"""
+    index=18,
+    label="C2H",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,T} {3,S}
 2 C u1 p0 c0 {1,T}
 3 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.89868,0.0132988,-2.80733e-05,2.89485e-08,-1.07502e-11,67061.6,6.18548], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.6627,0.00382492,-1.36633e-06,2.13455e-10,-1.23217e-14,67168.4,3.92206], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.89868,
+                    0.0132988,
+                    -2.80733e-05,
+                    2.89485e-08,
+                    -1.07502e-11,
+                    67061.6,
+                    6.18548,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.6627,
+                    0.00382492,
+                    -1.36633e-06,
+                    2.13455e-10,
+                    -1.23217e-14,
+                    67168.4,
+                    3.92206,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Ethynyl Rad   T 5/10""",
-    longDesc = 
-u"""
+    shortDesc="""Ethynyl Rad   T 5/10""",
+    longDesc="""
 Ethynyl Rad   T 5/10
 
 12070-15-4
@@ -670,10 +1040,9 @@ kJ  REF=Szalay Tajti & Stanton Mol Phys 103,(2005),xxx}   MAX LST SQ ERROR Cp @
 )
 
 entry(
-    index = 19,
-    label = "C2H4",
-    molecule = 
-"""
+    index=19,
+    label="C2H4",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u0 p0 c0 {1,D} {5,S} {6,S}
 3 H u0 p0 c0 {1,S}
@@ -681,17 +1050,40 @@ entry(
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.9592,-0.00757051,5.7099e-05,-6.91588e-08,2.69884e-11,5089.78,4.0973], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.99183,0.0104834,-3.71721e-06,5.94628e-10,-3.5363e-14,4268.66,-0.269082], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.9592,
+                    -0.00757051,
+                    5.7099e-05,
+                    -6.91588e-08,
+                    2.69884e-11,
+                    5089.78,
+                    4.0973,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.99183,
+                    0.0104834,
+                    -3.71721e-06,
+                    5.94628e-10,
+                    -3.5363e-14,
+                    4268.66,
+                    -0.269082,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""g 1/00""",
-    longDesc = 
-u"""
+    shortDesc="""g 1/00""",
+    longDesc="""
 g 1/00
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -707,10 +1099,9 @@ C=C
 )
 
 entry(
-    index = 20,
-    label = "C2H5",
-    molecule = 
-"""
+    index=20,
+    label="C2H5",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u1 p0 c0 {1,S} {6,S} {7,S}
@@ -720,17 +1111,40 @@ multiplicity 2
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.24186,-0.00356905,4.82667e-05,-5.85401e-08,2.25805e-11,12969,4.44704], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.32196,0.0123931,-4.39681e-06,7.0352e-10,-4.18435e-14,12175.9,0.171104], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.24186,
+                    -0.00356905,
+                    4.82667e-05,
+                    -5.85401e-08,
+                    2.25805e-11,
+                    12969,
+                    4.44704,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.32196,
+                    0.0123931,
+                    -4.39681e-06,
+                    7.0352e-10,
+                    -4.18435e-14,
+                    12175.9,
+                    0.171104,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""ethyl radic  IU1/07""",
-    longDesc = 
-u"""
+    shortDesc="""ethyl radic  IU1/07""",
+    longDesc="""
 ethyl radic  IU1/07
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -747,10 +1161,9 @@ C[CH2]
 )
 
 entry(
-    index = 21,
-    label = "C2H6",
-    molecule = 
-"""
+    index=21,
+    label="C2H6",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
 3 H u0 p0 c0 {1,S}
@@ -760,17 +1173,40 @@ entry(
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.29143,-0.00550155,5.99438e-05,-7.08466e-08,2.68686e-11,-11522.2,2.66679], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.04666,0.0153539,-5.47039e-06,8.77827e-10,-5.23168e-14,-12447.3,-0.968698], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.29143,
+                    -0.00550155,
+                    5.99438e-05,
+                    -7.08466e-08,
+                    2.68686e-11,
+                    -11522.2,
+                    2.66679,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.04666,
+                    0.0153539,
+                    -5.47039e-06,
+                    8.77827e-10,
+                    -5.23168e-14,
+                    -12447.3,
+                    -0.968698,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""g 8/88""",
-    longDesc = 
-u"""
+    shortDesc="""g 8/88""",
+    longDesc="""
 g 8/88
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -786,10 +1222,9 @@ CC
 )
 
 entry(
-    index = 22,
-    label = "CH3O",
-    molecule = 
-"""
+    index=22,
+    label="CH3O",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 O u1 p2 c0 {1,S}
@@ -797,17 +1232,40 @@ multiplicity 2
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.71181,-0.00280463,3.76551e-05,-4.73072e-08,1.86588e-11,1295.7,6.57241], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.75779,0.00744142,-2.69705e-06,4.38091e-10,-2.63537e-14,378.112,-1.9668], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.71181,
+                    -0.00280463,
+                    3.76551e-05,
+                    -4.73072e-08,
+                    1.86588e-11,
+                    1295.7,
+                    6.57241,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.75779,
+                    0.00744142,
+                    -2.69705e-06,
+                    4.38091e-10,
+                    -2.63537e-14,
+                    378.112,
+                    -1.9668,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""METHOXY RA  IU1/03""",
-    longDesc = 
-u"""
+    shortDesc="""METHOXY RA  IU1/03""",
+    longDesc="""
 METHOXY RA  IU1/03
 2143-68-2
 CH3O  METHOXY RADICAL  SYMNO=3.  A0=5.2  B0=C0=0.93  T0 STATWT=3 NU=2840,1417,
@@ -820,10 +1278,9 @@ C[O]
 )
 
 entry(
-    index = 23,
-    label = "CH2OH",
-    molecule = 
-"""
+    index=23,
+    label="CH2OH",
+    molecule="""
 multiplicity 2
 1 C u1 p0 c0 {2,S} {3,S} {4,S}
 2 O u0 p2 c0 {1,S} {5,S}
@@ -831,17 +1288,40 @@ multiplicity 2
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.47834,-0.0013507,2.78485e-05,-3.64869e-08,1.47907e-11,-3500.73,3.30913], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.09314,0.00594761,-2.06497e-06,3.23008e-10,-1.88126e-14,-4034.1,-1.84691], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.47834,
+                    -0.0013507,
+                    2.78485e-05,
+                    -3.64869e-08,
+                    1.47907e-11,
+                    -3500.73,
+                    3.30913,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.09314,
+                    0.00594761,
+                    -2.06497e-06,
+                    3.23008e-10,
+                    -1.88126e-14,
+                    -4034.1,
+                    -1.84691,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""RADICAL     IU2/03""",
-    longDesc = 
-u"""
+    shortDesc="""RADICAL     IU2/03""",
+    longDesc="""
 RADICAL     IU2/03
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -859,25 +1339,47 @@ Hudgens JPC 100 (1996),19874  extrapolated to 6000 K    REF=Ruscic et al JPCRD
 )
 
 entry(
-    index = 24,
-    label = "CH2(S)",
-    molecule = 
-"""
+    index=24,
+    label="CH2(S)",
+    molecule="""
 1 C u0 p1 c0 {2,S} {3,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.19195,-0.00230793,8.0509e-06,-6.60123e-09,1.95638e-12,50484.3,-0.754589], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.28556,0.00460255,-1.97412e-06,4.09548e-10,-3.34695e-14,50922.4,8.67684], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.19195,
+                    -0.00230793,
+                    8.0509e-06,
+                    -6.60123e-09,
+                    1.95638e-12,
+                    50484.3,
+                    -0.754589,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.28556,
+                    0.00460255,
+                    -1.97412e-06,
+                    4.09548e-10,
+                    -3.34695e-14,
+                    50922.4,
+                    8.67684,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""DHf(0K) =    93.49 [kcal/mol], taken from SJK v0.9.""",
-    longDesc = 
-u"""
+    shortDesc="""DHf(0K) =    93.49 [kcal/mol], taken from SJK v0.9.""",
+    longDesc="""
 DHf(0K) =    93.49 [kcal/mol], taken from SJK v0.9.
 Q(T) from B3LYP/6-311++G(d,p) by CFG on  06Sep2013
 2465-56-7
@@ -899,10 +1401,9 @@ CH2(S) SINGLET    IU6/03C  1.H  2.   0.   0.G   200.000  6000.000  1000.000,    
 )
 
 entry(
-    index = 25,
-    label = "C2H3",
-    molecule = 
-"""
+    index=25,
+    label="C2H3",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u1 p0 c0 {1,D} {5,S}
@@ -910,17 +1411,40 @@ multiplicity 2
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.36378,0.000265766,2.79621e-05,-3.72987e-08,1.5159e-11,34475,7.9151], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.15027,0.00754021,-2.62998e-06,4.15974e-10,-2.45408e-14,33856.6,1.72812], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.36378,
+                    0.000265766,
+                    2.79621e-05,
+                    -3.72987e-08,
+                    1.5159e-11,
+                    34475,
+                    7.9151,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.15027,
+                    0.00754021,
+                    -2.62998e-06,
+                    4.15974e-10,
+                    -2.45408e-14,
+                    33856.6,
+                    1.72812,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Vinyl Radi  ATcT/A""",
-    longDesc = 
-u"""
+    shortDesc="""Vinyl Radi  ATcT/A""",
+    longDesc="""
 Vinyl Radi  ATcT/A
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -941,26 +1465,48 @@ Cp @ 400 K 0.54%..
 )
 
 entry(
-    index = 26,
-    label = "CH2O",
-    molecule = 
-"""
+    index=26,
+    label="CH2O",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 O u0 p2 c0 {1,D}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.79372,-0.00990833,3.7322e-05,-3.79285e-08,1.31773e-11,-14379.2,0.602798], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.16953,0.00619321,-2.25056e-06,3.65976e-10,-2.20149e-14,-14548.7,6.04208], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.79372,
+                    -0.00990833,
+                    3.7322e-05,
+                    -3.79285e-08,
+                    1.31773e-11,
+                    -14379.2,
+                    0.602798,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.16953,
+                    0.00619321,
+                    -2.25056e-06,
+                    3.65976e-10,
+                    -2.20149e-14,
+                    -14548.7,
+                    6.04208,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Formaldehyde T 5/11""",
-    longDesc = 
-u"""
+    shortDesc="""Formaldehyde T 5/11""",
+    longDesc="""
 Formaldehyde T 5/11
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -977,26 +1523,48 @@ C=O
 )
 
 entry(
-    index = 27,
-    label = "C2H2",
-    molecule = 
-"""
+    index=27,
+    label="C2H2",
+    molecule="""
 1 C u0 p0 c0 {2,T} {3,S}
 2 C u0 p0 c0 {1,T} {4,S}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[0.80868,0.0233616,-3.55172e-05,2.80153e-08,-8.50075e-12,26429,13.9397], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.65878,0.00488397,-1.60829e-06,2.46975e-10,-1.38606e-14,25759.4,-3.99838], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    0.80868,
+                    0.0233616,
+                    -3.55172e-05,
+                    2.80153e-08,
+                    -8.50075e-12,
+                    26429,
+                    13.9397,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.65878,
+                    0.00488397,
+                    -1.60829e-06,
+                    2.46975e-10,
+                    -1.38606e-14,
+                    25759.4,
+                    -3.99838,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""g 1/91""",
-    longDesc = 
-u"""
+    shortDesc="""g 1/91""",
+    longDesc="""
 g 1/91
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1016,26 +1584,48 @@ C#C
 )
 
 entry(
-    index = 28,
-    label = "HCO",
-    molecule = 
-"""
+    index=28,
+    label="HCO",
+    molecule="""
 multiplicity 2
 1 C u1 p0 c0 {2,S} {3,D}
 2 H u0 p0 c0 {1,S}
 3 O u0 p2 c0 {1,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.23755,-0.00332075,1.4003e-05,-1.3424e-08,4.37416e-12,3872.41,3.30835], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.92002,0.00252279,-6.71004e-07,1.05616e-10,-7.43798e-15,3653.43,3.58077], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.23755,
+                    -0.00332075,
+                    1.4003e-05,
+                    -1.3424e-08,
+                    4.37416e-12,
+                    3872.41,
+                    3.30835,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.92002,
+                    0.00252279,
+                    -6.71004e-07,
+                    1.05616e-10,
+                    -7.43798e-15,
+                    3653.43,
+                    3.58077,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T 5/03""",
-    longDesc = 
-u"""
+    shortDesc="""T 5/03""",
+    longDesc="""
 T 5/03
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1053,26 +1643,48 @@ CHO               T 5/03C  1.H  1.O  1.   0.G   200.000  6000.000  A  29.01804 1
 )
 
 entry(
-    index = 29,
-    label = "CH2",
-    molecule = 
-"""
+    index=29,
+    label="CH2",
+    molecule="""
 multiplicity 3
 1 C u2 p0 c0 {2,S} {3,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.8328,0.000224446,4.68033e-06,-6.04743e-09,2.59009e-12,45920.8,1.40666], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.16229,0.00281798,-7.56235e-07,5.05446e-11,5.65236e-15,46099.1,4.77656], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.8328,
+                    0.000224446,
+                    4.68033e-06,
+                    -6.04743e-09,
+                    2.59009e-12,
+                    45920.8,
+                    1.40666,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.16229,
+                    0.00281798,
+                    -7.56235e-07,
+                    5.05446e-11,
+                    5.65236e-15,
+                    46099.1,
+                    4.77656,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""DHf(0K) =   141.76 [kcal/mol], taken from SJK v0.9.""",
-    longDesc = 
-u"""
+    shortDesc="""DHf(0K) =   141.76 [kcal/mol], taken from SJK v0.9.""",
+    longDesc="""
 DHf(0K) =   141.76 [kcal/mol], taken from SJK v0.9.
 Q(T) from B3LYP/6-311++G(d,p) by CFG on  06Sep2013
 2465-56-7
@@ -1098,27 +1710,49 @@ Duplicate of species CH2(S) (i.e. same molecular structure according to RMG)
 )
 
 entry(
-    index = 30,
-    label = "HOCO",
-    molecule = 
-"""
+    index=30,
+    label="HOCO",
+    molecule="""
 multiplicity 2
 1 C u1 p0 c0 {2,S} {3,D}
 2 O u0 p2 c0 {1,S} {4,S}
 3 O u0 p2 c0 {1,D}
 4 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.82191,0.00966218,-2.7856e-06,-4.12692e-09,2.61472e-12,-23546.5,11.4285], Tmin=(200,'K'), Tmax=(998.4,'K')),
-            NASAPolynomial(coeffs=[4.63989,0.00566363,-2.67855e-06,6.17049e-10,-5.60954e-14,-24052.7,1.90175], Tmin=(998.4,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.82191,
+                    0.00966218,
+                    -2.7856e-06,
+                    -4.12692e-09,
+                    2.61472e-12,
+                    -23546.5,
+                    11.4285,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(998.4, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.63989,
+                    0.00566363,
+                    -2.67855e-06,
+                    6.17049e-10,
+                    -5.60954e-14,
+                    -24052.7,
+                    1.90175,
+                ],
+                Tmin=(998.4, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""FAB/JAN05""",
-    longDesc = 
-u"""
+    shortDesc="""FAB/JAN05""",
+    longDesc="""
 FAB/JAN05
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1147,10 +1781,9 @@ O=[C]O
 )
 
 entry(
-    index = 31,
-    label = "CH3OO",
-    molecule = 
-"""
+    index=31,
+    label="CH3OO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 O u0 p2 c0 {1,S} {6,S}
@@ -1159,17 +1792,40 @@ multiplicity 2
 5 H u0 p0 c0 {1,S}
 6 O u1 p2 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.93065,0.00868504,8.80315e-06,-1.39561e-08,5.0294e-12,227.483,12.8755], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.88425,0.0140068,-6.88364e-06,1.6379e-09,-1.53129e-13,-20.0433,11.8153], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.93065,
+                    0.00868504,
+                    8.80315e-06,
+                    -1.39561e-08,
+                    5.0294e-12,
+                    227.483,
+                    12.8755,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.88425,
+                    0.0140068,
+                    -6.88364e-06,
+                    1.6379e-09,
+                    -1.53129e-13,
+                    -20.0433,
+                    11.8153,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
-    longDesc = 
-u"""
+    shortDesc="""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
+    longDesc="""
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
 mirrored at http://garfield.chem.elte.hu/burcat/burcat.html.
@@ -1191,27 +1847,49 @@ CO[O]
 )
 
 entry(
-    index = 32,
-    label = "HOCHO",
-    molecule = 
-"""
+    index=32,
+    label="HOCHO",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,D} {4,S}
 2 O u0 p2 c0 {1,S} {5,S}
 3 O u0 p2 c0 {1,D}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.89836,-0.00355878,3.55205e-05,-4.385e-08,1.71078e-11,-46778.6,7.34954], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.61383,0.00644964,-2.29083e-06,3.6716e-10,-2.18737e-14,-45330.3,0.847884], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.89836,
+                    -0.00355878,
+                    3.55205e-05,
+                    -4.385e-08,
+                    1.71078e-11,
+                    -46778.6,
+                    7.34954,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.61383,
+                    0.00644964,
+                    -2.29083e-06,
+                    3.6716e-10,
+                    -2.18737e-14,
+                    -45330.3,
+                    0.847884,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""FORMIC ACID A 5/14""",
-    longDesc = 
-u"""
+    shortDesc="""FORMIC ACID A 5/14""",
+    longDesc="""
 FORMIC ACID A 5/14
 Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160
 64-18-6
@@ -1226,10 +1904,9 @@ O=CO
 )
 
 entry(
-    index = 33,
-    label = "CH3OOH",
-    molecule = 
-"""
+    index=33,
+    label="CH3OOH",
+    molecule="""
 1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
 2 O u0 p2 c0 {1,S} {3,S}
 3 O u0 p2 c0 {2,S} {7,S}
@@ -1238,17 +1915,40 @@ entry(
 6 H u0 p0 c0 {1,S}
 7 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.85837,0.0159701,-2.52104e-06,-5.736e-09,2.80535e-12,-16883,12.897], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.45931,0.0141051,-6.53177e-06,1.47663e-09,-1.32512e-13,-17430.1,4.03867], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.85837,
+                    0.0159701,
+                    -2.52104e-06,
+                    -5.736e-09,
+                    2.80535e-12,
+                    -16883,
+                    12.897,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.45931,
+                    0.0141051,
+                    -6.53177e-06,
+                    1.47663e-09,
+                    -1.32512e-13,
+                    -17430.1,
+                    4.03867,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160""",
-    longDesc = 
-u"""
+    shortDesc="""Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160""",
+    longDesc="""
 Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160
 Low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
 COO
@@ -1256,27 +1956,49 @@ COO
 )
 
 entry(
-    index = 34,
-    label = "OCHO",
-    molecule = 
-"""
+    index=34,
+    label="OCHO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,D} {4,S}
 2 O u1 p2 c0 {1,S}
 3 O u0 p2 c0 {1,D}
 4 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.6286,0.00812496,-1.41561e-06,-3.27952e-09,1.61554e-12,-16747.8,7.8317], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.41052,0.00750888,-4.2589e-06,1.12761e-09,-1.14144e-13,-17029.8,3.43148], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.6286,
+                    0.00812496,
+                    -1.41561e-06,
+                    -3.27952e-09,
+                    1.61554e-12,
+                    -16747.8,
+                    7.8317,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.41052,
+                    0.00750888,
+                    -4.2589e-06,
+                    1.12761e-09,
+                    -1.14144e-13,
+                    -17029.8,
+                    3.43148,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""1104""",
-    longDesc = 
-u"""
+    shortDesc="""1104""",
+    longDesc="""
 1104
 Fabian WMF Janoschek R J Mol Struct THEOCHEM 2005, 713, 227-234
 CL Rasmussen J Hansen P Marshall P Glarborg Int J Chem Kinet 40 (2008) 454-480
@@ -1287,10 +2009,9 @@ Low T polynomial Tmin changed from 298.15 to 298.0 K when importing to RMG.
 )
 
 entry(
-    index = 35,
-    label = "CH3CH2O",
-    molecule = 
-"""
+    index=35,
+    label="CH3CH2O",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
 2 C u0 p0 c0 {1,S} {3,S} {7,S} {8,S}
@@ -1301,17 +2022,40 @@ multiplicity 2
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.26906,0.00933563,2.96317e-05,-4.53411e-08,1.88796e-11,-2950.23,10.4201], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[6.55054,0.0132526,-4.74726e-06,7.64699e-10,-4.57008e-14,-4471.92,-9.61231], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.26906,
+                    0.00933563,
+                    2.96317e-05,
+                    -4.53411e-08,
+                    1.88796e-11,
+                    -2950.23,
+                    10.4201,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    6.55054,
+                    0.0132526,
+                    -4.74726e-06,
+                    7.64699e-10,
+                    -4.57008e-14,
+                    -4471.92,
+                    -9.61231,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T06/11""",
-    longDesc = 
-u"""
+    shortDesc="""T06/11""",
+    longDesc="""
 T06/11
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1338,10 +2082,9 @@ CC[O]
 )
 
 entry(
-    index = 36,
-    label = "CH2OOH",
-    molecule = 
-"""
+    index=36,
+    label="CH2OOH",
+    molecule="""
 multiplicity 2
 1 C u1 p0 c0 {2,S} {4,S} {5,S}
 2 O u0 p2 c0 {1,S} {3,S}
@@ -1350,17 +2093,40 @@ multiplicity 2
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[5.83127,-0.00351771,4.54551e-05,-5.66903e-08,2.21633e-11,6061.87,-0.579143], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[6.98746,0.00900484,-3.24367e-06,5.24325e-10,-3.13587e-14,5012.58,-10.2619], Tmin=(1000,'K'), Tmax=(2500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    5.83127,
+                    -0.00351771,
+                    4.54551e-05,
+                    -5.66903e-08,
+                    2.21633e-11,
+                    6061.87,
+                    -0.579143,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    6.98746,
+                    0.00900484,
+                    -3.24367e-06,
+                    5.24325e-10,
+                    -3.13587e-14,
+                    5012.58,
+                    -10.2619,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(2500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (2500,'K'),
+        Tmin=(200, "K"),
+        Tmax=(2500, "K"),
     ),
-    shortDesc = u"""H298 = 15.79 kcal/mol [JAN/ROS04]""",
-    longDesc = 
-u"""
+    shortDesc="""H298 = 15.79 kcal/mol [JAN/ROS04]""",
+    longDesc="""
 H298 = 15.79 kcal/mol [JAN/ROS04]
 S298 = 65.89 cal/mol/K [JAN/ROS04]
 Cp(T) scaled Cp[CH3OO](T) to Cp298 = 14.89 cal/mol/K [JAN/ROS04].
@@ -1369,10 +2135,9 @@ Cp(T) scaled Cp[CH3OO](T) to Cp298 = 14.89 cal/mol/K [JAN/ROS04].
 )
 
 entry(
-    index = 37,
-    label = "CH3CHO",
-    molecule = 
-"""
+    index=37,
+    label="CH3CHO",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u0 p0 c0 {1,S} {6,D} {7,S}
 3 H u0 p0 c0 {1,S}
@@ -1381,17 +2146,40 @@ entry(
 6 O u0 p2 c0 {2,D}
 7 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.72946,-0.00319329,4.75349e-05,-5.74586e-08,2.19311e-11,-21572.9,4.10302], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.40411,0.0117231,-4.22631e-06,6.83725e-10,-4.09849e-14,-22593.1,-3.48079], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.72946,
+                    -0.00319329,
+                    4.75349e-05,
+                    -5.74586e-08,
+                    2.19311e-11,
+                    -21572.9,
+                    4.10302,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.40411,
+                    0.0117231,
+                    -4.22631e-06,
+                    6.83725e-10,
+                    -4.09849e-14,
+                    -22593.1,
+                    -3.48079,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""L 8/88""",
-    longDesc = 
-u"""
+    shortDesc="""L 8/88""",
+    longDesc="""
 L 8/88
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1409,10 +2197,9 @@ CC=O
 )
 
 entry(
-    index = 38,
-    label = "CH3CH2OH",
-    molecule = 
-"""
+    index=38,
+    label="CH3CH2OH",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
 3 O u0 p2 c0 {1,S} {9,S}
@@ -1423,17 +2210,40 @@ entry(
 8 H u0 p0 c0 {2,S}
 9 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.8587,-0.00374017,6.95554e-05,-8.86548e-08,3.51688e-11,-29996.1,4.80185], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[6.56244,0.0152042,-5.38968e-06,8.6225e-10,-5.12898e-14,-31525.6,-9.47302], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.8587,
+                    -0.00374017,
+                    6.95554e-05,
+                    -8.86548e-08,
+                    3.51688e-11,
+                    -29996.1,
+                    4.80185,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    6.56244,
+                    0.0152042,
+                    -5.38968e-06,
+                    8.6225e-10,
+                    -5.12898e-14,
+                    -31525.6,
+                    -9.47302,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""L 8/88""",
-    longDesc = 
-u"""
+    shortDesc="""L 8/88""",
+    longDesc="""
 L 8/88
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1473,10 +2283,9 @@ CCO
 )
 
 entry(
-    index = 39,
-    label = "CH2CHO",
-    molecule = 
-"""
+    index=39,
+    label="CH2CHO",
+    molecule="""
 multiplicity 2
 1 C u1 p0 c0 {2,S} {3,S} {4,S}
 2 C u0 p0 c0 {1,S} {5,D} {6,S}
@@ -1485,17 +2294,40 @@ multiplicity 2
 5 O u0 p2 c0 {2,D}
 6 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.66874,0.0096233,1.60617e-05,-2.87682e-08,1.2503e-11,219.438,12.5694], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.91637,0.0088465,-3.14955e-06,5.05413e-10,-3.01305e-14,-1047.8,-6.1065], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.66874,
+                    0.0096233,
+                    1.60617e-05,
+                    -2.87682e-08,
+                    1.2503e-11,
+                    219.438,
+                    12.5694,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.91637,
+                    0.0088465,
+                    -3.14955e-06,
+                    5.05413e-10,
+                    -3.01305e-14,
+                    -1047.8,
+                    -6.1065,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Vinyl-  T04/06""",
-    longDesc = 
-u"""
+    shortDesc="""Vinyl-  T04/06""",
+    longDesc="""
 Vinyl-  T04/06
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1514,10 +2346,9 @@ CH2=CHO*  Vinyl-  T04/06C  2.H  3.O  1.   0.G   200.000  6000.000  B  43.04462 1
 )
 
 entry(
-    index = 40,
-    label = "CH2CH2OH",
-    molecule = 
-"""
+    index=40,
+    label="CH2CH2OH",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u1 p0 c0 {1,S} {6,S} {7,S}
@@ -1528,17 +2359,40 @@ multiplicity 2
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.20954,0.00912965,2.47462e-05,-3.92946e-08,1.66541e-11,-4915.11,8.30445], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[7.01349,0.0120204,-4.21992e-06,6.70676e-10,-3.97135e-14,-6161.62,-8.62052], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.20954,
+                    0.00912965,
+                    2.47462e-05,
+                    -3.92946e-08,
+                    1.66541e-11,
+                    -4915.11,
+                    8.30445,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    7.01349,
+                    0.0120204,
+                    -4.21992e-06,
+                    6.70676e-10,
+                    -3.97135e-14,
+                    -6161.62,
+                    -8.62052,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T05/11""",
-    longDesc = 
-u"""
+    shortDesc="""T05/11""",
+    longDesc="""
 T05/11
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1557,10 +2411,9 @@ REF=Yamada, Bozzelli, Lay JPC A 103 (1999),7646  Vib=scaled x 0.9;  HF298=-25.82
 )
 
 entry(
-    index = 41,
-    label = "CH3CHOH",
-    molecule = 
-"""
+    index=41,
+    label="CH3CHOH",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
 2 C u1 p0 c0 {1,S} {3,S} {7,S}
@@ -1571,17 +2424,40 @@ multiplicity 2
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.22283,0.00512175,3.48387e-05,-4.91944e-08,2.01184e-11,-8356.22,8.01676], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[6.35842,0.0124356,-4.33097e-06,6.8453e-10,-4.03713e-14,-9530.19,-6.05106], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.22283,
+                    0.00512175,
+                    3.48387e-05,
+                    -4.91944e-08,
+                    2.01184e-11,
+                    -8356.22,
+                    8.01676,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    6.35842,
+                    0.0124356,
+                    -4.33097e-06,
+                    6.8453e-10,
+                    -4.03713e-14,
+                    -9530.19,
+                    -6.05106,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T06/11""",
-    longDesc = 
-u"""
+    shortDesc="""T06/11""",
+    longDesc="""
 T06/11
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1601,10 +2477,9 @@ C[CH]O
 )
 
 entry(
-    index = 42,
-    label = "CH2CHOH",
-    molecule = 
-"""
+    index=42,
+    label="CH2CHOH",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u0 p0 c0 {1,D} {5,S} {6,S}
 3 O u0 p2 c0 {1,S} {7,S}
@@ -1613,17 +2488,40 @@ entry(
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.28758,0.0197013,1.96383e-06,-1.9439e-08,1.02617e-11,-16537.3,14.1333], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[7.49818,0.0103957,-3.66891e-06,5.85206e-10,-3.47374e-14,-18164.3,-13.8388], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.28758,
+                    0.0197013,
+                    1.96383e-06,
+                    -1.9439e-08,
+                    1.02617e-11,
+                    -16537.3,
+                    14.1333,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    7.49818,
+                    0.0103957,
+                    -3.66891e-06,
+                    5.85206e-10,
+                    -3.47374e-14,
+                    -18164.3,
+                    -13.8388,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T03/10""",
-    longDesc = 
-u"""
+    shortDesc="""T03/10""",
+    longDesc="""
 T03/10
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1642,10 +2540,9 @@ C=CO
 )
 
 entry(
-    index = 43,
-    label = "CH3CO",
-    molecule = 
-"""
+    index=43,
+    label="CH3CO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u1 p0 c0 {1,S} {6,D}
@@ -1654,17 +2551,40 @@ multiplicity 2
 5 H u0 p0 c0 {1,S}
 6 O u0 p2 c0 {2,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.03587,0.000877295,3.071e-05,-3.92476e-08,1.52969e-11,-2682.07,7.86177], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.31372,0.00917378,-3.32204e-06,5.39475e-10,-3.24524e-14,-3645.04,-1.67576], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.03587,
+                    0.000877295,
+                    3.071e-05,
+                    -3.92476e-08,
+                    1.52969e-11,
+                    -2682.07,
+                    7.86177,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.31372,
+                    0.00917378,
+                    -3.32204e-06,
+                    5.39475e-10,
+                    -3.24524e-14,
+                    -3645.04,
+                    -1.67576,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""RADICAL    IU2/03""",
-    longDesc = 
-u"""
+    shortDesc="""RADICAL    IU2/03""",
+    longDesc="""
 RADICAL    IU2/03
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1683,10 +2603,9 @@ C[C]=O
 )
 
 entry(
-    index = 44,
-    label = "CHCHOH",
-    molecule = 
-"""
+    index=44,
+    label="CHCHOH",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u1 p0 c0 {1,D} {5,S}
@@ -1695,44 +2614,89 @@ multiplicity 2
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.99181,0.0473233,-6.66059e-05,4.68997e-08,-1.30686e-11,15200.1,31.4259], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[8.78246,0.00524797,-1.71857e-06,2.59722e-10,-1.48227e-14,12883.6,-21.0851], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.99181,
+                    0.0473233,
+                    -6.66059e-05,
+                    4.68997e-08,
+                    -1.30686e-11,
+                    15200.1,
+                    31.4259,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    8.78246,
+                    0.00524797,
+                    -1.71857e-06,
+                    2.59722e-10,
+                    -1.48227e-14,
+                    12883.6,
+                    -21.0851,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Lopez et al., Experimental and Kinetic Modeling Study of C2H2 Oxidation at High Pressure, Int. J. Chem. Kin., 2016""",
-    longDesc = 
-u"""
+    shortDesc="""Lopez et al., Experimental and Kinetic Modeling Study of C2H2 Oxidation at High Pressure, Int. J. Chem. Kin., 2016""",
+    longDesc="""
 Lopez et al., Experimental and Kinetic Modeling Study of C2H2 Oxidation at High Pressure, Int. J. Chem. Kin., 2016.
 [CH]=CO
 """,
 )
 
 entry(
-    index = 45,
-    label = "CH2CO",
-    molecule = 
-"""
+    index=45,
+    label="CH2CO",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u0 p0 c0 {1,D} {5,D}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {1,S}
 5 O u0 p2 c0 {2,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.13241,0.0181319,-1.74093e-05,9.35336e-09,-2.01725e-12,-7148.09,13.3808], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.75871,0.00635124,-2.25955e-06,3.62322e-10,-2.15856e-14,-8085.33,-4.9649], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.13241,
+                    0.0181319,
+                    -1.74093e-05,
+                    9.35336e-09,
+                    -2.01725e-12,
+                    -7148.09,
+                    13.3808,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.75871,
+                    0.00635124,
+                    -2.25955e-06,
+                    3.62322e-10,
+                    -2.15856e-14,
+                    -8085.33,
+                    -4.9649,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""g 4/02""",
-    longDesc = 
-u"""
+    shortDesc="""g 4/02""",
+    longDesc="""
 g 4/02
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1750,27 +2714,49 @@ C=C=O
 )
 
 entry(
-    index = 46,
-    label = "HCCOH",
-    molecule = 
-"""
+    index=46,
+    label="HCCOH",
+    molecule="""
 1 C u0 p0 c0 {2,T} {3,S}
 2 C u0 p0 c0 {1,T} {4,S}
 3 O u0 p2 c0 {1,S} {5,S}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.05541,0.0252003,-3.80822e-05,3.09891e-08,-9.898e-12,9768.72,12.2272], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[6.3751,0.00549429,-1.88137e-06,2.93804e-10,-1.71772e-14,8932.78,-8.24498], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.05541,
+                    0.0252003,
+                    -3.80822e-05,
+                    3.09891e-08,
+                    -9.898e-12,
+                    9768.72,
+                    12.2272,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    6.3751,
+                    0.00549429,
+                    -1.88137e-06,
+                    2.93804e-10,
+                    -1.71772e-14,
+                    8932.78,
+                    -8.24498,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Ethynol   T12/09""",
-    longDesc = 
-u"""
+    shortDesc="""Ethynol   T12/09""",
+    longDesc="""
 Ethynol   T12/09
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1788,10 +2774,9 @@ C#CO
 )
 
 entry(
-    index = 47,
-    label = "CH2CHOOH",
-    molecule = 
-"""
+    index=47,
+    label="CH2CHOOH",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,S} {5,S}
 2 C u0 p0 c0 {1,D} {6,S} {7,S}
 3 O u0 p2 c0 {1,S} {4,S}
@@ -1801,17 +2786,40 @@ entry(
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.79821,0.0274377,-2.03468e-05,7.62127e-09,-1.12671e-12,-6315.53,9.11829], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[2.82519,0.0274167,-2.04456e-05,7.77399e-09,-1.18661e-12,-6325.27,8.96641], Tmin=(1000,'K'), Tmax=(2000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.79821,
+                    0.0274377,
+                    -2.03468e-05,
+                    7.62127e-09,
+                    -1.12671e-12,
+                    -6315.53,
+                    9.11829,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    2.82519,
+                    0.0274167,
+                    -2.04456e-05,
+                    7.77399e-09,
+                    -1.18661e-12,
+                    -6325.27,
+                    8.96641,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(2000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (2000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
-    shortDesc = u"""0""",
-    longDesc = 
-u"""
+    shortDesc="""0""",
+    longDesc="""
 0
 in Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160
 CH3OCO     4/15/ 8 THERMC   2H   3O   2    0G   300.000  5000.000 1423.000    21
@@ -1829,27 +2837,49 @@ C=COO
 )
 
 entry(
-    index = 48,
-    label = "HCCO",
-    molecule = 
-"""
+    index=48,
+    label="HCCO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,T} {4,S}
 2 C u0 p0 c0 {1,T} {3,S}
 3 O u1 p2 c0 {2,S}
 4 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.87608,0.0221205,-3.58869e-05,3.05403e-08,-1.01281e-11,20163.4,13.6968], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.91479,0.00371409,-1.30137e-06,2.06473e-10,-1.21477e-14,19359.6,-5.50567], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    1.87608,
+                    0.0221205,
+                    -3.58869e-05,
+                    3.05403e-08,
+                    -1.01281e-11,
+                    20163.4,
+                    13.6968,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.91479,
+                    0.00371409,
+                    -1.30137e-06,
+                    2.06473e-10,
+                    -1.21477e-14,
+                    19359.6,
+                    -5.50567,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T 4/09""",
-    longDesc = 
-u"""
+    shortDesc="""T 4/09""",
+    longDesc="""
 T 4/09
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1877,10 +2907,9 @@ C#C[O]
 )
 
 entry(
-    index = 49,
-    label = "CH2CHOO",
-    molecule = 
-"""
+    index=49,
+    label="CH2CHOO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u0 p0 c0 {1,D} {5,S} {6,S}
@@ -1890,17 +2919,40 @@ multiplicity 2
 6 H u0 p0 c0 {2,S}
 7 O u1 p2 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.41461,0.0297546,-2.58394e-05,1.12221e-08,-1.86781e-12,11371.2,19.0226], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[1.41603,0.0299337,-2.63852e-05,1.17707e-08,-2.05116e-12,11361.7,18.9695], Tmin=(1000,'K'), Tmax=(2000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    1.41461,
+                    0.0297546,
+                    -2.58394e-05,
+                    1.12221e-08,
+                    -1.86781e-12,
+                    11371.2,
+                    19.0226,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    1.41603,
+                    0.0299337,
+                    -2.63852e-05,
+                    1.17707e-08,
+                    -2.05116e-12,
+                    11361.7,
+                    18.9695,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(2000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (2000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(2000, "K"),
     ),
-    shortDesc = u"""0""",
-    longDesc = 
-u"""
+    shortDesc="""0""",
+    longDesc="""
 0
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -1912,10 +2964,9 @@ C=CO[O]
 )
 
 entry(
-    index = 50,
-    label = "CH3CH2OO",
-    molecule = 
-"""
+    index=50,
+    label="CH3CH2OO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
@@ -1927,17 +2978,40 @@ multiplicity 2
 8 H u0 p0 c0 {2,S}
 9 O u1 p2 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.50099,0.00687965,4.74144e-05,-6.92287e-08,2.87395e-11,-5395.48,7.9149], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[8.88872,0.0135833,-4.91117e-06,7.92343e-10,-4.73526e-14,-7441.07,-19.079], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.50099,
+                    0.00687965,
+                    4.74144e-05,
+                    -6.92287e-08,
+                    2.87395e-11,
+                    -5395.48,
+                    7.9149,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    8.88872,
+                    0.0135833,
+                    -4.91117e-06,
+                    7.92343e-10,
+                    -4.73526e-14,
+                    -7441.07,
+                    -19.079,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""J Gimenez CL Rasmussen MU Alzueta P Marshall P Glarborg Proc. Combust. Inst. 32 (2009) 367-375""",
-    longDesc = 
-u"""
+    shortDesc="""J Gimenez CL Rasmussen MU Alzueta P Marshall P Glarborg Proc. Combust. Inst. 32 (2009) 367-375""",
+    longDesc="""
 J Gimenez CL Rasmussen MU Alzueta P Marshall P Glarborg Proc. Combust. Inst. 32 (2009) 367-375
 107-31-3
 C2H4O2  MethylFormate HCOOCH3  SIGMA=1  STATWT=1  IA=4.1878  IB=12.2832
@@ -1970,10 +3044,9 @@ CCO[O]
 )
 
 entry(
-    index = 51,
-    label = "HOCH2CH2OO",
-    molecule = 
-"""
+    index=51,
+    label="HOCH2CH2OO",
+    molecule="""
 multiplicity 2
 1  C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
 2  C u0 p0 c0 {1,S} {4,S} {7,S} {8,S}
@@ -1986,17 +3059,40 @@ multiplicity 2
 9  O u1 p2 c0 {3,S}
 10 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[0.556418,0.0412519,-3.10647e-05,1.2293e-08,-1.99691e-12,-22047.4,24.9983], Tmin=(298,'K'), Tmax=(800,'K')),
-            NASAPolynomial(coeffs=[0.556418,0.0412519,-3.10647e-05,1.2293e-08,-1.99691e-12,-22047.4,24.9983], Tmin=(800,'K'), Tmax=(2500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    0.556418,
+                    0.0412519,
+                    -3.10647e-05,
+                    1.2293e-08,
+                    -1.99691e-12,
+                    -22047.4,
+                    24.9983,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(800, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    0.556418,
+                    0.0412519,
+                    -3.10647e-05,
+                    1.2293e-08,
+                    -1.99691e-12,
+                    -22047.4,
+                    24.9983,
+                ],
+                Tmin=(800, "K"),
+                Tmax=(2500, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (2500,'K'),
+        Tmin=(298, "K"),
+        Tmax=(2500, "K"),
     ),
-    shortDesc = u"""Bozzelli 2015; PM""",
-    longDesc = 
-u"""
+    shortDesc="""Bozzelli 2015; PM""",
+    longDesc="""
 Bozzelli 2015; PM
 40135-01-1
 H298 =-40.30 kcal/mol
@@ -2007,10 +3103,9 @@ Low T polynomial Tmin changed from 300.0 to 298.0 K when importing to RMG.
 )
 
 entry(
-    index = 52,
-    label = "CH3CH2OOH",
-    molecule = 
-"""
+    index=52,
+    label="CH3CH2OOH",
+    molecule="""
 1  C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
 2  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
 3  O u0 p2 c0 {1,S} {4,S}
@@ -2022,17 +3117,40 @@ entry(
 9  H u0 p0 c0 {2,S}
 10 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.14672,0.00978668,4.91492e-05,-7.42532e-08,3.11169e-11,-21467.1,9.84025], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[9.58691,0.0148604,-5.29788e-06,8.47317e-10,-5.03436e-14,-23836.8,-22.8311], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.14672,
+                    0.00978668,
+                    4.91492e-05,
+                    -7.42532e-08,
+                    3.11169e-11,
+                    -21467.1,
+                    9.84025,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    9.58691,
+                    0.0148604,
+                    -5.29788e-06,
+                    8.47317e-10,
+                    -5.03436e-14,
+                    -23836.8,
+                    -22.8311,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T02/10""",
-    longDesc = 
-u"""
+    shortDesc="""T02/10""",
+    longDesc="""
 T02/10
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2062,10 +3180,9 @@ CCOO
 )
 
 entry(
-    index = 53,
-    label = "CH2CH2OOH",
-    molecule = 
-"""
+    index=53,
+    label="CH2CH2OOH",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
 2 C u1 p0 c0 {1,S} {7,S} {8,S}
@@ -2077,17 +3194,40 @@ multiplicity 2
 8 H u0 p0 c0 {2,S}
 9 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[5.07456,0.013239,2.53759e-05,-4.3809e-08,1.89062e-11,3710.63,2.7229], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[9.4138,0.0133542,-4.68068e-06,7.43231e-10,-4.39824e-14,1984.6,-22.4517], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    5.07456,
+                    0.013239,
+                    2.53759e-05,
+                    -4.3809e-08,
+                    1.89062e-11,
+                    3710.63,
+                    2.7229,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    9.4138,
+                    0.0133542,
+                    -4.68068e-06,
+                    7.43231e-10,
+                    -4.39824e-14,
+                    1984.6,
+                    -22.4517,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T 4/15""",
-    longDesc = 
-u"""
+    shortDesc="""T 4/15""",
+    longDesc="""
 T 4/15
 Janoschek R Rossi MJ Int J Chem Kinet 2004 36 661-686
 CL Rasmussen JG Jacobsen P Glarborg Int J Chem Kinet 40 (2008) 778-807
@@ -2103,10 +3243,9 @@ Cp @ 6000 K 0.44%.
 )
 
 entry(
-    index = 54,
-    label = "CH3CHOOH",
-    molecule = 
-"""
+    index=54,
+    label="CH3CHOOH",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
 2 C u1 p0 c0 {1,S} {3,S} {8,S}
@@ -2118,17 +3257,40 @@ multiplicity 2
 8 H u0 p0 c0 {2,S}
 9 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[6.26854,0.000111351,6.15944e-05,-7.95035e-08,3.12333e-11,962.571,-0.180971], Tmin=(200,'K'), Tmax=(999.99,'K')),
-            NASAPolynomial(coeffs=[9.10837,0.0152964,-5.54864e-06,9.02286e-10,-5.4412e-14,-932.703,-20.3914], Tmin=(999.99,'K'), Tmax=(2500,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    6.26854,
+                    0.000111351,
+                    6.15944e-05,
+                    -7.95035e-08,
+                    3.12333e-11,
+                    962.571,
+                    -0.180971,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(999.99, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    9.10837,
+                    0.0152964,
+                    -5.54864e-06,
+                    9.02286e-10,
+                    -5.4412e-14,
+                    -932.703,
+                    -20.3914,
+                ],
+                Tmin=(999.99, "K"),
+                Tmax=(2500, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (2500,'K'),
+        Tmin=(200, "K"),
+        Tmax=(2500, "K"),
     ),
-    shortDesc = u"""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
-    longDesc = 
-u"""
+    shortDesc="""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
+    longDesc="""
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
 mirrored at http://garfield.chem.elte.hu/burcat/burcat.html.
@@ -2142,10 +3304,9 @@ C[CH]OO
 )
 
 entry(
-    index = 55,
-    label = "cC2H4O",
-    molecule = 
-"""
+    index=55,
+    label="cC2H4O",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u0 p0 c0 {1,S} {3,S} {6,S} {7,S}
 3 O u0 p2 c0 {1,S} {2,S}
@@ -2154,17 +3315,40 @@ entry(
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.75905,-0.00944122,8.03097e-05,-1.00808e-07,4.00399e-11,-7560.81,7.84975], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.48876,0.0120462,-4.33369e-06,7.00283e-10,-4.19491e-14,-9180.43,-7.07996], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.75905,
+                    -0.00944122,
+                    8.03097e-05,
+                    -1.00808e-07,
+                    4.00399e-11,
+                    -7560.81,
+                    7.84975,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.48876,
+                    0.0120462,
+                    -4.33369e-06,
+                    7.00283e-10,
+                    -4.19491e-14,
+                    -9180.43,
+                    -7.07996,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""OXYRANE    L 8/88""",
-    longDesc = 
-u"""
+    shortDesc="""OXYRANE    L 8/88""",
+    longDesc="""
 OXYRANE    L 8/88
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2181,10 +3365,9 @@ C1CO1
 )
 
 entry(
-    index = 56,
-    label = "cC2H3O",
-    molecule = 
-"""
+    index=56,
+    label="cC2H3O",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u1 p0 c0 {1,S} {3,S} {6,S}
@@ -2193,17 +3376,40 @@ multiplicity 2
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.58349,-0.00602276,6.32427e-05,-8.18541e-08,3.30445e-11,18568.1,9.59726], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.60158,0.00917614,-3.28029e-06,5.27904e-10,-3.15362e-14,17144.6,-5.47229], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.58349,
+                    -0.00602276,
+                    6.32427e-05,
+                    -8.18541e-08,
+                    3.30445e-11,
+                    18568.1,
+                    9.59726,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.60158,
+                    0.00917614,
+                    -3.28029e-06,
+                    5.27904e-10,
+                    -3.15362e-14,
+                    17144.6,
+                    -5.47229,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""A 1/05""",
-    longDesc = 
-u"""
+    shortDesc="""A 1/05""",
+    longDesc="""
 A 1/05
 Goldsmith et al., J. Phys. Chem. A 2012, 116, 3325-3346
 31586-84-2
@@ -2217,10 +3423,9 @@ C2H3O Oxyrane Rad A 1/05C  2.H  3.O  1.   0.G   200.000  6000.000  B  43.04462 1
 )
 
 entry(
-    index = 57,
-    label = "OCHCHO",
-    molecule = 
-"""
+    index=57,
+    label="OCHCHO",
+    molecule="""
 1 C u0 p0 c0 {2,S} {3,D} {5,S}
 2 C u0 p0 c0 {1,S} {4,D} {6,S}
 3 O u0 p2 c0 {1,D}
@@ -2228,17 +3433,40 @@ entry(
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.68412,0.000478013,4.26391e-05,-5.79018e-08,2.31669e-11,-27198.5,4.51187], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[8.72507,0.00633097,-2.35575e-06,3.89783e-10,-2.37487e-14,-29102.4,-20.3904], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.68412,
+                    0.000478013,
+                    4.26391e-05,
+                    -5.79018e-08,
+                    2.31669e-11,
+                    -27198.5,
+                    4.51187,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    8.72507,
+                    0.00633097,
+                    -2.35575e-06,
+                    3.89783e-10,
+                    -2.37487e-14,
+                    -29102.4,
+                    -20.3904,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160""",
-    longDesc = 
-u"""
+    shortDesc="""Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160""",
+    longDesc="""
 Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160
 107-22-2
 C2H2O2 (CHO-CHO) Trans-Cis-GLYOXAL   SIGMA=2   T0=0 (trans)  STATWT=1
@@ -2260,10 +3488,9 @@ O=CC=O
 )
 
 entry(
-    index = 58,
-    label = "HOCH2O",
-    molecule = 
-"""
+    index=58,
+    label="HOCH2O",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 O u0 p2 c0 {1,S} {6,S}
@@ -2272,17 +3499,40 @@ multiplicity 2
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[-1.97309,0.0426372,-5.84444e-05,4.12219e-08,-1.13585e-11,-21382.8,32.869], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.64142,0.0146739,-8.24143e-06,2.2479e-09,-2.38671e-13,-22230.4,7.15858], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    -1.97309,
+                    0.0426372,
+                    -5.84444e-05,
+                    4.12219e-08,
+                    -1.13585e-11,
+                    -21382.8,
+                    32.869,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.64142,
+                    0.0146739,
+                    -8.24143e-06,
+                    2.2479e-09,
+                    -2.38671e-13,
+                    -22230.4,
+                    7.15858,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""1311""",
-    longDesc = 
-u"""
+    shortDesc="""1311""",
+    longDesc="""
 1311
 Aranda, V., et al., Int. J. Chemical Kinet. 45.5 (2013): 283-294.
 PM
@@ -2292,10 +3542,9 @@ Marshall and Glarborg, Proc. Combust. Inst. 35 (2015) 153-160.
 )
 
 entry(
-    index = 59,
-    label = "OCHCO",
-    molecule = 
-"""
+    index=59,
+    label="OCHCO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u0 p0 c0 {1,D} {5,D}
@@ -2303,17 +3552,40 @@ multiplicity 2
 4 H u0 p0 c0 {1,S}
 5 O u0 p2 c0 {2,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.39406,0.0143629,-8.84138e-06,1.60961e-09,3.20389e-13,-8684.14,10.592], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.94994,0.010163,-5.5772e-06,1.4572e-09,-1.47435e-13,-9096.51,2.57988], Tmin=(1000,'K'), Tmax=(2900,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.39406,
+                    0.0143629,
+                    -8.84138e-06,
+                    1.60961e-09,
+                    3.20389e-13,
+                    -8684.14,
+                    10.592,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.94994,
+                    0.010163,
+                    -5.5772e-06,
+                    1.4572e-09,
+                    -1.47435e-13,
+                    -9096.51,
+                    2.57988,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(2900, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (2900,'K'),
+        Tmin=(298, "K"),
+        Tmax=(2900, "K"),
     ),
-    shortDesc = u"""0""",
-    longDesc = 
-u"""
+    shortDesc="""0""",
+    longDesc="""
 0
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2340,10 +3612,9 @@ Low T polynomial Tmin changed from 350.0 to 298.0 K when importing to RMG.
 )
 
 entry(
-    index = 60,
-    label = "CH3C(O)O",
-    molecule = 
-"""
+    index=60,
+    label="CH3C(O)O",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 C u0 p0 c0 {1,S} {6,S} {7,D}
@@ -2353,17 +3624,40 @@ multiplicity 2
 6 O u1 p2 c0 {2,S}
 7 O u0 p2 c0 {2,D}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.30016,0.0237699,-1.23328e-05,5.87355e-11,1.44737e-12,-24433.8,20.8502], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.15457,0.0168675,-8.75191e-06,2.18661e-09,-2.13394e-13,-25230.4,5.95053], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    1.30016,
+                    0.0237699,
+                    -1.23328e-05,
+                    5.87355e-11,
+                    1.44737e-12,
+                    -24433.8,
+                    20.8502,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.15457,
+                    0.0168675,
+                    -8.75191e-06,
+                    2.18661e-09,
+                    -2.13394e-13,
+                    -25230.4,
+                    5.95053,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""1508""",
-    longDesc = 
-u"""
+    shortDesc="""1508""",
+    longDesc="""
 1508
 J Gimenez CL Rasmussen MU Alzueta P Marshall P Glarborg Proc. Combust. Inst. 32 (2009) 367-375
 W-C Ing CY Sheng JW Bozzelli Fuel Proc Tech 83 (2003) 111-145
@@ -2373,25 +3667,47 @@ CC([O])=O
 )
 
 entry(
-    index = 61,
-    label = "C2",
-    molecule =
-"""
+    index=61,
+    label="C2",
+    molecule="""
 multiplicity 3
 1 C u1 p0 c0 {2,T}
 2 C u1 p0 c0 {1,T}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.69386,-0.00184767,5.23713e-06,-3.83965e-09,8.61136e-13,98382.2,2.23677], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.25289,0.0012319,-4.50354e-07,7.49357e-11,-4.57925e-15,98373.7,3.9586], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.69386,
+                    -0.00184767,
+                    5.23713e-06,
+                    -3.83965e-09,
+                    8.61136e-13,
+                    98382.2,
+                    2.23677,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.25289,
+                    0.0012319,
+                    -4.50354e-07,
+                    7.49357e-11,
+                    -4.57925e-15,
+                    98373.7,
+                    3.9586,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""singlet        T05/09""",
-    longDesc = 
-u"""
+    shortDesc="""singlet        T05/09""",
+    longDesc="""
 Note: This species should be in a singlet form (multiplicity = 1), but currently RMG won't accept it
 (Same for the Klippenstein_Glarborg2016 kinetic library)
 
@@ -2410,10 +3726,9 @@ Max Lst Sq Error Cp @ 1300 K 0.32%..
 )
 
 entry(
-    index = 62,
-    label = "CH3C(O)OO",
-    molecule = 
-"""
+    index=62,
+    label="CH3C(O)OO",
+    molecule="""
 multiplicity 2
 1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
 2 C u0 p0 c0 {1,S} {3,S} {7,D}
@@ -2424,17 +3739,40 @@ multiplicity 2
 7 O u0 p2 c0 {2,D}
 8 O u1 p2 c0 {3,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.12838,0.0294919,-2.00221e-05,5.32494e-09,3.03452e-14,-21203.4,18.0452], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.76604,0.0188598,-9.95181e-06,2.52994e-09,-2.50541e-13,-22126.8,-0.48408], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.12838,
+                    0.0294919,
+                    -2.00221e-05,
+                    5.32494e-09,
+                    3.03452e-14,
+                    -21203.4,
+                    18.0452,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.76604,
+                    0.0188598,
+                    -9.95181e-06,
+                    2.52994e-09,
+                    -2.50541e-13,
+                    -22126.8,
+                    -0.48408,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""1508""",
-    longDesc = 
-u"""
+    shortDesc="""1508""",
+    longDesc="""
 1508
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2455,10 +3793,9 @@ CC(=O)O[O]
 )
 
 entry(
-    index = 63,
-    label = "CH3C(O)OOH",
-    molecule = 
-"""
+    index=63,
+    label="CH3C(O)OOH",
+    molecule="""
 1 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
 2 C u0 p0 c0 {1,S} {3,S} {8,D}
 3 O u0 p2 c0 {2,S} {4,S}
@@ -2469,17 +3806,40 @@ entry(
 8 O u0 p2 c0 {2,D}
 9 H u0 p0 c0 {4,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[1.43748,0.0339384,-2.25467e-05,5.77205e-09,1.28452e-13,-44070.1,19.8194], Tmin=(298,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.64132,0.0217231,-1.11238e-05,2.75682e-09,-2.67754e-13,-45140.9,-1.61172], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    1.43748,
+                    0.0339384,
+                    -2.25467e-05,
+                    5.77205e-09,
+                    1.28452e-13,
+                    -44070.1,
+                    19.8194,
+                ],
+                Tmin=(298, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.64132,
+                    0.0217231,
+                    -1.11238e-05,
+                    2.75682e-09,
+                    -2.67754e-13,
+                    -45140.9,
+                    -1.61172,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (298,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(298, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""1508""",
-    longDesc = 
-u"""
+    shortDesc="""1508""",
+    longDesc="""
 1508
 Bozzelli 2015; PM.
 CC(=O)OO
@@ -2487,26 +3847,48 @@ CC(=O)OO
 )
 
 entry(
-    index = 64,
-    label = "C2O",
-    molecule = 
-"""
+    index=64,
+    label="C2O",
+    molecule="""
 multiplicity 3
 1 C u0 p0 c0 {2,T} {3,S}
 2 C u1 p0 c0 {1,T}
 3 O u1 p2 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.86278,0.0119701,-1.80851e-05,1.52778e-08,-5.20063e-12,44312.6,8.89759], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.42468,0.00185394,-5.17933e-07,6.77646e-11,-3.53315e-15,43716.1,-3.69608], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.86278,
+                    0.0119701,
+                    -1.80851e-05,
+                    1.52778e-08,
+                    -5.20063e-12,
+                    44312.6,
+                    8.89759,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.42468,
+                    0.00185394,
+                    -5.17933e-07,
+                    6.77646e-11,
+                    -3.53315e-15,
+                    43716.1,
+                    -3.69608,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""T 8/11""",
-    longDesc = 
-u"""
+    shortDesc="""T 8/11""",
+    longDesc="""
 T 8/11
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2526,26 +3908,48 @@ Newmark JCP 108,(1998),4070 and Williams & Fleming Proc. Comb. Inst 31,(2007),
 )
 
 entry(
-    index = 65,
-    label = "HCOH",
-    molecule = 
-"""
+    index=65,
+    label="HCOH",
+    molecule="""
 1 O u0 p1 c+1 {2,D} {4,S}
 2 C u0 p1 c-1 {1,D} {3,S}
 3 H u0 p0 c0 {2,S}
 4 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[4.65733,-0.00953742,4.04679e-05,-4.45318e-08,1.64762e-11,13861.5,1.97861], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[3.65237,0.00555807,-1.97617e-06,3.16823e-10,-1.88748e-14,13553.6,4.22141], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    4.65733,
+                    -0.00953742,
+                    4.04679e-05,
+                    -4.45318e-08,
+                    1.64762e-11,
+                    13861.5,
+                    1.97861,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    3.65237,
+                    0.00555807,
+                    -1.97617e-06,
+                    3.16823e-10,
+                    -1.88748e-14,
+                    13553.6,
+                    4.22141,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""CH**-OH cis T 9/09""",
-    longDesc = 
-u"""
+    shortDesc="""CH**-OH cis T 9/09""",
+    longDesc="""
 CH**-OH cis T 9/09
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2580,10 +3984,9 @@ REF=ATcT C 2011}  Max Lst Sq Error Cp @ 6000 K 0.49%..
 )
 
 entry(
-    index = 66,
-    label = "CHCHO",
-    molecule = 
-"""
+    index=66,
+    label="CHCHO",
+    molecule="""
 multiplicity 3
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u1 p0 c0 {1,D} {5,S}
@@ -2591,17 +3994,40 @@ multiplicity 3
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {2,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[2.06864,0.0187233,-1.21319e-05,-3.33727e-10,2.32882e-12,29739.4,14.7866], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[5.96288,0.00799899,-4.30606e-06,1.11076e-09,-1.11415e-13,28725.6,-5.17392], Tmin=(1000,'K'), Tmax=(3000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    2.06864,
+                    0.0187233,
+                    -1.21319e-05,
+                    -3.33727e-10,
+                    2.32882e-12,
+                    29739.4,
+                    14.7866,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    5.96288,
+                    0.00799899,
+                    -4.30606e-06,
+                    1.11076e-09,
+                    -1.11415e-13,
+                    28725.6,
+                    -5.17392,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(3000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (3000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(3000, "K"),
     ),
-    shortDesc = u"""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
-    longDesc = 
-u"""
+    shortDesc="""E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical""",
+    longDesc="""
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
 mirrored at http://garfield.chem.elte.hu/burcat/burcat.html.
@@ -2611,26 +4037,48 @@ Accessed April 2016.
 )
 
 entry(
-    index = 67,
-    label = "H2CC",
-    molecule = 
-"""
+    index=67,
+    label="H2CC",
+    molecule="""
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
 2 C u0 p1 c0 {1,D}
 3 H u0 p0 c0 {1,S}
 4 H u0 p0 c0 {1,S}
 """,
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(coeffs=[3.28155,0.00697643,-2.38528e-06,-1.21078e-09,9.82042e-13,48319.2,5.92036], Tmin=(200,'K'), Tmax=(1000,'K')),
-            NASAPolynomial(coeffs=[4.27807,0.00475623,-1.63007e-06,2.54623e-10,-1.4886e-14,48014,0.639979], Tmin=(1000,'K'), Tmax=(6000,'K')),
+    thermo=NASA(
+        polynomials=[
+            NASAPolynomial(
+                coeffs=[
+                    3.28155,
+                    0.00697643,
+                    -2.38528e-06,
+                    -1.21078e-09,
+                    9.82042e-13,
+                    48319.2,
+                    5.92036,
+                ],
+                Tmin=(200, "K"),
+                Tmax=(1000, "K"),
+            ),
+            NASAPolynomial(
+                coeffs=[
+                    4.27807,
+                    0.00475623,
+                    -1.63007e-06,
+                    2.54623e-10,
+                    -1.4886e-14,
+                    48014,
+                    0.639979,
+                ],
+                Tmin=(1000, "K"),
+                Tmax=(6000, "K"),
+            ),
         ],
-        Tmin = (200,'K'),
-        Tmax = (6000,'K'),
+        Tmin=(200, "K"),
+        Tmax=(6000, "K"),
     ),
-    shortDesc = u"""Vinylidene   T 7/11""",
-    longDesc = 
-u"""
+    shortDesc="""Vinylidene   T 7/11""",
+    longDesc="""
 Vinylidene   T 7/11
 E Goos A Burcat B Ruscic Ideal gas thermochemical database with updates from active thermochemical
 http://burcat.technion.ac.il/dir/
@@ -2650,4 +4098,3 @@ kJ REF=ATcT A}   Max Lst Sq Error Cp @ 6000 K 0.35%..
 [C]=C
 """,
 )
-

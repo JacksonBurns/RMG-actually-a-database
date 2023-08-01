@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 name = "Surface_Migration/groups"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 Surface species migrating where it binds to the surface.
 
      *4              *4
@@ -22,47 +22,46 @@ template(reactants=["Adsorbate1"], products=["Adsorbate2"], ownReverse=False)
 
 reverse = "Surface_Migration_Reverse"
 
-reactantNum=1
-productNum=1
+reactantNum = 1
+productNum = 1
 
-recipe(actions=[
-    ['BREAK_BOND', '*1', 1, '*2'],
-    ['BREAK_BOND', '*3', 1, '*4'],
-    ['FORM_BOND', '*1', 1, '*3'],
-    ['FORM_BOND', '*2', 1, '*4'],
-])
+recipe(
+    actions=[
+        ["BREAK_BOND", "*1", 1, "*2"],
+        ["BREAK_BOND", "*3", 1, "*4"],
+        ["FORM_BOND", "*1", 1, "*3"],
+        ["FORM_BOND", "*2", 1, "*4"],
+    ]
+)
 
 entry(
-    index = 1,
-    label = "Adsorbate1",
-    group =
-"""
+    index=1,
+    label="Adsorbate1",
+    group="""
 1 *1 X   ux px cx {2,S}
 2 *2 R!H ux px cx {1,S} {3,[S,D]}
 3 *3 R!H ux px cx {2,[S,D]} {4,S}
 4 *4 R   ux px cx {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 2,
+    index=2,
     label="*C",
-    group =
-"""
+    group="""
 1 *1 X ux px cx {2,S}
 2 *2 C ux px cx {1,S} {3,[S,D]}
 3 *3 C ux px cx {2,[S,D]} {4,S}
 4 *4 R ux px cx {3,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 3,
+    index=3,
     label="*nC4",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {5,S} {6,S}
 3 *3 C u0 p0 c0 {2,S} {4,S} {7,S} {8,S}
@@ -78,14 +77,13 @@ entry(
 13   H u0 p0 c0 {11,S}
 14   H u0 p0 c0 {11,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 4,
+    index=4,
     label="*nC6",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {5,S} {6,S}
 3 *3 C u0 p0 c0 {2,S} {4,S} {7,S} {8,S}
@@ -107,14 +105,13 @@ entry(
 19   H u0 p0 c0 {17,S}
 20   H u0 p0 c0 {17,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 entry(
-    index = 5,
+    index=5,
     label="*nC8",
-    group =
-"""
+    group="""
 1 *1 X u0 p0 c0 {2,S}
 2 *2 C u0 p0 c0 {1,S} {3,S} {5,S} {6,S}
 3 *3 C u0 p0 c0 {2,S} {4,S} {7,S} {8,S}
@@ -142,11 +139,11 @@ entry(
 25   H u0 p0 c0 {23,S}
 26   H u0 p0 c0 {23,S}
 """,
-    kinetics = None,
+    kinetics=None,
 )
 
 tree(
-"""
+    """
 L1: Adsorbate1
     L2: *C
         L3: *nC4
