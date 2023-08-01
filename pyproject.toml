@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rmgdatabase"
+version = "4.0.0a0"
+authors = [{ name = "RMG Team", email = "rmg_dev@mit.edu" }]
+license = { text = "MIT" }
+description = "The Amazing Database of chemical information used in Reaction Mechanism Generator"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+urls = { Homepage = "https://github.com/JacksonBurns/RMG-actually-a-database" }
+requires-python = ">=3.7"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "pytest"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.isort]
+profile = "black"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rmgdatabase"]
+exclude = ["docs", "examples", "test"]
