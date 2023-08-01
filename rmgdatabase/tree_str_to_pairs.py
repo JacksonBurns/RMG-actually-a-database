@@ -24,7 +24,7 @@ def sketchy_conversion(instr):
     overall_dict = {}
     added_stack = []
     last_level = 0
-    for line in test_str.split("\n"):
+    for line in instr.split("\n"):
         if "L" not in line:
             continue
         level = (len(line) - len(line.lstrip(" "))) // 4
