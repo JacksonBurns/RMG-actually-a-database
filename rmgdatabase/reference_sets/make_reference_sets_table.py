@@ -6,7 +6,9 @@ from tqdm import tqdm
 
 db = pw.SqliteDatabase("reference_sets.db")
 
-all_yaml_fpaths = [os.path.join("main", i) for i in os.listdir("main")]
+all_yaml_fpaths = [
+    os.path.join("reference_yml_files", i) for i in os.listdir("reference_yml_files")
+]
 
 
 class BaseModel(pw.Model):
