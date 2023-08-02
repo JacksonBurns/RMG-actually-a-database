@@ -141,8 +141,6 @@ for fpath in tqdm(all_libraries_fpaths):
             elif line.startswith("    index"):
                 idx = int(line.split("=")[1].replace(",", ""))
                 new_library.rmgdb_index = idx
-                if idx == 0:
-                    new_library.is_head_node = True
             elif line.startswith("    label"):
                 new_library.label = line.split("=")[1].replace('"', "").replace(",", "")
             elif line.startswith("    molecule"):
