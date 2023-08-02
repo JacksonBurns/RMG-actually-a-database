@@ -9,7 +9,7 @@ Convert...
  - [ ] kinetics
  - [x] quantum_corrections - was already _mostly_ compatible
  - [x] reference_sets - flattened
- - [ ] solvation
+ - [x] solvation
  - [ ] statmech
  - [x] surface
  - [ ] thermo
