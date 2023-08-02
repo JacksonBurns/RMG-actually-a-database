@@ -3,8 +3,6 @@ import os
 import peewee as pw
 from tqdm import tqdm
 
-if os.path.exists("surface.db"):
-    os.remove("surface.db")
 db = pw.SqliteDatabase("surface.db")
 
 all_libraries_fpaths = [os.path.join("libraries", i) for i in os.listdir("libraries")]
