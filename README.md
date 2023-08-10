@@ -10,7 +10,7 @@ Convert...
  - [x] quantum_corrections - was already _mostly_ compatible
  - [x] reference_sets - flattened
  - [x] solvation
- - [ ] statmech
+ - [x] statmech
  - [x] surface
  - [ ] thermo
  - [x] transport - flattened
