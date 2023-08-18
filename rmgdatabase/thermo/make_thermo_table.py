@@ -6,8 +6,6 @@ from tqdm import tqdm
 
 from rmgdatabase.tree_str_to_pairs import sketchy_conversion
 
-if os.path.exists("thermo.db"):
-    os.remove("thermo.db")
 db = pw.SqliteDatabase("thermo.db")
 
 all_groups_fpaths = [os.path.join("groups", i) for i in os.listdir("groups")]
